@@ -113,8 +113,10 @@ def build_prompt(url: str, info: dict[str, str], shape_hint: str | None = None) 
     lines = [f"- {label}: {value}" for label, value in fields if value]
     info_block = "\n".join(lines) if lines else "- (병원정보 없음 — URL만으로 진행)"
     hint_block = ""
-    if shape_hint and shape_hint in SHAPE_HINTS:
-        hint_block = f"\n사전 분류 힌트(참고용): 이 사이트는 {SHAPE_HINTS[shape_hint]}\n"
+    if shape_hint in SHAPE_HINTS:
+        hint_block = (
+            f"\n사전 분류 힌트(참고용): 이 사이트는 {SHAPE_HINTS[shape_hint]}\n"
+        )
 
     return (
         f"{SKILL_NAME} 스킬을 사용해 아래 병원 공식 홈페이지를 크롤링·추출하고, "
@@ -291,8 +293,7 @@ async def run(
         log(f"🔎 트리아지: {verdict['decision']} — {verdict['reason']}")
         if verdict["decision"] == "SKIP":
             if out_path is not None:
-                if out_path.exists():
-                    out_path.unlink()
+                out_path.unlink(missing_ok=True)
                 write_skip_output(out_path, info, url, verdict)
                 log(
                     f"결과 저장: {out_path.relative_to(PROJECT_ROOT)} — "
@@ -319,8 +320,8 @@ async def run(
     # 이전 실행의 잔존 결과 파일을 지우고 새로 크롤링한다. 남겨두면 약한 모델이
     # 크롤링 대신 그 파일을 읽어 재사용하는 오염이 생기고, 크래시 후 잔존 파일을
     # "저장됨"으로 오보하게 된다. (resume은 별도 기능으로 다룬다.)
-    if out_path is not None and out_path.exists():
-        out_path.unlink()
+    if out_path is not None:
+        out_path.unlink(missing_ok=True)
 
     last_result: ResultMessage | None = None
     seen_model: str | None = None
@@ -466,8 +467,13 @@ def main(argv: list[str] | None = None) -> int:
 
     return asyncio.run(
         run(
-            args.url, info, args.budget, args.model, args.effort,
-            args.time_limit, args.no_triage,
+            args.url,
+            info,
+            args.budget,
+            args.model,
+            args.effort,
+            args.time_limit,
+            args.no_triage,
         )
     )
 

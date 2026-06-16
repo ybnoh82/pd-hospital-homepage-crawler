@@ -31,31 +31,93 @@ UA = (
 
 # 비타깃 진료과(병원명 신호). 이름에 있고 본문에 미용 신호가 없으면 스킵 후보.
 NONTARGET_TYPES = [
-    "안과", "이비인후과", "가정의학", "내과", "산부인과", "비뇨기", "비뇨의학",
-    "정형외과", "소아", "치과", "한의원", "한방", "신경과", "정신건강", "정신의학",
-    "재활의학", "흉부외과", "영상의학", "진단검사", "마취통증",
+    "안과",
+    "이비인후과",
+    "가정의학",
+    "내과",
+    "산부인과",
+    "비뇨기",
+    "비뇨의학",
+    "정형외과",
+    "소아",
+    "치과",
+    "한의원",
+    "한방",
+    "신경과",
+    "정신건강",
+    "정신의학",
+    "재활의학",
+    "흉부외과",
+    "영상의학",
+    "진단검사",
+    "마취통증",
 ]
 # 강한 미용 신호(본문·이름). 하나라도 있으면 타깃으로 보고 스킵하지 않는다.
 # **모호한 단어는 일부러 뺐다** — "레이저"(라식), "성형"(비중격성형술), "비급여"(모든
 # 의원), "피부"(일반)는 비타깃 의료 사이트에도 흔해 미용 신호로 못 쓴다. 비타깃 진료과
 # 이름을 덮으려면 명백한 미용 신호여야 한다(내과가 보톡스를 하면 그건 본문에 강하게 뜬다).
 STRONG_BEAUTY_KW = [
-    "피부과", "성형외과", "미용", "쁘띠", "필러", "톡신", "보톡스", "보툴리눔",
-    "리프팅", "스킨부스터", "울쎄라", "슈링크", "써마지", "인모드", "쥬베룩", "리쥬란",
-    "스컬트라", "윤곽주사", "제모", "여드름", "모공", "색소침착", "안티에이징",
-    "에스테틱", "더모톡신", "쁘띠성형", "보톡스", "물광주사", "백옥주사",
-    "filler", "botox", "skinbooster", "dermatolog", "aesthetic", "botulinum",
+    "피부과",
+    "성형외과",
+    "미용",
+    "쁘띠",
+    "필러",
+    "톡신",
+    "보톡스",
+    "보툴리눔",
+    "리프팅",
+    "스킨부스터",
+    "울쎄라",
+    "슈링크",
+    "써마지",
+    "인모드",
+    "쥬베룩",
+    "리쥬란",
+    "스컬트라",
+    "윤곽주사",
+    "제모",
+    "여드름",
+    "모공",
+    "색소침착",
+    "안티에이징",
+    "에스테틱",
+    "더모톡신",
+    "쁘띠성형",
+    "보톡스",
+    "물광주사",
+    "백옥주사",
+    "filler",
+    "botox",
+    "skinbooster",
+    "dermatolog",
+    "aesthetic",
+    "botulinum",
 ]
 # 주차/준비중/광고 도메인 신호.
 PARKED_KW = [
-    "this domain", "domain is for sale", "도메인이 만료", "도메인 판매",
-    "sedoparking", "parkingcrew", "bodis.com", "준비중입니다", "서비스 준비 중",
-    "사이트를 찾을 수 없", "페이지를 찾을 수 없", "site not found",
+    "this domain",
+    "domain is for sale",
+    "도메인이 만료",
+    "도메인 판매",
+    "sedoparking",
+    "parkingcrew",
+    "bodis.com",
+    "준비중입니다",
+    "서비스 준비 중",
+    "사이트를 찾을 수 없",
+    "페이지를 찾을 수 없",
+    "site not found",
 ]
 # SPA 프레임워크 흔적(내용이 JS로 렌더되어 raw HTML엔 안 보임).
 SPA_MARKERS = [
-    "__next_data__", "data-reactroot", 'id="root"', 'id="app"', "ng-app",
-    "window.__nuxt__", "/_next/", "data-server-rendered",
+    "__next_data__",
+    "data-reactroot",
+    'id="root"',
+    'id="app"',
+    "ng-app",
+    "window.__nuxt__",
+    "/_next/",
+    "data-server-rendered",
 ]
 
 
@@ -67,11 +129,23 @@ def fetch(url: str, timeout: int = 15) -> tuple[int | None, str, str]:
     marker = "\n__CURLMETA__"
     try:
         p = subprocess.run(
-            ["curl", "-sL", "-A", UA, "--max-time", str(timeout),
-             "-w", f"{marker}%{{http_code}}\t%{{url_effective}}", url],
-            capture_output=True, text=True, errors="replace", timeout=timeout + 5,
+            [
+                "curl",
+                "-sL",
+                "-A",
+                UA,
+                "--max-time",
+                str(timeout),
+                "-w",
+                f"{marker}%{{http_code}}\t%{{url_effective}}",
+                url,
+            ],
+            capture_output=True,
+            text=True,
+            errors="replace",
+            timeout=timeout + 5,
         )
-    except (subprocess.TimeoutExpired, OSError):
+    except subprocess.TimeoutExpired, OSError:
         return None, url, ""
     # curl 비정상 종료(DNS·연결거부·TLS·타임아웃)는 dead. 이때 -w가 http_code=000을
     # 찍어 marker는 남으므로 returncode로 잡는다. 404 등은 returncode=0이라 통과한다.
@@ -86,7 +160,7 @@ def fetch(url: str, timeout: int = 15) -> tuple[int | None, str, str]:
     parts = meta.split("\t")
     try:
         code = int(parts[0])
-    except (ValueError, IndexError):
+    except ValueError, IndexError:
         code = None
     if len(parts) > 1 and parts[1]:
         final = parts[1]
@@ -97,9 +171,9 @@ def _norm(s: str) -> str:
     return unicodedata.normalize("NFKC", s or "").casefold()
 
 
-def _hits(text: str, kws: list[str]) -> list[str]:
-    t = _norm(text)
-    return [k for k in kws if _norm(k) in t]
+def _hits(norm_text: str, kws: list[str]) -> list[str]:
+    """`norm_text`는 이미 `_norm`을 거친 문자열이어야 한다(큰 HTML을 매번 재정규화하지 않기 위함)."""
+    return [k for k in kws if _norm(k) in norm_text]
 
 
 def scan_content(html: str) -> dict:
@@ -108,11 +182,11 @@ def scan_content(html: str) -> dict:
     text = re.sub(r"<style[\s\S]*?</style>", " ", text, flags=re.I)
     text = re.sub(r"<[^>]+>", " ", text)
     text = re.sub(r"\s+", " ", text).strip()
-    low = _norm(html)
+    low = _norm(html)  # 큰 HTML은 한 번만 정규화하고 아래 키워드 매칭에서 재사용.
     return {
         "text_len": len(text),
-        "beauty": _hits(html, STRONG_BEAUTY_KW),
-        "parked": _hits(html, PARKED_KW),
+        "beauty": _hits(low, STRONG_BEAUTY_KW),
+        "parked": _hits(low, PARKED_KW),
         "is_spa": len(text) < 800 and any(m in low for m in SPA_MARKERS),
         "img_count": len(re.findall(r"<img\b", html, flags=re.I)),
     }
@@ -122,35 +196,50 @@ def triage(url: str, name: str = "") -> dict:
     """크롤 전 분류. {decision: SKIP|CRAWL, reason, signals}를 반환한다."""
     code, final, html = fetch(url)
     if code is None:
-        return {"decision": "SKIP", "reason": "dead: 접속 불가(DNS·연결·타임아웃)",
-                "signals": {"http": None}}
+        return {
+            "decision": "SKIP",
+            "reason": "dead: 접속 불가(DNS·연결·타임아웃)",
+            "signals": {"http": None},
+        }
     if code >= 400:
-        return {"decision": "SKIP", "reason": f"dead: HTTP {code}",
-                "signals": {"http": code, "final_url": final}}
+        return {
+            "decision": "SKIP",
+            "reason": f"dead: HTTP {code}",
+            "signals": {"http": code, "final_url": final},
+        }
 
     c = scan_content(html)
-    name_nontarget = _hits(name, NONTARGET_TYPES)
+    nname = _norm(name)
+    name_nontarget = _hits(nname, NONTARGET_TYPES)
     # 강한 미용 신호: 본문 또는 병원명 어느 쪽에든 있으면 타깃으로 보고 스킵하지 않는다.
-    has_beauty = bool(c["beauty"]) or bool(_hits(name, STRONG_BEAUTY_KW))
+    has_beauty = bool(c["beauty"]) or bool(_hits(nname, STRONG_BEAUTY_KW))
     sig = {
-        "http": code, "final_url": final, "text_len": c["text_len"],
-        "beauty_hits": c["beauty"][:6], "is_spa": c["is_spa"],
-        "img": c["img_count"], "name_nontarget": name_nontarget,
+        "http": code,
+        "final_url": final,
+        "text_len": c["text_len"],
+        "beauty_hits": c["beauty"][:6],
+        "is_spa": c["is_spa"],
+        "img": c["img_count"],
+        "name_nontarget": name_nontarget,
     }
 
     # ② 주차/준비중: 강한 미용 신호 0일 때만(스팸 섞인 진짜 사이트 보호 — 미인피부과).
     if c["parked"] and not has_beauty:
-        return {"decision": "SKIP",
-                "reason": f"주차/준비중/광고 도메인 ({', '.join(c['parked'][:3])})",
-                "signals": sig}
+        return {
+            "decision": "SKIP",
+            "reason": f"주차/준비중/광고 도메인 ({', '.join(c['parked'][:3])})",
+            "signals": sig,
+        }
 
     # ③ 비타깃 진료과: 이름이 명백한 비타깃 과목(안과·이비인후과 등)인데 강한 미용 신호 0.
     # 본문 길이·SPA 가드를 두지 않는다 — 이름이 "○○안과의원"이면 SPA든 빈 HTML이든 안과다.
     # (내과·가정의학이 미용을 하면 본문에 강한 미용 신호가 떠 has_beauty로 걸러진다.)
     if name_nontarget and not has_beauty:
-        return {"decision": "SKIP",
-                "reason": f"비타깃 진료과({'/'.join(name_nontarget)}) — 강한 미용 신호 0",
-                "signals": sig}
+        return {
+            "decision": "SKIP",
+            "reason": f"비타깃 진료과({'/'.join(name_nontarget)}) — 강한 미용 신호 0",
+            "signals": sig,
+        }
 
     # 그 외엔 CRAWL. 사이트 형태 힌트를 프롬프트에 주입할 수 있게 남긴다.
     if c["is_spa"]:
@@ -160,7 +249,11 @@ def triage(url: str, name: str = "") -> dict:
     else:
         hint = "text"
     sig["hint"] = hint
-    return {"decision": "CRAWL", "reason": f"타깃 또는 판단보류(shape={hint})", "signals": sig}
+    return {
+        "decision": "CRAWL",
+        "reason": f"타깃 또는 판단보류(shape={hint})",
+        "signals": sig,
+    }
 
 
 def main() -> int:

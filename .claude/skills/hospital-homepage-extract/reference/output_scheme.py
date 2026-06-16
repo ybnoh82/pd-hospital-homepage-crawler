@@ -547,14 +547,18 @@ def _fix_at(data, skeleton, loc):
 def repair_to_valid(raw, skeleton):
     """raw를 스켈레톤 위에 얹고 무효 부분만 떨궈 스키마를 통과하는 dict로 만든다.
 
-    유효 데이터는 최대한 보존한다. 반환값은 항상 스키마에 맞는다(보장).
+    유효 데이터는 최대한 보존하고, 시술에 거둔 제품·장비 이름은 `aggregate_from_treatments`로
+    최상위 unmatched에 보강한다(무손실 — 이 보장을 함수 안에 둬 모든 호출자가 받게 한다).
+    반환값은 항상 스키마에 맞는다(보장).
     """
     from pydantic import ValidationError
 
     data = {**skeleton, **{k: v for k, v in raw.items() if k in skeleton}}
+    result = None
     for _ in range(500):
         try:
-            return HospitalHomepageResult.model_validate(data).model_dump(mode="json")
+            result = HospitalHomepageResult.model_validate(data).model_dump(mode="json")
+            break
         except ValidationError as e:
             fixed = False
             for err in e.errors():
@@ -562,8 +566,11 @@ def repair_to_valid(raw, skeleton):
                     fixed = True
             if not fixed:
                 break
-    # 최후: 스켈레톤만이라도 유효하게 반환
-    return HospitalHomepageResult.model_validate(skeleton).model_dump(mode="json")
+    if result is None:  # 최후: 스켈레톤만이라도 유효하게
+        result = HospitalHomepageResult.model_validate(skeleton).model_dump(mode="json")
+    # 거둔 제품·장비를 잃지 않게 시술에서 자동 집계한 뒤 재검증한다.
+    aggregate_from_treatments(result)
+    return HospitalHomepageResult.model_validate(result).model_dump(mode="json")
 
 
 def _norm(s):
@@ -593,59 +600,65 @@ def aggregate_from_treatments(data):
     treatments = data.get("treatments") or []
     products = data.setdefault("products", {})
     equipments = data.setdefault("equipments", {})
-    up = products.setdefault("unmatched_products", [])
-    ue = equipments.setdefault("unmatched_equipments", [])
 
-    def _keys(matched, matched_fields, unmatched):
-        keys = set()
-        for it in matched:
-            if isinstance(it, dict):
-                for f in matched_fields:
-                    if it.get(f):
-                        keys.add(_norm(it[f]))
-        for it in unmatched:
-            if isinstance(it, dict) and it.get("raw_name"):
-                keys.add(_norm(it["raw_name"]))
-        return keys
-
-    def _collect(field):
-        seen = {}  # norm -> [raw, count, {source urls}]
+    def _aggregate(matched, matched_fields, unmatched, tx_field, model):
+        # 이미 matched(정식명)·unmatched(원표기)에 잡힌 이름 — 중복 추가 방지용 집합.
+        seen = {
+            _norm(it[f])
+            for it in matched
+            if isinstance(it, dict)
+            for f in matched_fields
+            if it.get(f)
+        }
+        seen |= {
+            _norm(it["raw_name"])
+            for it in unmatched
+            if isinstance(it, dict) and it.get("raw_name")
+        }
+        # 시술에서 이름 → (원표기, 언급횟수, 출처 URL 집합) 수집.
+        collected = {}
         for t in treatments:
             if not isinstance(t, dict):
                 continue
             src = t.get("source_page")
-            for raw in _split_names(t.get(field)):
-                e = seen.setdefault(_norm(raw), [raw, 0, set()])
+            for raw in _split_names(t.get(tx_field)):
+                e = collected.setdefault(_norm(raw), [raw, 0, set()])
                 e[1] += 1
                 if src:
                     e[2].add(src)
-        return seen
-
-    def _append(seen, keys, target):
         added = 0
-        for k, (raw, cnt, srcs) in seen.items():
-            if k in keys:
+        for key, (raw, cnt, srcs) in collected.items():
+            if key in seen:
                 continue
-            target.append(
-                {
-                    "raw_name": raw,
-                    "mention_count": cnt,
-                    "sources": [{"channel": "homepage", "url": u} for u in sorted(srcs)],
-                    "context": "시술(treatments)에서 자동 집계 — 카탈로그 매칭 미수행",
-                }
+            # 스키마 모델로 만들어 필드명·기본값(SourceRef.channel 등)을 모델에서 끌어온다
+            # — 스키마 필드명이 바뀌어도 조용히 데이터를 잃지 않게.
+            unmatched.append(
+                model(
+                    raw_name=raw,
+                    mention_count=cnt,
+                    sources=[SourceRef(url=u) for u in sorted(srcs)],
+                    context="시술(treatments)에서 자동 집계 — 카탈로그 매칭 미수행",
+                ).model_dump(mode="json")
             )
-            keys.add(k)
+            seen.add(key)
             added += 1
         return added
 
-    pk = _keys(
-        products.get("matched_products") or [], ("product_kr", "brand_kr"), up
-    )
-    ek = _keys(
-        equipments.get("matched_equipments") or [], ("name_kr", "name_en"), ue
-    )
-    return _append(_collect("product_name"), pk, up), _append(
-        _collect("equipment_name"), ek, ue
+    return (
+        _aggregate(
+            products.get("matched_products") or [],
+            ("product_kr", "brand_kr"),
+            products.setdefault("unmatched_products", []),
+            "product_name",
+            UnmatchedProduct,
+        ),
+        _aggregate(
+            equipments.get("matched_equipments") or [],
+            ("name_kr", "name_en"),
+            equipments.setdefault("unmatched_equipments", []),
+            "equipment_name",
+            UnmatchedEquipment,
+        ),
     )
 
 
@@ -688,12 +701,11 @@ if __name__ == "__main__":
             raw = json.load(open(path, encoding="utf-8"))
             if not isinstance(raw, dict):
                 raw = {}
-        except (FileNotFoundError, json.JSONDecodeError):
+        except FileNotFoundError, json.JSONDecodeError:
             raw = {}
-        fixed = repair_to_valid(raw, skeleton)
-        # 거둔 제품·장비를 잃지 않도록 시술에서 자동 집계해 보강한 뒤 재검증한다.
-        aggregate_from_treatments(fixed)
-        fixed = HospitalHomepageResult.model_validate(fixed).model_dump(mode="json")
+        fixed = repair_to_valid(
+            raw, skeleton
+        )  # 유효화 + 시술→제품/장비 무손실 집계 포함
         with open(path, "w", encoding="utf-8") as f:
             json.dump(fixed, f, ensure_ascii=False, indent=2)
             f.write("\n")

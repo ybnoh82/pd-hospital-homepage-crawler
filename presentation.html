@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>병원 홈페이지 크롤링 — 과정과 설계 논리</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" />
+<style>
+  :root {
+    --ink: #0f1620; --ink-2: #18222f;
+    --porcelain: #f1f3f6; --paper: #ffffff;
+    --teal: #0b7d78; --teal-bright: #16b8ac;
+    --warn: #b06a2b;
+    --mute: #5f6f84; --mute-d: #93a3b8;
+    --line: #dde3ea; --line-d: #2a3744;
+    --sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", monospace;
+    --maxw: 1120px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-snap-type: y mandatory; scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { font-family: var(--sans); background: var(--porcelain); color: var(--ink); line-height: 1.5; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+
+  .progress { position: fixed; top: 0; left: 0; height: 3px; width: 0%; background: var(--teal); z-index: 60; transition: width .25s ease; }
+  .dots { position: fixed; right: clamp(14px, 3vw, 34px); top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; align-items: flex-end; gap: 13px; z-index: 50; }
+  .dots button { position: relative; appearance: none; border: 0; background: transparent; cursor: pointer; display: flex; align-items: center; justify-content: flex-end; gap: 9px; color: var(--mute); font-family: var(--mono); font-size: 11px; letter-spacing: .04em; }
+  .dots .ix2 { font-variant-numeric: tabular-nums; }
+  .dots .bead { width: 9px; height: 9px; border-radius: 50%; border: 1.5px solid var(--mute-d); transition: all .25s ease; }
+  .dots .lbl { position: absolute; right: calc(100% + 12px); top: 50%; white-space: nowrap; opacity: 0; transform: translateY(-50%) translateX(6px); transition: all .25s ease; }
+  .dots button:hover .lbl, .dots button:focus-visible .lbl { opacity: 1; transform: translateY(-50%); }
+  .dots button[aria-current="true"] .bead { background: var(--teal); border-color: var(--teal); transform: scale(1.25); }
+  .dots button[aria-current="true"] { color: var(--ink); }
+  .dots.on-dark button { color: var(--mute-d); }
+  .dots.on-dark button[aria-current="true"] { color: #fff; }
+  .dots.on-dark .bead { border-color: #45586a; }
+  .dots.on-dark button[aria-current="true"] .bead { background: var(--teal-bright); border-color: var(--teal-bright); }
+
+  .slide { min-height: 100dvh; scroll-snap-align: start; display: grid; align-content: center; padding: clamp(28px, 5vh, 70px) clamp(22px, 7vw, 96px); position: relative; overflow: hidden; }
+  .wrap { width: 100%; max-width: var(--maxw); margin: 0 auto; }
+  .slide.dark { background: var(--ink); color: var(--porcelain); }
+  .slide.dark .mute { color: var(--mute-d); }
+
+  .eyebrow { font-family: var(--mono); font-size: clamp(11px, 1.05vw, 13px); letter-spacing: .13em; text-transform: uppercase; color: var(--teal); display: inline-flex; align-items: center; gap: 10px; margin-bottom: 18px; }
+  .slide.dark .eyebrow { color: var(--teal-bright); }
+  .eyebrow .ix { color: var(--mute); border: 1px solid var(--line); border-radius: 999px; padding: 2px 9px; }
+  .slide.dark .eyebrow .ix { color: var(--mute-d); border-color: var(--line-d); }
+
+  h1 { font-size: clamp(34px, 6vw, 70px); line-height: 1.05; font-weight: 800; letter-spacing: -.03em; }
+  h2 { font-size: clamp(25px, 4vw, 48px); line-height: 1.1; font-weight: 800; letter-spacing: -.025em; }
+  .lead { font-size: clamp(15px, 1.55vw, 19px); color: var(--mute); max-width: 42em; margin-top: 18px; font-weight: 450; }
+  .slide.dark .lead { color: #c4d0dc; }
+  .lead b, .dnote b { color: var(--ink); font-weight: 700; }
+  .slide.dark .lead b { color: #fff; }
+  .tealword { color: var(--teal); }
+  .slide.dark .tealword { color: var(--teal-bright); }
+  .mute { color: var(--mute); }
+
+  .rise { opacity: 0; transform: translateY(20px); transition: opacity .55s cubic-bezier(.2,.7,.2,1), transform .55s cubic-bezier(.2,.7,.2,1); }
+  .is-active .rise { opacity: 1; transform: none; }
+  .is-active .rise.d1 { transition-delay: .06s; } .is-active .rise.d2 { transition-delay: .14s; }
+  .is-active .rise.d3 { transition-delay: .24s; } .is-active .rise.d4 { transition-delay: .34s; }
+  .is-active .rise.d5 { transition-delay: .44s; } .is-active .rise.d6 { transition-delay: .54s; }
+
+  /* hero */
+  .hero .kicker { font-family: var(--mono); font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--mute); margin-bottom: 26px; }
+  .hero .kicker b { color: var(--ink); font-weight: 700; }
+  .hero h1 span { display: block; }
+  .metaline { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 8px 22px; font-family: var(--mono); font-size: 12px; color: var(--mute); }
+  .metaline span b { color: var(--teal); font-weight: 700; }
+  .hint { position: absolute; left: 50%; bottom: clamp(18px, 4vh, 34px); transform: translateX(-50%); font-family: var(--mono); font-size: 11px; letter-spacing: .08em; color: var(--mute); display: flex; align-items: center; gap: 8px; }
+  .hint .arr { animation: bob 1.8s ease-in-out infinite; }
+  @keyframes bob { 0%,100%{transform:translateY(0)} 50%{transform:translateY(4px)} }
+
+  /* process steps (with WHY) */
+  .steps { margin-top: 26px; display: grid; gap: 2px; max-width: 880px; }
+  .step { display: grid; grid-template-columns: 46px 1fr; gap: 18px; padding: 16px 0; border-top: 1px solid var(--line); align-items: start; }
+  .slide.dark .step { border-color: var(--line-d); }
+  .step .sk { font-family: var(--mono); font-size: 14px; color: var(--teal); padding-top: 2px; font-weight: 500; }
+  .slide.dark .step .sk { color: var(--teal-bright); }
+  .step .what { font-size: clamp(16px, 1.9vw, 21px); font-weight: 700; letter-spacing: -.01em; }
+  .step .why { margin-top: 6px; font-size: clamp(13.5px, 1.5vw, 16px); color: var(--mute); font-weight: 450; }
+  .slide.dark .step .why { color: #aebccb; }
+  .step .why::before { content: "왜"; font-family: var(--mono); font-size: 10px; font-weight: 700; letter-spacing: .05em; color: var(--teal); border: 1px solid currentColor; border-radius: 4px; padding: 1px 5px; margin-right: 9px; vertical-align: 1.5px; }
+  .slide.dark .step .why::before { color: var(--teal-bright); }
+
+  /* cost ladder (funnel) */
+  .ladder { margin-top: 30px; display: flex; flex-direction: column; gap: 12px; }
+  .tier { border-radius: 12px; padding: 16px 22px; display: flex; justify-content: space-between; align-items: center; gap: 18px; border: 1px solid var(--line); background: var(--paper); align-self: flex-start; }
+  .tier .tin .tl { font-weight: 700; font-size: clamp(15px, 1.8vw, 19px); }
+  .tier .tin .td { color: var(--mute); font-size: 13.5px; margin-top: 3px; }
+  .tier .cost { font-family: var(--mono); font-size: 12px; white-space: nowrap; padding: 5px 11px; border-radius: 999px; border: 1px solid var(--line); color: var(--mute); }
+  .tier.t1 { width: 100%; } .tier.t2 { width: 76%; } .tier.t3 { width: 52%; }
+  .tier.t3 { background: var(--ink); border-color: var(--ink); color: var(--porcelain); }
+  .tier.t3 .td { color: #aebccb; }
+  .tier.t3 .cost { color: var(--ink); background: var(--teal-bright); border-color: var(--teal-bright); font-weight: 700; }
+  .laddernote { margin-top: 22px; font-size: clamp(14px, 1.6vw, 18px); font-weight: 700; letter-spacing: -.01em; max-width: 44em; }
+  .laddernote .tealword { font-weight: 800; }
+
+  /* status grid + table + figures (supporting) */
+  .statusgrid { margin-top: 28px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; max-width: 880px; }
+  .statusitem { border: 1px solid var(--line); border-radius: 12px; padding: 17px 19px; display: flex; flex-direction: column; gap: 8px; background: var(--paper); }
+  .statusitem .badge { align-self: flex-start; font-family: var(--mono); font-size: 10.5px; letter-spacing: .06em; padding: 3px 9px; border-radius: 999px; border: 1px solid; }
+  .badge.done { color: var(--teal); border-color: var(--teal); }
+  .badge.todo { color: var(--warn); border-color: var(--warn); }
+  .statusitem .sl { font-size: 15.5px; font-weight: 700; }
+  .statusitem .sd { font-size: 13px; color: var(--mute); }
+
+  .dtable { margin-top: 24px; width: 100%; border-collapse: collapse; font-size: clamp(12px, 1.3vw, 15px); }
+  .dtable th, .dtable td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  .dtable th { font-family: var(--mono); font-size: 10.5px; letter-spacing: .05em; color: var(--mute); text-transform: uppercase; font-weight: 500; }
+  .dtable td.num, .dtable th.num { text-align: right; font-family: var(--mono); font-variant-numeric: tabular-nums; }
+  .dtable .hosp { font-weight: 700; }
+  .dtable .ty { display: block; color: var(--mute); font-size: 11.5px; font-weight: 450; margin-top: 2px; }
+  .dtable tr.sum td { border-top: 2px solid var(--ink); border-bottom: 0; font-weight: 800; padding-top: 12px; }
+  .dnote { margin-top: 15px; font-size: 13px; color: var(--mute); max-width: 54em; line-height: 1.6; }
+
+  .figrow { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 18px 54px; align-items: flex-end; }
+  .fig .n { font-size: clamp(38px, 6.5vw, 78px); font-weight: 800; letter-spacing: -.04em; line-height: .9; color: var(--teal); }
+  .slide.dark .fig .n { color: var(--teal-bright); }
+  .fig .l { font-family: var(--mono); font-size: 12px; color: var(--mute); margin-top: 10px; letter-spacing: .03em; line-height: 1.5; }
+
+  /* transformation (output example) */
+  .xform { margin-top: 28px; display: grid; grid-template-columns: 1fr 56px 1fr; gap: 0; align-items: center; }
+  .xcaption { margin-top: 16px; font-family: var(--mono); font-size: 12px; color: var(--mute-d); letter-spacing: .03em; }
+  .site { position: relative; background: #0a1019; border: 1px solid var(--line-d); border-radius: 14px; padding: 16px; overflow: hidden; box-shadow: 0 24px 60px rgba(0,0,0,.35); }
+  .site .bar { display: flex; gap: 6px; margin-bottom: 13px; }
+  .site .bar i { width: 9px; height: 9px; border-radius: 50%; background: #34465a; }
+  .site .nav { display: flex; flex-wrap: wrap; gap: 7px 14px; font-size: 12px; margin-bottom: 13px; }
+  .site .nav span { color: #6f8094; }
+  .imgblock { position: relative; border: 1px dashed #3a4c61; border-radius: 8px; padding: 13px 14px 11px; background: linear-gradient(135deg, #11202c, #0b161f); margin-bottom: 11px; }
+  .imgblock .tag { position: absolute; top: 8px; right: 10px; font-family: var(--mono); font-size: 9px; letter-spacing: .12em; color: #4f677d; }
+  .imgblock .price { font-weight: 800; font-size: clamp(14px, 1.9vw, 18px); color: #dfe8f0; letter-spacing: -.01em; }
+  .imgblock .sub { font-size: 11px; color: #7e91a6; margin-top: 3px; }
+  .scatter { display: flex; flex-wrap: wrap; gap: 6px; }
+  .scatter b { font-size: 11px; font-weight: 500; color: #6b7d92; background: #121f2b; border: 1px solid #243341; border-radius: 6px; padding: 3px 8px; }
+  .scanline { position: absolute; left: 0; right: 0; height: 60px; top: -66px; pointer-events: none; background: linear-gradient(to bottom, rgba(22,184,172,0), rgba(22,184,172,.25) 60%, rgba(22,184,172,.8)); border-bottom: 2px solid var(--teal-bright); box-shadow: 0 0 26px 5px rgba(22,184,172,.4); opacity: 0; }
+  .is-active .scanline { animation: scan 2.4s cubic-bezier(.6,0,.4,1) .3s 1 forwards; }
+  @keyframes scan { 0%{top:-66px;opacity:0} 8%{opacity:1} 92%{opacity:1} 100%{top:100%;opacity:0} }
+  .arrowmid { display: grid; place-items: center; color: var(--teal-bright); }
+  .arrowmid svg { width: 28px; height: 28px; }
+  .card { background: var(--paper); color: var(--ink); border-radius: 14px; padding: 20px 22px 18px; box-shadow: 0 24px 60px rgba(0,0,0,.28); border: 1px solid #e7ebf0; }
+  .card .crow { display: grid; grid-template-columns: 96px 1fr; gap: 12px; padding: 10px 0; border-top: 1px solid var(--line); }
+  .card .crow:first-child { border-top: 0; padding-top: 2px; }
+  .card .ck { font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em; color: var(--mute); padding-top: 3px; }
+  .card .cv { font-size: 14.5px; font-weight: 600; }
+  .card .cv .n { color: var(--mute); font-weight: 500; font-size: 13px; }
+  .card .field { opacity: 0; transform: translateY(8px); transition: all .5s ease; }
+  .is-active .card .field { opacity: 1; transform: none; }
+  .is-active .card .field.f1 { transition-delay: 1.5s; } .is-active .card .field.f2 { transition-delay: 1.72s; }
+  .is-active .card .field.f3 { transition-delay: 1.94s; } .is-active .card .field.f4 { transition-delay: 2.16s; }
+  .is-active .card .field.f5 { transition-delay: 2.38s; }
+
+  @media (max-width: 820px) { .statusgrid { grid-template-columns: 1fr; } .tier.t2, .tier.t3 { width: 100%; } }
+  @media (max-width: 760px) {
+    .dots { display: none; }
+    .xform { grid-template-columns: 1fr; gap: 12px; } .arrowmid { transform: rotate(90deg); }
+    .step { grid-template-columns: 36px 1fr; gap: 12px; }
+    .card .crow { grid-template-columns: 78px 1fr; }
+    .dtable th, .dtable td { padding: 8px 7px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .rise, .card .field { transition: none; opacity: 1; transform: none; }
+    .scanline { animation: none; opacity: 0; } .hint .arr { animation: none; }
+  }
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<nav class="dots" id="dots" aria-label="슬라이드 이동"></nav>
+
+<!-- 1 · 표지 -->
+<section class="slide hero" data-label="표지" data-dark="false">
+  <div class="wrap">
+    <div class="kicker rise"><b>PLANDOCS</b> &nbsp;·&nbsp; 내부 진행 보고</div>
+    <h1 class="rise d1">
+      <span>병원 홈페이지를</span>
+      <span><span class="tealword">어떻게</span> 수집하는가</span>
+    </h1>
+    <p class="lead rise d2">크롤링의 <b>전체 과정</b>과, 각 단계를 <b>왜 그렇게 설계했는지</b>(비용을 아끼면서도 필요한 정보를 빠짐없이 거두는 논리)를 설명합니다.</p>
+    <div class="metaline rise d3">
+      <span>지금 단계: <b>수집 과정·기술 검증 완료</b></span>
+      <span>대량 배치(8,000곳): <b>아직 전</b></span>
+    </div>
+  </div>
+  <div class="hint rise d4"><span class="arr">↓</span> 스크롤 또는 → 키로 이동</div>
+</section>
+
+<!-- 2 · 설계 원리 (비용 사다리) -->
+<section class="slide" data-label="설계 원리" data-dark="false">
+  <div class="wrap">
+    <span class="eyebrow rise"><span class="ix">01</span> 왜 이렇게 설계했나 · 핵심 원리</span>
+    <h2 class="rise d1">비용을 <span class="tealword">정보 가치에 비례</span>해 씁니다.</h2>
+    <p class="lead rise d1">수집 작업마다 드는 돈이 다릅니다. 그래서 <b>싼 작업으로 최대한 거르고 거둔 뒤</b>, 비싼 작업은 꼭 필요한 곳에만 씁니다.</p>
+    <div class="ladder">
+      <div class="tier t1 rise d2"><div class="tin"><div class="tl">① 사전 점검 — 모든 사이트</div><div class="td">죽은 사이트·대상 아닌 병원을 먼저 걸러낸다 (브라우저·AI 없이)</div></div><div class="cost">거의 0원</div></div>
+      <div class="tier t2 rise d3"><div class="tin"><div class="tl">② 텍스트 읽기 — 통과한 사이트 전 페이지</div><div class="td">메뉴·본문 글자는 마음껏 읽는다 (페이지 수 제한 없음)</div></div><div class="cost">거의 무료</div></div>
+      <div class="tier t3 rise d4"><div class="tin"><div class="tl">③ 이미지 판독(AI 비전) — 꼭 필요한 일부</div><div class="td">사진 속 정보만, 사이트당 약 10장까지로 아껴 쓴다</div></div><div class="cost">비쌈</div></div>
+    </div>
+    <p class="laddernote rise d5">넓은 아래(싼 작업)에서 최대한, <span class="tealword">좁은 위(비싼 작업)는 최소한</span> — 그래서 한 곳당 비용이 통제됩니다. &nbsp;+&nbsp; 끊겨도 잃지 않도록 <span class="tealword">거두는 즉시 저장</span>합니다.</p>
+  </div>
+</section>
+
+<!-- 3 · 과정 ① 거르고·파악 -->
+<section class="slide" data-label="과정 ① 파악" data-dark="false">
+  <div class="wrap">
+    <span class="eyebrow rise"><span class="ix">02</span> 크롤링 과정 ① · 거의 0원~무료 구간</span>
+    <h2 class="rise d1">먼저, 싸게 <span class="tealword">'지형'을 파악</span>합니다.</h2>
+    <div class="steps">
+      <div class="step rise d2"><div class="sk">01</div><div><div class="what">사전 점검 (트리아지)</div><div class="why">죽은 사이트·대상 아닌 병원(안과·치과 등)에 비싼 AI를 쓰지 않으려고 — 거의 0원에 먼저 거른다. (강남 명단을 보면 이름만으로도 약 6%는 안과·이비인후과 등 대상 밖으로 추정 — 그만큼 아낄 수 있다는 의미. 실제 대량 적용은 아직 전.)</div></div></div>
+      <div class="step rise d3"><div class="sk">02</div><div><div class="what">정찰 (첫 가벼운 스캔)</div><div class="why">무작정 사진부터 찍으면 느리고 비싸다. 텍스트로 메뉴·구조를 한 번에 떠서 '텍스트형 / 이미지형 / 화면렌더형'을 판별 → 이 사이트에 맞는 전략을 먼저 정한다.</div></div></div>
+      <div class="step rise d4"><div class="sk">03</div><div><div class="what">신원 확인</div><div class="why">주어진 주소가 정말 그 병원 홈페이지인지 확인 — 다른 병원·광고 페이지면 수집하지 않는다(엉뚱한 데이터·낭비 방지).</div></div></div>
+      <div class="step rise d5"><div class="sk">04</div><div><div class="what">첫 저장 (체크포인트)</div><div class="why">비용·시간 상한은 예고 없이 작업을 끊는다. 끊기기 전에 저장이 안 돼 있으면 그때까지 거둔 게 전부 0이 된다 — 그래서 정찰 직후 거둔 것만으로 일단 저장하고, 이후 덮어쓰며 채운다.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4 · 과정 ② 수집·이미지판독 -->
+<section class="slide dark" data-label="과정 ② 수집" data-dark="true">
+  <div class="wrap">
+    <span class="eyebrow rise"><span class="ix">03</span> 크롤링 과정 ② · 본 수집</span>
+    <h2 class="rise d1">필요한 곳만 깊이, <span class="tealword">비싼 판독은 아껴서.</span></h2>
+    <div class="steps">
+      <div class="step rise d2"><div class="sk">05</div><div><div class="what">상세 페이지 전수 방문</div><div class="why">제품·장비명은 메뉴 목록이 아니라 상세 본문에 숨어 있는 경우가 많다(목록만 보면 대부분 놓친다). 텍스트 읽기는 사실상 무료라, 상세는 빠짐없이 들어간다.</div></div></div>
+      <div class="step rise d3"><div class="sk">06</div><div><div class="what">이미지 판독 (AI 비전) — 조건부</div><div class="why">비싸기 때문에 '텍스트로 안 잡히는데 사진에만 있는' 정보에만 켠다. 가격은 무조건 판독, 제품·장비는 텍스트로 0건일 때만. 사이트당 약 10장 상한으로 비용을 묶는다.</div></div></div>
+      <div class="step rise d4"><div class="sk">07</div><div><div class="what">카탈로그 대조 — 보수적으로</div><div class="why">사이트 표기("에코2")를 정식 명칭("eCO2")으로 확정한다. 확신이 없으면 매칭하지 않고 '후보'로 남긴다 — 기계적으로 막 매칭하면 '국산보톡스→보톡스' 같은 거짓 매칭이 생기기 때문(정확도 우선).</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 · 과정 ③ 무손실·정지 -->
+<section class="slide" data-label="과정 ③ 마무리" data-dark="false">
+  <div class="wrap">
+    <span class="eyebrow rise"><span class="ix">04</span> 크롤링 과정 ③ · 마무리</span>
+    <h2 class="rise d1">표준 형식으로 빠짐없이, <span class="tealword">그리고 깔끔히 멈춤.</span></h2>
+    <div class="steps">
+      <div class="step rise d2"><div class="sk">08</div><div><div class="what">표준 형식으로 정규화</div><div class="why">어느 병원이든 같은 형식(전화·시간·제품·가격 구조)으로 정리해야 DB 적재·분석에 바로 쓸 수 있다.</div></div></div>
+      <div class="step rise d3"><div class="sk">09</div><div><div class="what">무손실 보장 (결정론적)</div><div class="why">거둔 제품·장비가 저장 단계에서 사라지지 않도록 시스템이 자동으로 다시 채워 넣는다. 실제로 이 누락 결함을 검증 중 발견해 고쳤다 — 사람 판단이 아니라 규칙으로 보장한다.</div></div></div>
+      <div class="step rise d4"><div class="sk">10</div><div><div class="what">상한에서 정지 + 미완 기록</div><div class="why">무한정 파고들면 비용이 폭발한다. 정해진 비용·시간 상한에 닿으면 깔끔히 멈추되, 못 끝낸 부분은 기록해 다음 실행이 이어받는다(조용히 빠뜨리지 않는다).</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · 결과 예시 -->
+<section class="slide dark" data-label="결과 예시" data-dark="true">
+  <div class="wrap">
+    <span class="eyebrow rise"><span class="ix">05</span> 이 과정을 거치면</span>
+    <h2 class="rise d1">어수선한 홈페이지 → <span class="tealword">표준 데이터</span></h2>
+    <div class="xform">
+      <div class="site rise d2" aria-label="병원 홈페이지(수집 전)">
+        <div class="scanline"></div>
+        <div class="bar"><i></i><i></i><i></i></div>
+        <div class="nav"><span>병원소개</span><span>시술안내</span><span>이벤트</span><span>비급여안내</span><span>오시는길</span></div>
+        <div class="imgblock"><span class="tag">IMAGE · 사진</span><div class="price">써마지 FLX 300샷 — 99만원</div><div class="sub">＊ 글자가 아니라 이미지 안에 박혀 있음</div></div>
+        <div class="scatter"><b>리쥬란</b><b>쥬비덤</b><b>슈링크 유니버스</b><b>스컬트라</b><b>울쎄라</b><b>온다리프팅</b><b>쥬베룩</b></div>
+      </div>
+      <div class="arrowmid rise d2" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      <div class="card rise d3" aria-label="추출된 데이터(수집 후)">
+        <div class="crow field f1"><div class="ck">병원</div><div class="cv">신논현톡스앤필의원</div></div>
+        <div class="crow field f2"><div class="ck">취급제품</div><div class="cv">쥬비덤 · 리쥬란 · 스컬트라 · 쥬베룩 … <span class="n">31개</span></div></div>
+        <div class="crow field f3"><div class="ck">취급장비</div><div class="cv">써마지 FLX · 울쎄라 · 슈링크 · 온다 … <span class="n">12개</span></div></div>
+        <div class="crow field f4"><div class="ck">시술·가격</div><div class="cv">39건 <span class="n">· 가격 포함</span></div></div>
+        <div class="crow field f5"><div class="ck">다국어</div><div class="cv">KR · EN · JP · CN <span class="n">외 7개 언어</span></div></div>
+      </div>
+    </div>
+    <div class="xcaption rise d4">실제 수집 결과 · 신논현톡스앤필의원</div>
+  </div>
+</section>
+
+<!-- 7 · (부가) 실측 결과 -->
+<section class="slide" data-label="실측 결과" data-dark="false">
+  <div class="wrap">
+    <span class="eyebrow rise"><span class="ix">06</span> 참고 · 강남 10곳 실측</span>
+    <h2 class="rise d1">과정을 실제로 돌려본 숫자입니다.</h2>
+    <table class="dtable rise d2">
+      <thead><tr><th>병원 (유형)</th><th class="num">제품</th><th class="num">장비</th><th class="num">시술</th><th class="num">비용</th><th class="num">시간</th></tr></thead>
+      <tbody>
+        <tr><td class="hosp">유앤아이<span class="ty">텍스트형 의원</span></td><td class="num">36</td><td class="num">39</td><td class="num">27</td><td class="num">$3.04</td><td class="num">9.4분</td></tr>
+        <tr><td class="hosp">톡스앤필<span class="ty">프랜차이즈 지점</span></td><td class="num">31</td><td class="num">12</td><td class="num">39</td><td class="num">$3.01</td><td class="num">8.6분</td></tr>
+        <tr><td class="hosp">리프톤<span class="ty">SPA·피부과</span></td><td class="num">13</td><td class="num">11</td><td class="num">18</td><td class="num">$3.05</td><td class="num">9.0분</td></tr>
+        <tr><td class="hosp">미인<span class="ty">소형 피부과</span></td><td class="num">3</td><td class="num">6</td><td class="num">20</td><td class="num">$2.86</td><td class="num">6.0분</td></tr>
+        <tr><td class="hosp">권장덕<span class="ty">성형외과(수술 전문)</span></td><td class="num">0</td><td class="num">0</td><td class="num">25</td><td class="num">$2.45</td><td class="num">6.4분</td></tr>
+        <tr class="sum"><td>10곳 합계 / 평균</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">$28.71</td><td class="num">7.8분</td></tr>
+      </tbody>
+    </table>
+    <p class="dnote rise d3">＊ 가장 높은 품질 설정(opus) 기준이라 비용이 다소 높음. <b>권장덕은 수술 전문</b>이라 제품·장비 0이 정상(시술 25건은 정상 수집). 이 수치는 <b>대량 배치가 아니라 10곳 검증</b> 결과입니다.</p>
+  </div>
+</section>
+
+<!-- 8 · (부가) 비용 구조 -->
+<section class="slide dark" data-label="비용" data-dark="true">
+  <div class="wrap">
+    <span class="eyebrow rise"><span class="ix">07</span> 참고 · 비용 구조</span>
+    <h2 class="rise d1">한 곳당 비용을 <span class="tealword">상한으로 통제</span>합니다.</h2>
+    <div class="figrow">
+      <div class="fig rise d2"><div class="n">$1–3</div><div class="l">한 곳당 (설정에 따라)<br>≈ 1,400–4,400원</div></div>
+      <div class="fig rise d3"><div class="n">8,000곳</div><div class="l">환산 AI 비용 (대략)<br>약 1,100만~3,200만원</div></div>
+    </div>
+    <p class="lead rise d4">'싸게'와 '완전하게'는 동시에 어렵습니다. 그래서 한 곳당 비용·시간 상한으로 통제하고, 더 완전한 데이터가 필요하면 상한을 올립니다(설계 원리 ②의 비용 사다리가 이 통제의 근거). 위는 AI 사용료이며, 주소 확보·서버 비용은 별도입니다.</p>
+  </div>
+</section>
+
+<!-- 9 · (부가) 현 위치 & 남은 과제 -->
+<section class="slide" data-label="남은 과제" data-dark="false">
+  <div class="wrap">
+    <span class="eyebrow rise"><span class="ix">08</span> 현 위치 · 남은 과제</span>
+    <h2 class="rise d1">한 곳을 정확히 수집하는 <span class="tealword">'과정'은 완성</span> — 다음은 대량화.</h2>
+    <div class="statusgrid">
+      <div class="statusitem rise d2"><span class="badge done">완료·검증</span><div class="sl">수집 과정·로직</div><div class="sd">위 ①~③ 전 과정 구현 + 강남 10곳 실측 검증.</div></div>
+      <div class="statusitem rise d2"><span class="badge todo">미해결</span><div class="sl">홈페이지 주소 확보</div><div class="sd">병원 DB에 주소가 없음 — 8,000곳 주소를 모으는 별도 작업이 대량화의 첫 관문.</div></div>
+      <div class="statusitem rise d3"><span class="badge todo">구현 전</span><div class="sl">대량 배치 자동화</div><div class="sd">여러 곳 동시 처리·재시도·집계 — 설계는 끝났고 만드는 일이 남음.</div></div>
+      <div class="statusitem rise d3"><span class="badge todo">로드맵</span><div class="sl">교차검증·자기개선</div><div class="sd">결과를 다른 AI가 재검증하고, 돌릴수록 스스로 개선 — 설계 단계.</div></div>
+    </div>
+    <p class="lead rise d4">즉, <b>실제 대량 크롤링(배치)은 아직 전</b>입니다. 지금은 그 전 단계인 <b>'수집 과정과 기술'을 완성·검증</b>한 상태입니다.</p>
+  </div>
+</section>
+
+<script>
+  (function () {
+    var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+    var dots = document.getElementById('dots');
+    var bar = document.getElementById('progress');
+    slides.forEach(function (s, i) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.setAttribute('aria-label', (i + 1) + '. ' + (s.dataset.label || ''));
+      b.innerHTML = '<span class="lbl">' + (s.dataset.label || '') + '</span><span class="ix2">' + String(i + 1).padStart(2, '0') + '</span><span class="bead"></span>';
+      b.addEventListener('click', function () { s.scrollIntoView({ behavior: 'smooth' }); });
+      dots.appendChild(b);
+    });
+    var beads = Array.prototype.slice.call(dots.querySelectorAll('button'));
+    var current = 0;
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting && e.intersectionRatio >= 0.55) {
+          e.target.classList.add('is-active');
+          current = slides.indexOf(e.target);
+          beads.forEach(function (b, i) { b.setAttribute('aria-current', i === current ? 'true' : 'false'); });
+          dots.classList.toggle('on-dark', e.target.dataset.dark === 'true');
+          bar.style.width = ((current + 1) / slides.length * 100) + '%';
+        }
+      });
+    }, { threshold: [0.55] });
+    slides.forEach(function (s) { io.observe(s); });
+    function go(d) { var n = Math.max(0, Math.min(slides.length - 1, current + d)); slides[n].scrollIntoView({ behavior: 'smooth' }); }
+    window.addEventListener('keydown', function (ev) {
+      if (['ArrowDown', 'ArrowRight', 'PageDown', ' '].includes(ev.key)) { ev.preventDefault(); go(1); }
+      else if (['ArrowUp', 'ArrowLeft', 'PageUp'].includes(ev.key)) { ev.preventDefault(); go(-1); }
+      else if (ev.key === 'Home') { ev.preventDefault(); slides[0].scrollIntoView({ behavior: 'smooth' }); }
+      else if (ev.key === 'End') { ev.preventDefault(); slides[slides.length - 1].scrollIntoView({ behavior: 'smooth' }); }
+    });
+    slides[0].classList.add('is-active');
+  })();
+</script>
+</body>
+</html>

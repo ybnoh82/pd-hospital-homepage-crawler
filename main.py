@@ -29,6 +29,8 @@ from claude_agent_sdk import (
 )
 from dotenv import load_dotenv
 
+from triage import triage
+
 PROJECT_ROOT = Path(__file__).resolve().parent
 SKILL_NAME = "hospital-homepage-extract"
 
@@ -86,10 +88,19 @@ def load_hospital_from_csv(csv_path: Path, hospital_id: str) -> dict[str, str]:
     raise SystemExit(f"CSV에서 id={hospital_id!r}를 찾지 못했다: {csv_path}")
 
 
-def build_prompt(url: str, info: dict[str, str]) -> str:
+# 트리아지 shape 힌트를 프롬프트 문장으로. 정찰 왕복을 줄이는 참고용(사이트에서 재확인).
+SHAPE_HINTS = {
+    "text": "텍스트형으로 보인다(본문에 정보가 텍스트로 노출) — vision을 최소화하고 evaluate 추출을 우선하라.",
+    "image": "이미지형으로 보인다(내용이 이미지에 묻힘) — §4 vision 게이트를 적극 가동하되 효율 기법을 지켜라.",
+    "spa": "SPA로 보인다(콘텐츠가 JS로 렌더되어 raw HTML엔 안 보임) — 반드시 browser로 열어 렌더 후 수집하라.",
+}
+
+
+def build_prompt(url: str, info: dict[str, str], shape_hint: str | None = None) -> str:
     """스킬을 호출하도록 유도하는 프롬프트를 만든다.
 
     info에 채워진 항목만 입력으로 넘긴다(빈 값은 생략).
+    shape_hint(트리아지 분류 결과)가 있으면 정찰 참고용으로 한 줄 덧붙인다.
     """
     fields = [
         ("hospital_id", info.get("id")),
@@ -101,12 +112,18 @@ def build_prompt(url: str, info: dict[str, str]) -> str:
     ]
     lines = [f"- {label}: {value}" for label, value in fields if value]
     info_block = "\n".join(lines) if lines else "- (병원정보 없음 — URL만으로 진행)"
+    hint_block = ""
+    if shape_hint in SHAPE_HINTS:
+        hint_block = (
+            f"\n사전 분류 힌트(참고용): 이 사이트는 {SHAPE_HINTS[shape_hint]}\n"
+        )
 
     return (
         f"{SKILL_NAME} 스킬을 사용해 아래 병원 공식 홈페이지를 크롤링·추출하고, "
         "결과를 output/{병원ID}_{병원이름}_homepage.json에 저장한 뒤 스키마로 검증한다.\n\n"
         f"- homepage_url: {url}\n"
-        f"{info_block}\n\n"
+        f"{info_block}\n"
+        f"{hint_block}\n"
         "지금 바로 도구를 써서 끝까지 자율 수행한다. 너는 무인 배치로 실행 중이며, "
         "사용자는 보고 있지 않으니 질문하거나 허락을 구하지 말고, 계획만 설명하고 멈추지 마라. "
         "한 번의 응답에 작업을 다 담으려 하지 말고, browser_navigate/browser_evaluate 등 "
@@ -166,7 +183,7 @@ def backfill_cost(path: Path, result: ResultMessage, model: str | None) -> bool:
     """
     try:
         data = json.loads(path.read_text(encoding="utf-8"))
-    except FileNotFoundError, json.JSONDecodeError:
+    except (FileNotFoundError, json.JSONDecodeError):
         return False
 
     usage = result.usage or {}
@@ -225,6 +242,29 @@ def repair_output(path: Path, info: dict[str, str | None], url: str) -> bool:
     return r.stdout.strip().startswith("USEFUL")
 
 
+# 트리아지가 비타깃·죽은 사이트로 판단해 크롤 없이 제외한 종료 코드. USEFUL(0)·EMPTY(1)과
+# 구분한다 — 배치 드라이버는 이걸 "정상 제외(재시도 금지)"로 다룬다(EMPTY는 재시도 대상).
+TRIAGE_SKIP_EXIT = 2
+
+
+def write_skip_output(
+    out_path: Path, info: dict[str, str | None], url: str, verdict: dict
+) -> None:
+    """트리아지 SKIP 시, 크롤 없이 유효 스켈레톤을 쓰고 사유를 notes에 남긴다."""
+    reason = verdict.get("reason", "트리아지 스킵")
+    sig = verdict.get("signals", {})
+    raw = {
+        "crawl_metadata": {
+            "crawl_method": "prefetch 트리아지 — 크롤 생략(비타깃/죽은 사이트)",
+            "pages_crawled": 0,
+            "notes": [f"트리아지 스킵: {reason}", f"트리아지 신호: {sig}"],
+        }
+    }
+    out_path.write_text(json.dumps(raw, ensure_ascii=False), encoding="utf-8")
+    # repair로 유효 스키마 형태로 정규화(id/name/url을 채우고 나머지는 기본값).
+    repair_output(out_path, info, url)
+
+
 def supports_effort(model: str | None) -> bool:
     """effort 파라미터를 받는 모델인지. Haiku·구형은 에러를 낸다."""
     m = model or ""
@@ -238,7 +278,30 @@ async def run(
     model: str | None,
     effort: str | None,
     time_limit: float,
+    no_triage: bool = False,
 ) -> int:
+    (PROJECT_ROOT / "output").mkdir(exist_ok=True)
+    out_path = expected_output_path(info)
+
+    # prefetch 트리아지: 크롤 전에 curl로 싸게 분류한다(~$0·수초). 죽은 도메인·비타깃
+    # 진료과(안과·내과 등)면 비싼 에이전트를 띄우지 않고 유효 스켈레톤만 쓰고 제외한다.
+    # 스킵은 보수적이다(강한 미용 신호가 있으면 무조건 크롤) — 자세한 규칙은 triage.py.
+    shape_hint: str | None = None
+    if not no_triage:
+        name = info.get("hospital_name") or info.get("name") or ""
+        verdict = triage(url, name)
+        log(f"🔎 트리아지: {verdict['decision']} — {verdict['reason']}")
+        if verdict["decision"] == "SKIP":
+            if out_path is not None:
+                out_path.unlink(missing_ok=True)
+                write_skip_output(out_path, info, url, verdict)
+                log(
+                    f"결과 저장: {out_path.relative_to(PROJECT_ROOT)} — "
+                    "트리아지 제외(크롤 생략)"
+                )
+            return TRIAGE_SKIP_EXIT
+        shape_hint = verdict.get("signals", {}).get("hint")
+
     options = ClaudeAgentOptions(
         cwd=str(PROJECT_ROOT),
         skills=[SKILL_NAME],
@@ -254,14 +317,11 @@ async def run(
         setting_sources=["project", "local"],
     )
 
-    (PROJECT_ROOT / "output").mkdir(exist_ok=True)
-
     # 이전 실행의 잔존 결과 파일을 지우고 새로 크롤링한다. 남겨두면 약한 모델이
     # 크롤링 대신 그 파일을 읽어 재사용하는 오염이 생기고, 크래시 후 잔존 파일을
     # "저장됨"으로 오보하게 된다. (resume은 별도 기능으로 다룬다.)
-    out_path = expected_output_path(info)
-    if out_path is not None and out_path.exists():
-        out_path.unlink()
+    if out_path is not None:
+        out_path.unlink(missing_ok=True)
 
     last_result: ResultMessage | None = None
     seen_model: str | None = None
@@ -277,7 +337,7 @@ async def run(
     loop = asyncio.get_event_loop()
     try:
         async with ClaudeSDKClient(options=options) as client:
-            await client.query(build_prompt(url, info))
+            await client.query(build_prompt(url, info, shape_hint))
             start = loop.time()
             try:
                 async with asyncio.timeout(time_limit):
@@ -379,6 +439,11 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
         default=DEFAULT_TIME_LIMIT_S,
         help=f"최대 소요시간(초) 상한. 기본 {DEFAULT_TIME_LIMIT_S}",
     )
+    p.add_argument(
+        "--no-triage",
+        action="store_true",
+        help="prefetch 트리아지(비타깃·죽은 사이트 사전 차단)를 끄고 무조건 크롤한다",
+    )
     return p.parse_args(argv)
 
 
@@ -401,7 +466,15 @@ def main(argv: list[str] | None = None) -> int:
         }
 
     return asyncio.run(
-        run(args.url, info, args.budget, args.model, args.effort, args.time_limit)
+        run(
+            args.url,
+            info,
+            args.budget,
+            args.model,
+            args.effort,
+            args.time_limit,
+            args.no_triage,
+        )
     )
 
 

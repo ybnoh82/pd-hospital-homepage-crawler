@@ -13,7 +13,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 핵심: **크롤링 로직은 Python 코드가 아니라 Claude Code 스킬로 구현되어 있다.** 병원마다 홈페이지 구조가 제각각이라 고정 파싱 스크립트 대신 에이전트(`hospital-homepage-extract` 스킬 + Playwright MCP + vision)가 페이지를 직접 탐색·판독·매칭한다. `main.py`는 그 스킬을 `claude-agent-sdk`로 무인 실행하는 **러너**다 — 한 병원 URL을 받아 예산을 걸고 스킬을 돌린다.
 
-> **`HANDOFF.md`** — 비용·품질 최적화의 실측 기록·미해결 이슈·다음 할 일(prefetch 분류기·배치 드라이버)·`/goal` 활용 가이드. 이어서 작업할 땐 먼저 읽을 것.
+> **`HANDOFF.md`** — 비용·품질 최적화의 실측 기록·미해결 이슈·`/goal` 활용 가이드. 이어서 작업할 땐 먼저 읽을 것.
+> **`EVOLUTION.md`** — "스스로 진화하는 크롤러" 전체 설계도(골든 회귀 하니스 → 배치 드라이버 → 독립 검증 sub-agent → 진화 엔진, Phase 0~6). 앞으로의 방향·다음 작업의 진실원. 다음 세션은 여기 Phase 0부터.
 
 ## Commands
 

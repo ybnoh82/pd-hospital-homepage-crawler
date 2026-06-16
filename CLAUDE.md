@@ -13,6 +13,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 핵심: **크롤링 로직은 Python 코드가 아니라 Claude Code 스킬로 구현되어 있다.** 병원마다 홈페이지 구조가 제각각이라 고정 파싱 스크립트 대신 에이전트(`hospital-homepage-extract` 스킬 + Playwright MCP + vision)가 페이지를 직접 탐색·판독·매칭한다. `main.py`는 그 스킬을 `claude-agent-sdk`로 무인 실행하는 **러너**다 — 한 병원 URL을 받아 예산을 걸고 스킬을 돌린다.
 
+> **`HANDOFF.md`** — 비용·품질 최적화의 실측 기록·미해결 이슈·다음 할 일(prefetch 분류기·배치 드라이버)·`/goal` 활용 가이드. 이어서 작업할 땐 먼저 읽을 것.
+
 ## Commands
 
 ```bash
@@ -23,7 +25,9 @@ uv sync
 uv run python main.py <홈페이지URL> --id <병원ID> --name <병원이름>
 # 병원DB CSV에서 id로 행을 찾아 시도·주소까지 자동으로 채워 넘기기 (identity 판정에 사용)
 uv run python main.py <홈페이지URL> --from-csv data/beauty_hospitals_gangnam.csv --id <병원ID>
-# 하드 사이트에 한해 품질↑(비용↑): --model claude-opus-4-8 --effort high --budget 2
+# 품질 우선(비용·시간↑): 캡을 올려 자연완주 유도
+uv run python main.py <홈페이지URL> --from-csv data/sample10.csv --id <병원ID> --budget 2 --time-limit 600
+# 가장 어려운 사이트: --model claude-opus-4-8 --effort high
 
 # 추출 결과 JSON 스키마 검증 (스킬 마무리 단계에서 필수)
 uv run python .claude/skills/hospital-homepage-extract/reference/output_scheme.py output/{병원ID}_{병원이름}_homepage.json
@@ -33,7 +37,7 @@ uv run ruff check .
 uv run ruff format .
 ```
 
-Playwright MCP 서버는 `.mcp.json`에 정의되어 있고 `settings.local.json`에서 자동 활성화된다(`npx @playwright/mcp@latest`). 러너(`main.py`)는 이 서버를 직접 명시하고 `permission_mode="bypassPermissions"`로 무인 실행하므로, API 키(`.env`의 `ANTHROPIC_API_KEY`)만 있으면 사람 개입 없이 돈다.
+Playwright MCP 서버는 `.mcp.json`(대화형 Claude Code용)에 정의되어 있고, 러너(`main.py`)는 자체 `PLAYWRIGHT_SERVER`로 **`--headless --isolated`**를 명시해 띄운다(배치 운영성). 러너는 `permission_mode="bypassPermissions"`로 무인 실행한다. 인증은 `.env`의 `ANTHROPIC_API_KEY`가 있으면 그것을, 없으면 **Claude Code 로그인 자격(구독)**을 쓴다 — 둘 중 하나면 사람 개입 없이 돈다. (지속적 8,000개 배치엔 구독 한도보다 API 키+tier 권장 — HANDOFF.md §2 참고.)
 
 ## 추출 작업 흐름 (the actual workflow)
 
@@ -56,7 +60,7 @@ Playwright MCP 서버는 `.mcp.json`에 정의되어 있고 `settings.local.json
 3. **소프트 데드라인 steering** — 소프트 데드라인에 도달하면 `client.query(FINALIZE_MESSAGE)`로 "지금 유효 JSON 저장·검증하고 종료하라"를 주입한다. 에이전트는 시계를 못 보므로, 하드 기요틴 대신 이 신호로 깨끗이 마무리하게 한다. 무시하면 하드캡(`asyncio.timeout`)이 백스톱.
 4. **무인 실행 환경** — `skills=["hospital-homepage-extract"]`, playwright MCP, `bypassPermissions`, 프로젝트 setting_sources. 스트리밍 메시지를 flush해 실시간 출력.
 5. **신선도 보장** — 실행 전 기존 출력 파일을 삭제한다(남겨두면 약한 모델이 크롤링 대신 재사용하는 오염 + 크래시 후 stale 오보). 실행 후 파일이 있으면 이번 실행이 쓴 것.
-6. **검증·비용 백필** — 끝나면 저장 JSON을 `output_scheme.py`로 **스키마 검증**해 유효/무효를 요약에 찍고(배치 적재 가능 여부), `ResultMessage`의 실측 비용·소요시간을 `crawl_metadata.cost` 빈 칸에 채운다. **저장됐고 스키마도 유효할 때만 exit 0**, 아니면 exit 1.
+6. **유효성 보장(repair)·비용 백필** — 끝나면 `output_scheme.py --repair`로 결과를 **항상 스키마 통과 형태로 고친다**(잘 쓴 파일은 no-op, 무효 부분만 제거, 미저장이면 스켈레톤 생성). 그 뒤 `ResultMessage`의 실측 비용·소요시간을 `crawl_metadata.cost` 빈 칸에 채운다. 유효 파일은 항상 남고, **유의미한 데이터가 있으면 exit 0(USEFUL), 빈약하면 exit 1(EMPTY → 배치 재시도)**.
 
 **예산/시간 도달은 실패가 아니라 정상 종료다.** "상한 안에서 최대한 → 닿으면 멈춤"이 설계된 happy path. 진짜 실패(접속 불가·기타 에러)만 fatal.
 
@@ -77,7 +81,9 @@ Playwright MCP 서버는 `.mcp.json`에 정의되어 있고 `settings.local.json
 
 ## 입력 데이터
 
-`data/beauty_hospitals_gangnam.csv` — 추출 대상 병원 목록. 컬럼: `id, hospital_name, sido, sggu, emdong, address, longitude, latitude`. `id`는 출력 파일명·`hospital_id`에, 전체 행은 주어진 URL이 그 병원 홈페이지가 맞는지(`identity_status`) 판정하는 데 쓴다. `data/`는 git 추적 대상이 아니다(`?? data/`).
+`data/beauty_hospitals_gangnam.csv` — 추출 대상 병원 목록. 컬럼: `id, hospital_name, sido, sggu, emdong, address, longitude, latitude`. `id`는 출력 파일명·`hospital_id`에, 전체 행은 주어진 URL이 그 병원 홈페이지가 맞는지(`identity_status`) 판정하는 데 쓴다. **이 CSV엔 홈페이지 URL이 없다** — 러너에 URL은 별도 인자로 넘긴다.
+
+`data/sample10.csv` — 위 원본 컬럼에 **`homepage_url` 컬럼을 추가**한 10개 표본(사이트 형태 다양: SPA·대형브랜드·체인·프랜차이즈·소형). URL이 들어 있어 배치 입력 형식의 예이자 회귀 테스트용 표본이다.
 
 ## 데이터 원칙 (스킬 작업 시 반드시)
 

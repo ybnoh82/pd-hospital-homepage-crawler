@@ -1,0 +1,237 @@
+{
+  "hospital_id": "example1",
+  "hospital_name": "예시의원",
+  "crawled_at": "2026-01-01T00:00:00+09:00",
+  "address": {
+    "sido": "서울",
+    "sigungu": "강남구",
+    "eupmyeondong": "역삼동",
+    "road_address": "서울특별시 강남구 ○○로 00, 0층",
+    "latitude": 37.5,
+    "longitude": 127.03
+  },
+  "homepage_url": "https://example-clinic.co.kr/",
+  "identity_status": "match",
+  "alternative_urls": [
+    "https://example-clinic.co.kr/en/"
+  ],
+  "branches": {
+    "type": "branch",
+    "network_group": "예시메디네트워크",
+    "this_branch_name": "예시의원 강남점",
+    "sibling_branches": [
+      {
+        "name": "예시의원 분당점",
+        "url": "https://example-clinic.co.kr/bundang",
+        "address": "경기도 성남시 분당구 ○○로 00"
+      }
+    ]
+  },
+  "operation_info": {
+    "hospital_name": "예시의원",
+    "representative_name": "홍길동",
+    "business_number": "000-00-00000",
+    "phone": "02-000-0000",
+    "phone_secondary": "02-000-0001",
+    "fax": null,
+    "email": "info@example-clinic.co.kr",
+    "kakao_channel": "https://pf.kakao.com/_example",
+    "operating_hours": {
+      "monday": { "open": "10:00", "close": "19:00", "break_start": "13:00", "break_end": "14:00" },
+      "tuesday": { "open": "10:00", "close": "19:00", "break_start": "13:00", "break_end": "14:00" },
+      "wednesday": { "open": "10:00", "close": "19:00", "break_start": "13:00", "break_end": "14:00" },
+      "thursday": { "open": "10:00", "close": "21:00", "break_start": "13:00", "break_end": "14:00" },
+      "friday": { "open": "10:00", "close": "19:00", "break_start": "13:00", "break_end": "14:00" },
+      "saturday": { "open": "10:00", "close": "14:00", "break_start": null, "break_end": null },
+      "sunday": null,
+      "holiday": null
+    },
+    "operating_hours_note": "일요일·공휴일 휴진. 목요일 야간진료(~21:00). 평일 점심 13:00-14:00.",
+    "parking_info": "건물 지하 주차장 이용(2시간 무료).",
+    "transport_info": "지하철 ○○역 1번 출구 도보 5분.",
+    "facilities": ["주차장", "와이파이"]
+  },
+  "doctors": [
+    {
+      "name": "홍길동",
+      "is_representative": true,
+      "role": "대표원장",
+      "specialty": ["피부과"],
+      "education": ["○○대학교 의과대학 졸업"],
+      "career": ["전 ○○병원 피부과 전문의"],
+      "associations": ["대한피부과의사회 정회원"],
+      "awards": ["○○ 학술상"],
+      "profile_image_url": "https://example-clinic.co.kr/img/doctor1.jpg",
+      "verification_status": "verified"
+    }
+  ],
+  "products": {
+    "matched_products": [
+      {
+        "product_kr": "리쥬란 힐러",
+        "brand_kr": "리쥬란",
+        "manufacturer_kr": "파마리서치",
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://example-clinic.co.kr/skin/booster",
+            "evidence": "스킨부스터 라인업에 '리쥬란힐러' 표기"
+          }
+        ],
+        "context": "카탈로그 '리쥬란 힐러' 직접 매칭",
+        "verification_status": "verified"
+      }
+    ],
+    "unmatched_products": [
+      {
+        "raw_name": "○○비타민주사",
+        "category_guess": "영양/미백 주사(브랜드 미표기)",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://example-clinic.co.kr/event",
+            "evidence": "이벤트 페이지 '○○비타민주사'"
+          }
+        ],
+        "context": "브랜드 미표기로 카탈로그 특정 불가 → 보류",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "equipments": {
+    "matched_equipments": [
+      {
+        "name_kr": "써마지 FLX",
+        "name_en": "Thermage FLX",
+        "category": "리프팅",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://example-clinic.co.kr/lifting",
+            "evidence": "리프팅 메뉴 '써마지 FLX'"
+          }
+        ],
+        "context": "카탈로그 '써마지 FLX' 직접 매칭",
+        "verification_status": "verified"
+      }
+    ],
+    "unmatched_equipments": [
+      {
+        "raw_name": "○○토닝레이저",
+        "category_guess": "색소 레이저(자체 브랜드 시술명)",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://example-clinic.co.kr/laser",
+            "evidence": "레이저 메뉴 '○○토닝'"
+          }
+        ],
+        "context": "자체 브랜드 시술명, 실제 장비 모델 미표기 → 보류",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "manufacturer_signals": [
+    {
+      "name": "Merz",
+      "catalog_manufacturer_kr": "멀츠",
+      "sources": [
+        {
+          "channel": "homepage",
+          "url": "https://example-clinic.co.kr/",
+          "evidence": "푸터 제휴 배너 'Merz Aesthetics Partner'"
+        }
+      ],
+      "context": "푸터 제휴 배너 — 제품 미특정. 본문에 멀츠 제품·브랜드 언급 없음",
+      "verification_status": "verified"
+    }
+  ],
+  "treatments": [
+    {
+      "treatment_name": "리쥬란힐러",
+      "category": "스킨부스터",
+      "product_name": "리쥬란 힐러",
+      "equipment_name": null,
+      "price": {
+        "text": "정상가 30만원 → 이벤트가 1회(2cc) 20만원 / 3회 패키지 50만원 (VAT 포함)",
+        "low": 200000,
+        "high": 500000,
+        "regular_price": 300000,
+        "unit": "cc",
+        "quantity": 2,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": true
+      },
+      "package": { "sessions": 3, "duration_months": null, "event_period": "2026-01-01 ~ 2026-01-31" },
+      "notes": "이벤트가. 가격은 이벤트 배너에서 확인(이미지 전용이면 vision 판독)",
+      "source_page": "https://example-clinic.co.kr/event",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "써마지 FLX",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "써마지 FLX",
+      "price": null,
+      "package": null,
+      "notes": "상시가 미게시(상담 후 결정)",
+      "source_page": "https://example-clinic.co.kr/lifting",
+      "verification_status": "verified"
+    }
+  ],
+  "language_support": {
+    "supported_languages": ["ko", "en"],
+    "has_language_switcher": true,
+    "foreign_language_pages": { "en": "https://example-clinic.co.kr/en/" }
+  },
+  "crawl_metadata": {
+    "pages_crawled": 4,
+    "pages_visited": [
+      "https://example-clinic.co.kr/ (홈)",
+      "https://example-clinic.co.kr/about (병원소개·의료진)",
+      "https://example-clinic.co.kr/skin/booster (스킨부스터)",
+      "https://example-clinic.co.kr/event (이벤트 가격)"
+    ],
+    "crawl_method": "Playwright MCP 직접 방문 + 이미지 가격 vision 판독",
+    "errors": [],
+    "completeness": {
+      "operation_info": true,
+      "doctors": true,
+      "products": true,
+      "equipments": false,
+      "treatments": true,
+      "prices": true,
+      "language_support": true
+    },
+    "follow_up": [
+      {
+        "area": "equipments",
+        "reason": "needs_deeper_crawl",
+        "detail": "레이저(색소·제모) 상세 페이지가 초장축 마케팅 이미지라 장비 모델명 미확정 — 일부 장비만 확보. 해당 페이지 분할 캡처로 판독 시 완료.",
+        "urls": ["https://example-clinic.co.kr/laser"]
+      }
+    ],
+    "cost": {
+      "model": "claude-fable-5",
+      "input_tokens": 152340,
+      "output_tokens": 8412,
+      "cost_usd": 1.87,
+      "duration_seconds": 420
+    },
+    "notes": [
+      "병원 확인: 푸터 사업자정보(병원명·대표자·주소)가 입력 병원 정보와 일치 — match.",
+      "가격: 이벤트 페이지 텍스트/배너에서 확인. 이미지 전용이면 vision 판독, 상시가 미게시 항목은 price null.",
+      "매칭: 리쥬란힐러·써마지 FLX는 카탈로그 직접 매칭(verified). 브랜드 미표기 항목(○○비타민주사 등)은 unmatched로 보류.",
+      "미완: 레이저 상세가 초장축 이미지라 장비 모델명 일부 미확정 — 예산 한도로 중단, follow_up에 재방문 URL 기록.",
+      "미방문: 후기·갤러리 게시판은 데이터 출처로 보지 않아 미수집."
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# env files (can opt-in for committing if needed)
+.env*
+!.env.sample
+
+# playwright
+.playwright-mcp
+
+# ruff
+.ruff_cache

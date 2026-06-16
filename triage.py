@@ -145,7 +145,7 @@ def fetch(url: str, timeout: int = 15) -> tuple[int | None, str, str]:
             errors="replace",
             timeout=timeout + 5,
         )
-    except subprocess.TimeoutExpired, OSError:
+    except (subprocess.TimeoutExpired, OSError):
         return None, url, ""
     # curl 비정상 종료(DNS·연결거부·TLS·타임아웃)는 dead. 이때 -w가 http_code=000을
     # 찍어 marker는 남으므로 returncode로 잡는다. 404 등은 returncode=0이라 통과한다.
@@ -160,7 +160,7 @@ def fetch(url: str, timeout: int = 15) -> tuple[int | None, str, str]:
     parts = meta.split("\t")
     try:
         code = int(parts[0])
-    except ValueError, IndexError:
+    except (ValueError, IndexError):
         code = None
     if len(parts) > 1 and parts[1]:
         final = parts[1]

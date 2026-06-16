@@ -7,7 +7,7 @@
 ## 빠른 시작
 
 ```bash
-uv sync                                  # 의존성 (uv 기반, Python >=3.14)
+uv sync                                  # 의존성 (uv 기반, Python >=3.12)
 
 # 인증: .env의 ANTHROPIC_API_KEY 또는 Claude Code 로그인(구독) 중 하나
 # 한 병원 크롤링 (기본 Sonnet 4.6 · effort low · 예산캡 $0.90 · 시간캡 270s)

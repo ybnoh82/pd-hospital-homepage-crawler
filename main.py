@@ -183,7 +183,7 @@ def backfill_cost(path: Path, result: ResultMessage, model: str | None) -> bool:
     """
     try:
         data = json.loads(path.read_text(encoding="utf-8"))
-    except FileNotFoundError, json.JSONDecodeError:
+    except (FileNotFoundError, json.JSONDecodeError):
         return False
 
     usage = result.usage or {}

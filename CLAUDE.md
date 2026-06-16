@@ -18,7 +18,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Commands
 
 ```bash
-# 의존성 동기화 (uv 기반, Python >=3.14)
+# 의존성 동기화 (uv 기반, Python >=3.12)
 uv sync
 
 # 한 병원 크롤링 실행 (러너). 기본 Sonnet 4.6 · effort low · 예산캡 $0.90 · 시간캡 270s

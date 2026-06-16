@@ -701,7 +701,7 @@ if __name__ == "__main__":
             raw = json.load(open(path, encoding="utf-8"))
             if not isinstance(raw, dict):
                 raw = {}
-        except FileNotFoundError, json.JSONDecodeError:
+        except (FileNotFoundError, json.JSONDecodeError):
             raw = {}
         fixed = repair_to_valid(
             raw, skeleton

@@ -3,7 +3,7 @@ name = "pd-hospital-crawler"
 version = "0.1.0"
 description = "플랜닥스 잠재고객인 미용·성형 전문 병원 홈페이지 크롤러"
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.12"
 dependencies = [
     "claude-agent-sdk>=0.2.102",
     "pydantic>=2.13.4",

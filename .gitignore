@@ -18,3 +18,11 @@ wheels/
 
 # ruff
 .ruff_cache
+
+# 크롤 산출물(병원별 결과 JSON) — 생성물이라 추적하지 않음
+output/
+
+# 크롤 중 저장된 스크린샷 아티팩트(루트에 떨어진 vision 캡처)
+/*.jpeg
+/*.jpg
+/*.png

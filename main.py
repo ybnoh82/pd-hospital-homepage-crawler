@@ -1,6 +1,409 @@
-def main():
-    print("Hello from pd-hospital-crawler!")
+"""hospital-homepage-extract 스킬을 claude-agent-sdk로 실행하는 러너.
+
+병원 홈페이지 URL(과 선택적 병원정보)을 받아 `hospital-homepage-extract`
+스킬을 돌리고, 결과 JSON을 output/{병원ID}_{병원이름}_homepage.json에 저장한다.
+
+예:
+    uv run python main.py https://example-clinic.co.kr
+    uv run python main.py https://example-clinic.co.kr --id xaji0y --name 365엠씨의원
+    uv run python main.py https://example-clinic.co.kr --from-csv data/beauty_hospitals_gangnam.csv --id xaji0y
+"""
+
+from __future__ import annotations
+
+import argparse
+import asyncio
+import csv
+import json
+import sys
+from pathlib import Path
+
+from claude_agent_sdk import (
+    AssistantMessage,
+    ClaudeAgentOptions,
+    ClaudeSDKClient,
+    ResultMessage,
+    TextBlock,
+    ThinkingBlock,
+    ToolUseBlock,
+)
+from dotenv import load_dotenv
+
+PROJECT_ROOT = Path(__file__).resolve().parent
+SKILL_NAME = "hospital-homepage-extract"
+
+# 기본 모델. 8,000개 배치의 비용·속도 목표(병원당 평균 $1·5분 이내)와 품질의 균형점.
+# Haiku 4.5($1/$5)는 가장 싸지만 이 멀티스텝 에이전트 스킬(SPA 탐색·매칭·vision)에서
+# 조기 종료·미저장으로 완주에 실패했다(측정). Sonnet 4.6($3/$15, Opus의 0.6배)은
+# 안정적으로 완주하며 effort로 비용을 더 줄일 수 있다. 하드 사이트는 --model로 Opus.
+DEFAULT_MODEL = "claude-sonnet-4-6"
+
+# 추론 effort. Sonnet 4.6/Opus만 지원(Haiku는 에러). medium은 $1 예산 안에 완주하지
+# 못하고 컷에 걸렸다(측정: 305s/$1.03/미저장). low로 낮춰 더 많은 크롤링 여지를 둔다.
+DEFAULT_EFFORT = "low"
+
+# 비용 하드캡($). 측정상 미용·성형 사이트는 전부 콘텐츠가 풍부해 캡에 닿고, 캡은
+# 턴 완료 후 검사라 vision 턴에서 최대 +$0.3까지 오버슈트한다(실측 $1.29). 평균 $1을
+# 지키려면 캡을 $1보다 낮춰 오버슈트를 흡수한다.
+DEFAULT_BUDGET_USD = 0.90
+
+# 시간 하드캡(초). $ 예산은 시간을 못 묶는다(느린 사이트는 9분까지 흘렀다 — 실측).
+# 시간을 단일 바인딩 제약으로 삼고, 78% 지점에서 "지금 마무리하라" 메시지를 주입해
+# 기요틴 대신 깨끗한 유효 저장을 시킨다(SOFT_DEADLINE_RATIO). 하드캡은 마지막 백스톱.
+# 평균 5분 이내 목표에 마진을 둬 4.5분.
+DEFAULT_TIME_LIMIT_S = 270
+SOFT_DEADLINE_RATIO = 0.78
+
+# 소프트 데드라인에 주입하는 마무리 지시. 기요틴 직전에 에이전트가 스스로 유효 JSON을
+# 저장·검증하고 끝내게 한다 — 시계를 못 보는 에이전트에게 시간을 알려주는 셈이다.
+FINALIZE_MESSAGE = (
+    "시간이 거의 다 됐다. 지금부터 새 페이지를 열거나 추가 크롤링을 하지 마라. "
+    "즉시 그때까지 수집한 것만으로 스키마에 맞는 유효한 JSON을 출력 경로에 저장하고, "
+    "output_scheme.py로 검증해 통과시킨 뒤 종료하라. 못 끝낸 영역은 follow_up에 남겨라. "
+    "유효성이 최우선이다 — 빈 필드·미매칭이 있어도 스키마만 통과하면 된다."
+)
+
+# playwright MCP 서버. 배치(8,000개 병렬)를 위해:
+# --headless: 가시 창 없이 실행(메모리·CPU↓, 헤드리스 서버 실행 가능, 브라우저 오버헤드↓).
+#   단, 시간캡에 묶여 속도 이득은 주로 "같은 시간에 더 많은 페이지"(완전성)로 나타난다.
+# --isolated: 프로필을 메모리에 둠(병렬 인스턴스 간 프로필 잠금 충돌 방지, 시작 빠름, 클린 상태).
+PLAYWRIGHT_SERVER = {
+    "command": "npx",
+    "args": ["@playwright/mcp@latest", "--headless", "--isolated"],
+}
+
+# CLI stdout 버퍼 상한. SDK 기본값은 1MB라 base64 스크린샷 한 장이 이를 넘으면
+# 메시지 리더가 죽는다(vision은 스킬의 핵심이라 반드시 키운다). 50MB로 여유를 둔다.
+MAX_BUFFER_SIZE = 50 * 1024 * 1024
+
+
+def load_hospital_from_csv(csv_path: Path, hospital_id: str) -> dict[str, str]:
+    """병원DB CSV에서 id로 한 행을 찾아 병원정보 dict로 반환한다."""
+    with csv_path.open(encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            if row.get("id") == hospital_id:
+                return row
+    raise SystemExit(f"CSV에서 id={hospital_id!r}를 찾지 못했다: {csv_path}")
+
+
+def build_prompt(url: str, info: dict[str, str]) -> str:
+    """스킬을 호출하도록 유도하는 프롬프트를 만든다.
+
+    info에 채워진 항목만 입력으로 넘긴다(빈 값은 생략).
+    """
+    fields = [
+        ("hospital_id", info.get("id")),
+        ("hospital_name", info.get("hospital_name") or info.get("name")),
+        ("시도", info.get("sido")),
+        ("시군구", info.get("sggu")),
+        ("읍면동", info.get("emdong")),
+        ("도로명주소", info.get("address")),
+    ]
+    lines = [f"- {label}: {value}" for label, value in fields if value]
+    info_block = "\n".join(lines) if lines else "- (병원정보 없음 — URL만으로 진행)"
+
+    return (
+        f"{SKILL_NAME} 스킬을 사용해 아래 병원 공식 홈페이지를 크롤링·추출하고, "
+        "결과를 output/{병원ID}_{병원이름}_homepage.json에 저장한 뒤 스키마로 검증한다.\n\n"
+        f"- homepage_url: {url}\n"
+        f"{info_block}\n\n"
+        "지금 바로 도구를 써서 끝까지 자율 수행한다. 너는 무인 배치로 실행 중이며, "
+        "사용자는 보고 있지 않으니 질문하거나 허락을 구하지 말고, 계획만 설명하고 멈추지 마라. "
+        "한 번의 응답에 작업을 다 담으려 하지 말고, browser_navigate/browser_evaluate 등 "
+        "Playwright 도구를 실제로 호출해 페이지를 열고 수집하라. "
+        "결과 JSON을 저장하고 스키마 검증까지 마쳤을 때, 또는 접속 불가·예산 소진 등으로 "
+        "더 진행할 수 없을 때에만 턴을 끝낸다. 턴을 끝내기 전, 마지막 메시지가 계획·의도·"
+        "다음 단계 목록이면 그 작업을 지금 도구 호출로 실제 수행하라.\n\n"
+        "중요(증분 저장 — 캡이 예고 없이 끊는다): 비용·시간 한도는 보통 4~5분/약 $1 안에서 "
+        "작업을 강제로 끊는다. 그 전에 저장이 안 돼 있으면 결과가 전부 사라진다. 그래서 "
+        "**정찰(첫 browser_evaluate) 직후, 상세 페이지·카탈로그 매칭 전에** 그때까지 거둔 "
+        "것만으로 유효한 JSON을 위 경로에 **반드시 먼저 저장**하라. 첫 저장에 카탈로그 매칭은 "
+        "필요 없다 — 거둔 제품·장비 이름을 unmatched에 그대로 넣고 저장하면 된다(매칭 0건도 OK). "
+        "큰 카탈로그를 읽어 매칭하는 일이 첫 저장을 늦추는 주범이다. 이후 페이지·매칭으로 보강할 "
+        "때마다 같은 파일을 덮어써 갱신하라. '모두 수집한 뒤 한 번에 저장'은 금지 — 끊기면 0이 된다."
+    )
+
+
+def log(*args: object) -> None:
+    """파이프로 출력해도 즉시 보이도록 flush한다."""
+    print(*args, flush=True)
+
+
+def render_message(msg: object) -> str | None:
+    """스트리밍 메시지를 사람이 읽기 좋게 출력한다.
+
+    AssistantMessage를 만나면 그 모델명을 반환한다(비용 메타 백필용).
+    """
+    if isinstance(msg, AssistantMessage):
+        for block in msg.content:
+            if isinstance(block, ThinkingBlock):
+                log(f"\n💭 {block.thinking.strip()[:500]}")
+            elif isinstance(block, TextBlock):
+                text = block.text.strip()
+                if text:
+                    log(f"\n{text}")
+            elif isinstance(block, ToolUseBlock):
+                detail = block.input.get("url") or block.input.get("skill") or ""
+                log(f"  🔧 {block.name} {detail}".rstrip())
+        return msg.model
+    return None
+
+
+def expected_output_path(info: dict[str, str | None]) -> Path | None:
+    """스킬이 저장할 결과 파일 경로. id·이름을 둘 다 알 때만 계산 가능."""
+    hid = info.get("id")
+    name = info.get("hospital_name") or info.get("name")
+    if hid and name:
+        return PROJECT_ROOT / "output" / f"{hid}_{name}_homepage.json"
+    return None
+
+
+def backfill_cost(path: Path, result: ResultMessage, model: str | None) -> bool:
+    """저장된 JSON의 crawl_metadata.cost를 러너가 관측한 실측값으로 채운다.
+
+    에이전트는 자기 토큰·비용을 못 보므로 cost를 null로 남긴다(SKILL.md §8).
+    러너는 ResultMessage로 실측을 알기에 여기서 보강한다 — 에이전트가 적은 값은 덮지 않는다.
+    """
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except FileNotFoundError, json.JSONDecodeError:
+        return False
+
+    usage = result.usage or {}
+    observed = {
+        "model": model or next(iter(result.model_usage or {}), None),
+        "input_tokens": usage.get("input_tokens"),
+        "output_tokens": usage.get("output_tokens"),
+        "cost_usd": round(result.total_cost_usd, 4)
+        if result.total_cost_usd is not None
+        else None,
+        "duration_seconds": round(result.duration_ms / 1000),  # 스키마상 int
+    }
+    cm = data.setdefault("crawl_metadata", {})
+    cost = cm.get("cost") or {}
+    # 에이전트가 이미 채운 값은 보존하고, 비어 있는 칸만 실측으로 메운다.
+    for key, value in observed.items():
+        if cost.get(key) in (None, "") and value is not None:
+            cost[key] = value
+    cm["cost"] = cost
+    path.write_text(
+        json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+    return True
+
+
+SCHEMA_VALIDATOR = (
+    PROJECT_ROOT / ".claude/skills" / SKILL_NAME / "reference/output_scheme.py"
+)
+
+
+def repair_output(path: Path, info: dict[str, str | None], url: str) -> bool:
+    """저장 JSON을 스키마 통과 형태로 고친다(없으면 유효 스켈레톤 생성).
+
+    에이전트가 시간 압박에 쓴 무효 JSON에서 유효 부분만 살리고 무효 부분은 떨궈,
+    **어떤 실행이든 100% 유효 파일을 남긴다.** 유효성을 에이전트 신뢰도에서 떼어낸다.
+    반환값: 유의미한 데이터가 있으면 True(USEFUL), 빈 스켈레톤 수준이면 False(EMPTY).
+    """
+    import subprocess
+
+    name = info.get("hospital_name") or info.get("name") or "unknown"
+    r = subprocess.run(
+        [
+            sys.executable,
+            str(SCHEMA_VALIDATOR),
+            "--repair",
+            str(path),
+            "--id",
+            info.get("id") or "unknown",
+            "--name",
+            name,
+            *(["--url", url] if url else []),
+        ],
+        capture_output=True,
+        text=True,
+    )
+    return r.stdout.strip().startswith("USEFUL")
+
+
+def supports_effort(model: str | None) -> bool:
+    """effort 파라미터를 받는 모델인지. Haiku·구형은 에러를 낸다."""
+    m = model or ""
+    return "sonnet-4-6" in m or "opus" in m
+
+
+async def run(
+    url: str,
+    info: dict[str, str | None],
+    budget: float,
+    model: str | None,
+    effort: str | None,
+    time_limit: float,
+) -> int:
+    options = ClaudeAgentOptions(
+        cwd=str(PROJECT_ROOT),
+        skills=[SKILL_NAME],
+        mcp_servers={"playwright": PLAYWRIGHT_SERVER},
+        permission_mode="bypassPermissions",
+        max_budget_usd=budget,
+        model=model,
+        # Haiku 등 미지원 모델에 넘기면 에러나므로 지원 모델일 때만 설정한다.
+        effort=effort if (effort and supports_effort(model)) else None,
+        # base64 스크린샷이 기본 1MB 버퍼를 넘겨 리더가 죽는 것을 막는다.
+        max_buffer_size=MAX_BUFFER_SIZE,
+        # 스킬 파일·CLAUDE.md 로드를 위해 프로젝트 설정을 읽는다.
+        setting_sources=["project", "local"],
+    )
+
+    (PROJECT_ROOT / "output").mkdir(exist_ok=True)
+
+    # 이전 실행의 잔존 결과 파일을 지우고 새로 크롤링한다. 남겨두면 약한 모델이
+    # 크롤링 대신 그 파일을 읽어 재사용하는 오염이 생기고, 크래시 후 잔존 파일을
+    # "저장됨"으로 오보하게 된다. (resume은 별도 기능으로 다룬다.)
+    out_path = expected_output_path(info)
+    if out_path is not None and out_path.exists():
+        out_path.unlink()
+
+    last_result: ResultMessage | None = None
+    seen_model: str | None = None
+    budget_reached = False
+    time_reached = False
+    steered = False
+    fatal_error: str | None = None
+
+    # 양방향 클라이언트로 크롤링을 돌리되, 소프트 데드라인에서 "마무리하라" 메시지를
+    # 주입해 에이전트가 스스로 유효 JSON을 저장·검증하게 한다. 하드캡(asyncio.timeout)은
+    # 에이전트가 마무리 지시를 무시할 때만 작동하는 마지막 백스톱이다.
+    soft_deadline = time_limit * SOFT_DEADLINE_RATIO
+    loop = asyncio.get_event_loop()
+    try:
+        async with ClaudeSDKClient(options=options) as client:
+            await client.query(build_prompt(url, info))
+            start = loop.time()
+            try:
+                async with asyncio.timeout(time_limit):
+                    async for msg in client.receive_messages():
+                        seen_model = render_message(msg) or seen_model
+                        if isinstance(msg, ResultMessage):
+                            last_result = msg
+                            break
+                        if not steered and (loop.time() - start) > soft_deadline:
+                            steered = True
+                            log(
+                                f"\n⏱️  소프트 데드라인({soft_deadline:.0f}s) — 마무리 지시 주입"
+                            )
+                            await client.query(FINALIZE_MESSAGE)
+            except TimeoutError:
+                time_reached = True
+    except Exception as exc:  # noqa: BLE001 — SDK가 에러 결과를 예외로 던진다
+        # 예산 한도 도달은 이 프로젝트에서 정상 종료다(스킬이 follow_up을 남기고 멈춘다).
+        if "budget" in str(exc).lower():
+            budget_reached = True
+        else:
+            fatal_error = str(exc)
+
+    if last_result is not None and last_result.subtype == "error_max_budget_usd":
+        budget_reached = True
+
+    # 러너가 결과 유효성을 보장한다: 에이전트가 쓴 (무효일 수 있는) JSON을 repair로
+    # 스키마 통과 형태로 고치고(없으면 스켈레톤 생성), 그 뒤 실측 비용을 백필한다.
+    useful = False
+    if out_path is not None:
+        useful = repair_output(out_path, info, url)
+        if last_result is not None:
+            backfill_cost(out_path, last_result, model or seen_model)
+
+    log("\n" + "─" * 48)
+    if last_result is not None:
+        cost = (
+            f"${last_result.total_cost_usd:.4f}"
+            if last_result.total_cost_usd is not None
+            else "n/a"
+        )
+        log(
+            f"턴 {last_result.num_turns} · {last_result.duration_ms / 1000:.1f}s · {cost}"
+        )
+    if budget_reached:
+        log(f"예산 한도(${budget}) 도달 — 정상 종료. 미완료 영역은 follow_up 참고.")
+    if time_reached:
+        log(
+            f"시간 한도({time_limit:.0f}s) 도달 — 정상 종료. 미완료 영역은 follow_up 참고."
+        )
+    if fatal_error:
+        log(f"오류로 종료: {fatal_error}")
+    if out_path is not None:
+        mark = "유효·데이터 있음" if useful else "유효·빈 스켈레톤(재시도 권장)"
+        log(f"결과 저장: {out_path.relative_to(PROJECT_ROOT)} — {mark}")
+
+    if fatal_error:
+        return 1
+    # 유효 파일은 항상 남지만, 유의미한 데이터가 있을 때만 성공(아니면 배치가 재시도).
+    return 0 if useful else 1
+
+
+def parse_args(argv: list[str]) -> argparse.Namespace:
+    p = argparse.ArgumentParser(
+        description="claude-agent-sdk로 hospital-homepage-extract 스킬을 실행한다.",
+    )
+    p.add_argument("url", help="수집할 병원 공식 홈페이지 URL")
+    p.add_argument("--id", dest="id", help="병원DB 아이디")
+    p.add_argument("--name", dest="name", help="병원이름")
+    p.add_argument("--sido", help="시도")
+    p.add_argument("--sggu", help="시군구")
+    p.add_argument("--emdong", help="읍면동")
+    p.add_argument("--address", help="도로명주소")
+    p.add_argument(
+        "--from-csv",
+        type=Path,
+        help="병원DB CSV 경로. --id로 행을 찾아 병원정보를 채운다",
+    )
+    p.add_argument(
+        "--budget",
+        type=float,
+        default=DEFAULT_BUDGET_USD,
+        help=f"최대 비용(USD) 상한. 기본 ${DEFAULT_BUDGET_USD}",
+    )
+    p.add_argument(
+        "--model",
+        default=DEFAULT_MODEL,
+        help=f"사용할 모델. 기본 {DEFAULT_MODEL}",
+    )
+    p.add_argument(
+        "--effort",
+        default=DEFAULT_EFFORT,
+        choices=["low", "medium", "high", "max"],
+        help=f"추론 effort(Sonnet/Opus만). 기본 {DEFAULT_EFFORT}",
+    )
+    p.add_argument(
+        "--time-limit",
+        type=float,
+        default=DEFAULT_TIME_LIMIT_S,
+        help=f"최대 소요시간(초) 상한. 기본 {DEFAULT_TIME_LIMIT_S}",
+    )
+    return p.parse_args(argv)
+
+
+def main(argv: list[str] | None = None) -> int:
+    load_dotenv()
+    args = parse_args(argv if argv is not None else sys.argv[1:])
+
+    if args.from_csv:
+        if not args.id:
+            raise SystemExit("--from-csv 사용 시 --id가 필요하다")
+        info = load_hospital_from_csv(args.from_csv, args.id)
+    else:
+        info = {
+            "id": args.id,
+            "name": args.name,
+            "sido": args.sido,
+            "sggu": args.sggu,
+            "emdong": args.emdong,
+            "address": args.address,
+        }
+
+    return asyncio.run(
+        run(args.url, info, args.budget, args.model, args.effort, args.time_limit)
+    )
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

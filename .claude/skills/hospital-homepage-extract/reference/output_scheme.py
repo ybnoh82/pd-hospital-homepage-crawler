@@ -493,9 +493,127 @@ class HospitalHomepageResult(BaseModel):
     )
 
 
+def _nav(node, loc):
+    """loc 경로의 노드를 반환(없으면 None)."""
+    cur = node
+    for k in loc:
+        if isinstance(cur, dict) and not isinstance(k, int):
+            cur = cur.get(k)
+        elif isinstance(cur, list) and isinstance(k, int) and 0 <= k < len(cur):
+            cur = cur[k]
+        else:
+            return None
+    return cur
+
+
+_MISSING = object()
+
+
+def _skeleton_value(skeleton, loc):
+    cur = skeleton
+    for k in loc:
+        if isinstance(cur, dict) and not isinstance(k, int) and k in cur:
+            cur = cur[k]
+        else:
+            return _MISSING
+    return cur
+
+
+def _fix_at(data, skeleton, loc):
+    """무효한 loc를 고친다: 리스트를 지나면 그 항목을 버리고,
+    딕셔너리 경로면 스켈레톤 기본값으로 복원하거나 그 키를 지운다."""
+    for i, k in enumerate(loc):
+        if isinstance(k, int):  # 리스트 항목이 문제 → 그 항목만 제거(나머지는 보존)
+            parent = _nav(data, loc[:i])
+            if isinstance(parent, list) and 0 <= k < len(parent):
+                del parent[k]
+                return True
+            return False
+    parent = _nav(data, loc[:-1])
+    if not isinstance(parent, dict):
+        return False
+    last = loc[-1]
+    sv = _skeleton_value(skeleton, loc)
+    if sv is not _MISSING:  # 필수 필드 → 스켈레톤 기본값으로 복원
+        parent[last] = sv
+        return True
+    if last in parent:  # 선택 필드 → 제거(기본값이 채워짐)
+        del parent[last]
+        return True
+    return False
+
+
+def repair_to_valid(raw, skeleton):
+    """raw를 스켈레톤 위에 얹고 무효 부분만 떨궈 스키마를 통과하는 dict로 만든다.
+
+    유효 데이터는 최대한 보존한다. 반환값은 항상 스키마에 맞는다(보장).
+    """
+    from pydantic import ValidationError
+
+    data = {**skeleton, **{k: v for k, v in raw.items() if k in skeleton}}
+    for _ in range(500):
+        try:
+            return HospitalHomepageResult.model_validate(data).model_dump(mode="json")
+        except ValidationError as e:
+            fixed = False
+            for err in e.errors():
+                if _fix_at(data, skeleton, list(err["loc"])):
+                    fixed = True
+            if not fixed:
+                break
+    # 최후: 스켈레톤만이라도 유효하게 반환
+    return HospitalHomepageResult.model_validate(skeleton).model_dump(mode="json")
+
+
+def _has_useful_data(d):
+    p = d.get("products") or {}
+    e = d.get("equipments") or {}
+    return bool(
+        p.get("matched_products")
+        or p.get("unmatched_products")
+        or e.get("matched_equipments")
+        or e.get("unmatched_equipments")
+        or d.get("treatments")
+        or d.get("doctors")
+        or d.get("operation_info")
+    )
+
+
 if __name__ == "__main__":
     import json
 
-    for path in sys.argv[1:]:
-        HospitalHomepageResult.model_validate(json.load(open(path, encoding="utf-8")))
-        print("OK", path)
+    # 복구 모드: python output_scheme.py --repair <path> --id X --name Y --url Z
+    # 에이전트가 쓴 (무효일 수 있는) JSON을 스키마 통과 형태로 고쳐 덮어쓴다.
+    # 파일이 없거나 깨졌으면 최소 유효 스켈레톤을 쓴다. 러너가 검증 대신 호출한다.
+    if "--repair" in sys.argv:
+        a = sys.argv
+        path = a[a.index("--repair") + 1]
+        opt = {a[i]: a[i + 1] for i in range(len(a) - 1) if a[i].startswith("--id")}
+
+        def _arg(name, default=None):
+            return a[a.index(name) + 1] if name in a else default
+
+        skeleton = HospitalHomepageResult(
+            hospital_id=_arg("--id", "unknown"),
+            hospital_name=_arg("--name", "unknown"),
+            homepage_url=_arg("--url"),
+            # 필수 필드의 유효 placeholder. raw나 러너 백필이 실제값으로 덮는다.
+            crawled_at="1970-01-01T00:00:00+09:00",
+        ).model_dump(mode="json")
+        try:
+            raw = json.load(open(path, encoding="utf-8"))
+            if not isinstance(raw, dict):
+                raw = {}
+        except (FileNotFoundError, json.JSONDecodeError):
+            raw = {}
+        fixed = repair_to_valid(raw, skeleton)
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(fixed, f, ensure_ascii=False, indent=2)
+            f.write("\n")
+        print("USEFUL" if _has_useful_data(fixed) else "EMPTY", path)
+    else:
+        for path in sys.argv[1:]:
+            HospitalHomepageResult.model_validate(
+                json.load(open(path, encoding="utf-8"))
+            )
+            print("OK", path)

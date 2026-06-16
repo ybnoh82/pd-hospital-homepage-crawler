@@ -14,9 +14,9 @@
 - **Goodhart** — 지표(matched 수)는 올리고 실제 품질은 떨어뜨림 (예: 거짓 매칭 남발 — `국산보톡스→보톡스`).
 - **과적합** — 한 사이트에 맞춰 고쳤더니 나머지 9개가 회귀.
 
-**그래서 골든 회귀 세트 없이는 "자기진화"가 "자기표류"가 된다.** 2026-06-16에 만든 opus/high 10개 기준선(`output/`)이 그 골든이다.
+**그래서 골든 회귀 세트 없이는 "자기진화"가 "자기표류"가 된다.** 기존 opus/high 10개 기준선(`output/`)이 그 골든이다.
 
-**loop-engineering 매핑(현황):** Skills ✅(`SKILL.md`) · Memory ✅(`MEMORY.md`+`crawl_metadata.follow_up`) · Automations ◐(`main.py` 러너; 배치 미구현) · Connectors ◐(Playwright MCP) · **Sub-agents ❌(생성≠검증 분리 — 이 설계의 핵심 신규)** · 세 경고(검증부담·이해부채·인지적항복)는 "사람이 작은 diff를 검토하고 엔지니어로 남는다"로 대응.
+**이 설계의 핵심 신규는 생성≠검증 분리(sub-agent)**다 — 나머지 loop-engineering 요소(Skills·Memory·Automations·Connectors)는 이미 부분~완전 갖춰져 있다. 무인 루프의 세 경고(검증부담·이해부채·인지적 항복)는 "사람이 작은 diff를 검토하고 엔지니어로 남는다"로 대응한다.
 
 ## 진화 루프 (한 장)
 
@@ -41,7 +41,7 @@
 | **5** | `evolve.py` 최소판: **triage 키워드 제안만**, 무료 검증, diff 제시 | $0 | 자기개선 루프 전체를 공짜로 증명 | Connectors+Memory+사람게이트 |
 | **6** | `evolve.py` 확장: SKILL.md gotcha → 카탈로그 추가, 유료 `compare`로 게이트 | $$ | 고가치·고위험 뇌편집, 루프 신뢰 후에만 | 풀 루프 |
 
-**원칙:** Phase 1(공짜 회귀망)·Phase 2(작동하는 배치)를 먼저 확보하고, 진화 기계는 그 위에 올린다. 자기수정 루프 자체는 **Phase 5에서 $0로 증명**한 뒤 Phase 6에서 비로소 돈을 쓰게 한다.
+**원칙:** 공짜 안전망(P1)·작동 배치(P2)를 먼저, 자기수정은 P5에서 $0로 증명한 뒤 P6에서만 유료.
 
 ## 컴포넌트 설계
 
@@ -55,10 +55,10 @@
   - **`score`(공짜):** 결과 JSON + 골든 → `ScoreReport`. `output_scheme.py`의 `_norm`·`_split_names`·`_has_useful_data`·`HospitalHomepageResult` **재사용**(재구현 금지).
   - **`compare`(유료):** `manifest.json`의 URL로 `main.run(...)` 재크롤 → 동결 골든과 델타 표. 진화안 적용 전 유료 게이트.
 - **메트릭(ScoreReport):** schema_valid(하드), **leak_count(하드: 0이어야)**, matched/unmatched 제품·장비(카운트), treatments/doctors(카운트), identity(범주), has_useful_data(bool), cost/duration(천장 체크, compare에서만).
-  - **누수 불변식:** 각 `treatments[].product_name/equipment_name`을 `_split_names`→`_norm`한 게 products/equipments 이름집합에 있어야 한다(= `aggregate_from_treatments`가 보장. 2026-06-16 프로토타입으로 10개 leak=0 확인).
+  - **누수 불변식:** 각 `treatments[].product_name/equipment_name`을 `_split_names`→`_norm`한 게 products/equipments 이름집합에 있어야 한다(= `aggregate_from_treatments`가 보장; 프로토타입으로 10개 leak=0 확인).
 - **점수 철학(반-Goodhart, 여기 박는다):**
   - 카운트는 **밴드**로: `≥골든`=개선/유지, `-10%이내`=유지, `<골든-10%`=**회귀**. "많을수록 좋다" 무한보상 금지.
-  - **하드 불변식(schema, leak==0)은 게이트:** 골든 중 하나라도 깨지면 제안 전체 기각(공짜·재크롤 불필요). 2026-06-16의 데이터손실 버그가 정확히 이걸로 공짜 적발됐을 클래스.
+  - **하드 불변식(schema, leak==0)은 게이트:** 골든 중 하나라도 깨지면 제안 전체 기각(공짜·재크롤 불필요). 과거 데이터손실 버그가 바로 이 게이트에 — 재크롤 없이 — 걸렸을 종류다.
   - 종합 판정: `HOLD` / `IMPROVED` / `REGRESSED`.
 - **순서:** `score` 먼저 → pytest sanity(`tests/test_golden.py`: `expected/` 자기대조 HOLD) → `compare` 마지막(유일하게 유료).
 
@@ -87,16 +87,16 @@
      - **유료 재크롤 게이트(사전체크 통과 & 크롤출력 바뀔 수 있을 때만):** `compare`로 10개 재크롤·델타, `HOLD`/`IMPROVED`만 유지(~$10–30, 배치로).
   4. **사람 게이트(엔지니어로 남기):** **자동 머지 절대 금지.** 살아남은 제안을 **git diff(브랜치) + 근거(어떤 findings·몇 병원·골든 델타표)** 로 `proposals/` 또는 `gh` PR. 사람이 작은 증거기반 diff만 검토.
   5. **결과 기록:** 수락→`accepted_proposals.jsonl`+뇌버전; 기각→`rejected_proposals.jsonl`(재채굴 금지, 검증기오류 플래그).
-- **반-Goodhart 요약:** 지표 이득은 자동적용 안 됨; 하드불변식+밴드 점수가 쓰레기증식 거부; **정밀 카운터지표**(matched 대비 junk-unmatched 증가 추적 — unmatched만 부풀면 "개선 아님"); N-병원 반복; 카탈로그(헤드라인 지표 직격 레버)는 최강 게이트.
+- **반-Goodhart(§1 점수철학 적용):** §3 고유 가드는 **정밀 카운터지표**(matched 대비 junk-unmatched 증가 추적 — unmatched만 부풀면 "개선 아님"), N-병원 반복, 카탈로그(헤드라인 지표 직격 레버)는 최강 게이트.
 - **최소 1판:** **triage 키워드 제안만**, **공짜** triage 재실행 + `score` 사전체크, diff 제시. 재크롤·카탈로그·SKILL편집 없음 → 전체 파이프라인(채굴→제안→검증→게이트)을 $0로 증명.
 
 ### 4. 배치 드라이버
 - **신규 `batch.py`**(top-level). 입력: `homepage_url` 있는 CSV(`sample10.csv` 형식). `load_hospital_from_csv` 행 형식 재사용.
 - **URL 확보 갭(명시):** `beauty_hospitals_gangnam.csv`(1,405행)엔 URL 없음. 드라이버는 URL-enriched CSV를 먹어야 하고, **그 CSV 생산(검색/스크랩/수기)은 별도 상류 파이프라인**으로 사람이 소유. URL없는 행을 조용히 실패처리하지 말 것.
 - **동시성 풀:** asyncio 세마포어 기본 8·최대 12(24GB/12코어, ~1GB/run, **메모리 바인딩**). 각 슬롯이 `main.run(...)`.
-- **exit 라우팅(기존 3코드 계약 재사용):** `0 USEFUL`→완료·10% 검증샘플 후보 / `1 EMPTY`→백오프 재시도(최대 2회)→소진시 human inbox / `2 SKIP`→재시도금지·공짜 curl 검증 큐.
+- **exit 라우팅(`CLAUDE.md`의 0/1/2 계약 재사용):** 0→완료·10% 검증샘플 후보 / 1 EMPTY→백오프 재시도(최대 2회)→소진 시 human inbox / 2 SKIP→재시도금지·공짜 curl 검증 큐.
 - **429 백오프:** 진짜 천장은 API TPM/RPM(머신 아님 — `CLAUDE.md` "측정된 운영 사실"). 글로벌 토큰버킷/지수백오프, transient로 재큐(실패 아님). per-run 예산캡과 별개.
-- **진행·집계:** done/empty/skip/failed, 평균비용(time-cap런은 `ResultMessage` 미수신으로 비용없는 갭 — `CLAUDE.md` "측정된 운영 사실"의 알려진 갭), 유효율(설계상 ~100%), ETA.
+- **진행·집계:** done/empty/skip/failed, 평균비용(time-cap런은 `ResultMessage` 미수신이라 비용 미측정 — `CLAUDE.md` 알려진 갭), 유효율(~100%), ETA.
 - **resume 상태(§5):** 모든 상태전이 영속화, 재시작시 done 스킵·in-flight/empty 재큐. 멱등.
 - **주기적 진화 트리거:** N건(예 250)마다 신규런 멈추고 검증샘플 + `evolve.py` 제안, diff를 inbox로, 재개. 진화는 배치를 **막지 않음**(제안은 큐잉, 사람 머지 전까진 현재 뇌로 계속).
 - **human inbox** `memory/inbox.jsonl`: 소진된 EMPTY·의심 SKIP·차단 사이트 + 병원별 `crawl_metadata.follow_up`의 배치레벨 롤업.
@@ -140,4 +140,4 @@
 - **실 8,000 배치 전:** URL 확보 파이프라인 해결.
 
 ---
-*설계 출처: 2026-06-16 세션. 영감: Addy Osmani, "Loop Engineering". 현 구현 상태·운영 규칙·측정된 사실은 `CLAUDE.md`.*
+*영감: Addy Osmani, "Loop Engineering". 현 구현 상태·운영 규칙·측정된 사실은 `CLAUDE.md`.*

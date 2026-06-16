@@ -1,7 +1,7 @@
 # EVOLUTION — 자기진화 크롤러 설계도
 
 > 이 프로젝트를 **크롤링하면서 스스로 진화하는 크롤러**로 키우기 위한 설계 진실원.
-> 운영규칙은 `CLAUDE.md`, 크롤 행동규칙은 `SKILL.md`, 그동안의 실측·미해결은 `HANDOFF.md`.
+> 운영규칙·측정된 운영 사실은 `CLAUDE.md`, 크롤 행동규칙은 `SKILL.md`.
 > 이 문서는 **앞으로 무엇을 어떤 순서로 짓는지**의 청사진이다. 다음 세션은 Phase 0부터 이어받는다.
 
 ## Context — 왜
@@ -47,7 +47,7 @@
 
 ### Phase 0 — 기준선 동결 (먼저, ~1h, $0)
 `output/`은 gitignore라 커밋 불가 → **새 committed 위치 `golden/expected/`** 에 10개 JSON 복사 + `golden/manifest.json`(병원별 `{id, name, homepage_url, model, effort, budget, time_limit, crawled_at, git_sha}` + `frozen_metrics` 블록). 작아서(15–70KB) 커밋해 **계약**으로 삼는다.
-- **사람 결정점:** 이 10개 opus 출력이 진짜 "금"인가? (`HANDOFF.md` §5: 추가5는 풀리뷰 전.)
+- **사람 결정점:** 이 10개 opus 출력이 진짜 "금"인가? (sample10의 추가 5개 사이트는 아직 풀리뷰 전일 수 있다 — 동결 전 한 번 더 확인.)
 
 ### 1. 골든 회귀 하니스 (토대)
 **권장: 독립 스크립트 + 얇은 pytest 래퍼**(pytest-only 아님). 재점수는 **재크롤 없이** 임의 JSON에 돌고 사람이 읽을 표를 내야 하며 batch/evolve에서도 호출된다. pytest는 CI pass/fail 게이트용으로 같은 함수를 import.
@@ -95,8 +95,8 @@
 - **URL 확보 갭(명시):** `beauty_hospitals_gangnam.csv`(1,405행)엔 URL 없음. 드라이버는 URL-enriched CSV를 먹어야 하고, **그 CSV 생산(검색/스크랩/수기)은 별도 상류 파이프라인**으로 사람이 소유. URL없는 행을 조용히 실패처리하지 말 것.
 - **동시성 풀:** asyncio 세마포어 기본 8·최대 12(24GB/12코어, ~1GB/run, **메모리 바인딩**). 각 슬롯이 `main.run(...)`.
 - **exit 라우팅(기존 3코드 계약 재사용):** `0 USEFUL`→완료·10% 검증샘플 후보 / `1 EMPTY`→백오프 재시도(최대 2회)→소진시 human inbox / `2 SKIP`→재시도금지·공짜 curl 검증 큐.
-- **429 백오프:** 진짜 천장은 API TPM/RPM(머신 아님 — `HANDOFF.md` §2). 글로벌 토큰버킷/지수백오프, transient로 재큐(실패 아님). per-run 예산캡과 별개.
-- **진행·집계:** done/empty/skip/failed, 평균비용(time-cap런은 비용없는 갭 — `HANDOFF.md` §4-2), 유효율(설계상 ~100%), ETA.
+- **429 백오프:** 진짜 천장은 API TPM/RPM(머신 아님 — `CLAUDE.md` "측정된 운영 사실"). 글로벌 토큰버킷/지수백오프, transient로 재큐(실패 아님). per-run 예산캡과 별개.
+- **진행·집계:** done/empty/skip/failed, 평균비용(time-cap런은 `ResultMessage` 미수신으로 비용없는 갭 — `CLAUDE.md` "측정된 운영 사실"의 알려진 갭), 유효율(설계상 ~100%), ETA.
 - **resume 상태(§5):** 모든 상태전이 영속화, 재시작시 done 스킵·in-flight/empty 재큐. 멱등.
 - **주기적 진화 트리거:** N건(예 250)마다 신규런 멈추고 검증샘플 + `evolve.py` 제안, diff를 inbox로, 재개. 진화는 배치를 **막지 않음**(제안은 큐잉, 사람 머지 전까진 현재 뇌로 계속).
 - **human inbox** `memory/inbox.jsonl`: 소진된 EMPTY·의심 SKIP·차단 사이트 + 병원별 `crawl_metadata.follow_up`의 배치레벨 롤업.
@@ -134,10 +134,10 @@
 
 ## 사람 결정점 (STOP)
 - **Phase 0 후:** 10개 opus 출력이 진짜 금인가?
-- **Phase 2 실런 전:** 인증 모델(구독 vs API키+tier — 지속 8k엔 API키, `HANDOFF.md` §2).
+- **Phase 2 실런 전:** 인증 모델(구독 vs API키+tier — 지속 8k엔 API키; `CLAUDE.md` Commands 절).
 - **Phase 3/6 유료게이트 전:** 재크롤 예산(~$10–30/사이클) 승인.
 - **매 진화 제안:** diff + 골든 델타 검토 후 머지(핵심 사람 게이트).
 - **실 8,000 배치 전:** URL 확보 파이프라인 해결.
 
 ---
-*설계 출처: 2026-06-16 세션. 영감: Addy Osmani, "Loop Engineering". 현 구현 상태·실측은 `HANDOFF.md`.*
+*설계 출처: 2026-06-16 세션. 영감: Addy Osmani, "Loop Engineering". 현 구현 상태·운영 규칙·측정된 사실은 `CLAUDE.md`.*

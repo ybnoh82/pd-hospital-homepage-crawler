@@ -544,15 +544,206 @@ def _fix_at(data, skeleton, loc):
     return False
 
 
+def _empty(v):
+    """None·빈문자열·빈리스트·빈딕트를 '값 없음'으로 본다."""
+    return v is None or v == "" or v == [] or v == {}
+
+
+# 에이전트가 operation_info 자리에 자주 쓰는 별칭 필드명 → 스키마 필드명.
+_OPERATION_ALIASES = {
+    "registration_number": "business_number",
+    "business_registration_number": "business_number",
+    "biz_number": "business_number",
+    "representative": "representative_name",
+    "representative_director": "representative_name",
+    "ceo": "representative_name",
+    "tel": "phone",
+    "phone_number": "phone",
+    "hours": "operating_hours",
+    "hours_note": "operating_hours_note",
+}
+
+# unmatched 제품/장비 항목에서 raw_name 대신 쓰이는 이름 키들(우선순위 순).
+_NAME_ALIASES = (
+    "raw_name",
+    "name",
+    "product_name",
+    "equipment_name",
+    "product",
+    "equipment",
+    "title",
+    "label",
+)
+
+
+def _as_unmatched(it):
+    """제품/장비 보류 항목을 raw_name 키를 갖도록 정규화한다. 만들 수 없으면 None."""
+    if isinstance(it, str):
+        return {"raw_name": it.strip()} if it.strip() else None
+    if not isinstance(it, dict):
+        return None
+    if it.get("raw_name"):
+        return it
+    for k in _NAME_ALIASES:
+        if it.get(k):
+            return {**it, "raw_name": it[k]}
+    return None
+
+
+def _normalize_pe(raw, kind, matched_key, unmatched_key, required):
+    """제품/장비 블록을 스키마 구조(`{kind: {matched, unmatched}}`)로 모은다.
+
+    에이전트가 최상위에 둔 matched_*/unmatched_*와, raw[kind]가 dict든 list든 모두 합친다.
+    매칭 정식명(required: product_kr/name_kr)이 없는 matched 항목은 거짓 매칭을 막기 위해
+    버리지 않고 unmatched로 내린다(이름은 보존).
+    """
+    node = raw.get(kind)
+    block = node if isinstance(node, dict) else {}
+    extra_list = node if isinstance(node, list) else []
+    matched_src = (block.get(matched_key) or []) + (raw.pop(matched_key, None) or [])
+    unmatched_src = (
+        (block.get(unmatched_key) or [])
+        + (raw.pop(unmatched_key, None) or [])
+        + extra_list
+    )
+
+    matched, demoted = [], []
+    for it in matched_src:
+        if isinstance(it, dict) and it.get(required):
+            matched.append(it)
+        else:  # 정식명 없는 matched → 거짓매칭 방지 위해 unmatched로 살려 내린다
+            u = _as_unmatched(it)
+            if u:
+                demoted.append(u)
+    unmatched = [u for u in (_as_unmatched(x) for x in unmatched_src) if u] + demoted
+    if matched or unmatched:
+        raw[kind] = {matched_key: matched, unmatched_key: unmatched}
+
+
+def _normalize_operation(raw):
+    """operation_info를 스키마 구조로 모은다. business_info 별칭과 키 별칭을 흡수한다."""
+    op = raw.get("operation_info") if isinstance(raw.get("operation_info"), dict) else {}
+    bi = raw.pop("business_info", None)
+    merged = {}
+    for src in [op, bi if isinstance(bi, dict) else {}]:  # op(정식)이 먼저 → 우선
+        for k, v in src.items():
+            key = _OPERATION_ALIASES.get(k, k)
+            if not _empty(v) and _empty(merged.get(key)):
+                merged[key] = v
+    # 주소는 operation_info 스키마에 없으니 최상위 address로 옮긴다(빈 경우만).
+    addr = merged.pop("address", None)
+    if addr and _empty(raw.get("address")):
+        raw["address"] = {"road_address": addr} if isinstance(addr, str) else addr
+    if merged:
+        raw["operation_info"] = merged
+
+
+def _normalize_language(raw):
+    """language_support를 `{supported_languages: [...]}` 구조로 모은다."""
+    node = raw.get("language_support")
+    ls = (
+        node
+        if isinstance(node, dict)
+        else {"supported_languages": node}
+        if isinstance(node, list)
+        else {}
+    )
+    if _empty(ls.get("supported_languages")):
+        for alias in ("languages_supported", "languages", "language", "supported_languages"):
+            v = raw.get(alias)
+            if isinstance(v, str):
+                v = [v]
+            if v:
+                ls["supported_languages"] = v
+                break
+    for alias in ("languages_supported", "languages", "language", "supported_languages"):
+        raw.pop(alias, None)
+    if ls:
+        raw["language_support"] = ls
+
+
+def _normalize_metadata(raw):
+    """최상위에 흩어진 크롤 메타(crawl_method·pages_visited 등)를 crawl_metadata로 모은다."""
+    cm = (
+        raw.get("crawl_metadata")
+        if isinstance(raw.get("crawl_metadata"), dict)
+        else {}
+    )
+    for top in ("crawl_method", "pages_visited", "pages_crawled", "follow_up", "errors"):
+        if top in raw:
+            if _empty(cm.get(top)):
+                cm[top] = raw[top]
+            raw.pop(top, None)
+    if isinstance(raw.get("notes"), list) and _empty(cm.get("notes")):
+        cm["notes"] = raw.pop("notes")
+    if cm:
+        raw["crawl_metadata"] = cm
+
+
+def normalize_aliases(raw):
+    """에이전트가 스키마와 다른 흔한 필드명·위치로 쓴 데이터를 스키마 구조로 옮긴다.
+
+    repair_to_valid는 스키마 밖 최상위 키와 필수 필드가 빠진 항목을 통째로 버리므로, 이
+    패스가 없으면 거둔 데이터가 조용히 사라진다 — 저비용 모델(Sonnet/low)이 흔히
+    business_info(↔operation_info)·staff(↔doctors)·최상위 matched_products(↔products 중첩)·
+    unmatched 항목 {"name":..}(↔{"raw_name":..})·languages_supported(↔language_support)·
+    최상위 crawl_method 등으로 쓴다(실측: 기본 설정 sample10 10/10 EMPTY의 직접 원인).
+    보수적으로: 정식 필드가 이미 차 있으면 덮지 않고 빈 칸만 채우며, 매칭 근거 없는 항목을
+    matched로 올리지 않는다(거짓 매칭 방지). aggregate_from_treatments와 같은 무손실 철학.
+    """
+    import copy
+
+    if not isinstance(raw, dict):
+        return raw
+    raw = copy.deepcopy(raw)
+
+    _normalize_pe(raw, "products", "matched_products", "unmatched_products", "product_kr")
+    _normalize_pe(raw, "equipments", "matched_equipments", "unmatched_equipments", "name_kr")
+    _normalize_operation(raw)
+    _normalize_language(raw)
+    _normalize_metadata(raw)
+
+    if _empty(raw.get("doctors")) and raw.get("staff"):
+        raw["doctors"] = raw.get("staff")
+    raw.pop("staff", None)
+    for d in raw.get("doctors") or []:
+        if isinstance(d, dict) and not d.get("name"):
+            for k in ("doctor_name", "full_name"):
+                if d.get(k):
+                    d["name"] = d[k]
+                    break
+
+    if isinstance(raw.get("address"), str):
+        raw["address"] = {"road_address": raw["address"]}
+
+    for t in raw.get("treatments") or []:
+        if not isinstance(t, dict):
+            continue
+        if not t.get("treatment_name"):
+            for k in ("name", "title", "treatment", "treatment_kr"):
+                if t.get(k):
+                    t["treatment_name"] = t[k]
+                    break
+        p = t.get("price")
+        if isinstance(p, str) and p.strip():
+            t["price"] = {"text": p.strip()}
+        elif isinstance(p, (int, float)) and not isinstance(p, bool):
+            t["price"] = {"low": int(p), "text": str(p)}
+
+    return raw
+
+
 def repair_to_valid(raw, skeleton):
     """raw를 스켈레톤 위에 얹고 무효 부분만 떨궈 스키마를 통과하는 dict로 만든다.
 
-    유효 데이터는 최대한 보존하고, 시술에 거둔 제품·장비 이름은 `aggregate_from_treatments`로
-    최상위 unmatched에 보강한다(무손실 — 이 보장을 함수 안에 둬 모든 호출자가 받게 한다).
-    반환값은 항상 스키마에 맞는다(보장).
+    먼저 normalize_aliases로 별칭 필드명·위치(business_info·staff·최상위 matched_* 등)를
+    스키마 구조로 옮긴 뒤(버리기 전에 살린다), 유효 데이터는 최대한 보존하고, 시술에 거둔
+    제품·장비 이름은 aggregate_from_treatments로 최상위 unmatched에 보강한다(무손실 — 이
+    보장을 함수 안에 둬 모든 호출자가 받게 한다). 반환값은 항상 스키마에 맞는다(보장).
     """
     from pydantic import ValidationError
 
+    raw = normalize_aliases(raw)
     data = {**skeleton, **{k: v for k, v in raw.items() if k in skeleton}}
     result = None
     for _ in range(500):

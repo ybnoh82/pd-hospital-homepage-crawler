@@ -97,11 +97,17 @@ SHAPE_HINTS = {
 }
 
 
-def build_prompt(url: str, info: dict[str, str], shape_hint: str | None = None) -> str:
+def build_prompt(
+    url: str,
+    info: dict[str, str],
+    shape_hint: str | None = None,
+    output_dir: str = "output",
+) -> str:
     """스킬을 호출하도록 유도하는 프롬프트를 만든다.
 
     info에 채워진 항목만 입력으로 넘긴다(빈 값은 생략).
     shape_hint(트리아지 분류 결과)가 있으면 정찰 참고용으로 한 줄 덧붙인다.
+    output_dir로 에이전트가 저장할 디렉토리를 지정한다(기본 output).
     """
     fields = [
         ("hospital_id", info.get("id")),
@@ -121,7 +127,7 @@ def build_prompt(url: str, info: dict[str, str], shape_hint: str | None = None) 
 
     return (
         f"{SKILL_NAME} 스킬을 사용해 아래 병원 공식 홈페이지를 크롤링·추출하고, "
-        "결과를 output/{병원ID}_{병원이름}_homepage.json에 저장한 뒤 스키마로 검증한다.\n\n"
+        f"결과를 {output_dir}/{{병원ID}}_{{병원이름}}_homepage.json에 저장한 뒤 스키마로 검증한다.\n\n"
         f"- homepage_url: {url}\n"
         f"{info_block}\n"
         f"{hint_block}\n"
@@ -142,9 +148,29 @@ def build_prompt(url: str, info: dict[str, str], shape_hint: str | None = None) 
     )
 
 
+# --log 활성화 시 log()가 stdout과 함께 출력을 쓰는 파일 핸들(없으면 stdout만).
+_LOG_FH = None
+
+
 def log(*args: object) -> None:
-    """파이프로 출력해도 즉시 보이도록 flush한다."""
+    """stdout에 즉시(flush) 출력하고, 로그 파일이 열려 있으면 거기에도 같이 쓴다."""
     print(*args, flush=True)
+    if _LOG_FH is not None:
+        print(*args, file=_LOG_FH, flush=True)
+
+
+def open_run_log(info: dict[str, str | None], log_dir: str = "logs"):
+    """logs/{id}.log를 열어 전역 핸들에 건다(이후 log()가 자동 tee).
+
+    파일명은 출력 JSON과 같은 식별자(id)를 쓴다 — id가 없으면 이름, 그것도 없으면 unknown.
+    반환한 핸들은 호출자가 close한다(main의 finally).
+    """
+    global _LOG_FH
+    log_root = PROJECT_ROOT / log_dir
+    log_root.mkdir(exist_ok=True)
+    stem = info.get("id") or info.get("hospital_name") or info.get("name") or "unknown"
+    _LOG_FH = open(log_root / f"{stem}.log", "w", encoding="utf-8")
+    return _LOG_FH
 
 
 def render_message(msg: object) -> str | None:
@@ -167,16 +193,20 @@ def render_message(msg: object) -> str | None:
     return None
 
 
-def expected_output_path(info: dict[str, str | None]) -> Path | None:
+def expected_output_path(
+    info: dict[str, str | None], output_dir: str = "output"
+) -> Path | None:
     """스킬이 저장할 결과 파일 경로. id·이름을 둘 다 알 때만 계산 가능."""
     hid = info.get("id")
     name = info.get("hospital_name") or info.get("name")
     if hid and name:
-        return PROJECT_ROOT / "output" / f"{hid}_{name}_homepage.json"
+        return PROJECT_ROOT / output_dir / f"{hid}_{name}_homepage.json"
     return None
 
 
-def backfill_cost(path: Path, result: ResultMessage, model: str | None) -> bool:
+def backfill_cost(
+    path: Path, result: ResultMessage, model: str | None, effort: str | None
+) -> bool:
     """저장된 JSON의 crawl_metadata.cost를 러너가 관측한 실측값으로 채운다.
 
     에이전트는 자기 토큰·비용을 못 보므로 cost를 null로 남긴다(SKILL.md §8).
@@ -190,6 +220,7 @@ def backfill_cost(path: Path, result: ResultMessage, model: str | None) -> bool:
     usage = result.usage or {}
     observed = {
         "model": model or next(iter(result.model_usage or {}), None),
+        "effort": effort if (effort and supports_effort(model)) else None,
         "input_tokens": usage.get("input_tokens"),
         "output_tokens": usage.get("output_tokens"),
         "cost_usd": round(result.total_cost_usd, 4)
@@ -280,9 +311,10 @@ async def run(
     effort: str | None,
     time_limit: float,
     no_triage: bool = False,
+    output_dir: str = "output",
 ) -> int:
-    (PROJECT_ROOT / "output").mkdir(exist_ok=True)
-    out_path = expected_output_path(info)
+    (PROJECT_ROOT / output_dir).mkdir(exist_ok=True)
+    out_path = expected_output_path(info, output_dir)
 
     # prefetch 트리아지: 크롤 전에 curl로 싸게 분류한다(~$0·수초). 죽은 도메인·비타깃
     # 진료과(안과·내과 등)면 비싼 에이전트를 띄우지 않고 유효 스켈레톤만 쓰고 제외한다.
@@ -338,7 +370,7 @@ async def run(
     loop = asyncio.get_event_loop()
     try:
         async with ClaudeSDKClient(options=options) as client:
-            await client.query(build_prompt(url, info, shape_hint))
+            await client.query(build_prompt(url, info, shape_hint, output_dir))
             start = loop.time()
             try:
                 async with asyncio.timeout(time_limit):
@@ -371,7 +403,7 @@ async def run(
     if out_path is not None:
         useful = repair_output(out_path, info, url)
         if last_result is not None:
-            backfill_cost(out_path, last_result, model or seen_model)
+            backfill_cost(out_path, last_result, model or seen_model, effort)
 
     log("\n" + "─" * 48)
     if last_result is not None:
@@ -445,6 +477,21 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
         action="store_true",
         help="prefetch 트리아지(비타깃·죽은 사이트 사전 차단)를 끄고 무조건 크롤한다",
     )
+    p.add_argument(
+        "--log",
+        action="store_true",
+        help="실행 출력을 {log-dir}/{id}.log 파일로도 남긴다(stdout과 함께). 배치 운영용",
+    )
+    p.add_argument(
+        "--output-dir",
+        default="output",
+        help="결과 JSON을 저장할 디렉토리. 기본 output. 조합 테스트 시 분리용",
+    )
+    p.add_argument(
+        "--log-dir",
+        default="logs",
+        help="--log 사용 시 로그를 남길 디렉토리. 기본 logs",
+    )
     return p.parse_args(argv)
 
 
@@ -466,17 +513,27 @@ def main(argv: list[str] | None = None) -> int:
             "address": args.address,
         }
 
-    return asyncio.run(
-        run(
-            args.url,
-            info,
-            args.budget,
-            args.model,
-            args.effort,
-            args.time_limit,
-            args.no_triage,
+    # --log면 logs/{id}.log를 열어 두면 run() 내내 log()가 stdout과 함께 tee한다.
+    # run()의 여러 return 지점을 건드리지 않도록 여기서 열고 finally로 닫는다.
+    global _LOG_FH
+    log_fh = open_run_log(info, args.log_dir) if args.log else None
+    try:
+        return asyncio.run(
+            run(
+                args.url,
+                info,
+                args.budget,
+                args.model,
+                args.effort,
+                args.time_limit,
+                args.no_triage,
+                args.output_dir,
+            )
         )
-    )
+    finally:
+        if log_fh is not None:
+            log_fh.close()
+            _LOG_FH = None
 
 
 if __name__ == "__main__":

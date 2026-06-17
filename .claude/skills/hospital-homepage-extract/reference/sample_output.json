@@ -4,8 +4,8 @@
   "crawled_at": "2026-01-01T00:00:00+09:00",
   "address": {
     "sido": "서울",
-    "sigungu": "강남구",
-    "eupmyeondong": "역삼동",
+    "sggu": "강남구",
+    "emdong": "역삼동",
     "road_address": "서울특별시 강남구 ○○로 00, 0층",
     "latitude": 37.5,
     "longitude": 127.03
@@ -220,7 +220,8 @@
       }
     ],
     "cost": {
-      "model": "claude-fable-5",
+      "model": "claude-opus-4-8",
+      "effort": "high",
       "input_tokens": 152340,
       "output_tokens": 8412,
       "cost_usd": 1.87,

@@ -19,10 +19,26 @@ wheels/
 # ruff
 .ruff_cache
 
-# 크롤 산출물(병원별 결과 JSON) — 생성물이라 추적하지 않음
+# 크롤 산출물(병원별 결과 JSON) — 생성물이라 추적하지 않음.
+# output_* 는 --output-dir로 만든 조합 테스트·비교 스냅샷 디렉토리(예: output_opus_low_…).
 output/
+output_*/
 
 # 크롤 중 저장된 스크린샷 아티팩트(루트에 떨어진 vision 캡처)
+# 정상 동작 시엔 .playwright-mcp/ 아래에만 떨어지지만(SKILL.md §0), 캡에 끊겨
+# 루트에 남는 경우를 대비한 백스톱.
 /*.jpeg
 /*.jpg
 /*.png
+
+# 크롤 중간 덤프(에이전트가 루트에 떨군 임시 파일 — SKILL.md §0 위반 백스톱)
+/.tmp_*
+/recon_*.json
+
+# 실행 로그·비교 스냅샷 디렉토리(배치/세션 산물).
+# logs_* / *_logs 는 --log-dir로 만든 조합 테스트 로그 디렉토리.
+logs/
+logs_*/
+crawl_logs/
+crawl_logs_*/
+*_logs/

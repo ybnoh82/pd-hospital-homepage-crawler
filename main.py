@@ -34,16 +34,18 @@ from triage import triage
 PROJECT_ROOT = Path(__file__).resolve().parent
 SKILL_NAME = "hospital-homepage-extract"
 
-# 기본 모델. 8,000개 배치의 비용·속도 목표(병원당 평균 $1·5분 이내)와 품질의 균형점.
-# Haiku 4.5($1/$5)는 가장 싸지만 이 멀티스텝 에이전트 스킬(SPA 탐색·매칭·vision)에서
-# 조기 종료·미저장으로 완주에 실패했다(측정). Sonnet 4.6($3/$15, Opus의 0.6배)은
-# 안정적으로 완주하며 effort로 비용을 더 줄일 수 있다. 하드 사이트는 --model로 Opus.
-DEFAULT_MODEL = "claude-sonnet-4-6"
+# 기본 모델. sample10 model×effort 매트릭스(60런, 2026-06-17)에서 Opus가 매칭률
+# (제품 52~56% vs Sonnet 34~51%)·운영정보 캡처(전화·진료시간 100% vs Sonnet 60~90%)에서
+# 일관 우위였고, $3 예산캡에 먼저 닿아 더 빨리 끝났다(중앙 400~520s). 반면 Sonnet/high는
+# 900s 시간캡에 걸려 느리고(중앙 860s) 비용 기록까지 잃어 dominated였다. Haiku 4.5는 이
+# 멀티스텝 에이전트(SPA·매칭·vision)에서 조기 종료로 완주 실패(측정). 그래서 기본을 Opus로.
+DEFAULT_MODEL = "claude-opus-4-8"
 
-# 추론 effort. Sonnet 4.6/Opus만 지원(Haiku는 에러). 멀티스텝(SPA·매칭·vision·스키마
-# 정합 저장)에서 추론량이 완주 품질을 좌우한다 — low는 정찰만 하다 조기 종료·미저장이
-# 잦았다(실측). 비용·시간 캡을 넉넉히 둔 만큼 high로 올려 완성도를 우선한다.
-DEFAULT_EFFORT = "high"
+# 추론 effort. Sonnet 4.6/Opus만 지원(Haiku는 에러). 매트릭스 실측상 Opus는 effort에 따라
+# 매칭 품질이 평탄(low≈medium≈high ~52~56%)하나, medium이 시술 수집량(평균 29 vs low 21)과
+# 비용($2.68)의 균형점이었다 — low는 더 싸고 빠르나 거두는 양이 적고, high는 비용만 더 든다.
+# 완전성과 비용의 절충으로 medium을 기본으로 둔다(비용 최우선이면 --effort low).
+DEFAULT_EFFORT = "medium"
 
 # 비용 하드캡($). 미용·성형 사이트는 콘텐츠가 풍부해 거의 캡에 닿는다. 타이트한 캡은
 # 카탈로그 매칭·스키마 정합 최종저장을 못 끝내고 끊겼다(실측: 저비용 캡 재크롤 다수 EMPTY).

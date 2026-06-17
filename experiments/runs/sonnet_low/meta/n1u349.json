@@ -1,0 +1,13 @@
+{
+  "combo": "sonnet_low",
+  "model_short": "sonnet",
+  "model_id": "claude-sonnet-4-6",
+  "effort": "low",
+  "id": "n1u349",
+  "name": "대치오라클피부과의원",
+  "url": "http://daechi.oracleclinic.com/",
+  "exit_code": 0,
+  "wall_seconds": 659.0,
+  "hard_killed": false,
+  "start_ts": 1781675294.5
+}

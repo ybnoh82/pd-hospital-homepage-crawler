@@ -1,0 +1,13 @@
+{
+  "combo": "opus_low",
+  "model_short": "opus",
+  "model_id": "claude-opus-4-8",
+  "effort": "low",
+  "id": "smado8",
+  "name": "리프톤피부과의원",
+  "url": "https://www.liftonskin.com/",
+  "exit_code": 0,
+  "wall_seconds": 316.3,
+  "hard_killed": false,
+  "start_ts": 1781666175.6
+}

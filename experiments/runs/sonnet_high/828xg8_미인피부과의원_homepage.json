@@ -1,0 +1,1067 @@
+{
+  "hospital_id": "828xg8",
+  "hospital_name": "미인피부과의원",
+  "crawled_at": "2026-06-17",
+  "address": {
+    "sido": "서울",
+    "sggu": "강남구",
+    "emdong": "청담동",
+    "road_address": "서울특별시 강남구 압구정로 461 (청담동 118-17 네이처포엠 2층)",
+    "latitude": null,
+    "longitude": null
+  },
+  "homepage_url": "http://www.meinclinic.com/",
+  "identity_status": "match",
+  "alternative_urls": [],
+  "branches": {
+    "type": "single",
+    "network_group": null,
+    "this_branch_name": null,
+    "sibling_branches": []
+  },
+  "operation_info": {
+    "hospital_name": "미인피부과",
+    "representative_name": "이수근",
+    "business_number": null,
+    "phone": "02-594-3375",
+    "phone_secondary": null,
+    "fax": "02-594-3779",
+    "email": null,
+    "kakao_channel": null,
+    "operating_hours": null,
+    "operating_hours_note": "홈페이지 내 영업시간 정보 미게재",
+    "parking_info": null,
+    "transport_info": "분당선 압구정 로데오역 2번출구 도보 9분; 7호선 청담역 9번출구 도보 14분; 네이처포엠 빌딩(1층 S.T. 듀퐁·끌로에 매장) 2층",
+    "facilities": []
+  },
+  "doctors": [
+    {
+      "name": "이수근",
+      "is_representative": true,
+      "role": "대표원장",
+      "specialty": [
+        "피부과전문의",
+        "의학박사"
+      ],
+      "education": [
+        "서울대학교 의과대학 졸업 (MD)",
+        "서울대학교 대학원 의학석사 (MS)",
+        "서울대학교 대학원 의학박사 (PhD)"
+      ],
+      "career": [
+        "청담 미인피부과 대표원장",
+        "분당서울대학병원 피부과 외래진료교수 (매주 수요일 오후 1:00~5:00)",
+        "미국피부과학회(AAD) 정회원",
+        "대한피부항노화연구회(KAAD) 회장",
+        "대한미용피부외과학회(KSDS) 이사",
+        "대한피부과의사회 보톡스-필러카페 대표운영자"
+      ],
+      "associations": [
+        "미국피부과학회(AAD)",
+        "대한피부항노화연구회(KAAD)",
+        "대한미용피부외과학회(KSDS)"
+      ],
+      "awards": [
+        "영국 캠브리지 국제인명센터(IBC) 선정 올해의 의학자상 (2010)",
+        "마르퀴스 후즈후 의학인명사전 제7판(2009~2010) 등재",
+        "마르퀴스 후즈후 세계인명사전 제28판 (2011) 등재"
+      ],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    }
+  ],
+  "products": {
+    "matched_products": [
+      {
+        "product_kr": "보톡스",
+        "brand_kr": "보톡스",
+        "manufacturer_kr": "엘러간",
+        "category": "톡신",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 12,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/clinic-1/",
+            "evidence": "보톡스 클리닉 12종 시술(이마/미간/사각턱/쇄골/미스빕 등) 전체를 '보톡스' 브랜드명으로 표기"
+          }
+        ],
+        "context": "홈페이지 메뉴에 '보톡스 클리닉' 섹션으로 명시. 12종 시술 모두 보톡스 브랜드명 사용. Allergan 보톡스가 직접 표기됨",
+        "verification_status": "verified"
+      }
+    ],
+    "unmatched_products": [
+      {
+        "raw_name": "필러(히알루론산)",
+        "category_guess": "필러",
+        "mention_count": 12,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/clinic-2-2/",
+            "evidence": "필러 클리닉 12종 시술에서 '필러' 표기, 히알루론산 성분 언급. 구체적 브랜드명(레스틸렌/쥬비덤/이브아르 등) 미언급"
+          }
+        ],
+        "context": "필러 클리닉 12종 시술 전반에서 '필러' 사용. 히알루론산 기반으로 설명. 특정 제품 브랜드 미언급으로 매칭 불가",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "물광주사(슈퍼 물광주사) - HA+PDRN/PN",
+        "category_guess": "스킨부스터",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/clinic-2-2/",
+            "evidence": "필러 클리닉 12번 항목 '(슈퍼) 물광주사'. HA + PDRN 또는 PN 성분 명시. 구체적 제품명 미언급"
+          }
+        ],
+        "context": "하이드로리프팅(hydrolifting). 히알루론산으로 피부 윤기·탄력. 슈퍼 물광주사는 PDRN/PN 추가. 구체적 제품명(리쥬란 등) 미언급으로 매칭 불가",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "필러(HA)",
+        "category_guess": null,
+        "mention_count": 11,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/clinic-2-2/",
+            "evidence": null
+          }
+        ],
+        "context": "시술(treatments)에서 자동 집계 — 카탈로그 매칭 미수행",
+        "verification_status": null
+      },
+      {
+        "raw_name": "물광주사(HA+PDRN/PN)",
+        "category_guess": null,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/clinic-2-2/",
+            "evidence": null
+          }
+        ],
+        "context": "시술(treatments)에서 자동 집계 — 카탈로그 매칭 미수행",
+        "verification_status": null
+      }
+    ]
+  },
+  "equipments": {
+    "matched_equipments": [
+      {
+        "name_kr": "더블로",
+        "name_en": "Doublo",
+        "category": "리프팅",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/clinic-5/",
+            "evidence": "레이저 클리닉 1번 항목 '더블로 리프팅'. 초음파(HIFU) SMAS층 치료 설명"
+          },
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/clinic-4/",
+            "evidence": "리프팅 클리닉 섹션 '더블로나 울쎄라 같은 초음파(HIFU)치료' 병기"
+          }
+        ],
+        "context": "레이저 클리닉 1번 항목으로 독립 섹션. HIFU 초음파로 SMAS층 치료. 6~12개월에 한 번 치료. 카탈로그 no.3 더블로 직접 일치",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "울쎄라",
+        "name_en": "Ulthera",
+        "category": "리프팅",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/clinic-4/",
+            "evidence": "특수클리닉 리프팅 섹션 '더블로나 울쎄라 같은 초음파(HIFU)치료를 강력하게 권장' 명시"
+          }
+        ],
+        "context": "특수클리닉 리프팅 섹션에서 '더블로나 울쎄라' 병기로 언급. 레이저 클리닉 메뉴에는 별도 섹션 없으나 취급 확인. 카탈로그 no.1 울쎄라 일치",
+        "verification_status": "inferred"
+      },
+      {
+        "name_kr": "프락셀",
+        "name_en": "Fraxel",
+        "category": "재생 / 흉터",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/clinic-4/",
+            "evidence": "흉터치료 클리닉 '셀라스나 프락셀 등의 프랙셔날레이저' 명시. 모공클리닉에도 '셀라스나 프락셀과 같은 프랙셔날레이저' 언급"
+          }
+        ],
+        "context": "특수클리닉 흉터치료·모공 섹션에서 '셀라스나 프락셀' 병기로 언급. 취급 확인. 카탈로그 no.22 프락셀 일치",
+        "verification_status": "inferred"
+      },
+      {
+        "name_kr": "루비 레이저",
+        "name_en": "Ruby Laser",
+        "category": "색소",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/clinic-5/",
+            "evidence": "레이저 클리닉 주근깨·후천성오타양모반(ABNOM) 섹션에서 'ruby laser' 명시"
+          }
+        ],
+        "context": "레이저 클리닉 주근깨·ABNOM 치료 설명에서 ruby laser 언급. 특정 장비명은 아니나 루비 레이저 사용 확인. 카탈로그 no.19 루비 레이저 일치",
+        "verification_status": "inferred"
+      }
+    ],
+    "unmatched_equipments": [
+      {
+        "raw_name": "셀라스 (Selas)",
+        "category_guess": "레이저 - 프랙셔널",
+        "mention_count": 3,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/clinic-5/",
+            "evidence": "레이저 클리닉 2번 항목으로 독립 섹션. PPA technology 프랙셔날 레이저 설명"
+          },
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/clinic-4/",
+            "evidence": "흉터치료·모공클리닉 섹션에서도 '셀라스' 언급"
+          }
+        ],
+        "context": "레이저 클리닉 2번 독립 항목. PPA technology 프랙셔날 레이저로 모공·여드름흉터 치료. 카탈로그 조회: 셀라스, Selas 모두 미수록",
+        "verification_status": "verified"
+      },
+      {
+        "raw_name": "IPL",
+        "category_guess": "레이저 - IPL",
+        "mention_count": 3,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/clinic-5/",
+            "evidence": "레이저 클리닉 3번 항목 'IPL(intense pulsed light)'. 기미·잡티·주근깨·잔주름 치료"
+          },
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/clinic-4/",
+            "evidence": "기미잡티클리닉·중년여성클리닉에서 IPL 언급"
+          }
+        ],
+        "context": "레이저 클리닉 3번 독립 항목. 구체적 IPL 기기명(BBL·Nordlys 등) 미언급. 카탈로그에서 IPL 기기 다수 있으나 특정 장비 특정 불가",
+        "verification_status": "verified"
+      },
+      {
+        "raw_name": "폴라리스 (Polaris)",
+        "category_guess": "레이저 - RF+레이저 복합",
+        "mention_count": 3,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/clinic-5/",
+            "evidence": "레이저 클리닉 4번 항목. 고주파(RF)+다이오드 레이저 결합 장비"
+          },
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/clinic-4/",
+            "evidence": "모공클리닉·중년여성클리닉에서 '폴라리스' 언급"
+          }
+        ],
+        "context": "레이저 클리닉 4번 독립 항목. RF+다이오드 레이저 결합. 카탈로그 조회: 폴라리스, Polaris 모두 미수록(Syneron 구형 장비)",
+        "verification_status": "verified"
+      },
+      {
+        "raw_name": "크리디오라이트",
+        "category_guess": "레이저 - 다이오드+냉각",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/clinic-5/",
+            "evidence": "레이저 클리닉 12번 항목 '크리디오라이트'. 냉각시스템+다이오드 레이저 결합 저출력 레이저"
+          }
+        ],
+        "context": "레이저 클리닉 12번 독립 항목. 피부 진정·홍반 감소 목적. 카탈로그 조회: 크리디오라이트 미수록",
+        "verification_status": "verified"
+      },
+      {
+        "raw_name": "Q-스위치 Nd:YAG 레이저",
+        "category_guess": "레이저 - Q스위치",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/clinic-5/",
+            "evidence": "레이저토닝 '레이저 토닝이란 Q-스위치 Nd:YAG 레이저의 강도를 약하게 하여', 후천성오타양모반 치료에도 언급"
+          }
+        ],
+        "context": "레이저토닝·후천성오타양모반 치료 설명에서 Q-스위치 Nd:YAG 레이저 기술 유형 언급. 특정 장비명(레블라이트 등) 미언급으로 카탈로그 매칭 불가",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "Er:YAG 레이저",
+        "category_guess": "레이저 - 박피",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/clinic-6/",
+            "evidence": "레이저박피 섹션 'Er:YAG와 같은 강력한 레이저를 이용하여 피부를 깎아내는' 명시"
+          }
+        ],
+        "context": "레이저박피 치료 설명에서 Er:YAG 레이저 기술 유형 언급. 특정 장비명 미언급으로 카탈로그 매칭 불가",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "alexandrite 레이저",
+        "category_guess": "레이저 - 알렉산드라이트",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/clinic-5/",
+            "evidence": "주근깨·후천성오타양모반 치료 설명에서 'alexandrite laser' 언급"
+          },
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/clinic-4/",
+            "evidence": "문신제거 클리닉 '엔디야그나 알렉산드라이트 레이저' 언급"
+          }
+        ],
+        "context": "레이저 기술 유형 언급. 특정 장비명(피코슈어·젠틀맥스 등) 미언급으로 카탈로그 매칭 불가",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "CO2 레이저",
+        "category_guess": "레이저 - CO2",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/clinic-5/",
+            "evidence": "주근깨 치료 'CO2 laser' 언급"
+          },
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/clinic-4/",
+            "evidence": "사마귀 클리닉 'CO2 레이저로 파내거나' 언급"
+          }
+        ],
+        "context": "CO2 레이저 기술 유형 언급. 특정 장비명(ActiveFX·eCO2 등) 미언급으로 카탈로그 매칭 불가",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "셀라스",
+        "category_guess": null,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/clinic-5/",
+            "evidence": null
+          }
+        ],
+        "context": "시술(treatments)에서 자동 집계 — 카탈로그 매칭 미수행",
+        "verification_status": null
+      },
+      {
+        "raw_name": "폴라리스",
+        "category_guess": null,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/clinic-5/",
+            "evidence": null
+          }
+        ],
+        "context": "시술(treatments)에서 자동 집계 — 카탈로그 매칭 미수행",
+        "verification_status": null
+      }
+    ]
+  },
+  "manufacturer_signals": [],
+  "treatments": [
+    {
+      "treatment_name": "이마/미간/눈가/눈밑/콧잔등주름 보톡스",
+      "category": "보톡스",
+      "product_name": "보톡스",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "얼굴 상반부 주름 5종세트. 미간주름 제거 적극 권장",
+      "source_page": "http://www.meinclinic.com/clinic-1/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "윗입술주름/입꼬리주름/턱끝주름 보톡스",
+      "category": "보톡스",
+      "product_name": "보톡스",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "입꼬리올리기(corner lip lift). 심하면 필러 병합요법",
+      "source_page": "http://www.meinclinic.com/clinic-1/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "눈썹올리기 (chemical brow lift)",
+      "category": "보톡스",
+      "product_name": "보톡스",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "눈썹 약 1~2mm 상승 효과",
+      "source_page": "http://www.meinclinic.com/clinic-1/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "아래눈꺼풀 근육비후 보톡스",
+      "category": "보톡스",
+      "product_name": "보톡스",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "두꺼운 아래눈꺼풀(hypertrophic orbicularis) 슬림화",
+      "source_page": "http://www.meinclinic.com/clinic-1/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "잇몸노출증 보톡스 (gummy smile)",
+      "category": "보톡스",
+      "product_name": "보톡스",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "효과 약 4개월 지속",
+      "source_page": "http://www.meinclinic.com/clinic-1/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "자갈모양턱 보톡스 (cobblestone chin)",
+      "category": "보톡스",
+      "product_name": "보톡스",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "http://www.meinclinic.com/clinic-1/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "넓은목근띠 보톡스 (platysmal bands)",
+      "category": "보톡스",
+      "product_name": "보톡스",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "http://www.meinclinic.com/clinic-1/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "사각턱 보톡스 (교근비대증)",
+      "category": "보톡스",
+      "product_name": "보톡스",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "시술 2주 후 효과. 4달 후 2차, 이후 6~9개월마다",
+      "source_page": "http://www.meinclinic.com/clinic-1/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "쇄골주사 (승모근 보톡스)",
+      "category": "보톡스",
+      "product_name": "보톡스",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "trapezius hypertrophy 보톡스. 날씬한 목선 연출",
+      "source_page": "http://www.meinclinic.com/clinic-1/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "종아리윤곽술 (calf contouring)",
+      "category": "보톡스",
+      "product_name": "보톡스",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "한 달 후 종아리 둘레 약 1cm 감소. 6~9개월마다",
+      "source_page": "http://www.meinclinic.com/clinic-1/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "각종 다한증 보톡스",
+      "category": "보톡스",
+      "product_name": "보톡스",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "겨드랑이/손바닥/발바닥/미각 다한증. 6~12개월마다",
+      "source_page": "http://www.meinclinic.com/clinic-1/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "미스빕 (메조보톡스, MISBIB)",
+      "category": "보톡스",
+      "product_name": "보톡스",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "Multiple Intradermal Small Bolus Injection of Botulinum toxin. 얼굴리프팅·모공축소·여드름완화·잔주름개선",
+      "source_page": "http://www.meinclinic.com/clinic-1/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "얼굴전체필러 (3F 리프팅, Full Face Filling)",
+      "category": "필러",
+      "product_name": "필러(HA)",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "4cc 이상 필러로 얼굴 전체 리프팅",
+      "source_page": "http://www.meinclinic.com/clinic-2-2/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "이마/관자놀이 필러",
+      "category": "필러",
+      "product_name": "필러(HA)",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "http://www.meinclinic.com/clinic-2-2/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "다크서클/앞광대 필러",
+      "category": "필러",
+      "product_name": "필러(HA)",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "눈물도랑(tear trough). SOOF 부위 주사. 시술시간 10분",
+      "source_page": "http://www.meinclinic.com/clinic-2-2/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "퀭한눈/애교살 필러",
+      "category": "필러",
+      "product_name": "필러(HA)",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "http://www.meinclinic.com/clinic-2-2/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "볼/턱/입술 키우기 필러",
+      "category": "필러",
+      "product_name": "필러(HA)",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "시술시간 5~10분",
+      "source_page": "http://www.meinclinic.com/clinic-2-2/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "코높이기 필러",
+      "category": "필러",
+      "product_name": "필러(HA)",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "낮은코·안장코·매부리코·휜코 교정. 만족도 80~90점. 시술시간 10분 내외",
+      "source_page": "http://www.meinclinic.com/clinic-2-2/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "팔자주름/입꼬리주름 필러",
+      "category": "필러",
+      "product_name": "필러(HA)",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "http://www.meinclinic.com/clinic-2-2/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "귓불키우기 필러",
+      "category": "필러",
+      "product_name": "필러(HA)",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "시술시간 10분 미만",
+      "source_page": "http://www.meinclinic.com/clinic-2-2/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "수평 목주름 필러",
+      "category": "필러",
+      "product_name": "필러(HA)",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "효과 1년 이상 지속",
+      "source_page": "http://www.meinclinic.com/clinic-2-2/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "손등회춘술 필러",
+      "category": "필러",
+      "product_name": "필러(HA)",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "http://www.meinclinic.com/clinic-2-2/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "여드름흉터/수두자국 필러",
+      "category": "필러",
+      "product_name": "필러(HA)",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "진피절제주입법. 효과 6~12개월 지속",
+      "source_page": "http://www.meinclinic.com/clinic-2-2/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "(슈퍼) 물광주사",
+      "category": "스킨부스터",
+      "product_name": "물광주사(HA+PDRN/PN)",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "하이드로리프팅. HA+PDRN/PN 성분. 1달 1회씩 3회, 약 1년 효과",
+      "source_page": "http://www.meinclinic.com/clinic-2-2/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "더블로 리프팅",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "더블로",
+      "price": null,
+      "package": null,
+      "notes": "초음파(HIFU) SMAS층 치료. 6~12개월에 한 번",
+      "source_page": "http://www.meinclinic.com/clinic-5/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "셀라스 (프랙셔날 레이저)",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": "셀라스",
+      "price": null,
+      "package": null,
+      "notes": "PPA technology. 모공·여드름흉터. 2~3주 간격 5회 이상",
+      "source_page": "http://www.meinclinic.com/clinic-5/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "IPL 치료",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": "IPL",
+      "price": null,
+      "package": null,
+      "notes": "기미·잡티·주근깨·잔주름·어두운 피부톤. 2~3주 간격 3~5회",
+      "source_page": "http://www.meinclinic.com/clinic-5/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "폴라리스",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": "폴라리스",
+      "price": null,
+      "package": null,
+      "notes": "RF+다이오드 레이저. 콜라겐 합성, 피지 감소. 2~3주 간격 3~5회",
+      "source_page": "http://www.meinclinic.com/clinic-5/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "눈썹문신 제거",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "2달 간격 2~3회",
+      "source_page": "http://www.meinclinic.com/clinic-5/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "아이라인문신 제거",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "2달 간격 2~3회",
+      "source_page": "http://www.meinclinic.com/clinic-5/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "주근깨 치료",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "IPL, Q-스위치 Nd:YAG, alexandrite, ruby, Er:YAG, CO2 레이저 등 다양하게 조합",
+      "source_page": "http://www.meinclinic.com/clinic-5/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "후천성오타양모반(ABNOM) 치료",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": "루비 레이저",
+      "price": null,
+      "package": null,
+      "notes": "Q-스위치 Nd:YAG, alexandrite, ruby 레이저 사용",
+      "source_page": "http://www.meinclinic.com/clinic-5/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "혈관레이저",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "혈관종·화염상모반·모세혈관확장증·안면홍조·주사(rosacea). 켈로이드·비후성반흔에도 적용",
+      "source_page": "http://www.meinclinic.com/clinic-5/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "점 제거",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "http://www.meinclinic.com/clinic-5/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "레이저토닝",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": "Q-스위치 Nd:YAG 레이저",
+      "price": null,
+      "package": null,
+      "notes": "기미·색소침착. 1~2주 간격 5~10회. 비타민-C 이온치료 병합 권장",
+      "source_page": "http://www.meinclinic.com/clinic-5/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "크리디오라이트",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": "크리디오라이트",
+      "price": null,
+      "package": null,
+      "notes": "냉각+다이오드 레이저. 피부 진정·홍반 감소",
+      "source_page": "http://www.meinclinic.com/clinic-5/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "다이아몬드필링",
+      "category": "박피/필링",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "미세박피술. 1~2주 간격 5~10회",
+      "source_page": "http://www.meinclinic.com/clinic-6/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "호박필링",
+      "category": "박피/필링",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "천연 레티놀 성분. 1~2주 간격 5~10회",
+      "source_page": "http://www.meinclinic.com/clinic-6/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "산소필링",
+      "category": "박피/필링",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "산소+비타민-C+천연과일산. 1~2주 간격 5~10회",
+      "source_page": "http://www.meinclinic.com/clinic-6/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "크로스 (CROSS)",
+      "category": "박피/필링",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "Chemical Reconstruction Of Skin Scars. TCA(trichloroacetic acid) 사용. 4~6주 간격 5회",
+      "source_page": "http://www.meinclinic.com/clinic-6/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "레이저박피",
+      "category": "박피/필링",
+      "product_name": null,
+      "equipment_name": "Er:YAG 레이저",
+      "price": null,
+      "package": null,
+      "notes": "6~8주 이상 간격 3~5회. 시술 후 10일간 드레싱",
+      "source_page": "http://www.meinclinic.com/clinic-6/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "보습관리치료 (H1~H3)",
+      "category": "피부관리",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "http://www.meinclinic.com/clinic-6/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "미백관리치료 / 비타민-C 이온치료 (W1~W3)",
+      "category": "피부관리",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "시술시간 10분",
+      "source_page": "http://www.meinclinic.com/clinic-6/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "진정관리치료 (SC/pro-SC/crydio-SC)",
+      "category": "피부관리",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "냉동콜라겐 SC, 프로폴리스 pro-SC, 냉각다이오드레이저 crydio-SC",
+      "source_page": "http://www.meinclinic.com/clinic-6/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "여드름치료 (AC1~AC3)",
+      "category": "피부관리",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "숙련된 의료인 압출 + 진정팩",
+      "source_page": "http://www.meinclinic.com/clinic-6/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "피부스케일링",
+      "category": "피부관리",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "1주 1회 4~5회 이상",
+      "source_page": "http://www.meinclinic.com/clinic-6/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "제모 클리닉 (레이저 제모)",
+      "category": "제모",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "콧수염·겨드랑이·턱·구렛나루·이마·목·비키니라인·좁은이마·팔뚝·남성5종·종아리·얼굴전체",
+      "source_page": "http://www.meinclinic.com/clinic-3/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "리프팅 클리닉 (HIFU 더블로/울쎄라)",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "더블로",
+      "price": null,
+      "package": null,
+      "notes": "'더블로나 울쎄라 같은 초음파(HIFU)치료' 권장. 얼굴 축소·턱선 개선·이중턱 감소",
+      "source_page": "http://www.meinclinic.com/clinic-4/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "여드름 클리닉",
+      "category": "피부",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "먹는약·바르는약·피부재생치료·비타민이온요법·스케일링·필링·레이저·진피절제술·필러 조합",
+      "source_page": "http://www.meinclinic.com/clinic-4/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "흉터치료 클리닉",
+      "category": "피부",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "PDRN 피부재생주사, 셀라스/프락셀 프랙셔날레이저, 어비윰야그 박피레이저, 진피절제술, CROSS, 필러 조합",
+      "source_page": "http://www.meinclinic.com/clinic-4/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "문신제거 클리닉",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "엔디야그나 알렉산드라이트 레이저. 2달 간격 1~5회",
+      "source_page": "http://www.meinclinic.com/clinic-4/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "모공 클리닉",
+      "category": "피부",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "호박필링·다이아몬드필링·셀라스/프락셀·CROSS·폴라리스(RF) 조합",
+      "source_page": "http://www.meinclinic.com/clinic-4/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "기미잡티 클리닉",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "기미: 레이저토닝 1주 간격 5~10회. 잡티: IPL·잡티레이저",
+      "source_page": "http://www.meinclinic.com/clinic-4/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "사마귀 클리닉",
+      "category": "피부",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "CO2 레이저 또는 주사제. 편평사마귀 면역치료",
+      "source_page": "http://www.meinclinic.com/clinic-4/",
+      "verification_status": "verified"
+    }
+  ],
+  "language_support": {
+    "supported_languages": [
+      "ko"
+    ],
+    "has_language_switcher": false,
+    "foreign_language_pages": {}
+  },
+  "crawl_metadata": {
+    "pages_crawled": 10,
+    "pages_visited": [
+      "http://www.meinclinic.com/",
+      "http://www.meinclinic.com/clinic-5/",
+      "http://www.meinclinic.com/clinic-1/",
+      "http://www.meinclinic.com/clinic-2-2/",
+      "http://www.meinclinic.com/clinic-4/",
+      "http://www.meinclinic.com/clinic-6/",
+      "http://www.meinclinic.com/pay2/",
+      "http://www.meinclinic.com/doctor/",
+      "http://www.meinclinic.com/location-2/",
+      "http://www.meinclinic.com/introduce/"
+    ],
+    "crawl_method": "text-first; 사이트 전체 메뉴와 클리닉 페이지가 텍스트형. evaluate 추출 위주로 진행, vision 미사용. 보톡스·필러·레이저·박피·특수클리닉 6개 섹션 전부 방문.",
+    "errors": [
+      "http://www.meinclinic.com/pay/ - 접속 타임아웃(60s 초과)",
+      "http://www.meinclinic.com/pay2/ - 로그인 필요 팝업 발생, 가격 수집 불가"
+    ],
+    "completeness": {
+      "operation_info": true,
+      "doctors": true,
+      "products": true,
+      "equipments": true,
+      "treatments": true,
+      "prices": false,
+      "language_support": true
+    },
+    "follow_up": [
+      {
+        "area": "pricing",
+        "reason": "blocked",
+        "detail": "/pay/ 타임아웃, /pay2/ 로그인 필요. 비급여진료비용 별도 페이지 확인 필요",
+        "urls": [
+          "http://www.meinclinic.com/pay/",
+          "http://www.meinclinic.com/pay2/"
+        ]
+      },
+      {
+        "area": "operating_hours",
+        "reason": "other",
+        "detail": "오시는길, 인사말 등 모든 페이지에 영업시간 정보 없음",
+        "urls": [
+          "http://www.meinclinic.com/"
+        ]
+      },
+      {
+        "area": "hair_removal_equipment",
+        "reason": "needs_deeper_crawl",
+        "detail": "제모클리닉 어떤 레이저 장비로 시술하는지 확인 못함",
+        "urls": [
+          "http://www.meinclinic.com/clinic-3/"
+        ]
+      }
+    ],
+    "cost": {
+      "model": "claude-sonnet-4-6",
+      "effort": "high",
+      "input_tokens": 103,
+      "output_tokens": 48394,
+      "cost_usd": 2.5156,
+      "duration_seconds": 857
+    },
+    "notes": [
+      "피부과전문의 이수근 원장 단독 운영 청담동 피부과. 메타설명: 보톡스,필러,리프팅,기미 잡티,모공,흉터,여드름 전문",
+      "주소 일치 확인: 강남구 청담동 118-17 네이처포엠 2층 (입력 주소: 압구정로 461, 210호 청담동 네이처포엠)",
+      "레이저 클리닉 12종 전체 텍스트 추출: 더블로·셀라스·IPL·폴라리스·눈썹문신제거·아이라인문신제거·주근깨·후천성오타양모반·혈관레이저·점제거·레이저토닝·크리디오라이트",
+      "보톡스 클리닉 12종, 필러 클리닉 12종, 박피-필링 12종, 특수클리닉 12종 전부 텍스트 추출 완료",
+      "사이트 내 스팸 링크(온라인카지노·룰렛·부동산 광고 등) 다수 삽입 확인 — 홈페이지 콘텐츠 신뢰성 문제 아니고 외부 스팸 삽입으로 판단",
+      "필러 브랜드명은 사이트에 전혀 언급 없어 unmatched 처리",
+      "보톡스는 브랜드명으로 직접 표기되어 Allergan 보톡스로 matched 처리",
+      "가격 정보: /pay/ 타임아웃, /pay2/ 로그인 필요로 수집 전혀 불가"
+    ]
+  }
+}

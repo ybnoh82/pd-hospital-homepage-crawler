@@ -1,0 +1,462 @@
+{
+  "hospital_id": "828xg8",
+  "hospital_name": "미인피부과의원",
+  "crawled_at": "1970-01-01T00:00:00+09:00",
+  "address": null,
+  "homepage_url": "http://www.meinclinic.com/",
+  "identity_status": "match",
+  "alternative_urls": [],
+  "branches": {
+    "type": null,
+    "network_group": null,
+    "this_branch_name": null,
+    "sibling_branches": []
+  },
+  "operation_info": null,
+  "doctors": [
+    {
+      "name": "이수근",
+      "is_representative": false,
+      "role": null,
+      "specialty": [],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": null
+    }
+  ],
+  "products": {
+    "matched_products": [],
+    "unmatched_products": []
+  },
+  "equipments": {
+    "matched_equipments": [],
+    "unmatched_equipments": [
+      {
+        "raw_name": "더블로",
+        "category_guess": null,
+        "mention_count": 1,
+        "sources": [],
+        "context": "시술(treatments)에서 자동 집계 — 카탈로그 매칭 미수행",
+        "verification_status": null
+      },
+      {
+        "raw_name": "셀라스",
+        "category_guess": null,
+        "mention_count": 1,
+        "sources": [],
+        "context": "시술(treatments)에서 자동 집계 — 카탈로그 매칭 미수행",
+        "verification_status": null
+      },
+      {
+        "raw_name": "IPL",
+        "category_guess": null,
+        "mention_count": 1,
+        "sources": [],
+        "context": "시술(treatments)에서 자동 집계 — 카탈로그 매칭 미수행",
+        "verification_status": null
+      },
+      {
+        "raw_name": "폴라리스",
+        "category_guess": null,
+        "mention_count": 1,
+        "sources": [],
+        "context": "시술(treatments)에서 자동 집계 — 카탈로그 매칭 미수행",
+        "verification_status": null
+      },
+      {
+        "raw_name": "Q-스위치 Nd:YAG 레이저",
+        "category_guess": null,
+        "mention_count": 1,
+        "sources": [],
+        "context": "시술(treatments)에서 자동 집계 — 카탈로그 매칭 미수행",
+        "verification_status": null
+      }
+    ]
+  },
+  "manufacturer_signals": [],
+  "treatments": [
+    {
+      "treatment_name": "이마주름 보톡스",
+      "category": "보톡스",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": null
+    },
+    {
+      "treatment_name": "미간주름 보톡스",
+      "category": "보톡스",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": null
+    },
+    {
+      "treatment_name": "눈가주름 보톡스",
+      "category": "보톡스",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": null
+    },
+    {
+      "treatment_name": "눈밑주름 제거 보톡스",
+      "category": "보톡스",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": null
+    },
+    {
+      "treatment_name": "콧잔등주름 제거 보톡스",
+      "category": "보톡스",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": null
+    },
+    {
+      "treatment_name": "윗입술주름 제거 보톡스",
+      "category": "보톡스",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": null
+    },
+    {
+      "treatment_name": "입꼬리주름(처진입꼬리) 보톡스",
+      "category": "보톡스",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": null
+    },
+    {
+      "treatment_name": "턱끝주름 제거 보톡스",
+      "category": "보톡스",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": null
+    },
+    {
+      "treatment_name": "수평목주름 제거 보톡스",
+      "category": "보톡스",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": null
+    },
+    {
+      "treatment_name": "사각턱 보톡스",
+      "category": "보톡스",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": null
+    },
+    {
+      "treatment_name": "쇄골주사(승모근 보톡스)",
+      "category": "보톡스",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": null
+    },
+    {
+      "treatment_name": "종아리 알통 윤곽성형",
+      "category": "보톡스",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": null
+    },
+    {
+      "treatment_name": "겨드랑이 다한증 제거 보톡스",
+      "category": "보톡스",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": null
+    },
+    {
+      "treatment_name": "손바닥 다한증 제거 보톡스",
+      "category": "보톡스",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": null
+    },
+    {
+      "treatment_name": "미스빕(메조보톡스, 더모톡신)",
+      "category": "보톡스",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": null
+    },
+    {
+      "treatment_name": "꺼진 이마 필러 교정",
+      "category": "필러",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": null
+    },
+    {
+      "treatment_name": "팔자주름 필러 교정",
+      "category": "필러",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": null
+    },
+    {
+      "treatment_name": "코 필러",
+      "category": "필러",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": null
+    },
+    {
+      "treatment_name": "슈퍼 물광주사",
+      "category": "스킨부스터",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": null
+    },
+    {
+      "treatment_name": "더블로 리프팅",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "더블로",
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": null
+    },
+    {
+      "treatment_name": "셀라스 (프랙셔날 레이저)",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": "셀라스",
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": null
+    },
+    {
+      "treatment_name": "IPL",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": "IPL",
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": null
+    },
+    {
+      "treatment_name": "폴라리스",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": "폴라리스",
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": null
+    },
+    {
+      "treatment_name": "레이저 토닝",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": "Q-스위치 Nd:YAG 레이저",
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": null
+    },
+    {
+      "treatment_name": "눈썹문신 / 아이라인 제거",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": null
+    },
+    {
+      "treatment_name": "점 제거",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": null
+    },
+    {
+      "treatment_name": "레이저 제모 - 겨드랑이",
+      "category": "제모",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": null
+    },
+    {
+      "treatment_name": "레이저 제모 - 얼굴 전체",
+      "category": "제모",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": null
+    },
+    {
+      "treatment_name": "다이아몬드 필링",
+      "category": "박피/필링",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": null
+    },
+    {
+      "treatment_name": "크로스(도트필링)",
+      "category": "박피/필링",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": null
+    },
+    {
+      "treatment_name": "레이저박피",
+      "category": "박피/필링",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": null
+    }
+  ],
+  "language_support": {
+    "supported_languages": [],
+    "has_language_switcher": false,
+    "foreign_language_pages": {}
+  },
+  "crawl_metadata": {
+    "pages_crawled": 8,
+    "pages_visited": [
+      "http://www.meinclinic.com/",
+      "http://www.meinclinic.com/clinic-1/",
+      "http://www.meinclinic.com/clinic-2-2/",
+      "http://www.meinclinic.com/clinic-5/",
+      "http://www.meinclinic.com/pay2/",
+      "http://www.meinclinic.com/doctor/",
+      "http://www.meinclinic.com/location-2/",
+      "http://www.meinclinic.com/introduce/"
+    ],
+    "crawl_method": "text - 텍스트형 사이트. 모든 시술 설명 및 가격이 텍스트로 제공됨. vision 미사용.",
+    "errors": [],
+    "completeness": {
+      "operation_info": false,
+      "doctors": false,
+      "products": false,
+      "equipments": false,
+      "treatments": false,
+      "prices": false,
+      "language_support": false
+    },
+    "follow_up": [],
+    "cost": {
+      "model": "claude-sonnet-4-6",
+      "effort": "low",
+      "input_tokens": 109,
+      "output_tokens": 22552,
+      "cost_usd": 1.7007,
+      "duration_seconds": 413
+    },
+    "notes": []
+  }
+}

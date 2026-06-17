@@ -1,0 +1,13 @@
+{
+  "combo": "opus_low",
+  "model_short": "opus",
+  "model_id": "claude-opus-4-8",
+  "effort": "low",
+  "id": "n1u349",
+  "name": "대치오라클피부과의원",
+  "url": "http://daechi.oracleclinic.com/",
+  "exit_code": 0,
+  "wall_seconds": 358.9,
+  "hard_killed": false,
+  "start_ts": 1781675627.9
+}

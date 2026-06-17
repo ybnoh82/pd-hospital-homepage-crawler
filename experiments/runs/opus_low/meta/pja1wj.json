@@ -1,0 +1,13 @@
+{
+  "combo": "opus_low",
+  "model_short": "opus",
+  "model_id": "claude-opus-4-8",
+  "effort": "low",
+  "id": "pja1wj",
+  "name": "강남유앤아이의원",
+  "url": "https://www.uni114.co.kr",
+  "exit_code": 0,
+  "wall_seconds": 359.2,
+  "hard_killed": false,
+  "start_ts": 1781667784.3
+}

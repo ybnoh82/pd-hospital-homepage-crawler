@@ -1,0 +1,617 @@
+{
+  "hospital_id": "kl8cgn",
+  "hospital_name": "바노바기성형외과의원",
+  "crawled_at": "2026-06-17T12:55:00+09:00",
+  "address": {
+    "sido": "서울",
+    "sggu": "강남구",
+    "emdong": "역삼동",
+    "road_address": "서울특별시 강남구 논현로 517, 바노바기 지하1,지상1~6층 (역삼동)",
+    "latitude": null,
+    "longitude": null
+  },
+  "homepage_url": "https://www.banobagi.com/",
+  "identity_status": "match",
+  "alternative_urls": [
+    "https://eng.banobagi.com/",
+    "https://th.banobagi.com/",
+    "https://www.chinabanobagi.com/",
+    "https://www.vnbanobagi.com/",
+    "https://www.indonesiabanobagi.com/",
+    "https://www.japanbanobagi.com/"
+  ],
+  "branches": {
+    "type": "headquarters",
+    "network_group": "바노바기그룹",
+    "this_branch_name": "바노바기성형외과의원",
+    "sibling_branches": [
+      {
+        "name": "바노바기 피부과의원",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "바노바기 클리닉 역삼역점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "바노바기 웰니스클리닉",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "바노바기 일레븐치과",
+        "url": null,
+        "address": null
+      }
+    ]
+  },
+  "operation_info": {
+    "hospital_name": "바노바기 성형외과 의원",
+    "representative_name": "반재상",
+    "business_number": "220-08-87096",
+    "phone": "1588-6508",
+    "phone_secondary": "02-562-6001",
+    "fax": null,
+    "email": null,
+    "kakao_channel": null,
+    "operating_hours": {
+      "monday": {
+        "open": "09:30",
+        "close": "18:30",
+        "break_start": null,
+        "break_end": null
+      },
+      "tuesday": {
+        "open": "09:30",
+        "close": "18:30",
+        "break_start": null,
+        "break_end": null
+      },
+      "wednesday": {
+        "open": "09:30",
+        "close": "18:30",
+        "break_start": null,
+        "break_end": null
+      },
+      "thursday": {
+        "open": "09:30",
+        "close": "18:30",
+        "break_start": null,
+        "break_end": null
+      },
+      "friday": {
+        "open": "09:30",
+        "close": "18:30",
+        "break_start": null,
+        "break_end": null
+      },
+      "saturday": {
+        "open": "09:30",
+        "close": "16:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "sunday": null,
+      "holiday": null
+    },
+    "operating_hours_note": "헤더 진료시간 위젯: 월-금 09:30-18:30, 토 09:30-16:00. 단 진료안내 페이지 본문은 월-금 09:30-17:30, 토 09:30-15:30로 상이하게 표기됨(공휴일·일요일 휴진). Global Contact: 02-522-6636.",
+    "parking_info": "자가용 이용 고객에게 발렛파킹 서비스 제공.",
+    "transport_info": "역삼역 6번 출구 도보 100m / 언주역 7번 출구 400m. 다수 버스 노선(간선 146·147·242·341·360·463·740 등). 서울 강남구 논현로 517 바노바기 빌딩.",
+    "facilities": [
+      "발렛파킹",
+      "입원실",
+      "회복실"
+    ]
+  },
+  "doctors": [
+    {
+      "name": "반재상",
+      "is_representative": true,
+      "role": "대표원장",
+      "specialty": [
+        "성형외과"
+      ],
+      "education": [
+        "서울대학교 병원"
+      ],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "오창현",
+      "is_representative": false,
+      "role": "성형외과 전문의",
+      "specialty": [
+        "성형외과"
+      ],
+      "education": [
+        "서울대학교 병원"
+      ],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "박선재",
+      "is_representative": false,
+      "role": "성형외과 전문의",
+      "specialty": [
+        "성형외과"
+      ],
+      "education": [
+        "서울대학교 병원"
+      ],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "윤민지",
+      "is_representative": false,
+      "role": "성형외과 전문의",
+      "specialty": [
+        "성형외과"
+      ],
+      "education": [
+        "서울대학교 병원"
+      ],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "권희연",
+      "is_representative": false,
+      "role": "성형외과 전문의",
+      "specialty": [
+        "성형외과"
+      ],
+      "education": [
+        "서울대학교 병원"
+      ],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "서재범",
+      "is_representative": false,
+      "role": "유방외과 세부전문의",
+      "specialty": [
+        "외과"
+      ],
+      "education": [
+        "경북대학교 외과"
+      ],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "김진현",
+      "is_representative": false,
+      "role": "성형외과 전문의",
+      "specialty": [
+        "성형외과"
+      ],
+      "education": [
+        "서울대학교병원"
+      ],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "박언주",
+      "is_representative": false,
+      "role": "의료진",
+      "specialty": [],
+      "education": [
+        "서울대학교의과대학"
+      ],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "김인건",
+      "is_representative": false,
+      "role": "의료진",
+      "specialty": [],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "김용주",
+      "is_representative": false,
+      "role": "의료진",
+      "specialty": [],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "최정윤",
+      "is_representative": false,
+      "role": "의료진",
+      "specialty": [],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "김지연",
+      "is_representative": false,
+      "role": "의료진",
+      "specialty": [],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    }
+  ],
+  "products": {
+    "matched_products": [],
+    "unmatched_products": [
+      {
+        "raw_name": "모티바 프리저베",
+        "category_guess": "가슴보형물(Motiva, 프리저베 기법)",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.banobagi.com/",
+            "evidence": "메인 슬라이드 '모티바 프리저베' 가슴성형"
+          }
+        ],
+        "context": "가슴보형물 브랜드(Motiva) — 미용 제품 카탈로그 미수록(가슴보형물은 카탈로그 대상 외) → 보류",
+        "verification_status": "verified"
+      },
+      {
+        "raw_name": "반영구필러 아테콜",
+        "category_guess": "필러(Artecoll, PMMA 반영구)",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.banobagi.com/page/artecoll",
+            "evidence": "동안/리프팅라운지 메뉴 '반영구필러 아테콜'"
+          }
+        ],
+        "context": "Artecoll(PMMA 반영구 필러). 카탈로그 조회(아테콜/Artecoll) 미수록 → 보류",
+        "verification_status": "verified"
+      },
+      {
+        "raw_name": "콜라겐 부스터",
+        "category_guess": "콜라겐 부스터(브랜드 미표기)",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.banobagi.com/page/lifting",
+            "evidence": "리프팅라운지 프로그램 이미지 alt '콜라겐 부스터'"
+          }
+        ],
+        "context": "일반 카테고리명, 구체 브랜드(쥬베룩·스컬트라 등) 미표기 → 특정 불가 보류",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "자가 유래 세포(줄기세포) 셀테라피/지방이식",
+        "category_guess": "자가유래 세포치료(줄기세포)",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.banobagi.com/page/stem_cell",
+            "evidence": "메뉴 '자가 유래 세포 셀테라피/지방이식', 리프팅 프로그램 '줄기세포'"
+          }
+        ],
+        "context": "자가유래 세포·지방이식 시술 — 상용 미용 제품 아님, 카탈로그 대상 외 → 보류",
+        "verification_status": "verified"
+      }
+    ]
+  },
+  "equipments": {
+    "matched_equipments": [
+      {
+        "name_kr": "써마지 FLX",
+        "name_en": "Thermage FLX",
+        "category": "리프팅",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.banobagi.com/page/lifting",
+            "evidence": "리프팅라운지 프로그램 이미지 alt '써마지'"
+          }
+        ],
+        "context": "사이트 표기 '써마지'(브랜드) → 카탈로그 '써마지 FLX'로 매칭. 세부 세대 미표기로 대표 라인 추정",
+        "verification_status": "inferred"
+      },
+      {
+        "name_kr": "울쎄라",
+        "name_en": "Ulthera",
+        "category": "리프팅",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.banobagi.com/page/lifting",
+            "evidence": "리프팅라운지 프로그램 이미지 alt '울쎄라코어'"
+          }
+        ],
+        "context": "사이트 표기 '울쎄라코어' → 카탈로그 '울쎄라(Ulthera)'로 매칭. '코어'는 자체 프로그램명 추정",
+        "verification_status": "inferred"
+      }
+    ],
+    "unmatched_equipments": [
+      {
+        "raw_name": "엔도타인",
+        "category_guess": "이마/중안면 리프팅 고정장치(Endotine)",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.banobagi.com/page/sub01_04",
+            "evidence": "동안 메뉴 '엔도타인 이마리프팅'"
+          }
+        ],
+        "context": "Endotine 흡수성 고정장치. 카탈로그(엔도타인/Endotine) 미수록 → 보류",
+        "verification_status": "verified"
+      }
+    ]
+  },
+  "manufacturer_signals": [],
+  "treatments": [
+    {
+      "treatment_name": "써마지",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "써마지 FLX",
+      "price": null,
+      "package": null,
+      "notes": "리프팅라운지 메인 케어 프로그램",
+      "source_page": "https://www.banobagi.com/page/lifting",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "울쎄라코어",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "울쎄라",
+      "price": null,
+      "package": null,
+      "notes": "리프팅라운지 메인 케어 프로그램",
+      "source_page": "https://www.banobagi.com/page/lifting",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "반영구필러 아테콜",
+      "category": "필러",
+      "product_name": "반영구필러 아테콜",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "Artecoll 반영구 필러",
+      "source_page": "https://www.banobagi.com/page/artecoll",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "콜라겐 부스터",
+      "category": "스킨부스터",
+      "product_name": "콜라겐 부스터",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "리프팅라운지 프로그램, 브랜드 미표기",
+      "source_page": "https://www.banobagi.com/page/lifting",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "자가 유래 세포 셀테라피",
+      "category": "기타",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "줄기세포 시술",
+      "source_page": "https://www.banobagi.com/page/stem_cell",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "엔도타인 이마리프팅",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "엔도타인",
+      "price": null,
+      "package": null,
+      "notes": "Endotine 고정장치 이용 이마거상",
+      "source_page": "https://www.banobagi.com/page/sub01_04",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "모티바 프리저베 가슴성형",
+      "category": "가슴성형",
+      "product_name": "모티바 프리저베",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "Motiva 보형물, 프리저베 기법",
+      "source_page": "https://www.banobagi.com/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "절개 모발이식 500모",
+      "category": "모발이식",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "1,650,000원 (500모당 50만원씩 추가)",
+        "low": 1650000,
+        "high": null,
+        "regular_price": null,
+        "unit": "모",
+        "quantity": 500.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "비급여수가표 게시",
+      "source_page": "https://www.banobagi.com/page/u_price",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "비절개 모발이식 500모(부분삭발)",
+      "category": "모발이식",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "2,750,000원 (500모당 50만원씩 추가)",
+        "low": 2750000,
+        "high": null,
+        "regular_price": null,
+        "unit": "모",
+        "quantity": 500.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "비급여수가표 게시",
+      "source_page": "https://www.banobagi.com/page/u_price",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "영양주사(단순한 피로 또는 권태)",
+      "category": "주사",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "200,000~400,000원 (종류·용량에 따름)",
+        "low": 200000,
+        "high": 400000,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "비급여수가표 게시",
+      "source_page": "https://www.banobagi.com/page/u_price",
+      "verification_status": "verified"
+    }
+  ],
+  "language_support": {
+    "supported_languages": [
+      "ko",
+      "en",
+      "th",
+      "zh",
+      "vi",
+      "id",
+      "ja"
+    ],
+    "has_language_switcher": true,
+    "foreign_language_pages": {
+      "en": "https://eng.banobagi.com/",
+      "th": "https://th.banobagi.com/",
+      "zh": "https://www.chinabanobagi.com/",
+      "vi": "https://www.vnbanobagi.com/",
+      "id": "https://www.indonesiabanobagi.com/",
+      "ja": "https://www.japanbanobagi.com/"
+    }
+  },
+  "crawl_metadata": {
+    "pages_crawled": 5,
+    "pages_visited": [
+      "https://www.banobagi.com/ (홈/정찰)",
+      "https://www.banobagi.com/page/lifting (리프팅라운지 — 제품·장비)",
+      "https://www.banobagi.com/page/sub07_02 (진료안내/오시는길)",
+      "https://www.banobagi.com/page/u_price (비급여수가표)",
+      "https://www.banobagi.com/page/sub07_01 (의료진 소개)"
+    ],
+    "crawl_method": "Playwright MCP 직접 방문, 텍스트형 — browser_evaluate(innerText·img alt) 우선, vision 미사용",
+    "errors": [],
+    "completeness": {
+      "operation_info": true,
+      "doctors": true,
+      "products": true,
+      "equipments": true,
+      "treatments": true,
+      "prices": true,
+      "language_support": true
+    },
+    "follow_up": [
+      {
+        "area": "products",
+        "reason": "needs_deeper_crawl",
+        "detail": "리프팅라운지 별도 도메인(liftingbanobagi.com) 및 패밀리 피부과의원 사이트에 비수술 제품·장비(필러·톡신·레이저)가 더 있을 수 있음 — 예산상 미방문.",
+        "urls": [
+          "http://www.liftingbanobagi.com/"
+        ]
+      },
+      {
+        "area": "treatments",
+        "reason": "needs_deeper_crawl",
+        "detail": "수술 상세 페이지(눈·코·윤곽·가슴 등 다수)와 프로모션 페이지 미방문 — 상시 시술가는 비급여수가표에 미게시(검사·재료·증명 위주). 상세 본문에 추가 제품/장비명 가능.",
+        "urls": [
+          "https://www.banobagi.com/page/sub05_00",
+          "https://www.banobagi.com/page/sub02_00",
+          "https://www.banobagi.com/page/artecoll",
+          "https://www.banobagi.com/page/stem_cell"
+        ]
+      }
+    ],
+    "cost": {
+      "model": "claude-opus-4-8",
+      "effort": "low",
+      "input_tokens": 2898,
+      "output_tokens": 17136,
+      "cost_usd": 1.7716,
+      "duration_seconds": 384
+    },
+    "notes": [
+      "병원 확인: 푸터 사업자정보(바노바기 성형외과 의원, 대표 반재상외 1명, 220-08-87096, 논현로 517)가 입력 정보와 일치 — match.",
+      "성형외과 단일전문에 가까운 사이트(눈·코·윤곽·가슴·남자성형 수술 위주). 비수술 제품·장비는 동안/리프팅라운지 섹션에 집중.",
+      "제품·장비는 텍스트(메뉴·이미지 alt)로 확보 — vision 불필요. 리프팅라운지 프로그램 alt: 써마지·울쎄라코어·반영구필러(아테콜)·줄기세포·콜라겐부스터.",
+      "매칭: 써마지→써마지 FLX, 울쎄라코어→울쎄라 (둘 다 세부 라인 미표기로 inferred). 모티바(가슴보형물)·아테콜·엔도타인·콜라겐부스터·줄기세포는 카탈로그 조회 후 미수록/대상외로 보류.",
+      "가격: 비급여수가표(u_price)는 의료법 고지표로 검사·약제·재료·제증명 위주. 미용시술 상시가 미게시. 모발이식·영양주사·초음파 등 일부만 수록 — treatments에 반영.",
+      "진료시간: 헤더 위젯(18:30/16:00)과 진료안내 본문(17:30/15:30)이 상이 — operating_hours_note에 병기.",
+      "미방문: 후기·갤러리 게시판은 데이터 출처 아님. 리프팅라운지 별도 도메인·패밀리 피부과 사이트는 follow_up 기록."
+    ]
+  }
+}

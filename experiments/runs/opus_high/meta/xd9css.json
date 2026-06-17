@@ -1,0 +1,13 @@
+{
+  "combo": "opus_high",
+  "model_short": "opus",
+  "model_id": "claude-opus-4-8",
+  "effort": "high",
+  "id": "xd9css",
+  "name": "도곡양재차앤박피부과의원",
+  "url": "https://www.cnpskin.com/cnpskin26",
+  "exit_code": 0,
+  "wall_seconds": 441.5,
+  "hard_killed": false,
+  "start_ts": 1781675225.5
+}

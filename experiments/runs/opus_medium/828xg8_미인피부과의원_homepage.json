@@ -1,0 +1,572 @@
+{
+  "hospital_id": "828xg8",
+  "hospital_name": "미인피부과의원",
+  "crawled_at": "2026-06-17T15:18:00+09:00",
+  "address": {
+    "sido": "서울",
+    "sggu": "강남구",
+    "emdong": "청담동",
+    "road_address": "서울특별시 강남구 압구정로 461, 210호 (청담동, 네이처 포엠)",
+    "latitude": null,
+    "longitude": null
+  },
+  "homepage_url": "http://www.meinclinic.com/",
+  "identity_status": "match",
+  "alternative_urls": [],
+  "branches": null,
+  "operation_info": {
+    "hospital_name": "미인피부과",
+    "representative_name": "이수근",
+    "business_number": null,
+    "phone": "02-594-3375",
+    "phone_secondary": "02-594-3376",
+    "fax": "02-594-3779",
+    "email": null,
+    "kakao_channel": null,
+    "operating_hours": {
+      "monday": {
+        "open": "10:00",
+        "close": "18:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "tuesday": {
+        "open": "10:00",
+        "close": "18:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "wednesday": {
+        "open": "10:00",
+        "close": "20:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "thursday": {
+        "open": "10:00",
+        "close": "18:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "friday": {
+        "open": "10:00",
+        "close": "18:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "15:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "sunday": null,
+      "holiday": null
+    },
+    "operating_hours_note": "평일 10:00~18:00, 수요일 야간진료 10:00~20:00, 토요일 10:00~15:00. 일요일·공휴일 표기 없음(미게시). 예약 02-594-3375. 진료시간은 홈 mein_time.jpg 이미지에서 vision 판독. 피부과 02-594-3375 / 에스테틱 02-594-3376.",
+    "parking_info": null,
+    "transport_info": "지하철: 분당선 압구정 로데오역 2번출구 도보 9분, 7호선 청담역 9번출구 도보 14분. 버스: 청담초등학교(앞)·프리마호텔·청담치안센터·청담지구대·농협앞·엠넷음악방송국·차병원차움 정류장(간선 143/240/242/362, 지선 3426/4212/4318/4419, 직행 9407/9507/9607). 네이처포엠 빌딩(1층 S.T.듀퐁·끌로에 매장) 2층.",
+    "facilities": []
+  },
+  "doctors": [
+    {
+      "name": "이수근",
+      "is_representative": true,
+      "role": "대표원장",
+      "specialty": [
+        "피부과"
+      ],
+      "education": [
+        "서울대학교 의과대학 졸업 (MD)",
+        "서울대학교 대학원 의학석사 (MS)",
+        "서울대학교 대학원 의학박사 (PhD)"
+      ],
+      "career": [
+        "청담 미인피부과 대표원장",
+        "분당서울대학병원 피부과 외래진료교수 (매주 수요일 오후 1:00~5:00 진료)",
+        "미국피부과학회(AAD) 정회원",
+        "대한피부항노화연구회(KAAD) 회장",
+        "대한미용피부외과학회(KSDS) 이사",
+        "대한피부과의사회 보톡스-필러카페 대표운영자"
+      ],
+      "associations": [
+        "미국피부과학회(AAD) 정회원",
+        "대한피부항노화연구회(KAAD) 회장",
+        "대한미용피부외과학회(KSDS) 이사"
+      ],
+      "awards": [
+        "영국 캠브리지 국제인명센터(IBC) 선정 '올해의 의학자상 (2010)'",
+        "영국 캠브리지 국제인명센터(IBC) 선정 '21세기 세계의 지성인 2000인'",
+        "미국인명정보기관(ABI) 선정 '21세기의 위대한 지성'",
+        "마르퀴스 후즈후 의학인명사전 제7판(2009~2010) 등재",
+        "마르퀴스 후즈후 과학인명사전 제11판(2011-2012) 등재",
+        "마르퀴스 후즈후 세계인명사전 제28판(2011) 등재"
+      ],
+      "profile_image_url": "http://www.meinclinic.com/wp-content/uploads/2016/01/6.jpg",
+      "verification_status": "verified"
+    }
+  ],
+  "products": {
+    "matched_products": [],
+    "unmatched_products": []
+  },
+  "equipments": {
+    "matched_equipments": [
+      {
+        "name_kr": "더블로",
+        "name_en": "Doublo",
+        "category": "리프팅",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/clinic-5/",
+            "evidence": "레이저 클리닉 '1. 더블로 리프팅 — 강력한 초음파(HIFU)로 SMAS 근육층을 잡아당기는 시술'"
+          },
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/pay2/",
+            "evidence": "치료비용 레이저 표 '더블로 – 피부처짐, 늘어짐'"
+          }
+        ],
+        "context": "카탈로그 '더블로/Doublo'(리프팅·초음파 HIFU) 직접 매칭",
+        "verification_status": "verified"
+      }
+    ],
+    "unmatched_equipments": [
+      {
+        "raw_name": "셀라스",
+        "category_guess": "프랙셔널 레이저(모공·여드름흉터)",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/clinic-5/#laser01",
+            "evidence": "레이저 클리닉 '2. 셀라스 — PPA technology 프랙셔날 레이저, 진피 콜라겐·엘라스틴 생성 촉진'"
+          },
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/pay2/",
+            "evidence": "치료비용 레이저 표 '셀라스(3회 이상) – 여드름, 모공'"
+          }
+        ],
+        "context": "프랙셔널 레이저로 설명되나 카탈로그(NFKC·한↔영·브랜드)에서 '셀라스/Sellas/Cellec' 미수록 → 보류",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "IPL",
+        "category_guess": "광치료(IPL, 색소·잡티)",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/clinic-5/#laser02",
+            "evidence": "레이저 클리닉 '3. IPL (intense pulsed light) — 다파장 광선으로 기미·잡티·주근깨 개선'"
+          },
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/pay2/",
+            "evidence": "치료비용 레이저 표 'IPL(3회 이상) – 칙칙한 피부, 잡티'"
+          }
+        ],
+        "context": "IPL은 광치료 기술 일반명(특정 브랜드·모델 미표기) → 카탈로그 특정 불가, 보류",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "폴라리스",
+        "category_guess": "고주파+다이오드 복합 레이저(탄력·모공)",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/clinic-5/#laser03",
+            "evidence": "레이저 클리닉 '4. 폴라리스 — 고주파와 다이오드 레이저가 결합된 장비, 콜라겐 합성 증가'"
+          },
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/pay2/",
+            "evidence": "치료비용 레이저 표 '폴라리스(3회 이상) – 탄력없는 피부, 모공'"
+          }
+        ],
+        "context": "RF+다이오드 복합 레이저(Syneron Polaris 추정)이나 카탈로그(NFKC·한↔영) '폴라리스/Polaris' 미수록 → 보류",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "크리디오라이트",
+        "category_guess": "냉각+다이오드 저출력 레이저(진정·홍반)",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/clinic-5/#laser11",
+            "evidence": "레이저 클리닉 '12. 크리디오라이트 — 강력한 냉각시스템과 다이오드 레이저가 결합된 저출력 레이저, 진정·홍반 감소'"
+          }
+        ],
+        "context": "냉각+다이오드 저출력 레이저(Cryolite 추정)이나 카탈로그 미수록 → 보류",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "레이저토닝 (Q-스위치 Nd:YAG)",
+        "category_guess": "색소 레이저(토닝)",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/clinic-5/#laser10",
+            "evidence": "레이저 클리닉 '11. 레이저 토닝 — Q-스위치 Nd:YAG 레이저 저강도 다회 치료, 기미·색소침착'"
+          },
+          {
+            "channel": "homepage",
+            "url": "http://www.meinclinic.com/pay2/",
+            "evidence": "치료비용 레이저 표 '레이저토닝(5~10회)'"
+          }
+        ],
+        "context": "Q-스위치 Nd:YAG 토닝 기술 일반명(특정 장비 브랜드 미표기) → 카탈로그 특정 불가, 보류",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "manufacturer_signals": [],
+  "treatments": [
+    {
+      "treatment_name": "보톡스 주름치료 (이마/미간/눈가/눈밑/콧잔등 주름)",
+      "category": "보톡스/주사",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "부위별 국산 15만원 / 미국산 20만원 (1달 이내 AS 무료)",
+        "low": 150000,
+        "high": 200000,
+        "regular_price": null,
+        "unit": "부위",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "치료비용표 '국산/미국산' 구분(브랜드 미표기). 이마/미간/눈가/눈밑/콧잔등/윗입술/입꼬리/턱끝 주름 동일가. 윗입술주름은 +필러 20만원.",
+      "source_page": "http://www.meinclinic.com/pay2/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "사각턱 보톡스 (양성교근비대증)",
+      "category": "보톡스/주사",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "국산 30만원 / 미국산 40만원",
+        "low": 300000,
+        "high": 400000,
+        "regular_price": null,
+        "unit": "부위",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "국산/미국산 구분(브랜드 미표기).",
+      "source_page": "http://www.meinclinic.com/pay2/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "다한증 보톡스 (겨드랑이/손바닥/발바닥)",
+      "category": "보톡스/주사",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "겨드랑이 60/80만원, 손바닥 80/100만원, 발바닥 100/120만원 (국산/미국산)",
+        "low": 600000,
+        "high": 1200000,
+        "regular_price": null,
+        "unit": "부위",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "국산/미국산 구분.",
+      "source_page": "http://www.meinclinic.com/pay2/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "미스빕 (메조보톡스, 더모톡신) 얼굴전체",
+      "category": "보톡스/주사",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "얼굴전체 국산 60만원 / 미국산 80만원",
+        "low": 600000,
+        "high": 800000,
+        "regular_price": null,
+        "unit": "얼굴전체",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "http://www.meinclinic.com/pay2/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "필러 (얼굴전체/이마/관자놀이/앞광대 등 부위별)",
+      "category": "필러",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "단기/중기 필러 부위별 (10% 부가세 포함). 예: 꺼진이마 159.5/192.5만원, 앞광대 126.5/159.5만원, 코필러 71.5/93.5만원, 팔자주름 93.5/115.5만원, 입꼬리올리기 38.5/49.5만원",
+        "low": 385000,
+        "high": 1925000,
+        "regular_price": null,
+        "unit": "부위",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "단기/중기 필러 구분(브랜드 미표기). 부가세 10% 포함가. 여드름흉터/수두자국은 '문의'. 1달 이내 AS 무료.",
+      "source_page": "http://www.meinclinic.com/pay2/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "더블로 리프팅",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "더블로",
+      "price": {
+        "text": "얼굴 전체 90만원(턱선/눈가 각각 50만원), 목 60만원",
+        "low": 500000,
+        "high": 900000,
+        "regular_price": null,
+        "unit": "부위",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "강력한 초음파(HIFU)로 SMAS층 리프팅. 대개 6~12개월에 한 번.",
+      "source_page": "http://www.meinclinic.com/clinic-5/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "셀라스 (여드름·모공)",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": "셀라스",
+      "price": {
+        "text": "얼굴전체 1회 50만원, 3회 140만원, 5회 230만원 / 얼굴중앙만 25·70·115만원",
+        "low": 250000,
+        "high": 2300000,
+        "regular_price": null,
+        "unit": "회",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": {
+        "sessions": 5,
+        "duration_months": null,
+        "event_period": null
+      },
+      "notes": "PPA technology 프랙셔날 레이저. 3회 이상 권장.",
+      "source_page": "http://www.meinclinic.com/clinic-5/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "IPL (칙칙한 피부·잡티)",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": "IPL",
+      "price": {
+        "text": "1회 20만원, 3회 60만원(+미백관리 3회), 5회 100만원(+이온자임 5회)",
+        "low": 200000,
+        "high": 1000000,
+        "regular_price": null,
+        "unit": "회",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": {
+        "sessions": 5,
+        "duration_months": null,
+        "event_period": null
+      },
+      "notes": "다파장 광치료. 3회 이상 권장.",
+      "source_page": "http://www.meinclinic.com/clinic-5/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "폴라리스 (탄력·모공)",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": "폴라리스",
+      "price": {
+        "text": "1회 30만원, 3회 90만원(+미백관리 3회), 5회 150만원(+이온자임 5회)",
+        "low": 300000,
+        "high": 1500000,
+        "regular_price": null,
+        "unit": "회",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": {
+        "sessions": 5,
+        "duration_months": null,
+        "event_period": null
+      },
+      "notes": "고주파+다이오드 복합 레이저. 3회 이상 권장.",
+      "source_page": "http://www.meinclinic.com/clinic-5/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "레이저 토닝 (기미·색소침착)",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": "레이저토닝 (Q-스위치 Nd:YAG)",
+      "price": {
+        "text": "1회 10만원, 5회 45만원, 10회 80만원",
+        "low": 100000,
+        "high": 800000,
+        "regular_price": null,
+        "unit": "회",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": {
+        "sessions": 10,
+        "duration_months": null,
+        "event_period": null
+      },
+      "notes": "Q-스위치 Nd:YAG 저강도 다회. 1-2주 간격 5-10회 권장.",
+      "source_page": "http://www.meinclinic.com/clinic-5/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "주근깨·잡티 레이저 / 점제거 / 혈관레이저",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "주근깨 30~80만원, 점제거 1~5만원(1~5mm 기준), 혈관레이저 문의, 문신제거 30만원(2회부터 10만원)",
+        "low": 10000,
+        "high": 800000,
+        "regular_price": null,
+        "unit": "회",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "주근깨/색소 치료에 IPL·Q-스위치 Nd:YAG·alexandrite·ruby·Er:YAG·CO2 등 다양한 레이저 사용 언급(기술 일반명). 점제거 2차비용 별도.",
+      "source_page": "http://www.meinclinic.com/clinic-5/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "레이저 제모 (부위별)",
+      "category": "제모",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "콧수염 2만원, 겨드랑이/비키니라인 각 3만원, 얼굴전체 15만원, 팔전체 12만원 (1회)",
+        "low": 20000,
+        "high": 150000,
+        "regular_price": null,
+        "unit": "회",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "영구제모. 부위별 1회 가격.",
+      "source_page": "http://www.meinclinic.com/pay2/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "박피·필링 (스케일링/다이아몬드필링/호박필/산소필/크로스/레이저박피)",
+      "category": "박피/필링",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "미인 스케일링 10만원, 다이아몬드필링 12만원, 호박필/산소필 각 12만원, 레이저스케일링 15만원, 크로스(도트필링) 여드름흉터 50~80만원, 레이저박피 80~120만원 (5회 선납시 10% DC)",
+        "low": 50000,
+        "high": 1200000,
+        "regular_price": null,
+        "unit": "회",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "5회 선납시 10% 할인. 미인 등/가슴스케일링 각 5만원, 퀵스케일링 8만원, 화이트/홍반/쿨스케일링 각 12만원.",
+      "source_page": "http://www.meinclinic.com/pay2/",
+      "verification_status": "verified"
+    }
+  ],
+  "language_support": {
+    "supported_languages": [
+      "ko"
+    ],
+    "has_language_switcher": false,
+    "foreign_language_pages": {}
+  },
+  "crawl_metadata": {
+    "pages_crawled": 7,
+    "pages_visited": [
+      "http://www.meinclinic.com/ (홈)",
+      "http://www.meinclinic.com/clinic-1/ (보톡스 클리닉)",
+      "http://www.meinclinic.com/clinic-2-2/ (필러 클리닉)",
+      "http://www.meinclinic.com/clinic-5/ (레이저 클리닉 — 장비명)",
+      "http://www.meinclinic.com/doctor/ (의료진소개)",
+      "http://www.meinclinic.com/location-2/ (오시는길)",
+      "http://www.meinclinic.com/pay2/ (치료비용 — 5개 가격표)"
+    ],
+    "crawl_method": "Playwright MCP 직접 방문 + 텍스트형 evaluate 추출 위주, 진료시간 이미지 1장만 vision 판독",
+    "errors": [
+      "/pay/ 페이지는 '로그인해주세요' 모달로 회원 전용 — 공개 가격은 /pay2/에서 수집."
+    ],
+    "completeness": {
+      "operation_info": true,
+      "doctors": true,
+      "products": false,
+      "equipments": true,
+      "treatments": true,
+      "prices": true,
+      "language_support": true
+    },
+    "follow_up": [],
+    "cost": {
+      "model": "claude-opus-4-8",
+      "effort": "medium",
+      "input_tokens": 3606,
+      "output_tokens": 20774,
+      "cost_usd": 2.3924,
+      "duration_seconds": 503
+    },
+    "notes": [
+      "병원 확인: 푸터 병원명(미인피부과)·대표 이수근·청담동 네이처포엠 2층 — 입력 병원(미인피부과의원, 청담동 네이처 포엠)과 건물·동·이름 모두 일치 → match.",
+      "사이트 형태: 텍스트형 워드프레스. 보톡스/필러/제모/레이저/박피필링/특수 클리닉 + 의료진/오시는길/치료비용 구성. 메뉴·본문·가격표가 모두 텍스트라 vision은 진료시간 이미지(mein_time.jpg) 1장만 사용.",
+      "진료시간: 홈 mein_time.jpg에서 vision 판독 — 평일 10-18시, 수요일 야간 10-20시, 토요일 10-15시. 일/공휴일 미표기. 에스테틱 별도 전화 02-594-3376 확인.",
+      "장비: 레이저 클리닉 본문/가격표에서 더블로(Doublo, HIFU 리프팅)·셀라스(PPA 프랙셔널)·IPL·폴라리스(RF+다이오드)·크리디오라이트(냉각+다이오드)·레이저토닝(Q-Nd:YAG) 수집. 카탈로그 매칭은 '더블로/Doublo'만 직접 일치(verified). 셀라스·폴라리스·크리디오라이트·IPL·토닝은 카탈로그(NFKC·한↔영·브랜드) 재조회에도 미수록 → unmatched 보류. 본문에 Q-스위치 Nd:YAG·alexandrite·ruby·Er:YAG·CO2 등은 기술 일반명으로만 언급(특정 모델 미표기).",
+      "제품: 보톡스·필러 모두 브랜드 미표기(가격표 '국산/미국산', '단기/중기 필러'로만 구분). 특정 제품명이 전혀 노출되지 않아 matched/unmatched 모두 비움 — 기계적 매칭(국산보톡스→보톡스 등) 금지 원칙 준수.",
+      "가격: /pay2/의 5개 표(보톡스·필러·레이저·제모·박피)에서 텍스트로 전량 수집. /pay/는 회원 로그인 전용이라 접근 불가(공개 가격 동일 출처로 판단).",
+      "주의: 홈·일부 본문에 Rolex replica 등 스팸 외부링크가 삽입됨(사이트 일부 변조 흔적). 병원 콘텐츠 자체는 유효해 정상 수집.",
+      "미수집: 공지사항·서적안내·수상내역·시술전후비교 게시판은 제품·장비·가격 데이터 출처가 아니어서 생략."
+    ]
+  }
+}

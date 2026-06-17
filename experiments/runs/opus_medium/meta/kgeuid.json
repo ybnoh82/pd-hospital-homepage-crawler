@@ -1,0 +1,13 @@
+{
+  "combo": "opus_medium",
+  "model_short": "opus",
+  "model_id": "claude-opus-4-8",
+  "effort": "medium",
+  "id": "kgeuid",
+  "name": "신논현톡스앤필의원",
+  "url": "https://www.toxnfill9.com",
+  "exit_code": 0,
+  "wall_seconds": 627.2,
+  "hard_killed": false,
+  "start_ts": 1781667268.9
+}

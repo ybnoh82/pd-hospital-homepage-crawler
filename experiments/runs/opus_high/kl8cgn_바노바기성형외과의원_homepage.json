@@ -1,0 +1,886 @@
+{
+  "hospital_id": "kl8cgn",
+  "hospital_name": "바노바기성형외과의원",
+  "crawled_at": "2026-06-17T14:48:00+09:00",
+  "address": {
+    "sido": "서울",
+    "sggu": "강남구",
+    "emdong": "역삼동",
+    "road_address": "서울특별시 강남구 논현로 517, 바노바기 지하1,지상1~6층 (역삼동)",
+    "latitude": null,
+    "longitude": null
+  },
+  "homepage_url": "https://www.banobagi.com/",
+  "identity_status": "match",
+  "alternative_urls": [],
+  "branches": {
+    "type": "headquarters",
+    "network_group": "바노바기 그룹",
+    "this_branch_name": "바노바기성형외과의원",
+    "sibling_branches": [
+      {
+        "name": "바노바기 리프팅라운지",
+        "url": "http://www.liftingbanobagi.com/",
+        "address": null
+      },
+      {
+        "name": "바노바기 피부과의원",
+        "url": "https://skinbanobagi.com/",
+        "address": null
+      },
+      {
+        "name": "바노바기 클리닉 역삼역점",
+        "url": "https://www.banobagiclinic.com/",
+        "address": null
+      },
+      {
+        "name": "바노바기 웰니스클리닉",
+        "url": "http://banobagiwellness.co.kr/",
+        "address": null
+      },
+      {
+        "name": "바노바기 일레븐치과",
+        "url": "http://www.11dent.co.kr/",
+        "address": null
+      }
+    ]
+  },
+  "operation_info": {
+    "hospital_name": "바노바기 성형외과 의원",
+    "representative_name": "반재상",
+    "business_number": "220-08-87096",
+    "phone": "1588-6508",
+    "phone_secondary": null,
+    "fax": null,
+    "email": null,
+    "kakao_channel": null,
+    "operating_hours": {
+      "monday": {
+        "open": "09:30",
+        "close": "18:30",
+        "break_start": null,
+        "break_end": null
+      },
+      "tuesday": {
+        "open": "09:30",
+        "close": "18:30",
+        "break_start": null,
+        "break_end": null
+      },
+      "wednesday": {
+        "open": "09:30",
+        "close": "18:30",
+        "break_start": null,
+        "break_end": null
+      },
+      "thursday": {
+        "open": "09:30",
+        "close": "18:30",
+        "break_start": null,
+        "break_end": null
+      },
+      "friday": {
+        "open": "09:30",
+        "close": "18:30",
+        "break_start": null,
+        "break_end": null
+      },
+      "saturday": {
+        "open": "09:30",
+        "close": "16:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "sunday": null,
+      "holiday": null
+    },
+    "operating_hours_note": "월-금 09:30-18:30, 토 09:30-16:00. 일요일·공휴일 휴진(명시). 대표번호 1588-6508. 통신판매업 신고번호 제2015-서울강남-03292호.",
+    "parking_info": null,
+    "transport_info": null,
+    "facilities": []
+  },
+  "doctors": [
+    {
+      "name": "반재상",
+      "is_representative": true,
+      "role": "대표원장",
+      "specialty": [
+        "성형외과"
+      ],
+      "education": [
+        "서울대학교병원"
+      ],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "오창현",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [
+        "성형외과"
+      ],
+      "education": [
+        "서울대학교병원"
+      ],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "박선재",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [
+        "성형외과"
+      ],
+      "education": [
+        "서울대학교병원"
+      ],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "윤민지",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [
+        "성형외과"
+      ],
+      "education": [
+        "서울대학교병원"
+      ],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "권희연",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [
+        "성형외과"
+      ],
+      "education": [
+        "서울대학교병원"
+      ],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "서재범",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [
+        "유방외과 세부전문의"
+      ],
+      "education": [
+        "경북대학교 외과"
+      ],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "김진현",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [
+        "성형외과"
+      ],
+      "education": [
+        "서울대학교병원"
+      ],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "박언주",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [],
+      "education": [
+        "서울대학교 의과대학"
+      ],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "김인건",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [
+        "성형외과"
+      ],
+      "education": [
+        "일본 긴끼대학 성형외과"
+      ],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "김용주",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [
+        "마취통증의학과"
+      ],
+      "education": [
+        "서울대학교병원"
+      ],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "최정윤",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [
+        "마취통증의학과"
+      ],
+      "education": [
+        "서울대학교병원"
+      ],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "김지연",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [
+        "마취통증의학과"
+      ],
+      "education": [
+        "서울대학교병원"
+      ],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    }
+  ],
+  "products": {
+    "matched_products": [
+      {
+        "product_kr": "쥬베룩",
+        "brand_kr": "쥬베룩",
+        "manufacturer_kr": null,
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 3,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.banobagi.com/myboard/promotion",
+            "evidence": "이벤트 '쥬베룩 4.9만원', '쥬베룩 + 인모드(FORMA) 18만원'"
+          }
+        ],
+        "context": "카탈로그 'Juvelook' 한↔영 매칭. 사이트 표기 '쥬베룩' = PLLA/PCL 콜라겐 부스터 스킨부스터. 세부 라인(Volume/i/G) 미표기.",
+        "verification_status": "verified"
+      }
+    ],
+    "unmatched_products": [
+      {
+        "raw_name": "아테콜",
+        "category_guess": "반영구 필러(PMMA, Artecoll 추정)",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.banobagi.com/page/artecoll",
+            "evidence": "메뉴 '반영구필러 아테콜'"
+          },
+          {
+            "channel": "homepage",
+            "url": "https://www.banobagi.com/myboard/promotion",
+            "evidence": "프로모션 '아테콜 1개 130만원'"
+          }
+        ],
+        "context": "카탈로그 재조회(아테콜/Artecoll, NFKC) 결과 미수록(유사어 '아테로콜라겐'은 다른 제품) → 보류.",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "모티바 프리저베",
+        "category_guess": "가슴 보형물(Motiva, 미용 카탈로그 범위 밖)",
+        "mention_count": 3,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.banobagi.com/",
+            "evidence": "메인 '모티바 프리저베' 가슴성형"
+          },
+          {
+            "channel": "homepage",
+            "url": "https://www.banobagi.com/myboard/promotion",
+            "evidence": "프로모션 '모티바 프리저베(vat포함) 1800만원', '모티바가슴성형 1050만원', '모티바 재수술 1050만원'"
+          }
+        ],
+        "context": "가슴 보형물은 필러·톡신·스킨부스터 카탈로그 대상 외 → 보류. 취급 신호로 기록.",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "멘토(스무스/엑스트라)",
+        "category_guess": "가슴 보형물(Mentor, 미용 카탈로그 범위 밖)",
+        "mention_count": 3,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.banobagi.com/myboard/promotion",
+            "evidence": "프로모션 '멘토스무스 400만원', '멘토엑스트라 800만원', '멘토엑스트라재수술 800만원'"
+          }
+        ],
+        "context": "가슴 보형물은 미용 카탈로그 대상 외 → 보류. 취급 신호로 기록.",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "equipments": {
+    "matched_equipments": [
+      {
+        "name_kr": "인모드",
+        "name_en": "InMode",
+        "category": "고주파(RF) 리프팅",
+        "mention_count": 3,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.banobagi.com/myboard/promotion",
+            "evidence": "이벤트 '쥬베룩 + 인모드(FORMA) 18만원', '윤곽 주사 + 인모드 11만원'"
+          }
+        ],
+        "context": "카탈로그 'InMode / InMode Forma / FX' 매칭. 사이트 표기 '인모드(FORMA)' = InMode Forma.",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "써마지 FLX",
+        "name_en": "Thermage FLX",
+        "category": "고주파(RF) 리프팅",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.banobagi.com/myboard/promotion",
+            "evidence": "프로모션 '수면 울써마지 130만원'(울쎄라+써마지 결합 시술명)"
+          },
+          {
+            "channel": "homepage",
+            "url": "https://www.banobagi.com/",
+            "evidence": "BANOBAGI TV '울써마지 맛집'"
+          }
+        ],
+        "context": "'울써마지'는 써마지(Thermage)+울쎄라(Ulthera) 결합 시술 브랜딩. 써마지 성분 추정 매칭(세부 모델 미표기, FLX 가정) → inferred.",
+        "verification_status": "inferred"
+      },
+      {
+        "name_kr": "울쎄라",
+        "name_en": "Ulthera",
+        "category": "고강도집속초음파(HIFU) 리프팅",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.banobagi.com/myboard/promotion",
+            "evidence": "프로모션 '수면 울써마지 130만원'(울쎄라+써마지 결합 시술명)"
+          },
+          {
+            "channel": "homepage",
+            "url": "https://www.banobagi.com/",
+            "evidence": "BANOBAGI TV '울써마지 맛집'"
+          }
+        ],
+        "context": "'울써마지'의 '울'은 울쎄라(Ulthera) 추정 → inferred.",
+        "verification_status": "inferred"
+      }
+    ],
+    "unmatched_equipments": [
+      {
+        "raw_name": "트리플타이트",
+        "category_guess": "고주파(RF) 타이트닝(InMode 계열 시술명 추정)",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.banobagi.com/myboard/promotion",
+            "evidence": "프로모션 '트리플타이트 60만원'(홈 이벤트 79만원)"
+          }
+        ],
+        "context": "카탈로그 재조회(트리플타이트) 미수록. InMode 기반 RF 타이트닝 시술명 추정이나 특정 모델 미표기 → 보류.",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "브이올렛",
+        "category_guess": "레이저(혈관/색소 추정)",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.banobagi.com/myboard/promotion",
+            "evidence": "프로모션 '브이올렛 29만원'"
+          }
+        ],
+        "context": "카탈로그 재조회(브이올렛/V-olet) 미수록 → 보류.",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "엘라코어",
+        "category_guess": "마이크로코어링 장비(Ellacor 추정)",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.banobagi.com/myboard/promotion",
+            "evidence": "프로모션 '엘라코어 290만원'"
+          }
+        ],
+        "context": "카탈로그 재조회(엘라코어/Ellacor) 미수록 → 보류.",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "manufacturer_signals": [],
+  "treatments": [
+    {
+      "treatment_name": "쥬베룩",
+      "category": "스킨부스터",
+      "product_name": "쥬베룩",
+      "equipment_name": null,
+      "price": {
+        "text": "쥬베룩 4.9만원",
+        "low": 49000,
+        "high": 49000,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": "이벤트가",
+      "source_page": "https://www.banobagi.com/myboard/promotion",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "쥬베룩 + 인모드(FORMA)",
+      "category": "스킨부스터/RF",
+      "product_name": "쥬베룩",
+      "equipment_name": "인모드",
+      "price": {
+        "text": "쥬베룩 + 인모드(FORMA) 18만원",
+        "low": 180000,
+        "high": 180000,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": "이벤트가(홈 이벤트)",
+      "source_page": "https://www.banobagi.com/myboard/promotion",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "윤곽 주사 + 인모드",
+      "category": "RF 타이트닝",
+      "product_name": null,
+      "equipment_name": "인모드",
+      "price": {
+        "text": "윤곽 주사 + 인모드 11만원",
+        "low": 110000,
+        "high": 110000,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": "이벤트가",
+      "source_page": "https://www.banobagi.com/myboard/promotion",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "트리플타이트",
+      "category": "RF 타이트닝",
+      "product_name": null,
+      "equipment_name": "트리플타이트",
+      "price": {
+        "text": "트리플타이트 60만원(홈 이벤트 79만원)",
+        "low": 600000,
+        "high": 790000,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": "프로모션 페이지 60만원, 홈 이벤트 배너 79만원 병기",
+      "source_page": "https://www.banobagi.com/myboard/promotion",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "수면 울써마지",
+      "category": "리프팅(HIFU+RF)",
+      "product_name": null,
+      "equipment_name": "써마지 FLX",
+      "price": {
+        "text": "수면 울써마지 130만원",
+        "low": 1300000,
+        "high": 1300000,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": "울쎄라+써마지 결합 시술",
+      "source_page": "https://www.banobagi.com/myboard/promotion",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "엘라코어",
+      "category": "마이크로코어링",
+      "product_name": null,
+      "equipment_name": "엘라코어",
+      "price": {
+        "text": "엘라코어 290만원",
+        "low": 2900000,
+        "high": 2900000,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": "이벤트가",
+      "source_page": "https://www.banobagi.com/myboard/promotion",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "브이올렛",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": "브이올렛",
+      "price": {
+        "text": "브이올렛 29만원",
+        "low": 290000,
+        "high": 290000,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": "이벤트가",
+      "source_page": "https://www.banobagi.com/myboard/promotion",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "RF 밴드 리프팅",
+      "category": "RF 리프팅",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "RF 밴드 리프팅 200만원",
+        "low": 2000000,
+        "high": 2000000,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": "자체 시술명(탄력밴드리프팅 계열)",
+      "source_page": "https://www.banobagi.com/myboard/promotion",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "비절개탄력밴드리프팅",
+      "category": "실리프팅",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "비절개탄력밴드리프팅 210만원(홈 비절개탄력 밴드리프팅 210만원)",
+        "low": 2100000,
+        "high": 2100000,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": "이벤트가",
+      "source_page": "https://www.banobagi.com/myboard/promotion",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "아테콜 1개",
+      "category": "반영구 필러",
+      "product_name": "아테콜",
+      "equipment_name": null,
+      "price": {
+        "text": "아테콜 1개 130만원",
+        "low": 1300000,
+        "high": 1300000,
+        "regular_price": null,
+        "unit": "개",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": "이벤트가",
+      "source_page": "https://www.banobagi.com/myboard/promotion",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "모티바 프리저베",
+      "category": "가슴성형",
+      "product_name": "모티바 프리저베",
+      "equipment_name": null,
+      "price": {
+        "text": "모티바 프리저베(vat포함) 1800만원",
+        "low": 18000000,
+        "high": 18000000,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": "VAT 포함. 모티바가슴성형 1050만원·재수술 1050만원도 게시",
+      "source_page": "https://www.banobagi.com/myboard/promotion",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "내시경 이마거상술",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "내시경이마거상술 250만원",
+        "low": 2500000,
+        "high": 2500000,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": "이벤트가",
+      "source_page": "https://www.banobagi.com/myboard/promotion",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "매몰 쌍꺼풀",
+      "category": "눈성형",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "매몰 쌍꺼풀 45만원",
+        "low": 450000,
+        "high": 450000,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": "이벤트가",
+      "source_page": "https://www.banobagi.com/myboard/promotion",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "절개 쌍꺼풀",
+      "category": "눈성형",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "절개 쌍꺼풀 120만원",
+        "low": 1200000,
+        "high": 1200000,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": "이벤트가",
+      "source_page": "https://www.banobagi.com/myboard/promotion",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "디테일 코성형",
+      "category": "코성형",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "디테일 코성형 150만원",
+        "low": 1500000,
+        "high": 1500000,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": "이벤트가. 기능 코성형 50만원·코끝 성형 99만원도 게시",
+      "source_page": "https://www.banobagi.com/myboard/promotion",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "세빈 서브리미티",
+      "category": "리프팅(추정)",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "세빈서브리미티 499만원(홈 399만원)",
+        "low": 3990000,
+        "high": 4990000,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": "자체 시술명, 장비·제품 미특정",
+      "source_page": "https://www.banobagi.com/myboard/promotion",
+      "verification_status": "verified"
+    }
+  ],
+  "language_support": {
+    "supported_languages": [
+      "ko"
+    ],
+    "has_language_switcher": false,
+    "foreign_language_pages": {}
+  },
+  "crawl_metadata": {
+    "pages_crawled": 5,
+    "pages_visited": [
+      "https://www.banobagi.com/ (홈·정찰·이벤트)",
+      "https://www.banobagi.com/myboard/promotion (프로모션 1페이지)",
+      "https://www.banobagi.com/shop_contents/myboard_list.htm?page=2&myboard_code=promotion (프로모션 2페이지, fetch)",
+      "https://www.banobagi.com/shop_contents/myboard_list.htm?page=3&myboard_code=promotion (프로모션 3페이지, fetch)",
+      "https://www.banobagi.com/page/sub07_01 (의료진 소개)"
+    ],
+    "crawl_method": "Playwright MCP 직접 방문 + browser_evaluate 텍스트 추출(텍스트형). 프로모션 2·3페이지는 AJAX fetch로 수집. vision 미사용(가격·제품·장비명 모두 텍스트 노출).",
+    "errors": [],
+    "completeness": {
+      "operation_info": true,
+      "doctors": true,
+      "products": true,
+      "equipments": true,
+      "treatments": true,
+      "prices": true,
+      "language_support": true
+    },
+    "follow_up": [
+      {
+        "area": "operation_info",
+        "reason": "needs_deeper_crawl",
+        "detail": "진료안내/오시는 길 페이지(주차·교통·시설)가 step 이미지(step_img*.jpg)로 구성 — 텍스트 미추출. vision 분할 판독 시 parking_info/transport_info 확보 가능.",
+        "urls": [
+          "https://www.banobagi.com/page/sub07_02"
+        ]
+      },
+      {
+        "area": "products",
+        "reason": "other",
+        "detail": "비수술(필러·톡신·스킨부스터·레이저) 부문은 패밀리 별도 도메인(바노바기 피부과의원 skinbanobagi.com, 리프팅라운지 liftingbanobagi.com)에 집중될 가능성. 같은 그룹이나 별개 의료기관(주소 상이 가능) — 본 실행은 banobagi.com 본원만 수집. 취급 제품·장비 보강 시 해당 도메인 신원확인 후 별도 수집 필요.",
+        "urls": [
+          "https://skinbanobagi.com/",
+          "http://www.liftingbanobagi.com/"
+        ]
+      },
+      {
+        "area": "treatments",
+        "reason": "budget_time",
+        "detail": "수술 상세 페이지(눈·코·윤곽·동안·리프팅 메뉴 40여 개)는 자체 마케팅 시술명 위주이며 본문에 추가 제품·장비명이 묻혀 있을 수 있음 — 시간 예산상 미방문. 비급여수가표(footer 링크)도 미방문.",
+        "urls": [
+          "https://www.banobagi.com/page/lifting",
+          "https://www.banobagi.com/page/artecoll",
+          "https://www.banobagi.com/page/stem_cell"
+        ]
+      }
+    ],
+    "cost": {
+      "model": "claude-opus-4-8",
+      "effort": "high",
+      "input_tokens": 2973,
+      "output_tokens": 23355,
+      "cost_usd": 2.1837,
+      "duration_seconds": 345
+    },
+    "notes": [
+      "병원 확인: 푸터 사업자정보(바노바기 성형외과 의원, 대표 반재상외 1명, 220-08-87096)가 입력 병원 정보와 일치 — match.",
+      "사이트 유형: 텍스트형. 메뉴·이벤트·프로모션·의료진명이 모두 텍스트로 노출되어 vision 미사용.",
+      "프로모션은 3페이지 페이지네이션(AJAX) — 2·3페이지는 fetch로 수집해 누락 방지.",
+      "매칭: 쥬베룩(Juvelook 스킨부스터) verified. 인모드(InMode) verified. 울써마지=울쎄라(Ulthera)+써마지(Thermage) 결합 시술 → 써마지 FLX·울쎄라 inferred.",
+      "보류(unmatched): 아테콜(Artecoll 반영구필러, 카탈로그 미수록), 트리플타이트·브이올렛·엘라코어(카탈로그 재조회 미수록), 모티바·멘토(가슴 보형물 — 미용 카탈로그 범위 밖이나 취급 신호로 기록).",
+      "의료진 12명 수집(성형외과 9·유방외과 1·마취통증의학과 3). 개별 상세(학력·경력 전체)는 예산상 목록 수준만 확보.",
+      "미방문: 수술 상세 40여 페이지, 비급여수가표, 오시는길(이미지) — follow_up에 기록. 비수술 제품·장비는 패밀리 별도 도메인 가능성도 follow_up에 기록."
+    ]
+  }
+}

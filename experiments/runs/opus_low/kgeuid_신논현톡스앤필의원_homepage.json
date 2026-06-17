@@ -1,0 +1,1976 @@
+{
+  "hospital_id": "kgeuid",
+  "hospital_name": "신논현톡스앤필의원",
+  "crawled_at": "2026-06-17T12:40:00+09:00",
+  "address": {
+    "sido": "서울",
+    "sggu": "강남구",
+    "emdong": "논현동",
+    "road_address": "서울특별시 강남구 강남대로 484, HK빌딩 2,3층 (논현동)",
+    "latitude": null,
+    "longitude": null
+  },
+  "homepage_url": "https://www.toxnfill9.com/",
+  "identity_status": "match",
+  "alternative_urls": [
+    "https://eng.toxnfill9.com/",
+    "https://jp.toxnfill9.com/",
+    "https://cn.toxnfill9.com/"
+  ],
+  "branches": {
+    "type": "branch",
+    "network_group": "톡스앤필",
+    "this_branch_name": "신논현 톡스앤필의원",
+    "sibling_branches": [
+      {
+        "name": "톡스앤필 강남본점",
+        "url": "https://www.toxnfill1.com/",
+        "address": null
+      },
+      {
+        "name": "톡스앤필 압구정점",
+        "url": "http://www.toxnfill2.com/",
+        "address": null
+      },
+      {
+        "name": "톡스앤필 송파점",
+        "url": "http://www.toxnfill29.com/",
+        "address": null
+      }
+    ]
+  },
+  "operation_info": {
+    "hospital_name": "신논현 톡스앤필의원",
+    "representative_name": "권용휘",
+    "business_number": "807-18-02404",
+    "phone": "02-6951-4882",
+    "phone_secondary": null,
+    "fax": null,
+    "email": null,
+    "kakao_channel": "http://pf.kakao.com/_tVxfTn",
+    "operating_hours": {
+      "monday": {
+        "open": "10:30",
+        "close": "20:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "tuesday": {
+        "open": "10:30",
+        "close": "20:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "wednesday": {
+        "open": "10:30",
+        "close": "20:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "thursday": {
+        "open": "10:30",
+        "close": "20:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "friday": {
+        "open": "10:30",
+        "close": "20:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "saturday": {
+        "open": "10:30",
+        "close": "20:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "sunday": {
+        "open": "10:30",
+        "close": "20:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "holiday": {
+        "open": "10:30",
+        "close": "20:00",
+        "break_start": null,
+        "break_end": null
+      }
+    },
+    "operating_hours_note": "평일·토요일·일요일 오전 10:30 ~ 오후 8:00. 공휴일 및 점심시간 없이 진료.",
+    "parking_info": "99빌딩 건물 뒤 주차장",
+    "transport_info": "9호선 신논현역 3번출구 244m, 2층",
+    "facilities": [
+      "주차장"
+    ]
+  },
+  "doctors": [
+    {
+      "name": "권용휘",
+      "is_representative": true,
+      "role": "대표원장",
+      "specialty": [],
+      "education": [
+        "원광대학교 졸업"
+      ],
+      "career": [
+        "엘러간 쥬비덤·스킨바이브 패컬티",
+        "써마지 키스피커",
+        "울쎄라피프라임 키닥터",
+        "제오민 키닥터",
+        "벨로테로 키닥터",
+        "벨로테로 리바이브 키닥터"
+      ],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "안익준",
+      "is_representative": false,
+      "role": "수석 원장",
+      "specialty": [],
+      "education": [
+        "전북대학교 의과대학"
+      ],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "홍윤환",
+      "is_representative": false,
+      "role": "수석 원장",
+      "specialty": [],
+      "education": [
+        "한양대학교 졸업"
+      ],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "채두원",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [],
+      "education": [
+        "원광대학교 졸업"
+      ],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "송민철",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [],
+      "education": [
+        "경희대학교 졸업"
+      ],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "노기성",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "오유나",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "최민운",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "김현호",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "정하빈",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "김용성",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "장우성",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    }
+  ],
+  "products": {
+    "matched_products": [
+      {
+        "product_kr": "쥬베룩 볼륨",
+        "brand_kr": "쥬베룩",
+        "manufacturer_kr": null,
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.toxnfill9.com/",
+            "evidence": "인기시술 '쥬베룩 볼륨 1vial'"
+          }
+        ],
+        "context": "카탈로그 '쥬베룩 볼륨' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "쥬베룩 스킨",
+        "brand_kr": "쥬베룩",
+        "manufacturer_kr": null,
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.toxnfill9.com/",
+            "evidence": "인기시술 '쥬베룩 스킨 1vial'"
+          }
+        ],
+        "context": "사이트 '쥬베룩 스킨' → 카탈로그 브랜드 '쥬베룩' 매칭(세부라인 추정)",
+        "verification_status": "inferred"
+      },
+      {
+        "product_kr": "엘라비에 리투오",
+        "brand_kr": "엘라비에",
+        "manufacturer_kr": null,
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.toxnfill9.com/detail.php?c=4277&i=32043",
+            "evidence": "스킨부스터·시그니처 '엘라비에 리투오'"
+          }
+        ],
+        "context": "카탈로그 '엘라비에 리투오' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "리투오 파인",
+        "brand_kr": "리투오",
+        "manufacturer_kr": null,
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.toxnfill9.com/",
+            "evidence": "인기시술 '리투오 파인 1vial'"
+          }
+        ],
+        "context": "사이트 '리투오 파인' → 카탈로그 브랜드 '리투오/엘라비에' 매칭(세부라인 추정)",
+        "verification_status": "inferred"
+      },
+      {
+        "product_kr": "스킨바이브",
+        "brand_kr": "스킨바이브",
+        "manufacturer_kr": "엘러간",
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.toxnfill9.com/detail.php?c=4277&i=27482",
+            "evidence": "스킨부스터 '스킨바이브 — FDA 승인 히알루론산 피부영양주사'"
+          }
+        ],
+        "context": "카탈로그 '스킨바이브' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "힐로웨이브",
+        "brand_kr": "힐로웨이브",
+        "manufacturer_kr": null,
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.toxnfill9.com/detail.php?c=4277&i=32044",
+            "evidence": "스킨부스터·시그니처 '힐로웨이브'"
+          }
+        ],
+        "context": "카탈로그 '힐로웨이브' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "리쥬란 힐러",
+        "brand_kr": "리쥬란",
+        "manufacturer_kr": "파마리서치",
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.toxnfill9.com/detail.php?c=4277&i=27473",
+            "evidence": "스킨부스터 '리쥬란힐러/아이리쥬란'"
+          }
+        ],
+        "context": "카탈로그 '리쥬란 힐러' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "리쥬란 아이",
+        "brand_kr": "리쥬란",
+        "manufacturer_kr": "파마리서치",
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.toxnfill9.com/detail.php?c=4277&i=27473",
+            "evidence": "스킨부스터 '아이리쥬란 — 눈 주변 잔주름'"
+          }
+        ],
+        "context": "사이트 '아이리쥬란' → 카탈로그 '리쥬란 아이' 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "리쥬란 HB",
+        "brand_kr": "리쥬란",
+        "manufacturer_kr": "파마리서치",
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.toxnfill9.com/detail.php?c=4277&i=27475",
+            "evidence": "스킨부스터 '리쥬란HB plus'"
+          }
+        ],
+        "context": "사이트 '리쥬란HB plus' → 카탈로그 '리쥬란 HB' 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "NCTF BOOST 135 HA",
+        "brand_kr": "NCTF",
+        "manufacturer_kr": "필로르가",
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.toxnfill9.com/detail.php?c=4277&i=27478",
+            "evidence": "스킨부스터 'NCTF동안치료'"
+          }
+        ],
+        "context": "사이트 'NCTF' → 카탈로그 'NCTF BOOST 135 HA' 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "레티젠",
+        "brand_kr": "레티젠",
+        "manufacturer_kr": null,
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.toxnfill9.com/detail.php?c=4277&i=35539",
+            "evidence": "스킨부스터 '레티젠 — 99.9% 순수 콜라겐'"
+          }
+        ],
+        "context": "카탈로그 '레티젠' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "쥬브아셀",
+        "brand_kr": "쥬브아셀",
+        "manufacturer_kr": null,
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.toxnfill9.com/detail.php?c=4277&i=33679",
+            "evidence": "스킨부스터 '[ECM부스터] 쥬브아셀 — hADM 기반'"
+          }
+        ],
+        "context": "카탈로그 '쥬브아셀' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "스컬트라",
+        "brand_kr": "스컬트라",
+        "manufacturer_kr": null,
+        "category": "필러/콜라겐스티뮬레이터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.toxnfill9.com/detail.php?c=4275&i=32338",
+            "evidence": "필러/스컬트라 '스컬트라 — 자연스럽게 오래가는 볼륨'"
+          }
+        ],
+        "context": "카탈로그 '스컬트라' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "쥬비덤",
+        "brand_kr": "쥬비덤",
+        "manufacturer_kr": "엘러간",
+        "category": "필러",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.toxnfill9.com/detail.php?c=4275&i=32336",
+            "evidence": "필러 '페이스필러(수입/쥬비덤)'"
+          }
+        ],
+        "context": "사이트 '쥬비덤' → 카탈로그 브랜드 '쥬비덤' 매칭(세부라인 미표기)",
+        "verification_status": "inferred"
+      },
+      {
+        "product_kr": "제오민",
+        "brand_kr": "제오민",
+        "manufacturer_kr": "멀츠",
+        "category": "보툴리눔톡신",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.toxnfill9.com/staff.php",
+            "evidence": "대표원장 권용휘 '제오민 키닥터'"
+          }
+        ],
+        "context": "의료진 프로필의 제오민 키닥터 표기 → 취급 톡신으로 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "벨로테로",
+        "brand_kr": "벨로테로",
+        "manufacturer_kr": "멀츠",
+        "category": "필러",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.toxnfill9.com/staff.php",
+            "evidence": "대표원장 권용휘 '벨로테로 키닥터 / 벨로테로 리바이브 키닥터'"
+          }
+        ],
+        "context": "의료진 프로필의 벨로테로 키닥터 표기 → 취급 필러로 매칭(세부라인 미표기)",
+        "verification_status": "inferred"
+      }
+    ],
+    "unmatched_products": [
+      {
+        "raw_name": "레디어스",
+        "category_guess": "스킨부스터(재생성분 5종)",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.toxnfill9.com/detail.php?c=4277&i=27551",
+            "evidence": "스킨부스터 '레디어스 — 무너진 피부구조 5가지 재생성분'"
+          }
+        ],
+        "context": "카탈로그를 브랜드명·영문명으로 재조회했으나 미수록",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "히알라제",
+        "category_guess": "필러 녹임주사(히알루로니다제)",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.toxnfill9.com/detail.php?c=4275&i=27446",
+            "evidence": "필러 '히알라제 — 필러 녹임 주사'"
+          }
+        ],
+        "context": "히알루로니다제 성분 시술명, 카탈로그 미수록 → 보류",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "페이스필러(국산)",
+        "category_guess": "국산 HA 필러(브랜드 미표기)",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.toxnfill9.com/detail.php?c=4275&i=32335",
+            "evidence": "필러 '페이스필러(국산)'"
+          }
+        ],
+        "context": "브랜드 미표기로 카탈로그 특정 불가 → 보류",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "equipments": {
+    "matched_equipments": [
+      {
+        "name_kr": "써마지 FLX",
+        "name_en": "Thermage FLX",
+        "category": "리프팅",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.toxnfill9.com/detail.php?c=4279&i=32334",
+            "evidence": "레이저리프팅 '[4세대] 커스텀 써마지 FLX'"
+          }
+        ],
+        "context": "카탈로그 '써마지 FLX' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "온다",
+        "name_en": "ONDA",
+        "category": "리프팅",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.toxnfill9.com/detail.php?c=4279&i=32333",
+            "evidence": "레이저리프팅 '온다리프팅'"
+          }
+        ],
+        "context": "사이트 '온다리프팅' → 카탈로그 '온다(ONDA)' 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "울쎄라피 프라임",
+        "name_en": "Ultherapy Prime",
+        "category": "리프팅",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.toxnfill9.com/detail.php?c=4279&i=32332",
+            "evidence": "레이저리프팅 'NEW 울쎄라피 프라임'"
+          }
+        ],
+        "context": "카탈로그 '울쎄라피 프라임' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "티타늄",
+        "name_en": "Titanium",
+        "category": "리프팅",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.toxnfill9.com/detail.php?c=4279&i=27492",
+            "evidence": "레이저리프팅 '티타늄 리프팅'"
+          }
+        ],
+        "context": "사이트 '티타늄 리프팅' → 카탈로그 '티타늄' 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "슈링크",
+        "name_en": "Shrink",
+        "category": "리프팅",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.toxnfill9.com/detail.php?c=4279&i=27493",
+            "evidence": "레이저리프팅 '슈링크 유니버스'"
+          }
+        ],
+        "context": "사이트 '슈링크 유니버스' → 카탈로그 브랜드 '슈링크' 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "포텐자",
+        "name_en": "POTENZA",
+        "category": "리프팅 / 재생",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.toxnfill9.com/detail.php?c=4282&i=27503",
+            "evidence": "여드름/모공 '포텐자 레이저'"
+          }
+        ],
+        "context": "카탈로그 '포텐자(POTENZA)' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "소프웨이브",
+        "name_en": "Sofwave (SUPERB)",
+        "category": "리프팅",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.toxnfill9.com/detail.php?c=4279&i=35538",
+            "evidence": "레이저리프팅 '소프웨이브'"
+          }
+        ],
+        "context": "카탈로그 '소프웨이브' 직접 매칭",
+        "verification_status": "verified"
+      }
+    ],
+    "unmatched_equipments": [
+      {
+        "raw_name": "엠페이스",
+        "category_guess": "안면근육 강화 리프팅(EMS+RF, Emface 추정)",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.toxnfill9.com/detail.php?c=4279&i=35537",
+            "evidence": "레이저리프팅 '엠페이스 — 안면근육 강화+중안부 축소'"
+          }
+        ],
+        "context": "카탈로그를 영문명(Emface)으로 재조회했으나 미수록",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "덴서티",
+        "category_guess": "리프팅(고주파/HIFU 계열)",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.toxnfill9.com/detail.php?c=4279&i=27494",
+            "evidence": "레이저리프팅 '덴서티'"
+          }
+        ],
+        "context": "카탈로그를 영문명(Density)으로 재조회했으나 미수록",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "오푸스",
+        "category_guess": "고주파 프랙셔널(Opus 추정)",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.toxnfill9.com/detail.php?c=4279&i=27515",
+            "evidence": "레이저리프팅 '오푸스 — 고주파 진피재생'"
+          }
+        ],
+        "context": "카탈로그를 영문명(Opus)으로 재조회했으나 미수록",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "민트실",
+        "category_guess": "실리프팅(녹는 실)",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.toxnfill9.com/detail.php?c=4278&i=27484",
+            "evidence": "실리프팅 '민트실 — 360도 장미가시돌기'"
+          }
+        ],
+        "context": "실리프팅 제품, 장비 카탈로그 미수록 → 보류",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "루카스토닝",
+        "category_guess": "색소 토닝 레이저",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.toxnfill9.com/detail.php?c=4281&i=27500",
+            "evidence": "색소/홍조 '루카스토닝 — 복합성 색소 미백토닝'"
+          }
+        ],
+        "context": "자체 시술명, 실제 레이저 모델 미표기 → 보류",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "manufacturer_signals": [
+    {
+      "name": "Allergan",
+      "catalog_manufacturer_kr": "엘러간",
+      "sources": [
+        {
+          "channel": "homepage",
+          "url": "https://www.toxnfill9.com/staff.php",
+          "evidence": "대표원장 '엘러간 쥬비덤·스킨바이브 패컬티'"
+        }
+      ],
+      "context": "엘러간 제휴 — 본문에서 쥬비덤·스킨바이브 확인됨(매칭 보강)",
+      "verification_status": "verified"
+    },
+    {
+      "name": "Merz",
+      "catalog_manufacturer_kr": "멀츠",
+      "sources": [
+        {
+          "channel": "homepage",
+          "url": "https://www.toxnfill9.com/staff.php",
+          "evidence": "대표원장 '제오민·벨로테로 키닥터'"
+        }
+      ],
+      "context": "멀츠 제휴 — 제오민·벨로테로 확인됨(매칭 보강)",
+      "verification_status": "verified"
+    }
+  ],
+  "treatments": [
+    {
+      "treatment_name": "턱 톡신",
+      "category": "톡신",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "19,000원 부터",
+        "low": 19000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4274&i=27384",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "주름톡신",
+      "category": "톡신",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "30,000원 부터",
+        "low": 30000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4274&i=27388",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "특수부위 톡신Ⅰ (침샘/측두근/귀밑샘/턱밑샘)",
+      "category": "톡신",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "50,000원 부터",
+        "low": 50000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4274&i=27389",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "특수부위 톡신 Ⅱ",
+      "category": "톡신",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "30,000원 부터",
+        "low": 30000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4274&i=27396",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "바디톡신",
+      "category": "톡신",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "59,000원 부터",
+        "low": 59000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4274&i=27390",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "다한증톡신",
+      "category": "톡신",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "90,000원 부터",
+        "low": 90000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4274&i=27394",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "프리미엄 미국산 · 얼굴전체 톡신 (개봉확인)",
+      "category": "톡신",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "정상가 450,000원 → 259,000원",
+        "low": 259000,
+        "high": null,
+        "regular_price": 450000,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": "인기시술 8위. 미국산(수입) 톡신, 개봉확인",
+      "source_page": "https://www.toxnfill9.com/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "스컬트라",
+      "category": "필러/콜라겐스티뮬레이터",
+      "product_name": "스컬트라",
+      "equipment_name": null,
+      "price": {
+        "text": "649,000원 부터",
+        "low": 649000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4275&i=32338",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "페이스필러(수입/쥬비덤)",
+      "category": "필러",
+      "product_name": "쥬비덤",
+      "equipment_name": null,
+      "price": {
+        "text": "450,000원 부터",
+        "low": 450000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4275&i=32336",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "페이스필러(국산)",
+      "category": "필러",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "290,000원 부터",
+        "low": 290000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "국산 필러, 브랜드 미표기",
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4275&i=32335",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "히알라제 (필러 녹임 주사)",
+      "category": "필러",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "50,000원 부터",
+        "low": 50000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4275&i=27446",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "윤곽주사",
+      "category": "윤곽/조각/지방분해",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "50,000원 부터",
+        "low": 50000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4276&i=27458",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "조각주사",
+      "category": "윤곽/조각/지방분해",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "69,000원 부터",
+        "low": 69000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4276&i=27461",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "벨라콜린",
+      "category": "윤곽/조각/지방분해",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "99,000원 부터",
+        "low": 99000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "턱 밑 지방 집중 분해",
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4276&i=27468",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "소프웨이브",
+      "category": "레이저리프팅",
+      "product_name": null,
+      "equipment_name": "소프웨이브",
+      "price": {
+        "text": "990,000원 부터",
+        "low": 990000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4279&i=35538",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "엠페이스",
+      "category": "레이저리프팅",
+      "product_name": null,
+      "equipment_name": "엠페이스",
+      "price": {
+        "text": "719,000원 부터",
+        "low": 719000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4279&i=35537",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "[4세대] 커스텀 써마지 FLX",
+      "category": "레이저리프팅",
+      "product_name": null,
+      "equipment_name": "써마지 FLX",
+      "price": {
+        "text": "1,000,000원 부터 (인기시술 300샷 정상가 1,700,000 → 990,000)",
+        "low": 990000,
+        "high": null,
+        "regular_price": 1700000,
+        "unit": "샷",
+        "quantity": 300.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": "인기시술 4위 '써마지 FLX 300샷'",
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4279&i=32334",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "온다리프팅",
+      "category": "레이저리프팅",
+      "product_name": null,
+      "equipment_name": "온다",
+      "price": {
+        "text": "페이스 온다 30,000J + 슈링크 300샷 정상가 350,000 → 199,000원",
+        "low": 199000,
+        "high": null,
+        "regular_price": 350000,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": "인기시술 1위(온다+슈링크 패키지)",
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4279&i=32333",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "NEW 울쎄라피 프라임",
+      "category": "레이저리프팅",
+      "product_name": null,
+      "equipment_name": "울쎄라피 프라임",
+      "price": {
+        "text": "299,000원 부터 (300샷 정상가 1,700,000 → 890,000)",
+        "low": 299000,
+        "high": null,
+        "regular_price": 1700000,
+        "unit": "샷",
+        "quantity": 300.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": "인기시술 3위(300+100샷 1,290,000), 5위(300샷 890,000)",
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4279&i=32332",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "티타늄 리프팅",
+      "category": "레이저리프팅",
+      "product_name": null,
+      "equipment_name": "티타늄",
+      "price": {
+        "text": "390,000원 부터 (하관전체 정상가 880,000 → 449,000)",
+        "low": 390000,
+        "high": null,
+        "regular_price": 880000,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": "인기시술 2위(하관전체 449,000), 9위(풀페이스 3회+크라이오 3회 1,450,000)",
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4279&i=27492",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "슈링크 유니버스",
+      "category": "레이저리프팅",
+      "product_name": null,
+      "equipment_name": "슈링크",
+      "price": {
+        "text": "85,000원 부터",
+        "low": 85000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "2가지 모드, 7개 카트리지",
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4279&i=27493",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "덴서티",
+      "category": "레이저리프팅",
+      "product_name": null,
+      "equipment_name": "덴서티",
+      "price": {
+        "text": "790,000원 부터",
+        "low": 790000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4279&i=27494",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "오푸스",
+      "category": "레이저리프팅",
+      "product_name": null,
+      "equipment_name": "오푸스",
+      "price": {
+        "text": "790,000원 부터",
+        "low": 790000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "고주파 진피재생, 흉터·모공 개선",
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4279&i=27515",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "레티젠",
+      "category": "스킨부스터",
+      "product_name": "레티젠",
+      "equipment_name": null,
+      "price": {
+        "text": "399,000원 부터",
+        "low": 399000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "99.9% 순수 콜라겐",
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4277&i=35539",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "[ECM부스터] 쥬브아셀",
+      "category": "스킨부스터",
+      "product_name": "쥬브아셀",
+      "equipment_name": null,
+      "price": {
+        "text": "390,000원 부터",
+        "low": 390000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "hADM(무세포 동종진피) 기반",
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4277&i=33679",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "힐로웨이브",
+      "category": "스킨부스터",
+      "product_name": "힐로웨이브",
+      "equipment_name": null,
+      "price": {
+        "text": "449,000원 부터",
+        "low": 449000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4277&i=32044",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "엘라비에 리투오",
+      "category": "스킨부스터",
+      "product_name": "엘라비에 리투오",
+      "equipment_name": null,
+      "price": {
+        "text": "600,000원 부터 (리투오 파인 1vial 정상가 950,000 → 490,000)",
+        "low": 490000,
+        "high": null,
+        "regular_price": 950000,
+        "unit": "vial",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": "인기시술 12위 '리투오 파인 1vial'",
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4277&i=32043",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "레디어스",
+      "category": "스킨부스터",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "800,000원 부터",
+        "low": 800000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "5가지 재생성분",
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4277&i=27551",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "리쥬란힐러/아이리쥬란",
+      "category": "스킨부스터",
+      "product_name": "리쥬란 힐러",
+      "equipment_name": null,
+      "price": {
+        "text": "120,000원 부터",
+        "low": 120000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "PN 고농도, 눈가용 아이리쥬란 포함",
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4277&i=27473",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "리쥬란HB plus",
+      "category": "스킨부스터",
+      "product_name": "리쥬란 HB",
+      "equipment_name": null,
+      "price": {
+        "text": "200,000원 부터",
+        "low": 200000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "통증 적은 리쥬란",
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4277&i=27475",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "스킨바이브",
+      "category": "스킨부스터",
+      "product_name": "스킨바이브",
+      "equipment_name": null,
+      "price": {
+        "text": "270,000원 부터",
+        "low": 270000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "FDA 승인 히알루론산 피부영양주사",
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4277&i=27482",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "NCTF동안치료",
+      "category": "스킨부스터",
+      "product_name": "NCTF BOOST 135 HA",
+      "equipment_name": null,
+      "price": {
+        "text": "199,000원 부터",
+        "low": 199000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4277&i=27478",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "쥬베룩 볼륨",
+      "category": "스킨부스터",
+      "product_name": "쥬베룩 볼륨",
+      "equipment_name": null,
+      "price": {
+        "text": "1vial 정상가 890,000 → 450,000원",
+        "low": 450000,
+        "high": null,
+        "regular_price": 890000,
+        "unit": "vial",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": "인기시술 6위",
+      "source_page": "https://www.toxnfill9.com/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "쥬베룩 스킨",
+      "category": "스킨부스터",
+      "product_name": "쥬베룩 스킨",
+      "equipment_name": null,
+      "price": {
+        "text": "1vial 정상가 840,000 → 429,000원",
+        "low": 429000,
+        "high": null,
+        "regular_price": 840000,
+        "unit": "vial",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": "인기시술 7위",
+      "source_page": "https://www.toxnfill9.com/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "민트실",
+      "category": "실리프팅",
+      "product_name": null,
+      "equipment_name": "민트실",
+      "price": {
+        "text": "100,000원 부터",
+        "low": 100000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "360도 장미가시돌기",
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4278&i=27484",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "비너스 시크릿라인 PKG",
+      "category": "체형/바디",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "150,000원 부터",
+        "low": 150000,
+        "high": null,
+        "regular_price": 299000,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": "無스테로이드 지방분해주사",
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4280&i=35536",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "바디 제로핏주사",
+      "category": "체형/바디",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "250,000원 부터",
+        "low": 250000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "스테로이드 없는 지방분해주사",
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4280&i=27495",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "빼빼주사",
+      "category": "체형/바디",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "49,000원 부터",
+        "low": 49000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "팔뚝 지방분해",
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4280&i=27498",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "호박필",
+      "category": "스킨케어",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "99,000원 부터",
+        "low": 99000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "천연발효필링",
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4336&i=29559",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "VIP필링(PHA필링)",
+      "category": "스킨케어",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "150,000원 부터",
+        "low": 150000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4336&i=27887",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "여드름관리/재생관리",
+      "category": "스킨케어",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "90,000원 부터",
+        "low": 90000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "여드름 압출 포함",
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4336&i=27508",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "블랙필",
+      "category": "스킨케어",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "79,000원 부터",
+        "low": 79000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "천연발효 흑초",
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4336&i=27511",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "알라딘필링",
+      "category": "스킨케어",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "89,000원 부터",
+        "low": 89000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4336&i=27514",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "루카스토닝",
+      "category": "색소/홍조",
+      "product_name": null,
+      "equipment_name": "루카스토닝",
+      "price": {
+        "text": "50,000원 부터",
+        "low": 50000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "복합성 색소 미백토닝",
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4281&i=27500",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "포텐자 레이저",
+      "category": "여드름/모공",
+      "product_name": null,
+      "equipment_name": "포텐자",
+      "price": {
+        "text": "249,000원 부터",
+        "low": 249000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4282&i=27503",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "염증주사",
+      "category": "여드름/모공",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "10,000원 부터",
+        "low": 10000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "여드름 진정주사",
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4282&i=27474",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "마늘주사",
+      "category": "항노화/영양주사",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "49,000원 부터",
+        "low": 49000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4322&i=27693",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "신데렐라주사",
+      "category": "항노화/영양주사",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "39,000원 부터",
+        "low": 39000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "정맥주사",
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4322&i=27692",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "백옥주사",
+      "category": "항노화/영양주사",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "39,000원 부터",
+        "low": 39000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "정맥주사",
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4322&i=27691",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "비타민주사",
+      "category": "항노화/영양주사",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "39,000원 부터",
+        "low": 39000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4322&i=27690",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "면역주사",
+      "category": "항노화/영양주사",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "50,000원 부터",
+        "low": 50000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "하이알파",
+      "source_page": "https://www.toxnfill9.com/detail.php?c=4322&i=27689",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "입술+입꼬리필러+입꼬리/립플립톡신 (국산)",
+      "category": "필러/톡신 패키지",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "정상가 450,000 → 229,000원",
+        "low": 229000,
+        "high": null,
+        "regular_price": 450000,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": "인기시술 10위",
+      "source_page": "https://www.toxnfill9.com/",
+      "verification_status": "verified"
+    }
+  ],
+  "language_support": {
+    "supported_languages": [
+      "ko",
+      "en",
+      "ja",
+      "zh",
+      "vi",
+      "th",
+      "id"
+    ],
+    "has_language_switcher": true,
+    "foreign_language_pages": {
+      "en": "https://eng.toxnfill9.com/",
+      "ja": "https://jp.toxnfill9.com/",
+      "zh": "https://cn.toxnfill9.com/"
+    }
+  },
+  "crawl_metadata": {
+    "pages_crawled": 15,
+    "pages_visited": [
+      "https://www.toxnfill9.com/ (홈)",
+      "https://www.toxnfill9.com/serviceInfo.php?c=4274 (톡신)",
+      "https://www.toxnfill9.com/serviceInfo.php?c=4275 (필러/스컬트라)",
+      "https://www.toxnfill9.com/serviceInfo.php?c=4276 (윤곽/조각/벨라콜린)",
+      "https://www.toxnfill9.com/serviceInfo.php?c=4279 (레이저리프팅)",
+      "https://www.toxnfill9.com/serviceInfo.php?c=4277 (스킨부스터)",
+      "https://www.toxnfill9.com/serviceInfo.php?c=4278 (실리프팅)",
+      "https://www.toxnfill9.com/serviceInfo.php?c=4280 (체형/바디)",
+      "https://www.toxnfill9.com/serviceInfo.php?c=4336 (스킨케어)",
+      "https://www.toxnfill9.com/serviceInfo.php?c=4281 (색소/홍조)",
+      "https://www.toxnfill9.com/serviceInfo.php?c=4282 (여드름/모공)",
+      "https://www.toxnfill9.com/serviceInfo.php?c=4322 (항노화/영양주사)",
+      "https://www.toxnfill9.com/map.php (지점소개·오시는길)",
+      "https://www.toxnfill9.com/staff.php (의사 & 직원 소개)"
+    ],
+    "crawl_method": "텍스트형 — Playwright browser_evaluate 텍스트 추출 위주, vision 미사용",
+    "errors": [],
+    "completeness": {
+      "operation_info": true,
+      "doctors": true,
+      "products": true,
+      "equipments": true,
+      "treatments": true,
+      "prices": true,
+      "language_support": true
+    },
+    "follow_up": [],
+    "cost": {
+      "model": "claude-opus-4-8",
+      "effort": "low",
+      "input_tokens": 3577,
+      "output_tokens": 33840,
+      "cost_usd": 3.1781,
+      "duration_seconds": 459
+    },
+    "notes": [
+      "병원 확인: 푸터 사업자정보(신논현 톡스앤필의원, 대표 권용휘, 사업자번호 807-18-02404, 02-6951-4882, 강남대로 484 2층) 입력 정보와 일치 — match.",
+      "프랜차이즈: 톡스앤필 전국 33개 지점. 이 도메인(toxnfill9.com)은 신논현점. 형제지점 일부만 sibling_branches에 기록(전체는 푸터 지점 목록 참조).",
+      "텍스트형 사이트: 메뉴·시술목록·상세요약에 제품·장비명이 모두 텍스트로 노출되어 vision 없이 전수 수집. 11개 시술 카테고리 전체 방문.",
+      "가격: 각 시술목록의 '○○원 부터'(low)와 홈 인기시술/이벤트의 정상가→이벤트가를 반영. 상세 페이지 내부 세부 옵션가는 미전개(목록 기준가만 확보).",
+      "매칭: 써마지FLX·온다·울쎄라피프라임·슈링크·소프웨이브·티타늄·포텐자(장비), 스컬트라·쥬비덤·쥬베룩·엘라비에리투오·스킨바이브·힐로웨이브·리쥬란(힐러/아이/HB)·NCTF·레티젠·쥬브아셀·제오민·벨로테로(제품) 카탈로그 매칭.",
+      "제오민·벨로테로는 본문 시술목록엔 브랜드 미표기이나 대표원장 키닥터 이력으로 취급 확인 → 매칭.",
+      "미매칭: 엠페이스(Emface)·덴서티·오푸스·민트실·루카스토닝(장비), 레디어스·히알라제·국산필러(제품)는 카탈로그 재조회 후에도 미수록/브랜드 미표기 → 보류.",
+      "미수집: 이벤트 상세·전후사진·학술활동 등 게시판은 데이터 출처로 보지 않아 미수집."
+    ]
+  }
+}

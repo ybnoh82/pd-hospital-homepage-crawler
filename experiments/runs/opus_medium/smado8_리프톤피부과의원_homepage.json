@@ -1,0 +1,880 @@
+{
+  "hospital_id": "smado8",
+  "hospital_name": "리프톤피부과의원",
+  "crawled_at": "2026-06-17T12:00:00+09:00",
+  "address": {
+    "sido": "서울",
+    "sggu": "강남구",
+    "emdong": "신사동",
+    "road_address": "서울특별시 강남구 도산대로 119, 8층 9층 (신사동)",
+    "latitude": null,
+    "longitude": null
+  },
+  "homepage_url": "https://www.liftonskin.com/main",
+  "identity_status": "match",
+  "alternative_urls": [],
+  "branches": {
+    "type": "branch",
+    "network_group": "리프톤 피부과",
+    "this_branch_name": "리프톤 피부과 신사",
+    "sibling_branches": [
+      {
+        "name": "리프톤 피부과 울산",
+        "url": null,
+        "address": null
+      }
+    ]
+  },
+  "operation_info": {
+    "hospital_name": "리프톤피부과의원",
+    "representative_name": "전재욱, 문성훈",
+    "business_number": "846-01-02833",
+    "phone": "02-6677-6300",
+    "phone_secondary": "02-6677-6301",
+    "fax": null,
+    "email": null,
+    "kakao_channel": null,
+    "operating_hours": {
+      "monday": {
+        "open": "10:00",
+        "close": "20:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "tuesday": {
+        "open": "10:00",
+        "close": "20:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "wednesday": {
+        "open": "10:00",
+        "close": "20:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "thursday": {
+        "open": "10:00",
+        "close": "20:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "friday": {
+        "open": "10:00",
+        "close": "20:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "16:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "sunday": null,
+      "holiday": null
+    },
+    "operating_hours_note": "평일 10:00-20:00, 토요일 10:00-16:00, 일요일 및 공휴일 휴진",
+    "parking_info": null,
+    "transport_info": "서울 강남구 도산대로 119 K타워 9층 (지도: 카카오맵 연동)",
+    "facilities": []
+  },
+  "doctors": [
+    {
+      "name": "문성훈",
+      "is_representative": true,
+      "role": "대표원장",
+      "specialty": [
+        "피부과"
+      ],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": "https://lifton-admin.s3.ap-northeast-2.amazonaws.com/54061f3a-811a-4650-9980-4bac735db3e9.png",
+      "verification_status": "verified"
+    },
+    {
+      "name": "전재욱",
+      "is_representative": true,
+      "role": "대표원장",
+      "specialty": [
+        "피부과"
+      ],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": "https://lifton-admin.s3.ap-northeast-2.amazonaws.com/ad3da652-7296-4858-97af-3a543e9765b1.png",
+      "verification_status": "verified"
+    },
+    {
+      "name": "박형진",
+      "is_representative": false,
+      "role": "수석원장",
+      "specialty": [],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": "https://lifton-admin.s3.ap-northeast-2.amazonaws.com/4fab5816-f52d-48dd-89f8-0d589a59c406.jpg",
+      "verification_status": "verified"
+    },
+    {
+      "name": "허웅",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": "https://lifton-admin.s3.ap-northeast-2.amazonaws.com/c75e8702-4d64-4671-91d5-fed06da90af8.jpg",
+      "verification_status": "verified"
+    },
+    {
+      "name": "이나경",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": "https://lifton-admin.s3.ap-northeast-2.amazonaws.com/fb8e799f-3836-4b98-9add-3334c6b6a262.jpg",
+      "verification_status": "verified"
+    },
+    {
+      "name": "김나희",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": "https://lifton-admin.s3.ap-northeast-2.amazonaws.com/704cadc7-1dca-4e88-a3d8-52662ea1d479.jpg",
+      "verification_status": "verified"
+    },
+    {
+      "name": "이병호",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": "https://lifton-admin.s3.ap-northeast-2.amazonaws.com/852d5be8-eee1-4062-9e74-162c981f79d6.jpg",
+      "verification_status": "verified"
+    }
+  ],
+  "products": {
+    "matched_products": [
+      {
+        "product_kr": "래디어스",
+        "brand_kr": "래디어스",
+        "manufacturer_kr": "멀츠",
+        "category": "필러",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.liftonskin.com/main",
+            "evidence": "항노화 볼륨 센터 메뉴 '레디어스' / 이벤트 'RADIESSE'"
+          }
+        ],
+        "context": "사이트 표기 '레디어스/RADIESSE' → 카탈로그 '래디어스/Radiesse' 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "레스틸렌",
+        "brand_kr": "레스틸렌",
+        "manufacturer_kr": "Galderma",
+        "category": "필러",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.liftonskin.com/main",
+            "evidence": "항노화 볼륨 센터 메뉴 '레스틸렌'"
+          }
+        ],
+        "context": "카탈로그 '레스틸렌/Restylane' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "엘라비에 리투오",
+        "brand_kr": "엘라비에",
+        "manufacturer_kr": "Humedix",
+        "category": "필러",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.liftonskin.com/main",
+            "evidence": "항노화 볼륨 센터 메뉴 '엘라비에 리투오' / 푸터 'ELRAVIE RE2O'"
+          }
+        ],
+        "context": "카탈로그 '엘라비에 리투오/Elravie Rituo' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "레스틸렌 스킨부스터 비탈라이트",
+        "brand_kr": "비탈라이트",
+        "manufacturer_kr": "Galderma",
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.liftonskin.com/main",
+            "evidence": "항노화 볼륨 센터 메뉴 '비탈라이트' / 이벤트 'VITAL LIGHT'"
+          }
+        ],
+        "context": "사이트 '비탈라이트/VITAL LIGHT' → 카탈로그 '레스틸렌 스킨부스터 비탈라이트/Restylane Skinbooster Vital Light' 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "쥬베룩 볼륨",
+        "brand_kr": "쥬베룩",
+        "manufacturer_kr": "Vaim",
+        "category": "스킨부스터/콜라겐",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.liftonskin.com/main",
+            "evidence": "항노화 볼륨 센터 메뉴 '쥬베룩 볼륨'"
+          }
+        ],
+        "context": "카탈로그 '쥬베룩/Juvelook' 매칭(볼륨 라인)",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "스컬트라",
+        "brand_kr": "스컬트라",
+        "manufacturer_kr": "Galderma",
+        "category": "콜라겐부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.liftonskin.com/main",
+            "evidence": "항노화 볼륨 센터 메뉴 '스컬트라'"
+          }
+        ],
+        "context": "카탈로그 '스컬트라/Sculptra' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "리쥬란",
+        "brand_kr": "리쥬란",
+        "manufacturer_kr": "파마리서치",
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.liftonskin.com/main",
+            "evidence": "스킨 부스팅 센터 '리쥬란 힐러/HB/I' / 이벤트 'REJURAN SVIP LIFTON'"
+          }
+        ],
+        "context": "사이트 '리쥬란 힐러/HB/I' → 카탈로그 '리쥬란/Rejuran'(HB·아이 라인) 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "쥬베룩",
+        "brand_kr": "쥬베룩",
+        "manufacturer_kr": "Vaim",
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.liftonskin.com/main",
+            "evidence": "스킨 부스팅 센터 '쥬베룩 스킨/쥬베룩 아이'"
+          }
+        ],
+        "context": "카탈로그 '쥬베룩/Juvelook' 매칭(스킨·아이 라인)",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "엑소좀",
+        "brand_kr": "엑소좀",
+        "manufacturer_kr": null,
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.liftonskin.com/main",
+            "evidence": "스킨 부스팅 센터 '엑소좀 by 포텐자'"
+          }
+        ],
+        "context": "카탈로그 스킨부스터/엑소좀 카테고리 매칭(브랜드 미특정)",
+        "verification_status": "inferred"
+      }
+    ],
+    "unmatched_products": [
+      {
+        "raw_name": "FIT 부스터",
+        "category_guess": "스킨부스터(자체 시술명, 브랜드 미특정)",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.liftonskin.com/main",
+            "evidence": "스킨 부스팅 센터 메뉴 'FIT 부스터'"
+          }
+        ],
+        "context": "자체 시술명, 카탈로그 브랜드 특정 불가 → 보류",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "필러",
+        "category_guess": "필러(일반명)",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.liftonskin.com/main",
+            "evidence": "항노화 볼륨 센터 '필러 미세 주입술'"
+          }
+        ],
+        "context": "브랜드 미표기 일반명 → 보류",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "보톡스",
+        "category_guess": "보툴리눔 톡신(일반명)",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.liftonskin.com/myboard/nonpay",
+            "evidence": "비급여 진료비용표 '보톡스 40,000원~'"
+          }
+        ],
+        "context": "브랜드 미표기 일반명 → 보류",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "equipments": {
+    "matched_equipments": [
+      {
+        "name_kr": "울쎄라피 프라임",
+        "name_en": "Ultherapy Prime",
+        "category": "리프팅",
+        "mention_count": 3,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.liftonskin.com/main",
+            "evidence": "리프팅 센터 메뉴 '울쎄라피 프라임' / 이벤트 'ULTHERAPY PRIME' / 의료진 페이지 장비설명"
+          }
+        ],
+        "context": "카탈로그 '울쎄라피 프라임/Ultherapy Prime' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "써마지 FLX",
+        "name_en": "Thermage FLX",
+        "category": "리프팅",
+        "mention_count": 3,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.liftonskin.com/main",
+            "evidence": "리프팅 센터 메뉴 '써마지 FLX' / 이벤트 'THERMAGE FLX'"
+          }
+        ],
+        "context": "카탈로그 '써마지 FLX/Thermage FLX' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "소프웨이브",
+        "name_en": "Sofwave (SUPERB)",
+        "category": "리프팅",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.liftonskin.com/main",
+            "evidence": "리프팅 센터 메뉴 '소프웨이브' / 이벤트 'NEW SOFWAVE'"
+          }
+        ],
+        "context": "카탈로그 '소프웨이브/Sofwave' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "티타늄",
+        "name_en": "Titanium",
+        "category": "리프팅",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.liftonskin.com/main",
+            "evidence": "리프팅 센터 메뉴 '티타늄' / 이벤트 'TITANIUM 3+1'"
+          }
+        ],
+        "context": "카탈로그 '티타늄/Titanium' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "온다",
+        "name_en": "ONDA",
+        "category": "리프팅",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.liftonskin.com/main",
+            "evidence": "리프팅 센터 메뉴 'ONDA' / 이벤트 'BODY ONDA'"
+          }
+        ],
+        "context": "카탈로그 '온다/ONDA' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "포텐자",
+        "name_en": "POTENZA",
+        "category": "리프팅 / 재생",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.liftonskin.com/main",
+            "evidence": "스킨 부스팅 센터 '엑소좀 by 포텐자'"
+          }
+        ],
+        "context": "카탈로그 '포텐자/POTENZA' 직접 매칭",
+        "verification_status": "verified"
+      }
+    ],
+    "unmatched_equipments": [
+      {
+        "raw_name": "프로파운드",
+        "category_guess": "고주파(RF) 리프팅",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.liftonskin.com/main",
+            "evidence": "리프팅 센터 메뉴 '프로파운드' / 이벤트 'PROFOUND PROMOTION'"
+          }
+        ],
+        "context": "카탈로그 영문 'Profound'·한글 '프로파운드' 모두 조회했으나 미수록 → 보류",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "압토스 바이오 리프팅",
+        "category_guess": "실리프팅(Aptos 실)",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.liftonskin.com/main",
+            "evidence": "리프팅 센터 메뉴 '압토스 바이오 리프팅' / 이벤트 'APTOS BIO LIFTING'"
+          }
+        ],
+        "context": "카탈로그 'Aptos/압토스' 조회했으나 미수록 → 보류",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "튠라이트",
+        "category_guess": "근적외선 레이저",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.liftonskin.com/main",
+            "evidence": "리프팅 센터 메뉴 '튠라이트'"
+          }
+        ],
+        "context": "카탈로그 '튠라이트/Tune' 조회했으나 미수록 → 보류",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "브이올렛/윤곽 주사",
+        "category_guess": "지방분해/윤곽 주사",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.liftonskin.com/main",
+            "evidence": "리프팅 센터 메뉴 '브이올렛/윤곽 주사'"
+          }
+        ],
+        "context": "카탈로그 '브이올렛' 조회했으나 미수록(주사 시술) → 보류",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "manufacturer_signals": [],
+  "treatments": [
+    {
+      "treatment_name": "울쎄라피 프라임",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "울쎄라피 프라임",
+      "price": {
+        "text": "노화/탄력 200,000원~ (비급여 안내 기준)",
+        "low": 200000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "고강도 초음파 리프팅. 이벤트가는 이벤트 배너(이미지) 별도",
+      "source_page": "https://www.liftonskin.com/main",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "써마지 FLX",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "써마지 FLX",
+      "price": null,
+      "package": null,
+      "notes": "FDA 승인 고주파 리프팅",
+      "source_page": "https://www.liftonskin.com/main",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "소프웨이브",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "소프웨이브",
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "https://www.liftonskin.com/main",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "티타늄",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "티타늄",
+      "price": null,
+      "package": null,
+      "notes": "세계 최초 3파장 동시 조사 핸드피스",
+      "source_page": "https://www.liftonskin.com/main",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "온다(ONDA)",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "온다",
+      "price": null,
+      "package": null,
+      "notes": "극초단파(Microwave) 리프팅, 바디 ONDA 포함",
+      "source_page": "https://www.liftonskin.com/main",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "프로파운드",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "프로파운드",
+      "price": null,
+      "package": null,
+      "notes": "고주파 레이저 리프팅",
+      "source_page": "https://www.liftonskin.com/main",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "압토스 바이오 리프팅",
+      "category": "실리프팅",
+      "product_name": null,
+      "equipment_name": "압토스 바이오 리프팅",
+      "price": {
+        "text": "실리프팅 100,000원~ (비급여 안내 기준)",
+        "low": 100000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "https://www.liftonskin.com/main",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "엑소좀 by 포텐자",
+      "category": "스킨부스터",
+      "product_name": "엑소좀",
+      "equipment_name": "포텐자",
+      "price": null,
+      "package": null,
+      "notes": "포텐자 장비로 엑소좀 전달",
+      "source_page": "https://www.liftonskin.com/main",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "리쥬란 힐러/HB/I",
+      "category": "스킨부스터",
+      "product_name": "리쥬란",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "https://www.liftonskin.com/main",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "레디어스(RADIESSE)",
+      "category": "필러",
+      "product_name": "래디어스",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "이벤트 진행(가격은 이벤트 배너 이미지 — vision 미판독)",
+      "source_page": "https://www.liftonskin.com/myboard/event/13",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "필러",
+      "category": "필러",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "필러 150,000원~ (비급여 안내 기준)",
+        "low": 150000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "https://www.liftonskin.com/myboard/nonpay",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "보톡스",
+      "category": "보툴리눔 톡신",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "보톡스 40,000원~ (비급여 안내 기준)",
+        "low": 40000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "https://www.liftonskin.com/myboard/nonpay",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "색소(미백/기미/잡티)",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "색소 10,000원~ (비급여 안내 기준)",
+        "low": 10000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "https://www.liftonskin.com/myboard/nonpay",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "여드름",
+      "category": "레이저/처치",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "여드름 10,000원~ (비급여 안내 기준)",
+        "low": 10000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "https://www.liftonskin.com/myboard/nonpay",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "모공/흉터",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "모공/흉터 100,000원~ (비급여 안내 기준)",
+        "low": 100000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "https://www.liftonskin.com/myboard/nonpay",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "피부관리",
+      "category": "피부관리",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "피부관리 70,000원~ (비급여 안내 기준)",
+        "low": 70000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "https://www.liftonskin.com/myboard/nonpay",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "염증주사",
+      "category": "주사",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "염증주사 11,000원~ (비급여 안내 기준)",
+        "low": 11000,
+        "high": null,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "https://www.liftonskin.com/myboard/nonpay",
+      "verification_status": "verified"
+    }
+  ],
+  "language_support": {
+    "supported_languages": [
+      "ko",
+      "en",
+      "ja",
+      "zh",
+      "id"
+    ],
+    "has_language_switcher": true,
+    "foreign_language_pages": {}
+  },
+  "crawl_metadata": {
+    "pages_crawled": 5,
+    "pages_visited": [
+      "https://www.liftonskin.com/ (지점 선택 랜딩)",
+      "https://www.liftonskin.com/main (신사점 메인 — 전체 메뉴·운영정보·장비설명)",
+      "https://www.liftonskin.com/sub_01/02 (의료진)",
+      "https://www.liftonskin.com/myboard/nonpay (비급여 진료비용 안내 — 가격표)",
+      "https://www.liftonskin.com/myboard/event/13 (RADIESSE 이벤트)"
+    ],
+    "crawl_method": "Playwright MCP 직접 방문. SPA(React), 텍스트형 — 메뉴·본문·운영정보·장비설명·비급여 가격표를 browser_evaluate 텍스트로 수집. 이벤트 배너는 초장축 이미지(vision 게이트)로 예산상 미판독.",
+    "errors": [],
+    "completeness": {
+      "operation_info": true,
+      "doctors": true,
+      "products": true,
+      "equipments": true,
+      "treatments": true,
+      "prices": true,
+      "language_support": true
+    },
+    "follow_up": [
+      {
+        "area": "prices",
+        "reason": "image_unreadable",
+        "detail": "이벤트 12건(BODY ONDA, SOFWAVE, APTOS BIO LIFTING, VITAL LIGHT, ULTHERAPY PRIME, THERMAGE FLX, REJURAN SVIP LIFTON, TITANIUM 3+1, ONE TIME LIFTING, RADIESSE, SKIN BOOSTER, PROFOUND)의 이벤트가가 각 event 페이지의 초장축 단일 이미지(약 801×15505px)에만 있음. 비급여 안내의 카테고리 최저가는 텍스트로 확보했으나 이벤트 세부가는 미판독 — 예산상 중단. 분할 캡처로 판독 가능.",
+        "urls": [
+          "https://www.liftonskin.com/myboard/event/13"
+        ]
+      },
+      {
+        "area": "doctors",
+        "reason": "needs_deeper_crawl",
+        "detail": "의료진 7명 이름·직함·프로필 이미지는 확보했으나 학력·경력 상세는 의료진 페이지 텍스트에 노출되지 않음(이미지 가능성).",
+        "urls": [
+          "https://www.liftonskin.com/sub_01/02"
+        ]
+      }
+    ],
+    "cost": {
+      "model": "claude-opus-4-8",
+      "effort": "medium",
+      "input_tokens": 3311,
+      "output_tokens": 27476,
+      "cost_usd": 2.932,
+      "duration_seconds": 445
+    },
+    "notes": [
+      "병원 확인: 푸터 사업자정보(리프톤피부과의원, 서울 강남구 도산대로 119 K타워 9층, 대표 전재욱·문성훈, 846-01-02833)가 입력 병원 정보와 일치 — match.",
+      "사이트 구조: liftonskin.com 루트는 지점 선택 랜딩(신사/울산). '신사' 선택 후 /main 진입. 울산점은 주소 다른 별개 지점이라 sibling_branches에만 기록.",
+      "유형: SPA(React)지만 메뉴·본문·장비설명·비급여 가격이 모두 텍스트로 렌더 — 텍스트형으로 수집. vision은 이벤트 배너 1건 시도(헤더 오버레이로 가격 미판독) 외 미사용.",
+      "매칭: 제품 9건·장비 6건 카탈로그 직접 매칭(verified). 엑소좀은 브랜드 미특정으로 inferred. 프로파운드·압토스·튠라이트·브이올렛은 영문/한글 재조회 후에도 카탈로그 미수록이라 보류.",
+      "가격: 비급여 진료비용표(텍스트)에서 카테고리 최저가 확보. 이벤트 세부가는 초장축 이미지라 follow_up에 남김.",
+      "미수집: 갤러리·전후사진·공지사항은 데이터 출처로 보지 않아 미수집."
+    ]
+  }
+}

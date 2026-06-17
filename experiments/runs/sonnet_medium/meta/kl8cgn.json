@@ -1,0 +1,13 @@
+{
+  "combo": "sonnet_medium",
+  "model_short": "sonnet",
+  "model_id": "claude-sonnet-4-6",
+  "effort": "medium",
+  "id": "kl8cgn",
+  "name": "바노바기성형외과의원",
+  "url": "https://www.banobagi.com",
+  "exit_code": 0,
+  "wall_seconds": 604.4,
+  "hard_killed": false,
+  "start_ts": 1781668058.6
+}

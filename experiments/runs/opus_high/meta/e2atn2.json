@@ -1,0 +1,13 @@
+{
+  "combo": "opus_high",
+  "model_short": "opus",
+  "model_id": "claude-opus-4-8",
+  "effort": "high",
+  "id": "e2atn2",
+  "name": "디에이치페이스업의원",
+  "url": "http://faceup1.com",
+  "exit_code": 0,
+  "wall_seconds": 432.0,
+  "hard_killed": false,
+  "start_ts": 1781666861.2
+}

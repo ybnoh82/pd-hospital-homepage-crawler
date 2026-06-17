@@ -1,0 +1,1112 @@
+{
+  "hospital_id": "n1u349",
+  "hospital_name": "대치오라클피부과의원",
+  "crawled_at": "2026-06-17T05:50:00+09:00",
+  "address": {
+    "sido": "서울",
+    "sggu": "강남구",
+    "emdong": "역삼동",
+    "road_address": "서울특별시 강남구 선릉로 319, 2층 (역삼동)",
+    "latitude": null,
+    "longitude": null
+  },
+  "homepage_url": "https://daechi.oracleclinic.com/",
+  "identity_status": "match",
+  "alternative_urls": [],
+  "branches": {
+    "type": "branch",
+    "network_group": "오라클랜드",
+    "this_branch_name": "오라클피부과 대치점",
+    "sibling_branches": []
+  },
+  "operation_info": {
+    "hospital_name": "오라클피부과 대치점",
+    "representative_name": null,
+    "business_number": null,
+    "phone": "02-501-4818",
+    "phone_secondary": null,
+    "fax": null,
+    "email": null,
+    "kakao_channel": null,
+    "operating_hours": {
+      "monday": {
+        "open": "10:00",
+        "close": "19:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "tuesday": {
+        "open": "10:00",
+        "close": "19:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "wednesday": {
+        "open": "10:00",
+        "close": "19:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "thursday": {
+        "open": "14:00",
+        "close": "19:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "friday": {
+        "open": "10:00",
+        "close": "20:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "16:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "sunday": null,
+      "holiday": null
+    },
+    "operating_hours_note": null,
+    "parking_info": null,
+    "transport_info": null,
+    "facilities": []
+  },
+  "doctors": [
+    {
+      "name": "유동오",
+      "is_representative": true,
+      "role": "원장",
+      "specialty": [
+        "피부과 전문의"
+      ],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    }
+  ],
+  "products": {
+    "matched_products": [
+      {
+        "product_kr": "리쥬란 힐러",
+        "brand_kr": "리쥬란",
+        "manufacturer_kr": "파마리서치",
+        "category": "스킨부스터",
+        "plandocs_handled": null,
+        "plandocs_featured": null,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://daechi.oracleclinic.com/non-covered",
+            "evidence": "리쥬란힐러 1cc 200,000원~"
+          }
+        ],
+        "context": "비급여 항목에 '리쥬란힐러 1cc'로 명시. 카탈로그 '리쥬란 힐러(Rejuran Healer)' 직접 매칭.",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "쥬베룩",
+        "brand_kr": "쥬베룩",
+        "manufacturer_kr": "바임",
+        "category": "스킨부스터",
+        "plandocs_handled": null,
+        "plandocs_featured": null,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://daechi.oracleclinic.com/non-covered",
+            "evidence": "쥬베룩 1cc 180,000원~"
+          }
+        ],
+        "context": "비급여 항목에 '쥬베룩 1cc'로 명시. 카탈로그 '쥬베룩(Juvelook)' 직접 매칭.",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "보톡스",
+        "brand_kr": "보톡스",
+        "manufacturer_kr": "엘러간",
+        "category": "톡신",
+        "plandocs_handled": null,
+        "plandocs_featured": null,
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://daechi.oracleclinic.com/treatments/botox",
+            "evidence": "보톡스(톡신)는 표정주름, 주름 개선에 즉각적인 효과"
+          },
+          {
+            "channel": "homepage",
+            "url": "https://daechi.oracleclinic.com/non-covered",
+            "evidence": "보톡스 50단위 100,000원~"
+          }
+        ],
+        "context": "시술 설명과 비급여 항목에 '보톡스(톡신)'로 명시. 카탈로그 '보톡스(Botox)' 직접 매칭.",
+        "verification_status": "verified"
+      }
+    ],
+    "unmatched_products": [
+      {
+        "raw_name": "리제반힐러",
+        "category_guess": "스킨부스터",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://daechi.oracleclinic.com/non-covered",
+            "evidence": "리제반힐러 1cc 150,000원~"
+          }
+        ],
+        "context": "카탈로그 '리제반' 검색 결과 미수록. PDRN 계열 스킨부스터로 추정.",
+        "verification_status": "verified"
+      },
+      {
+        "raw_name": "연어주사",
+        "category_guess": "스킨부스터",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://daechi.oracleclinic.com/treatments/salmon",
+            "evidence": "스킨부스터 연어주사"
+          },
+          {
+            "channel": "homepage",
+            "url": "https://daechi.oracleclinic.com/events/6",
+            "evidence": "연어주사 3회 550,000원"
+          }
+        ],
+        "context": "PDRN/연어 DNA 성분 스킨부스터 일반명. 카탈로그 '연어' 검색 미수록. 리쥬란힐러와 다른 제품일 수 있음.",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "필러",
+        "category_guess": "필러",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://daechi.oracleclinic.com/non-covered",
+            "evidence": "필러 1cc 300,000원~"
+          }
+        ],
+        "context": "비급여 항목에 '필러 1cc'로만 표기. 브랜드·제품명 미특정.",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "실리프팅",
+        "category_guess": "리프팅",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://daechi.oracleclinic.com/non-covered",
+            "evidence": "실리프팅 (10줄) 400,000원~"
+          }
+        ],
+        "context": "실 리프팅 일반명. 브랜드·제품명 미특정.",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "연어주사 (PDRN)",
+        "category_guess": null,
+        "mention_count": 3,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://daechi.oracleclinic.com/events/6",
+            "evidence": null
+          },
+          {
+            "channel": "homepage",
+            "url": "https://daechi.oracleclinic.com/events/7",
+            "evidence": null
+          },
+          {
+            "channel": "homepage",
+            "url": "https://daechi.oracleclinic.com/treatments/salmon",
+            "evidence": null
+          }
+        ],
+        "context": "시술(treatments)에서 자동 집계 — 카탈로그 매칭 미수행",
+        "verification_status": null
+      },
+      {
+        "raw_name": "실리프팅 (브랜드 미특정)",
+        "category_guess": null,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://daechi.oracleclinic.com/non-covered",
+            "evidence": null
+          }
+        ],
+        "context": "시술(treatments)에서 자동 집계 — 카탈로그 매칭 미수행",
+        "verification_status": null
+      },
+      {
+        "raw_name": "필러 (브랜드 미특정)",
+        "category_guess": null,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://daechi.oracleclinic.com/non-covered",
+            "evidence": null
+          }
+        ],
+        "context": "시술(treatments)에서 자동 집계 — 카탈로그 매칭 미수행",
+        "verification_status": null
+      }
+    ]
+  },
+  "equipments": {
+    "matched_equipments": [
+      {
+        "name_kr": "울쎄라",
+        "name_en": "Ulthera",
+        "category": "리프팅",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://daechi.oracleclinic.com/non-covered",
+            "evidence": "울쎄라 1,500,000원~"
+          }
+        ],
+        "context": "비급여 항목에 '울쎄라'로 명시. 카탈로그 no.1 직접 매칭.",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "써마지 FLX",
+        "name_en": "Thermage FLX",
+        "category": "리프팅",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://daechi.oracleclinic.com/non-covered",
+            "evidence": "써마지 FLX 600샷 1,200,000원~"
+          }
+        ],
+        "context": "비급여 항목에 '써마지 FLX 600샷'으로 명시. 카탈로그 no.4 직접 매칭.",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "텐써마",
+        "name_en": "TEN Therma",
+        "category": "리프팅",
+        "mention_count": 3,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://daechi.oracleclinic.com/treatments/10therma-daechi",
+            "evidence": "리프팅 텐써마"
+          },
+          {
+            "channel": "homepage",
+            "url": "https://daechi.oracleclinic.com/non-covered",
+            "evidence": "텐써마 800,000원~"
+          },
+          {
+            "channel": "homepage",
+            "url": "https://daechi.oracleclinic.com/events/7",
+            "evidence": "텐써마 ◆ 텐트리플 ◆ 연어주사 1회 990,000원"
+          }
+        ],
+        "context": "시술 상세·비급여·이벤트 이미지에서 명시 확인. 카탈로그 no.39 직접 매칭.",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "텐트리플",
+        "name_en": "TEN Triple",
+        "category": "복합",
+        "mention_count": 3,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://daechi.oracleclinic.com/non-covered",
+            "evidence": "텐트리플 500,000원~"
+          },
+          {
+            "channel": "homepage",
+            "url": "https://daechi.oracleclinic.com/events/7",
+            "evidence": "이벤트 이미지에 '10 TRIPLE' 장비 및 텐트리플 3회 이벤트 표기"
+          }
+        ],
+        "context": "비급여 항목과 이벤트 이미지에 명시. 이벤트 이미지에서 '10 TRIPLE' 장비 시각 확인. 카탈로그 no.41 직접 매칭.",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "제네시스",
+        "name_en": "Genesis Laser",
+        "category": "여드름 / 토닝",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://daechi.oracleclinic.com/events/7",
+            "evidence": "텐트리플 3회 ◆ 제네시스관리 10회 1,760,000원"
+          }
+        ],
+        "context": "이벤트 이미지 '제네시스관리'로 확인. 카탈로그 no.27 매칭.",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "프락셀",
+        "name_en": "Fraxel",
+        "category": "재생 / 흉터",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://daechi.oracleclinic.com/events/6",
+            "evidence": "이벤트 이미지 '프락셀'"
+          }
+        ],
+        "context": "이벤트 이미지에서 '프락셀'로 확인. 카탈로그 no.22 직접 매칭.",
+        "verification_status": "verified"
+      }
+    ],
+    "unmatched_equipments": [
+      {
+        "raw_name": "엑셀V",
+        "category_guess": "색소",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://daechi.oracleclinic.com/treatments/excelv",
+            "evidence": "색소 엑셀V 시술 페이지"
+          }
+        ],
+        "context": "Cutera ExcelV(혈관·색소 레이저)로 추정. 카탈로그 'excel/엑셀' 검색 미수록.",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "쿨스컬프팅",
+        "category_guess": "비만",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://daechi.oracleclinic.com/non-covered",
+            "evidence": "쿨스컬프팅 1부위 300,000원~"
+          }
+        ],
+        "context": "CoolSculpting(지방냉각분해)으로 추정. 카탈로그 'cool/쿨' 검색 미수록.",
+        "verification_status": "verified"
+      },
+      {
+        "raw_name": "피코토닝",
+        "category_guess": "색소",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://daechi.oracleclinic.com/non-covered",
+            "evidence": "피코토닝 1회 80,000원~"
+          }
+        ],
+        "context": "피코초 레이저 토닝 시술명(일반명). 특정 장비 브랜드 미특정.",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "레이저토닝",
+        "category_guess": "색소",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://daechi.oracleclinic.com/non-covered",
+            "evidence": "레이저토닝 1회 50,000원~"
+          }
+        ],
+        "context": "Q스위치/Nd:YAG 레이저 토닝 시술명(일반명). 특정 장비 브랜드 미특정.",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "듀얼HIFU",
+        "category_guess": "리프팅",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://daechi.oracleclinic.com/events/6",
+            "evidence": "이벤트 이미지 '듀얼HIFU'"
+          }
+        ],
+        "context": "HIFU 복합 장비로 추정. 카탈로그 'HIFU/하이푸' 검색 미수록.",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "고주파",
+        "category_guess": "스킨케어",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://daechi.oracleclinic.com/treatments/highfreq",
+            "evidence": "스킨케어 고주파관리"
+          }
+        ],
+        "context": "고주파 관리 일반명. 특정 장비 브랜드 미특정.",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "manufacturer_signals": [],
+  "treatments": [
+    {
+      "treatment_name": "텐써마",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "텐써마",
+      "price": {
+        "text": "800,000원~",
+        "low": 800000,
+        "high": null,
+        "regular_price": null,
+        "unit": "회",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "비급여 안내 기준가",
+      "source_page": "https://daechi.oracleclinic.com/non-covered",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "써마지 FLX",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "써마지 FLX",
+      "price": {
+        "text": "1,200,000원~",
+        "low": 1200000,
+        "high": null,
+        "regular_price": null,
+        "unit": "샷",
+        "quantity": 600.0,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "비급여 안내 기준가. 600샷 기준.",
+      "source_page": "https://daechi.oracleclinic.com/non-covered",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "울쎄라",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "울쎄라",
+      "price": {
+        "text": "1,500,000원~",
+        "low": 1500000,
+        "high": null,
+        "regular_price": null,
+        "unit": "회",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "비급여 안내 기준가",
+      "source_page": "https://daechi.oracleclinic.com/non-covered",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "텐트리플",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "텐트리플",
+      "price": {
+        "text": "500,000원~",
+        "low": 500000,
+        "high": null,
+        "regular_price": null,
+        "unit": "회",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "비급여 안내 기준가",
+      "source_page": "https://daechi.oracleclinic.com/non-covered",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "텐써마+텐트리플+연어주사 이벤트 패키지",
+      "category": "리프팅",
+      "product_name": "연어주사 (PDRN)",
+      "equipment_name": "텐써마; 텐트리플",
+      "price": {
+        "text": "990,000원",
+        "low": 990000,
+        "high": null,
+        "regular_price": null,
+        "unit": "패키지",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": null,
+        "duration_months": null,
+        "event_period": "2026-06-01 ~ 2026-12-31"
+      },
+      "notes": "텐써마 + 텐트리플 + 연어주사 1회 + 텐랄관리 포함. 이벤트 이미지 vision 판독.",
+      "source_page": "https://daechi.oracleclinic.com/events/7",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "텐트리플 3회+제네시스관리 10회 패키지",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "텐트리플; 제네시스",
+      "price": {
+        "text": "1,760,000원",
+        "low": 1760000,
+        "high": null,
+        "regular_price": null,
+        "unit": "패키지",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": null,
+        "duration_months": 3,
+        "event_period": "2026-06-01 ~ 2026-12-31"
+      },
+      "notes": "텐트리플 3회 + 제네시스관리 10회, 단약 12주. 이벤트 이미지 vision 판독.",
+      "source_page": "https://daechi.oracleclinic.com/events/7",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "실리프팅",
+      "category": "리프팅",
+      "product_name": "실리프팅 (브랜드 미특정)",
+      "equipment_name": null,
+      "price": {
+        "text": "400,000원~",
+        "low": 400000,
+        "high": null,
+        "regular_price": null,
+        "unit": "줄",
+        "quantity": 10.0,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "비급여 안내 기준가. 10줄 기준.",
+      "source_page": "https://daechi.oracleclinic.com/non-covered",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "연어주사",
+      "category": "스킨부스터",
+      "product_name": "연어주사 (PDRN)",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "스킨부스터 카테고리 대표 시술명",
+      "source_page": "https://daechi.oracleclinic.com/treatments/salmon",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "연어주사 3회 이벤트",
+      "category": "스킨부스터",
+      "product_name": "연어주사 (PDRN)",
+      "equipment_name": null,
+      "price": {
+        "text": "550,000원",
+        "low": 550000,
+        "high": null,
+        "regular_price": null,
+        "unit": "패키지",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 3,
+        "duration_months": null,
+        "event_period": "2026-06-01 ~ 2026-12-31"
+      },
+      "notes": "대치 오라클 이벤트 EVENT 01. 이벤트 이미지 vision 판독.",
+      "source_page": "https://daechi.oracleclinic.com/events/6",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "리쥬란힐러",
+      "category": "스킨부스터",
+      "product_name": "리쥬란 힐러",
+      "equipment_name": null,
+      "price": {
+        "text": "200,000원~",
+        "low": 200000,
+        "high": null,
+        "regular_price": null,
+        "unit": "cc",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "비급여 안내 기준가. 1cc 기준.",
+      "source_page": "https://daechi.oracleclinic.com/non-covered",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "리제반힐러",
+      "category": "스킨부스터",
+      "product_name": "리제반힐러",
+      "equipment_name": null,
+      "price": {
+        "text": "150,000원~",
+        "low": 150000,
+        "high": null,
+        "regular_price": null,
+        "unit": "cc",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "비급여 안내 기준가. 1cc 기준.",
+      "source_page": "https://daechi.oracleclinic.com/non-covered",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "쥬베룩",
+      "category": "스킨부스터",
+      "product_name": "쥬베룩",
+      "equipment_name": null,
+      "price": {
+        "text": "180,000원~",
+        "low": 180000,
+        "high": null,
+        "regular_price": null,
+        "unit": "cc",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "비급여 안내 기준가. 1cc 기준.",
+      "source_page": "https://daechi.oracleclinic.com/non-covered",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "보톡스",
+      "category": "쁘띠",
+      "product_name": "보톡스",
+      "equipment_name": null,
+      "price": {
+        "text": "100,000원~",
+        "low": 100000,
+        "high": null,
+        "regular_price": null,
+        "unit": "단위",
+        "quantity": 50.0,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "비급여 안내 기준가. 50단위 기준. 표정주름·이마·미간·눈가·사각턱·종아리 등 다양한 부위 적용 가능.",
+      "source_page": "https://daechi.oracleclinic.com/non-covered",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "필러",
+      "category": "쁘띠",
+      "product_name": "필러 (브랜드 미특정)",
+      "equipment_name": null,
+      "price": {
+        "text": "300,000원~",
+        "low": 300000,
+        "high": null,
+        "regular_price": null,
+        "unit": "cc",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "비급여 안내 기준가. 1cc 기준. 브랜드 미특정.",
+      "source_page": "https://daechi.oracleclinic.com/non-covered",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "엑셀V",
+      "category": "색소",
+      "product_name": null,
+      "equipment_name": "엑셀V",
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "https://daechi.oracleclinic.com/treatments/excelv",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "피코토닝",
+      "category": "색소",
+      "product_name": null,
+      "equipment_name": "피코토닝",
+      "price": {
+        "text": "80,000원~",
+        "low": 80000,
+        "high": null,
+        "regular_price": null,
+        "unit": "회",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "비급여 안내 기준가.",
+      "source_page": "https://daechi.oracleclinic.com/non-covered",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "레이저토닝",
+      "category": "색소",
+      "product_name": null,
+      "equipment_name": "레이저토닝",
+      "price": {
+        "text": "50,000원~",
+        "low": 50000,
+        "high": null,
+        "regular_price": null,
+        "unit": "회",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "비급여 안내 기준가.",
+      "source_page": "https://daechi.oracleclinic.com/non-covered",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "고주파관리",
+      "category": "스킨케어",
+      "product_name": null,
+      "equipment_name": "고주파",
+      "price": {
+        "text": "100,000원~",
+        "low": 100000,
+        "high": null,
+        "regular_price": null,
+        "unit": "회",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "비급여 안내 기준가 (스킨케어 관리 통합 가격).",
+      "source_page": "https://daechi.oracleclinic.com/non-covered",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "제네시스관리",
+      "category": "스킨케어",
+      "product_name": null,
+      "equipment_name": "제네시스",
+      "price": null,
+      "package": null,
+      "notes": "이벤트 이미지에서 '제네시스관리 10회' 형태로 확인.",
+      "source_page": "https://daechi.oracleclinic.com/events/7",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "여드름관리",
+      "category": "여드름",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "https://daechi.oracleclinic.com/treatments/acne-care",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "여드름 집중 5주 패키지",
+      "category": "여드름",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "490,000원",
+        "low": 490000,
+        "high": null,
+        "regular_price": null,
+        "unit": "패키지",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": null,
+        "duration_months": 1,
+        "event_period": "2026-06-01 ~ 2026-12-31"
+      },
+      "notes": "대치 오라클 이벤트 EVENT 05. 이벤트 이미지 vision 판독.",
+      "source_page": "https://daechi.oracleclinic.com/events/6",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "여드름 집중 8주 패키지",
+      "category": "여드름",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "690,000원",
+        "low": 690000,
+        "high": null,
+        "regular_price": null,
+        "unit": "패키지",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": null,
+        "duration_months": 2,
+        "event_period": "2026-06-01 ~ 2026-12-31"
+      },
+      "notes": "대치 오라클 이벤트 EVENT 05. 이벤트 이미지 vision 판독.",
+      "source_page": "https://daechi.oracleclinic.com/events/6",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "여드름 집중 12주 패키지",
+      "category": "여드름",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "850,000원",
+        "low": 850000,
+        "high": null,
+        "regular_price": null,
+        "unit": "패키지",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": null,
+        "duration_months": 3,
+        "event_period": "2026-06-01 ~ 2026-12-31"
+      },
+      "notes": "대치 오라클 이벤트 EVENT 05. 이벤트 이미지 vision 판독.",
+      "source_page": "https://daechi.oracleclinic.com/events/6",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "겨드랑이 제모",
+      "category": "제모",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "50,000원~",
+        "low": 50000,
+        "high": null,
+        "regular_price": null,
+        "unit": "회",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "비급여 안내 기준가. 여성 인중·겨드랑이·팔 아래쪽·종아리 앞뒤 제모 취급.",
+      "source_page": "https://daechi.oracleclinic.com/non-covered",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "전신제모",
+      "category": "제모",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "500,000원~",
+        "low": 500000,
+        "high": null,
+        "regular_price": null,
+        "unit": "회",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "비급여 안내 기준가.",
+      "source_page": "https://daechi.oracleclinic.com/non-covered",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "수액주사",
+      "category": "비만",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "https://daechi.oracleclinic.com/treatments/iv-injection",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "쿨스컬프팅",
+      "category": "비만",
+      "product_name": null,
+      "equipment_name": "쿨스컬프팅",
+      "price": {
+        "text": "300,000원~",
+        "low": 300000,
+        "high": null,
+        "regular_price": null,
+        "unit": "부위",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "비급여 안내 기준가. 1부위 기준.",
+      "source_page": "https://daechi.oracleclinic.com/non-covered",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "프락셀",
+      "category": "재생",
+      "product_name": null,
+      "equipment_name": "프락셀",
+      "price": null,
+      "package": null,
+      "notes": "이벤트 이미지에서 확인. 별도 시술 페이지 없음.",
+      "source_page": "https://daechi.oracleclinic.com/events/6",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "듀얼HIFU",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "듀얼HIFU",
+      "price": null,
+      "package": null,
+      "notes": "이벤트 이미지에서 확인. 정확한 구성 수량 이미지 해상도 한계로 불명확.",
+      "source_page": "https://daechi.oracleclinic.com/events/6",
+      "verification_status": "unverified"
+    }
+  ],
+  "language_support": {
+    "supported_languages": [
+      "ko"
+    ],
+    "has_language_switcher": false,
+    "foreign_language_pages": {}
+  },
+  "crawl_metadata": {
+    "pages_crawled": 17,
+    "pages_visited": [
+      "https://daechi.oracleclinic.com/",
+      "https://daechi.oracleclinic.com/about",
+      "https://daechi.oracleclinic.com/doctors",
+      "https://daechi.oracleclinic.com/treatments/10therma-daechi",
+      "https://daechi.oracleclinic.com/treatments/salmon",
+      "https://daechi.oracleclinic.com/treatments/botox",
+      "https://daechi.oracleclinic.com/treatments/excelv",
+      "https://daechi.oracleclinic.com/treatments/highfreq",
+      "https://daechi.oracleclinic.com/treatments/acne-care",
+      "https://daechi.oracleclinic.com/treatments/female-hair",
+      "https://daechi.oracleclinic.com/treatments/iv-injection",
+      "https://daechi.oracleclinic.com/non-covered",
+      "https://daechi.oracleclinic.com/events",
+      "https://daechi.oracleclinic.com/events/6",
+      "https://daechi.oracleclinic.com/events/7",
+      "https://daechi.oracleclinic.com/api/media/file/2606_%EB%8C%80%EC%B9%98%EC%A0%90_%EC%9D%B4%EB%B2%A4%ED%8A%B8_%EC%83%81%EC%84%B801.jpg",
+      "https://daechi.oracleclinic.com/api/media/file/2606_%EB%8C%80%EC%B9%98%EC%A0%90_%EC%9D%B4%EB%B2%A4%ED%8A%B8_%EC%83%81%EC%84%B802.jpg"
+    ],
+    "crawl_method": "SPA — browser_evaluate 텍스트 우선 추출, 이벤트 이미지 vision 판독 4장",
+    "errors": [],
+    "completeness": {
+      "operation_info": true,
+      "doctors": true,
+      "products": true,
+      "equipments": true,
+      "treatments": true,
+      "prices": true,
+      "language_support": true
+    },
+    "follow_up": [
+      {
+        "area": "이벤트",
+        "reason": "needs_deeper_crawl",
+        "detail": "events/8(여드름 치료 이벤트) 상세 이미지 미방문. 추가 시술 가격·구성 있을 수 있음.",
+        "urls": [
+          "https://daechi.oracleclinic.com/events/8"
+        ]
+      },
+      {
+        "area": "이벤트 이미지 세부",
+        "reason": "image_unreadable",
+        "detail": "대치 오라클 이벤트(events/6) EVENT 02·04의 세부 구성(수량·시술명)이 이미지 해상도 한계로 일부 불명확. 고해상도 확대 재판독 권장.",
+        "urls": [
+          "https://daechi.oracleclinic.com/events/6"
+        ]
+      },
+      {
+        "area": "doctors",
+        "reason": "needs_deeper_crawl",
+        "detail": "원장 유동오(피부과 전문의) 외 세부 경력·학력 미수록. 의료진 페이지에 이름·직함만 표시.",
+        "urls": [
+          "https://daechi.oracleclinic.com/doctors"
+        ]
+      }
+    ],
+    "cost": {
+      "model": "claude-sonnet-4-5",
+      "effort": "medium",
+      "input_tokens": 181,
+      "output_tokens": 48905,
+      "cost_usd": 2.7111,
+      "duration_seconds": 859
+    },
+    "notes": [
+      "오라클랜드 프랜차이즈 대치점. 신원 일치(match): '오라클피부과 대치점', 서울시 강남구 선릉로 319 2층(역삼동).",
+      "비급여 항목 페이지(/non-covered)와 일부 이벤트 페이지의 푸터 주소가 '서울시 강남구 선릉로 612 한일빌딩 1층'(전화 1800-7588)으로 다르게 표시됨. daechi.oracleclinic.com 도메인 하의 페이지이므로 대치점 가격으로 채택 — 오라클랜드 공통 비급여 안내 페이지 템플릿 공유로 추정.",
+      "vision 판독 이미지 4장: events/7 상세 이미지(텐텐리프팅 이벤트), events/6 상세 이미지(대치 오라클 이벤트).",
+      "시술 메뉴: 리프팅(텐써마)·스킨부스터(연어주사)·쁘띠(보톡스)·색소(엑셀V)·스킨케어(고주파관리)·여드름·제모·비만(수액주사). 비급여 항목에서 추가 시술(써마지 FLX·울쎄라·텐트리플·리쥬란힐러·리제반힐러·쥬베룩·필러·실리프팅·피코토닝·레이저토닝·쿨스컬프팅) 확인.",
+      "이벤트 이미지에서 추가 장비/시술 확인: 텐트리플·제네시스·프락셀·듀얼HIFU·탄력관리."
+    ]
+  }
+}

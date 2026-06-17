@@ -1,0 +1,123 @@
+매트릭스: 60개 잡 · 동시성 8 · 캡 $3/900s · stagger 2.0s
+[1/60] ▶ START sonnet_low smado8 (리프톤피부과의원)
+[2/60] ▶ START sonnet_medium smado8 (리프톤피부과의원)
+[3/60] ▶ START sonnet_high smado8 (리프톤피부과의원)
+[4/60] ▶ START opus_low smado8 (리프톤피부과의원)
+[5/60] ▶ START opus_medium smado8 (리프톤피부과의원)
+[6/60] ▶ START opus_high smado8 (리프톤피부과의원)
+[7/60] ▶ START sonnet_low 6wzs3t (권장덕케이성형외과의원)
+[8/60] ▶ START sonnet_medium 6wzs3t (권장덕케이성형외과의원)
+[2/60] ✔ DONE  sonnet_medium smado8 — EMPTY · 114s
+[9/60] ▶ START sonnet_high 6wzs3t (권장덕케이성형외과의원)
+[7/60] ✔ DONE  sonnet_low 6wzs3t — USEFUL · 285s
+[10/60] ▶ START opus_low 6wzs3t (권장덕케이성형외과의원)
+[8/60] ✔ DONE  sonnet_medium 6wzs3t — USEFUL · 299s
+[11/60] ▶ START opus_medium 6wzs3t (권장덕케이성형외과의원)
+[4/60] ✔ DONE  opus_low smado8 — USEFUL · 316s
+[12/60] ▶ START opus_high 6wzs3t (권장덕케이성형외과의원)
+[6/60] ✔ DONE  opus_high smado8 — USEFUL · 372s
+[13/60] ▶ START sonnet_low e2atn2 (디에이치페이스업의원)
+[5/60] ✔ DONE  opus_medium smado8 — USEFUL · 446s
+[14/60] ▶ START sonnet_medium e2atn2 (디에이치페이스업의원)
+[10/60] ✔ DONE  opus_low 6wzs3t — USEFUL · 220s
+[15/60] ▶ START sonnet_high e2atn2 (디에이치페이스업의원)
+[11/60] ✔ DONE  opus_medium 6wzs3t — USEFUL · 270s
+[16/60] ▶ START opus_low e2atn2 (디에이치페이스업의원)
+[9/60] ✔ DONE  sonnet_high 6wzs3t — USEFUL · 480s
+[17/60] ▶ START opus_medium e2atn2 (디에이치페이스업의원)
+[12/60] ✔ DONE  opus_high 6wzs3t — USEFUL · 369s
+[18/60] ▶ START opus_high e2atn2 (디에이치페이스업의원)
+[3/60] ✔ DONE  sonnet_high smado8 — USEFUL · 833s
+[19/60] ▶ START sonnet_low kgeuid (신논현톡스앤필의원)
+[1/60] ✔ DONE  sonnet_low smado8 — USEFUL · 842s
+[20/60] ▶ START sonnet_medium kgeuid (신논현톡스앤필의원)
+[13/60] ✔ DONE  sonnet_low e2atn2 — USEFUL · 633s
+[21/60] ▶ START sonnet_high kgeuid (신논현톡스앤필의원)
+[17/60] ✔ DONE  opus_medium e2atn2 — USEFUL · 487s
+[22/60] ▶ START opus_low kgeuid (신논현톡스앤필의원)
+[16/60] ✔ DONE  opus_low e2atn2 — USEFUL · 516s
+[23/60] ▶ START opus_medium kgeuid (신논현톡스앤필의원)
+[18/60] ✔ DONE  opus_high e2atn2 — USEFUL · 432s
+[24/60] ▶ START opus_high kgeuid (신논현톡스앤필의원)
+[14/60] ✔ DONE  sonnet_medium e2atn2 — USEFUL · 761s
+[25/60] ▶ START sonnet_low pja1wj (강남유앤아이의원)
+[15/60] ✔ DONE  sonnet_high e2atn2 — USEFUL · 905s
+[26/60] ▶ START sonnet_medium pja1wj (강남유앤아이의원)
+[22/60] ✔ DONE  opus_low kgeuid — USEFUL · 462s
+[27/60] ▶ START sonnet_high pja1wj (강남유앤아이의원)
+[24/60] ✔ DONE  opus_high kgeuid — USEFUL · 491s
+[28/60] ▶ START opus_low pja1wj (강남유앤아이의원)
+[19/60] ✔ DONE  sonnet_low kgeuid — USEFUL · 778s
+[29/60] ▶ START opus_medium pja1wj (강남유앤아이의원)
+[20/60] ✔ DONE  sonnet_medium kgeuid — USEFUL · 800s
+[30/60] ▶ START opus_high pja1wj (강남유앤아이의원)
+[23/60] ✔ DONE  opus_medium kgeuid — USEFUL · 627s
+[31/60] ▶ START sonnet_low kl8cgn (바노바기성형외과의원)
+[21/60] ✔ DONE  sonnet_high kgeuid — USEFUL · 874s
+[32/60] ▶ START sonnet_medium kl8cgn (바노바기성형외과의원)
+[25/60] ✔ DONE  sonnet_low pja1wj — USEFUL · 710s
+[33/60] ▶ START sonnet_high kl8cgn (바노바기성형외과의원)
+[28/60] ✔ DONE  opus_low pja1wj — USEFUL · 359s
+[34/60] ▶ START opus_low kl8cgn (바노바기성형외과의원)
+[26/60] ✔ DONE  sonnet_medium pja1wj — USEFUL · 609s
+[35/60] ▶ START opus_medium kl8cgn (바노바기성형외과의원)
+[29/60] ✔ DONE  opus_medium pja1wj — USEFUL · 536s
+[36/60] ▶ START opus_high kl8cgn (바노바기성형외과의원)
+[30/60] ✔ DONE  opus_high pja1wj — USEFUL · 530s
+[37/60] ▶ START sonnet_low xd9css (도곡양재차앤박피부과의원)
+[31/60] ✔ DONE  sonnet_low kl8cgn — USEFUL · 629s
+[38/60] ▶ START sonnet_medium xd9css (도곡양재차앤박피부과의원)
+[34/60] ✔ DONE  opus_low kl8cgn — USEFUL · 391s
+[39/60] ▶ START sonnet_high xd9css (도곡양재차앤박피부과의원)
+[27/60] ✔ DONE  sonnet_high pja1wj — USEFUL · 907s
+[40/60] ▶ START opus_low xd9css (도곡양재차앤박피부과의원)
+[32/60] ✔ DONE  sonnet_medium kl8cgn — USEFUL · 604s
+[41/60] ▶ START opus_medium xd9css (도곡양재차앤박피부과의원)
+[35/60] ✔ DONE  opus_medium kl8cgn — USEFUL · 561s
+[42/60] ▶ START opus_high xd9css (도곡양재차앤박피부과의원)
+[42/60] ✔ DONE  opus_high xd9css — EMPTY · 14s
+[43/60] ▶ START sonnet_low n1u349 (대치오라클피부과의원)
+[38/60] ✔ DONE  sonnet_medium xd9css — USEFUL · 252s
+[44/60] ▶ START sonnet_medium n1u349 (대치오라클피부과의원)
+[36/60] ✔ DONE  opus_high kl8cgn — USEFUL · 457s
+[45/60] ▶ START sonnet_high n1u349 (대치오라클피부과의원)
+[39/60] ✔ DONE  sonnet_high xd9css — USEFUL · 245s
+[46/60] ▶ START opus_low n1u349 (대치오라클피부과의원)
+[43/60] ✔ DONE  sonnet_low n1u349 — EMPTY · 3s
+[47/60] ▶ START opus_medium n1u349 (대치오라클피부과의원)
+[41/60] ✔ DONE  opus_medium xd9css — USEFUL · 116s
+[48/60] ▶ START opus_high n1u349 (대치오라클피부과의원)
+[44/60] ✔ DONE  sonnet_medium n1u349 — EMPTY · 2s
+[49/60] ▶ START sonnet_low asnwyw (리더스피부과의원)
+[45/60] ✔ DONE  sonnet_high n1u349 — EMPTY · 3s
+[50/60] ▶ START sonnet_medium asnwyw (리더스피부과의원)
+[46/60] ✔ DONE  opus_low n1u349 — EMPTY · 2s
+[51/60] ▶ START sonnet_high asnwyw (리더스피부과의원)
+[47/60] ✔ DONE  opus_medium n1u349 — EMPTY · 2s
+[52/60] ▶ START opus_low asnwyw (리더스피부과의원)
+[48/60] ✔ DONE  opus_high n1u349 — EMPTY · 3s
+[53/60] ▶ START opus_medium asnwyw (리더스피부과의원)
+[50/60] ✔ DONE  sonnet_medium asnwyw — EMPTY · 3s
+[54/60] ▶ START opus_high asnwyw (리더스피부과의원)
+[49/60] ✔ DONE  sonnet_low asnwyw — EMPTY · 4s
+[55/60] ▶ START sonnet_low 828xg8 (미인피부과의원)
+[51/60] ✔ DONE  sonnet_high asnwyw — EMPTY · 3s
+[56/60] ▶ START sonnet_medium 828xg8 (미인피부과의원)
+[40/60] ✔ DONE  opus_low xd9css — USEFUL · 164s
+[57/60] ▶ START sonnet_high 828xg8 (미인피부과의원)
+[53/60] ✔ DONE  opus_medium asnwyw — EMPTY · 2s
+[58/60] ▶ START opus_low 828xg8 (미인피부과의원)
+[52/60] ✔ DONE  opus_low asnwyw — EMPTY · 4s
+[59/60] ▶ START opus_medium 828xg8 (미인피부과의원)
+[54/60] ✔ DONE  opus_high asnwyw — EMPTY · 2s
+[60/60] ▶ START opus_high 828xg8 (미인피부과의원)
+[55/60] ✔ DONE  sonnet_low 828xg8 — EMPTY · 3s
+[56/60] ✔ DONE  sonnet_medium 828xg8 — EMPTY · 3s
+[57/60] ✔ DONE  sonnet_high 828xg8 — EMPTY · 3s
+[59/60] ✔ DONE  opus_medium 828xg8 — EMPTY · 3s
+[60/60] ✔ DONE  opus_high 828xg8 — EMPTY · 3s
+[58/60] ✔ DONE  opus_low 828xg8 — EMPTY · 5s
+[37/60] ✔ DONE  sonnet_low xd9css — USEFUL · 510s
+[33/60] ✔ DONE  sonnet_high kl8cgn — USEFUL · 860s
+
+전체 완료: 60개 잡 · 46.4분

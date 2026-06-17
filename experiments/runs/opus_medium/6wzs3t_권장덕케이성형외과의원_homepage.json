@@ -1,0 +1,405 @@
+{
+  "hospital_id": "6wzs3t",
+  "hospital_name": "권장덕케이성형외과의원",
+  "crawled_at": "2026-06-17T12:30:00+09:00",
+  "address": {
+    "sido": "서울",
+    "sggu": "강남구",
+    "emdong": "신사동",
+    "road_address": "서울특별시 강남구 논현로 857, 4층 (신사동, 계룡빌딩)",
+    "latitude": null,
+    "longitude": null
+  },
+  "homepage_url": "http://www.mimo21.co.kr/",
+  "identity_status": "match",
+  "alternative_urls": [],
+  "branches": null,
+  "operation_info": {
+    "hospital_name": "권장덕케이성형외과의원",
+    "representative_name": "권장덕",
+    "business_number": "291-17-00638",
+    "phone": "02-3444-1311",
+    "phone_secondary": null,
+    "fax": null,
+    "email": null,
+    "kakao_channel": "https://pf.kakao.com/_Mxitls",
+    "operating_hours": {
+      "monday": {
+        "open": "10:00",
+        "close": "18:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "tuesday": {
+        "open": "10:00",
+        "close": "18:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "wednesday": {
+        "open": "10:00",
+        "close": "18:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "thursday": {
+        "open": "10:00",
+        "close": "18:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "friday": {
+        "open": "10:00",
+        "close": "18:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "16:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "sunday": null,
+      "holiday": null
+    },
+    "operating_hours_note": "평일 10:00~18:00, 토요일 10:00~16:00. 모든 진료는 예약제로 운영되며, 해외출장·학술행사 등으로 진료시간이 유동적이므로 내원 전 진료 여부를 미리 확인 권고. 일요일·점심시간은 사이트에 명시되지 않음(진료시간 안내 이미지에서 vision 판독).",
+    "parking_info": null,
+    "transport_info": "지하철 3호선 압구정역 4번 출구에서 도보 1분. 간선버스 147/148/240/463, 지선버스 4211/4419 (오시는길 이미지에서 vision 판독).",
+    "facilities": []
+  },
+  "doctors": [
+    {
+      "name": "권장덕",
+      "is_representative": true,
+      "role": "대표원장",
+      "specialty": [
+        "성형외과"
+      ],
+      "education": [
+        "서울대학교 의과대학 졸업",
+        "성형외과 의학박사/성형외과 전문의"
+      ],
+      "career": [
+        "현) 서울대학교의과대학 45회 동기회장",
+        "현) 부산동천고등학교 총동문회장",
+        "현) 강남구의사회 부회장",
+        "현) 서울대학교의과대학 강남동문회 부회장",
+        "현) 서울대학교 의과대학 총동창회 이사",
+        "전) 서울시 강남구의사회 대외협력이사",
+        "전) 대한성형외과의사회 정보이사/기획이사/대외협력이사",
+        "전) 대한개원의협의회 대외협력이사",
+        "전) 강남구의사회 정보이사",
+        "전) 서울시의사회 상임이사",
+        "전) 강남의료관광협의회 상임이사",
+        "전) 대한 성형외과 개원의협의회 정보통신이사 역임(2002~2008년) — 성형전문커뮤니티 '성형코리아(prskorea.co.kr)' 기획·제작",
+        "전) 강남구의사회 정보통신이사 역임(2006~2012년)",
+        "서울대 강남동문회 총무·수석총무, 서울의대 총동창회 상임이사"
+      ],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    }
+  ],
+  "products": {
+    "matched_products": [],
+    "unmatched_products": []
+  },
+  "equipments": {
+    "matched_equipments": [],
+    "unmatched_equipments": []
+  },
+  "manufacturer_signals": [],
+  "treatments": [
+    {
+      "treatment_name": "매몰법",
+      "category": "눈성형",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "http://www.mimo21.co.kr/page/page5",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "절개/부분절개법",
+      "category": "눈성형",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "http://www.mimo21.co.kr/page/page16",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "자연유착법",
+      "category": "눈성형",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "http://www.mimo21.co.kr/page/page149",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "눈매교정술",
+      "category": "눈성형",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "http://www.mimo21.co.kr/page/page144",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "앞트임/뒷트임",
+      "category": "눈성형",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "http://www.mimo21.co.kr/page/page98",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "눈재수술(앞트임복원/뒷트임복원/쌍꺼풀복원/눈밑복원)",
+      "category": "눈성형",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "http://www.mimo21.co.kr/page/page150",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "코성형(코 재수술)",
+      "category": "코성형",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "http://www.mimo21.co.kr/page/page14",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "낮은코 성형",
+      "category": "코성형",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "http://www.mimo21.co.kr/page/page123",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "짧은코/긴코 성형",
+      "category": "코성형",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "http://www.mimo21.co.kr/page/page154",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "매부리코 성형",
+      "category": "코성형",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "http://www.mimo21.co.kr/page/page118",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "휜코 성형",
+      "category": "코성형",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "http://www.mimo21.co.kr/page/page120",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "미세지방이식",
+      "category": "얼굴성형",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "http://www.mimo21.co.kr/page/page122",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "얼굴지방이식",
+      "category": "얼굴성형",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "http://www.mimo21.co.kr/page/page78",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "지방이식재수술",
+      "category": "얼굴성형",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "http://www.mimo21.co.kr/page/page145",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "얼굴지방흡입",
+      "category": "얼굴성형",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "http://www.mimo21.co.kr/page/page90",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "내시경 눈썹거상술",
+      "category": "주름성형",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "주름성형 상세 페이지 확인 — 실리프팅·레이저 등 비수술 장비/제품 언급 없음(수술 전용).",
+      "source_page": "http://www.mimo21.co.kr/page/page94",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "최소절개 스마스리프트",
+      "category": "주름성형",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "http://www.mimo21.co.kr/page/page15",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "중하안면 스마스리프트",
+      "category": "주름성형",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "http://www.mimo21.co.kr/page/page67",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "목거상",
+      "category": "주름성형",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "http://www.mimo21.co.kr/page/page128",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "체형지방흡입",
+      "category": "바디성형",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "http://www.mimo21.co.kr/page/page77",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "엉덩이지방이식",
+      "category": "바디성형",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "http://www.mimo21.co.kr/page/page121",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "복부성형",
+      "category": "바디성형",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": "http://www.mimo21.co.kr/page/page129",
+      "verification_status": "verified"
+    }
+  ],
+  "language_support": {
+    "supported_languages": [
+      "ko"
+    ],
+    "has_language_switcher": false,
+    "foreign_language_pages": {}
+  },
+  "crawl_metadata": {
+    "pages_crawled": 5,
+    "pages_visited": [
+      "http://www.mimo21.co.kr/ (홈 — 메뉴·신원·푸터)",
+      "http://www.mimo21.co.kr/page/page92 (의료진소개 — vision)",
+      "http://www.mimo21.co.kr/page/page4 (오시는 길 — vision)",
+      "http://www.mimo21.co.kr/page/page2 (진료안내·진료시간 — vision)",
+      "http://www.mimo21.co.kr/page/page94 (주름성형 상세 — 장비/제품 확인)"
+    ],
+    "crawl_method": "Playwright MCP 직접 방문. 메뉴는 텍스트로 수집(수술 일색). 운영정보·진료시간·교통·의료진은 이미지 전용이라 vision 4장 판독(의료진/오시는길/진료시간 표/진료안내 보조).",
+    "errors": [],
+    "completeness": {
+      "operation_info": true,
+      "doctors": true,
+      "products": true,
+      "equipments": true,
+      "treatments": true,
+      "prices": false,
+      "language_support": true
+    },
+    "follow_up": [],
+    "cost": {
+      "model": "claude-opus-4-8",
+      "effort": "medium",
+      "input_tokens": 3170,
+      "output_tokens": 15450,
+      "cost_usd": 1.8275,
+      "duration_seconds": 269
+    },
+    "notes": [
+      "병원 확인: 푸터 사업자정보(권장덕케이성형외과의원, 대표 권장덕, 사업자번호 291-17-00638, 서울 강남구 논현로 857 계룡빌딩 4층, 02-3444-1311)가 입력 병원 정보와 완전 일치 — match.",
+      "수술 단일전문 성형외과(눈/코/얼굴/주름/바디 성형). 진료 메뉴 전체가 수술이며 쁘띠·필러·톡신·스킨부스터·레이저·피부 섹션이 전혀 없음 — 제품·장비 0건이 정상(§4 '끈다'). 주름성형 상세에서 실리프팅·울쎄라·써마지·레이저·녹는실 등 비수술 장비 키워드도 0건으로 교차확인. 제품·장비 vision 게이트 미가동.",
+      "운영정보·진료시간·교통·의료진 프로필은 텍스트가 아닌 이미지 전용이라 vision으로 판독(의료진소개·오시는길·진료시간 안내 이미지). 총 vision 4장.",
+      "진료시간: 평일 10:00~18:00, 토요일 10:00~16:00, 예약제. 일요일·점심시간 미표기.",
+      "교통: 3호선 압구정역 4번 출구 도보 1분.",
+      "의료진: 권장덕 대표원장 1인(서울대 의대 졸업, 성형외과 의학박사·전문의). 프로필 사진은 이미지 합성이라 개별 URL 미추출.",
+      "가격: 사이트 전체에 비급여진료비용/가격/이벤트 가격 페이지가 존재하지 않음(메뉴·푸터·HTML 키워드 검색으로 확인). 성형외과 상담 기반으로 가격 미게시 — prices=false.",
+      "미수집: 공지사항·언론보도·전후사진 갤러리 게시판은 데이터 출처로 보지 않아 미방문. 온라인상담은 폼이라 미수집."
+    ]
+  }
+}

@@ -1,0 +1,941 @@
+{
+  "hospital_id": "asnwyw",
+  "hospital_name": "리더스피부과의원",
+  "crawled_at": "2026-06-17T06:00:00+09:00",
+  "address": {
+    "sido": "서울",
+    "sggu": "강남구",
+    "emdong": "청담동",
+    "road_address": "서울특별시 강남구 도산대로 409, S&S TOWER 4,5층 (청담동)",
+    "latitude": null,
+    "longitude": null
+  },
+  "homepage_url": "https://leaders-cd.com/",
+  "identity_status": "match",
+  "alternative_urls": [
+    "https://leaders-eng.com/",
+    "https://leaders-cn.com/",
+    "https://leaders-jpn.com/"
+  ],
+  "branches": {
+    "type": "branch",
+    "network_group": "리더스피부과 네트워크",
+    "this_branch_name": "리더스피부과의원 청담도산대로점",
+    "sibling_branches": [
+      {
+        "name": "도곡리더스피부과의원",
+        "url": "http://leaders-dogok.com/",
+        "address": "서울특별시 강남구 언주로30길 21(도곡동) 아카데미스위트 2층"
+      },
+      {
+        "name": "리더스피부과의원 명동점",
+        "url": "http://leaders-md.com/",
+        "address": "서울특별시 중구 퇴계로 72(회현동) SK리더스뷰남산 B1층"
+      },
+      {
+        "name": "목동리더스피부과의원(트라팰리스점)",
+        "url": "http://leaders-mt.com/",
+        "address": "서울특별시 양천구 오목로 299(목동) 목동트라팰리스 이스턴 에비뉴 7층"
+      },
+      {
+        "name": "리더스피부과의원(목동현대점)",
+        "url": "http://leaders-mh.com/",
+        "address": "서울특별시 양천구 목동동로 257(목동) 현대백화점 목동점 본관 B1층"
+      },
+      {
+        "name": "압구정리더스피부과의원",
+        "url": "http://leaders-aj.com/",
+        "address": "서울특별시 강남구 언주로 843(신사동) 4층"
+      },
+      {
+        "name": "리더스피부과의원 청담명품거리점",
+        "url": "http://leaders-mg.com/",
+        "address": "서울특별시 강남구 압구정로 445(청담동) 다이애나빌딩 3층"
+      },
+      {
+        "name": "리더스피부과의원 판교점",
+        "url": "http://leaders-pg.com/",
+        "address": "경기도 성남시 분당구 판교역로 152(백현동) 알파돔타워 3층"
+      },
+      {
+        "name": "리더스피부과의원 부천현대점",
+        "url": "http://leaders-bh.com/",
+        "address": "경기도 부천시 길주로 180(중동) 현대백화점 중동점 본관 9층"
+      },
+      {
+        "name": "리더스피부과의원 삼성중앙점",
+        "url": "http://leaders-ssc.com/",
+        "address": "서울특별시 강남구 봉은사로 469(삼성동), S-TOWER 2층"
+      },
+      {
+        "name": "리더스피부과의원(송도점)",
+        "url": "http://leaders-sd.com/",
+        "address": "인천광역시 연수구 센트럴로 194(송도동) 더샵 센트럴파크 2차 A동 2층"
+      },
+      {
+        "name": "리더스피부과의원 위례중앙타워점",
+        "url": "http://leaders-wr.com/",
+        "address": "경기도 성남시 수정구 위례광장로 300(창곡동) 위례중앙타워 8층"
+      }
+    ]
+  },
+  "operation_info": {
+    "hospital_name": "리더스피부과의원 청담도산대로점",
+    "representative_name": "노낙경",
+    "business_number": "831-07-02532",
+    "phone": "1588-7833",
+    "phone_secondary": null,
+    "fax": "02-3443-7541",
+    "email": "master@beautyleader.co.kr",
+    "kakao_channel": null,
+    "operating_hours": {
+      "monday": {
+        "open": "10:00",
+        "close": "19:30",
+        "break_start": "13:00",
+        "break_end": "14:00"
+      },
+      "tuesday": {
+        "open": "10:00",
+        "close": "19:30",
+        "break_start": "13:00",
+        "break_end": "14:00"
+      },
+      "wednesday": null,
+      "thursday": {
+        "open": "10:00",
+        "close": "19:30",
+        "break_start": "13:00",
+        "break_end": "14:00"
+      },
+      "friday": {
+        "open": "10:00",
+        "close": "19:30",
+        "break_start": "13:00",
+        "break_end": "14:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "15:30",
+        "break_start": null,
+        "break_end": null
+      },
+      "sunday": null,
+      "holiday": null
+    },
+    "operating_hours_note": "월화목금 AM 10:00 - PM 07:30, 토요일 AM 10:00 - PM 03:30(점심 없음). 점심시간 PM 01:00 - PM 02:00. 수요일·일요일·공휴일 휴진. 진료접수는 마감 1시간 전까지 가능.",
+    "parking_info": null,
+    "transport_info": null,
+    "facilities": []
+  },
+  "doctors": [
+    {
+      "name": "노낙경",
+      "is_representative": true,
+      "role": "대표원장",
+      "specialty": [
+        "피부과"
+      ],
+      "education": [
+        "서울대학교 의과대학 졸업",
+        "삼성서울병원 피부과 (전문의 취득)"
+      ],
+      "career": [
+        "전) 리더스피부과 건대스타시티점 대표원장 (2009-2017)",
+        "전) 대한피부항노화연구회 학술이사, 간행이사, 연구이사, 기획정책이사",
+        "전) 대한미용피부외과학회 학술이사",
+        "전) 미국피부과학회(American Academy of Dermatology) 국제 전임의 (2007)",
+        "전) 국군수도병원 피부과장 (2006-2007)",
+        "전) 삼성서울병원 피부과 외래교수",
+        "대한 피부과학회 회원",
+        "대한 피부과의사회 회원",
+        "대한 피부항노화학회 편찬위원장, 기획정책위원장",
+        "대한 피부과의사회 학술위원",
+        "SCI급 해외학술지 논평위원 (Dermatologic Surgery, Clinical & Experimental)"
+      ],
+      "associations": [
+        "대한 피부과학회",
+        "대한 피부과의사회",
+        "대한 피부항노화학회"
+      ],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    }
+  ],
+  "products": {
+    "matched_products": [
+      {
+        "product_kr": "쥬비덤",
+        "brand_kr": "쥬비덤",
+        "manufacturer_kr": "엘러간",
+        "category": "필러",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://leaders-cd.com/network/landing_filler.php",
+            "evidence": "디자인 필러 종류에 '쥬비덤' 표기"
+          }
+        ],
+        "context": "카탈로그 '쥬비덤' 브랜드 매칭. 구체적 라인(볼루마/볼룩스 등) 미표기 → inferred",
+        "verification_status": "inferred"
+      },
+      {
+        "product_kr": "벨로테로",
+        "brand_kr": "벨로테로",
+        "manufacturer_kr": "멀츠",
+        "category": "필러",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://leaders-cd.com/network/landing_filler.php",
+            "evidence": "디자인 필러 종류에 '벨로테로' 표기"
+          }
+        ],
+        "context": "카탈로그 '벨로테로' 브랜드 매칭. 구체적 라인 미표기 → inferred",
+        "verification_status": "inferred"
+      },
+      {
+        "product_kr": "로리앙",
+        "brand_kr": "로리앙",
+        "manufacturer_kr": "중헌제약",
+        "category": "필러",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://leaders-cd.com/network/landing_filler.php",
+            "evidence": "디자인 필러 종류에 '로리앙' 표기"
+          }
+        ],
+        "context": "카탈로그 '로리앙' 브랜드 매칭. 구체적 라인(No.2/No.4/No.6) 미표기 → inferred",
+        "verification_status": "inferred"
+      },
+      {
+        "product_kr": "뉴라미스",
+        "brand_kr": "뉴라미스",
+        "manufacturer_kr": "메디톡스",
+        "category": "필러",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://leaders-cd.com/network/landing_filler.php",
+            "evidence": "디자인 필러 종류에 '뉴라미스' 표기"
+          }
+        ],
+        "context": "카탈로그 '뉴라미스' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "유스필",
+        "brand_kr": "유스필",
+        "manufacturer_kr": "GC녹십자웰빙",
+        "category": "필러",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://leaders-cd.com/network/landing_filler.php",
+            "evidence": "디자인 필러 종류에 '유스필' 표기"
+          }
+        ],
+        "context": "카탈로그 '유스필' 브랜드 매칭. 구체적 라인(Deep/Fine/Shape) 미표기 → inferred",
+        "verification_status": "inferred"
+      },
+      {
+        "product_kr": "리쥬란",
+        "brand_kr": "리쥬란",
+        "manufacturer_kr": "파마리서치",
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://leaders-cd.com/network/landing_re10.php",
+            "evidence": "'리쥬란 표준 시술법 가이드북 발간' 및 리텐 부스터 = 리쥬란 기반 스킨부스터로 명시"
+          }
+        ],
+        "context": "리텐 부스터 시술에서 리쥬란 가이드북 발간 명시. 카탈로그 '리쥬란' 브랜드 매칭. 구체적 라인(힐러/HB/에스) 미표기 → inferred",
+        "verification_status": "inferred"
+      },
+      {
+        "product_kr": "고우리",
+        "brand_kr": "고우리",
+        "manufacturer_kr": "덱스레보",
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://leaders-cd.com/",
+            "evidence": "홈 팝업 배너 '고우리 신규 도입'"
+          }
+        ],
+        "context": "카탈로그 '고우리(덱스레보)' 직접 매칭. 신규 도입 명시",
+        "verification_status": "verified"
+      }
+    ],
+    "unmatched_products": [
+      {
+        "raw_name": "리쥬비엘",
+        "category_guess": "필러",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://leaders-cd.com/network/landing_filler.php",
+            "evidence": "디자인 필러 종류에 '리쥬비엘' 표기"
+          }
+        ],
+        "context": "카탈로그에 리쥬비엘 미수록. 영문명(Rejuveel 등) 검색해도 없음 → unmatched",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "실루엣 소프트",
+        "category_guess": null,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://leaders-cd.com/network/landing_sfit.php",
+            "evidence": null
+          }
+        ],
+        "context": "시술(treatments)에서 자동 집계 — 카탈로그 매칭 미수행",
+        "verification_status": null
+      }
+    ]
+  },
+  "equipments": {
+    "matched_equipments": [
+      {
+        "name_kr": "온다",
+        "name_en": "ONDA",
+        "category": "리프팅",
+        "mention_count": 4,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://leaders-cd.com/",
+            "evidence": "홈 시그니처 프로그램 'ONDA 리프팅' — 유럽 DEKA사 극초단파 리프팅"
+          },
+          {
+            "channel": "homepage",
+            "url": "https://leaders-cd.com/bbs/content_06.html",
+            "evidence": "비보험 진료비 '온다레이저' 1,100,000~1,320,000원/1회"
+          }
+        ],
+        "context": "카탈로그 no.9 '온다(ONDA)' 직접 매칭. DEKA사(이탈리아) 마이크로웨이브 리프팅. 비보험가 확인",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "써마지 FLX",
+        "name_en": "Thermage FLX",
+        "category": "리프팅",
+        "mention_count": 5,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://leaders-cd.com/",
+            "evidence": "홈 시그니처 '써마지 FLX' — 고주파 피부 타이트닝"
+          },
+          {
+            "channel": "homepage",
+            "url": "https://leaders-cd.com/network/landing_thermage_flx.php",
+            "evidence": "랜딩 페이지 확인"
+          },
+          {
+            "channel": "homepage",
+            "url": "https://leaders-cd.com/bbs/content_06.html",
+            "evidence": "비보험 진료비 '써마지' 1,980,000~3,630,000원/1회"
+          }
+        ],
+        "context": "카탈로그 no.4 '써마지 FLX' 직접 매칭. Solta Medical(미국). 비보험가 확인",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "울쎄라피 프라임",
+        "name_en": "Ultherapy Prime",
+        "category": "리프팅",
+        "mention_count": 3,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://leaders-cd.com/",
+            "evidence": "홈 시그니처 '울쎄라피 프라임' — NEW 울쎄라2"
+          },
+          {
+            "channel": "homepage",
+            "url": "https://leaders-cd.com/network/landing_ultherapy.php",
+            "evidence": "랜딩 페이지 확인"
+          },
+          {
+            "channel": "homepage",
+            "url": "https://leaders-cd.com/bbs/content_06.html",
+            "evidence": "비보험 '울쎄라' 660,000원/100샷"
+          }
+        ],
+        "context": "카탈로그 no.33 '울쎄라피 프라임(Ultherapy Prime)' 직접 매칭. Merz(독일). 비보험가(울쎄라 명칭으로 게시)",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "세르프",
+        "name_en": "SERF",
+        "category": "리프팅",
+        "mention_count": 3,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://leaders-cd.com/",
+            "evidence": "홈 시그니처 '세르프(XERF)' — 듀얼 모노폴라 타이트닝"
+          },
+          {
+            "channel": "homepage",
+            "url": "https://leaders-cd.com/network/landing_xerf.php",
+            "evidence": "랜딩 페이지 확인"
+          }
+        ],
+        "context": "카탈로그 no.35 '세르프(SERF)' 매칭. 사이트 표기 'XERF'와 카탈로그 'SERF' 동음이표기로 판단. 국산 HIFU",
+        "verification_status": "inferred"
+      },
+      {
+        "name_kr": "티타늄",
+        "name_en": "Titanium",
+        "category": "리프팅",
+        "mention_count": 3,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://leaders-cd.com/",
+            "evidence": "홈 시그니처 '티타늄 리프팅' — 3파장 레이저 리프팅"
+          },
+          {
+            "channel": "homepage",
+            "url": "https://leaders-cd.com/network/landing_titanium.php",
+            "evidence": "랜딩 페이지 확인"
+          },
+          {
+            "channel": "homepage",
+            "url": "https://leaders-cd.com/bbs/content_06.html",
+            "evidence": "비보험 '티타늄레이저' 1,100,000~1,210,000원/1회"
+          }
+        ],
+        "context": "카탈로그 no.37 '티타늄(Titanium)' 매칭. 비보험가 확인",
+        "verification_status": "verified"
+      }
+    ],
+    "unmatched_equipments": [
+      {
+        "raw_name": "코레지 2.0",
+        "category_guess": "리프팅/피부재생 장비",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://leaders-cd.com/",
+            "evidence": "홈 시그니처 '코레지 2.0' — 16가지 공명파장 세포 운동 및 피부 재생 유도"
+          }
+        ],
+        "context": "카탈로그 미수록. '코레지'·'Korage' 등으로 재조회해도 없음 → unmatched",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "엠페이스",
+        "category_guess": "리프팅/근육 자극 장비(BTL EMFACE)",
+        "mention_count": 3,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://leaders-cd.com/",
+            "evidence": "홈 시그니처 '엠페이스' — 스마일 리프팅, 근육까지 탄력"
+          },
+          {
+            "channel": "homepage",
+            "url": "https://leaders-cd.com/network/landing_emface.php",
+            "evidence": "랜딩 페이지 확인"
+          }
+        ],
+        "context": "BTL社 EMFACE(전자기+RF 복합 리프팅)로 추정. 카탈로그 미수록 → unmatched",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "헤일로 레이저",
+        "category_guess": "하이브리드 프락셔널 레이저",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://leaders-cd.com/network/landing_halo.php",
+            "evidence": "헤일로 레이저 랜딩 — 미국 사이톤(Sciton)社 줄 헤일로(Halo) 레이저. 2940nm+1470nm 두 파장"
+          }
+        ],
+        "context": "Sciton Halo(하이브리드 프락셔널). 카탈로그 미수록 → unmatched. BBL과 같은 사이톤 제품군",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "헬리오스 785 레이저",
+        "category_guess": "트리플 파장 색소 레이저",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://leaders-cd.com/network/helios.php",
+            "evidence": "헬리오스 785 레이저 — 1064nm+532nm 큐스위치 Nd:YAG + 785nm 피코 레이저. 피코+나노 복합"
+          }
+        ],
+        "context": "트리플 파장 레이저(피코+나노). 카탈로그 미수록 → unmatched",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "실루엣 소프트(실루엣 Fit)",
+        "category_guess": "PLLA 녹는 실 리프팅",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://leaders-cd.com/network/landing_sfit.php",
+            "evidence": "실루엣 Fit 리프팅 — 실루엣 소프트 사용, PLLA(Poly Lactic Acid) 녹는 실"
+          }
+        ],
+        "context": "Galderma 실루엣 소프트(PLLA). 카탈로그 미수록 → unmatched",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "manufacturer_signals": [
+    {
+      "name": "DEKA",
+      "catalog_manufacturer_kr": "DEKA",
+      "sources": [
+        {
+          "channel": "homepage",
+          "url": "https://leaders-cd.com/",
+          "evidence": "ONDA 리프팅 설명 '유럽 DEKA사에서 개발한 극초단파 리프팅'"
+        }
+      ],
+      "context": "DEKA사 ONDA 장비 사용 본문 명시. ONDA 매칭으로 확인됨",
+      "verification_status": "verified"
+    },
+    {
+      "name": "Sciton",
+      "catalog_manufacturer_kr": null,
+      "sources": [
+        {
+          "channel": "homepage",
+          "url": "https://leaders-cd.com/network/landing_halo.php",
+          "evidence": "헤일로 레이저 '미국 사이톤(Sciton) 社에서 개발한 줄 헤일로 레이저'"
+        }
+      ],
+      "context": "Sciton사 Halo 사용. 카탈로그 미수록",
+      "verification_status": "verified"
+    }
+  ],
+  "treatments": [
+    {
+      "treatment_name": "ONDA 리프팅",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "온다",
+      "price": {
+        "text": "1,100,000~1,320,000원/1회(부위)",
+        "low": 1100000,
+        "high": 1320000,
+        "regular_price": null,
+        "unit": "회",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "즉각적인 리프팅과 스킨 타이트닝 효과, 콜라겐 리모델링. DEKA사 극초단파. 비보험 진료비 기준가",
+      "source_page": "https://leaders-cd.com/network/landing_onda.php",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "코레지 2.0",
+      "category": "리프팅/피부재생",
+      "product_name": null,
+      "equipment_name": "코레지 2.0",
+      "price": null,
+      "package": null,
+      "notes": "16가지 공명파장 세포 운동 및 피부 재생 유도. 열에너지 아닌 공명파장 사용",
+      "source_page": "https://leaders-cd.com/network/landing_corage20.php",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "섬유아세포 강화술",
+      "category": "피부재생",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "섬유아세포 배양액을 이용한 피부 재생 치료. 주사 없이 피부 침투. 리더스피부과 대표 항노화 시술",
+      "source_page": "https://leaders-cd.com/network/landing_qtcell.php",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "지우개 멀티토닝",
+      "category": "색소/토닝",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "165,000~550,000원/1회(부위) (토닝레이저 비보험가 참고)",
+        "low": 165000,
+        "high": 550000,
+        "regular_price": null,
+        "unit": "회",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "기미, 잡티, 색소침착 치료. 비보험 진료비 '토닝레이저' 항목 참고가로 기재(정확한 장비 미표기)",
+      "source_page": "https://leaders-cd.com/network/landing_eraser.php",
+      "verification_status": "inferred"
+    },
+    {
+      "treatment_name": "울써티",
+      "category": "리프팅 (복합)",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "울쎄라+써마지+티타늄 3가지 장비를 결합한 리더스피부과 자체 커스텀 리프팅 패키지",
+      "source_page": "https://leaders-cd.com/network/landing_ultherti.php",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "써마지 FLX",
+      "category": "리프팅/타이트닝",
+      "product_name": null,
+      "equipment_name": "써마지 FLX",
+      "price": {
+        "text": "1,980,000~3,630,000원/1회(부위)",
+        "low": 1980000,
+        "high": 3630000,
+        "regular_price": null,
+        "unit": "회",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "고주파 피부 타이트닝. #콜라겐 재생 #잔주름 개선 #모공 축소. 비보험 진료비 기준가",
+      "source_page": "https://leaders-cd.com/network/landing_thermage_flx.php",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "울쎄라피 프라임",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "울쎄라피 프라임",
+      "price": {
+        "text": "660,000원/100샷",
+        "low": 660000,
+        "high": 660000,
+        "regular_price": null,
+        "unit": "100샷",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "초음파 리프팅. NEW 울쎄라2. 비보험 진료비 '울쎄라 660,000원/100샷' 기준가",
+      "source_page": "https://leaders-cd.com/network/landing_ultherapy.php",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "티타늄 리프팅",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "티타늄",
+      "price": {
+        "text": "1,100,000~1,210,000원/1회(부위)",
+        "low": 1100000,
+        "high": 1210000,
+        "regular_price": null,
+        "unit": "회",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "3파장 레이저 리프팅. #리프팅 #스킨 타이트닝 #브라이트닝. 비보험 진료비 기준가",
+      "source_page": "https://leaders-cd.com/network/landing_titanium.php",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "엠페이스",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "엠페이스",
+      "price": null,
+      "package": null,
+      "notes": "스마일 리프팅. 피부 속 근육까지 탄력과 리프팅. #처진 눈매를 또렷하게 #얼굴 라인 개선",
+      "source_page": "https://leaders-cd.com/network/landing_emface.php",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "세르프",
+      "category": "리프팅/타이트닝",
+      "product_name": null,
+      "equipment_name": "세르프",
+      "price": null,
+      "package": null,
+      "notes": "듀얼 모노폴라 타이트닝. XERF 표기 확인",
+      "source_page": "https://leaders-cd.com/network/landing_xerf.php",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "울써마지",
+      "category": "리프팅 (복합)",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "울쎄라+써마지 FLX 복합 패키지. '겉은 조이고, 속은 당기는 이중 탄력 리프팅'",
+      "source_page": "https://leaders-cd.com/network/landing_ulthermage.php",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "헤일로 레이저",
+      "category": "재생/피부결",
+      "product_name": null,
+      "equipment_name": "헤일로 레이저",
+      "price": null,
+      "package": null,
+      "notes": "미국 사이톤(Sciton)社 Halo. 하이브리드 프락셔널(2940nm+1470nm). 잔주름·모공·피부결 개선",
+      "source_page": "https://leaders-cd.com/network/landing_halo.php",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "실루엣 Fit 리프팅",
+      "category": "리프팅 (실 리프팅)",
+      "product_name": "실루엣 소프트",
+      "equipment_name": null,
+      "price": {
+        "text": "440,000~770,000원/1줄 (비보험 실리프팅 기준)",
+        "low": 440000,
+        "high": 770000,
+        "regular_price": null,
+        "unit": "줄",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "실루엣 소프트(PLLA 3D Cone) 사용. 자가 콜라겐 생성, 볼륨+리프팅 동시. 비보험 '실리프팅' 항목 참고가",
+      "source_page": "https://leaders-cd.com/network/landing_sfit.php",
+      "verification_status": "inferred"
+    },
+    {
+      "treatment_name": "디자인 필러",
+      "category": "필러",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "330,000~770,000원/1cc",
+        "low": 330000,
+        "high": 770000,
+        "regular_price": null,
+        "unit": "cc",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "쥬비덤·벨로테로·로리앙·뉴라미스·유스필·리쥬비엘 사용. 비보험 '필러' 330,000~770,000원/1cc",
+      "source_page": "https://leaders-cd.com/network/landing_filler.php",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "리텐 부스터",
+      "category": "스킨부스터",
+      "product_name": "리쥬란",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "리쥬란 기반 스킨부스터. 섬유아세포 기능 정상화, 유수분 밸런스. 더마샤인 프로/리쥬메이트 인젝터 사용",
+      "source_page": "https://leaders-cd.com/network/landing_re10.php",
+      "verification_status": "inferred"
+    },
+    {
+      "treatment_name": "V라인 실리프팅",
+      "category": "리프팅 (실 리프팅)",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "440,000~770,000원/1줄 (비보험 실리프팅 기준)",
+        "low": 440000,
+        "high": 770000,
+        "regular_price": null,
+        "unit": "줄",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "녹는 실 실리프팅. 짧고 가는 실, 이물감 적음, 회복 빠름",
+      "source_page": "https://leaders-cd.com/network/landing_line.php",
+      "verification_status": "inferred"
+    },
+    {
+      "treatment_name": "스캐폴드 아이 리프팅",
+      "category": "리프팅 (실 리프팅 - 눈가)",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "눈가 전용 실 리프팅. 머리카락보다 얇은 특수 실. 눈가 주름·처짐·다크서클 개선",
+      "source_page": "https://leaders-cd.com/network/scaffold_eye.php",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "헬리오스 785 레이저",
+      "category": "색소",
+      "product_name": null,
+      "equipment_name": "헬리오스 785 레이저",
+      "price": {
+        "text": "330,000~880,000원/1회(부위) (색소레이저 비보험가 참고)",
+        "low": 330000,
+        "high": 880000,
+        "regular_price": null,
+        "unit": "회",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "트리플 파장(1064nm+532nm 큐스위치 Nd:YAG + 785nm 피코). 피코+나노 복합. 비보험 '색소레이저' 참고가",
+      "source_page": "https://leaders-cd.com/network/helios.php",
+      "verification_status": "inferred"
+    },
+    {
+      "treatment_name": "보톡스",
+      "category": "톡신",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "110,000~330,000원/1회(제품별), 사각턱: 220,000~440,000원/1회",
+        "low": 110000,
+        "high": 440000,
+        "regular_price": null,
+        "unit": "회",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "비보험 진료비 '보톡스(제품별)', '보톡스(사각턱)' 확인. 제품 미특정",
+      "source_page": "https://leaders-cd.com/bbs/content_06.html",
+      "verification_status": "verified"
+    }
+  ],
+  "language_support": {
+    "supported_languages": [
+      "ko",
+      "en",
+      "zh",
+      "ja"
+    ],
+    "has_language_switcher": true,
+    "foreign_language_pages": {
+      "en": "https://leaders-eng.com/",
+      "zh": "https://leaders-cn.com/",
+      "ja": "https://leaders-jpn.com/"
+    }
+  },
+  "crawl_metadata": {
+    "pages_crawled": 12,
+    "pages_visited": [
+      "https://leaders-cd.com/ (홈 — 정찰, 메뉴/시술명/사업자정보/의료진)",
+      "https://leaders-cd.com/network/landing_ulthermage.php (울써마지 복합 시술)",
+      "https://leaders-cd.com/network/landing_halo.php (헤일로 레이저)",
+      "https://leaders-cd.com/network/landing_sfit.php (실루엣 Fit 리프팅)",
+      "https://leaders-cd.com/network/landing_filler.php (디자인 필러 — 제품 목록)",
+      "https://leaders-cd.com/network/landing_re10.php (리텐 부스터 — 리쥬란)",
+      "https://leaders-cd.com/network/landing_line.php (V라인 실리프팅)",
+      "https://leaders-cd.com/network/scaffold_eye.php (스캐폴드 아이 리프팅)",
+      "https://leaders-cd.com/network/helios.php (헬리오스 785 레이저)",
+      "https://leaders-cd.com/bbs/content.php?co_id=nonpay (비보험 진료비 안내)",
+      "https://leaders-cd.com/bbs/content_06.html (청담도산대로점 비보험 진료비)",
+      "https://leaders-cd.com/network/landing_qtcell.php (섬유아세포 강화술)"
+    ],
+    "crawl_method": "text-first: 텍스트형 사이트. 홈 evaluate로 메뉴·사업자정보·시술명 대부분 수집. 상세 landing 페이지 개별 방문 및 비보험 진료비 iframe 탭 방문.",
+    "errors": [],
+    "completeness": {
+      "operation_info": true,
+      "doctors": true,
+      "products": true,
+      "equipments": true,
+      "treatments": true,
+      "prices": true,
+      "language_support": true
+    },
+    "follow_up": [
+      {
+        "area": "treatments",
+        "reason": "needs_deeper_crawl",
+        "detail": "landing_ultherti, landing_eraser, landing_emface, landing_corage20 등 개별 랜딩 페이지 상세 미방문. 상세 가격/장비명 추가 확보 가능",
+        "urls": [
+          "https://leaders-cd.com/network/landing_ultherti.php",
+          "https://leaders-cd.com/network/landing_eraser.php",
+          "https://leaders-cd.com/network/landing_emface.php",
+          "https://leaders-cd.com/network/landing_corage20.php"
+        ]
+      },
+      {
+        "area": "prices",
+        "reason": "needs_deeper_crawl",
+        "detail": "이달의 혜택 이벤트 페이지 미방문 — 이벤트 시술가 있을 수 있음",
+        "urls": [
+          "https://leaders-cd.com/network/month_event.php"
+        ]
+      }
+    ],
+    "cost": {
+      "model": "claude-sonnet-4-5",
+      "effort": "medium",
+      "input_tokens": 115,
+      "output_tokens": 37945,
+      "cost_usd": 2.4541,
+      "duration_seconds": 668
+    },
+    "notes": [
+      "신원확인: 사업자등록번호 831-07-02532, 대표자 노낙경 → identity_status=match 확정",
+      "프랜차이즈 네트워크(12개 지점). 다국어 언어 스위처(KR/EN/CN/JPN) 확인",
+      "홈 팝업 배너에서 '고우리 신규 도입' 확인 → 카탈로그 매칭",
+      "세르프(XERF) 카탈로그 표기 SERF와 동일 제품으로 판단(inferred)",
+      "울써티=울쎄라+써마지+티타늄, 울써마지=울쎄라+써마지 복합 패키지(자체 브랜드)",
+      "비보험 진료비는 청담도산대로점 탭(content_06.html)에서 정확히 수집",
+      "주요 기존 장비 랜딩 페이지는 홈에서 충분한 정보 수집했으나 일부 미방문"
+    ]
+  }
+}

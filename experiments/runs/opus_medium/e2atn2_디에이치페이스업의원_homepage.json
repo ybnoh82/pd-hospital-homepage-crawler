@@ -1,0 +1,673 @@
+{
+  "hospital_id": "e2atn2",
+  "hospital_name": "디에이치페이스업의원",
+  "crawled_at": "2026-06-17T12:32:00+09:00",
+  "address": {
+    "sido": "서울",
+    "sggu": "강남구",
+    "emdong": "논현동",
+    "road_address": "서울특별시 강남구 강남대로 480, 5층 (논현동)",
+    "latitude": 37.50529,
+    "longitude": 127.024555
+  },
+  "homepage_url": "http://faceup1.com/",
+  "identity_status": "match",
+  "alternative_urls": [
+    "http://faceup1.com/thermage_eng",
+    "http://faceup1.com/rejuran_eng",
+    "http://faceup1.com/hydrafacial_eng",
+    "http://faceup1.com/event_eng"
+  ],
+  "branches": null,
+  "operation_info": {
+    "hospital_name": "디에이치페이스업의원",
+    "representative_name": "황인성",
+    "business_number": "639-04-01260",
+    "phone": "02-543-4742",
+    "phone_secondary": null,
+    "fax": "02-543-4743",
+    "email": null,
+    "kakao_channel": "http://pf.kakao.com/_cxeptxj",
+    "operating_hours": {
+      "monday": {
+        "open": "11:00",
+        "close": "20:00",
+        "break_start": "13:00",
+        "break_end": "14:00"
+      },
+      "tuesday": {
+        "open": "11:00",
+        "close": "20:00",
+        "break_start": "13:00",
+        "break_end": "14:00"
+      },
+      "wednesday": null,
+      "thursday": {
+        "open": "11:00",
+        "close": "20:00",
+        "break_start": "13:00",
+        "break_end": "14:00"
+      },
+      "friday": {
+        "open": "11:00",
+        "close": "20:00",
+        "break_start": "13:00",
+        "break_end": "14:00"
+      },
+      "saturday": {
+        "open": "11:00",
+        "close": "17:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "sunday": {
+        "open": "11:00",
+        "close": "17:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "holiday": null
+    },
+    "operating_hours_note": "평일(월·화·목·금) 11:00-20:00, 점심 13:00-14:00. 토·일 11:00-17:00(점심 없음). 매주 수요일 휴진.",
+    "parking_info": "메가커피 건물(1층) 3시간 무료주차, 발렛비 3천원. 네비게이션에 '페이스업의원' 검색 시 주차장 연결.",
+    "transport_info": "9호선 신논현역 3번 출구 도보 30초. 2호선 강남역 11번 출구 도보 10분, 7호선 논현역 2번 출구 도보 10분. 교보타워 도보 1분.",
+    "facilities": [
+      "주차장",
+      "발렛파킹"
+    ]
+  },
+  "doctors": [
+    {
+      "name": "황인성",
+      "is_representative": true,
+      "role": "대표원장",
+      "specialty": [],
+      "education": [],
+      "career": [],
+      "associations": [
+        "리쥬란 키닥터(Key Doctor) 및 임상 자문위원"
+      ],
+      "awards": [
+        "리쥬란 SVIP & VVIP 병원 선정"
+      ],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    }
+  ],
+  "products": {
+    "matched_products": [
+      {
+        "product_kr": "리쥬란 HB",
+        "brand_kr": "리쥬란",
+        "manufacturer_kr": "파마리서치",
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 3,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://faceup1.com/rejuran_kor",
+            "evidence": "리쥬란 페이지 '리쥬란 HB (Premium) PN+HA+리도카인'"
+          },
+          {
+            "channel": "homepage",
+            "url": "http://faceup1.com/event",
+            "evidence": "가격표 '리쥬란HB plus - FACE 1cc/2cc/4cc/7cc'(이미지 vision 판독)"
+          }
+        ],
+        "context": "사이트 표기 '리쥬란 HB plus' → 카탈로그 '리쥬란 HB(Rejuran HB)' 매칭. 'plus'는 신규 라인 표기로 추정",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "리쥬란 힐러",
+        "brand_kr": "리쥬란",
+        "manufacturer_kr": "파마리서치",
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://faceup1.com/rejuran_kor",
+            "evidence": "리쥬란 페이지 '리쥬란힐러(Original) PN only, 주로 목 부위'"
+          },
+          {
+            "channel": "homepage",
+            "url": "http://faceup1.com/event",
+            "evidence": "가격표 '리쥬란힐러(Normal) - NECK 4cc'(이미지 vision 판독)"
+          }
+        ],
+        "context": "카탈로그 '리쥬란 힐러(Rejuran Healer)' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "제오민",
+        "brand_kr": "제오민",
+        "manufacturer_kr": "멀츠",
+        "category": "보툴리눔 톡신",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://faceup1.com/botoxfiller",
+            "evidence": "보톡스 페이지 '제오민(XEOMIN)은 독일 멀츠(MERZ)에서 만든 제품…복합단백질 제거'"
+          },
+          {
+            "channel": "homepage",
+            "url": "http://faceup1.com/event",
+            "evidence": "보톡스 프로모션 표 '국산/제오민' 열(이미지 vision 판독)"
+          }
+        ],
+        "context": "카탈로그 '제오민(Xeomin/Merz)' 직접 매칭. 보톡스 '수입' 옵션이 제오민",
+        "verification_status": "verified"
+      }
+    ],
+    "unmatched_products": [
+      {
+        "raw_name": "국산 보톡스(보툴리눔 톡신)",
+        "category_guess": "보툴리눔 톡신(국산, 브랜드 미표기)",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://faceup1.com/botoxfiller",
+            "evidence": "보톡스 시술 '국산' 옵션(가격 별도) — 구체 브랜드 미표기"
+          }
+        ],
+        "context": "'국산' 톡신으로만 표기, 구체 제품·브랜드 미표기 → 카탈로그 특정 불가, 보류",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "equipments": {
+    "matched_equipments": [
+      {
+        "name_kr": "써마지 FLX",
+        "name_en": "Thermage FLX",
+        "category": "리프팅",
+        "mention_count": 3,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://faceup1.com/thermage",
+            "evidence": "페이지 타이틀 '써마지FLX 전문' · '써마지 공식 안티에이징 센터'"
+          },
+          {
+            "channel": "homepage",
+            "url": "http://faceup1.com/event",
+            "evidence": "가격표 '써마지FLX 600샷/300샷 프로모션'(이미지 vision 판독)"
+          }
+        ],
+        "context": "카탈로그 '써마지 FLX(Thermage FLX, Solta Medical)' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "인모드 포마/FX",
+        "name_en": "InMode Forma / FX",
+        "category": "리프팅",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://faceup1.com/inmode",
+            "evidence": "인모드리프팅 페이지 'FX, Forma 두 단계를 배합'"
+          }
+        ],
+        "context": "카탈로그 '인모드 포마/FX(InMode Forma/FX)' 매칭. 사이트 표기 FX·Forma 일치",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "제네시스",
+        "name_en": "Genesis Laser",
+        "category": "토닝",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://faceup1.com/excelv",
+            "evidence": "엑셀V 페이지 '안면홍조 제네시스 2회' · 가격표 '엑셀브이 제네시스 5000샷'(vision)"
+          }
+        ],
+        "context": "사이트 '엑셀브이 제네시스' → 카탈로그 '제네시스(Genesis Laser, Cutera/Candela)' 매칭. Excel V의 제네시스 모드",
+        "verification_status": "verified"
+      }
+    ],
+    "unmatched_equipments": [
+      {
+        "raw_name": "엑셀V 레이저 (Excel V)",
+        "category_guess": "혈관/색소 멀티 레이저(Cutera)",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://faceup1.com/excelv",
+            "evidence": "엑셀브이(excel V) 레이저 페이지 '멀티 솔루션 레이저, 색소·홍조·탄력'"
+          }
+        ],
+        "context": "Cutera Excel V 본체 — 카탈로그 미수록(제네시스 모드만 카탈로그에 존재). 영문명 Excel V로도 미검색 → 보류",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "아포지 플러스 (Apogee Plus)",
+        "category_guess": "제모 레이저(755nm 알렉산드라이트, Cynosure)",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://faceup1.com/apogee",
+            "evidence": "'2025 아포지 플러스, 755nm 알렉산드라이트 레이저' 제모 프로그램"
+          },
+          {
+            "channel": "homepage",
+            "url": "http://faceup1.com/event",
+            "evidence": "제모 가격표 얼굴/팔/다리(이미지 vision 판독)"
+          }
+        ],
+        "context": "Cynosure Apogee+ 제모 레이저 — 카탈로그 미수록(아포지/Apogee 검색 무결과) → 보류",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "하이드라페이셜 (Hydrafacial)",
+        "category_guess": "각질/모공/보습 스킨케어 장비",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "http://faceup1.com/hydrafacial_kor",
+            "evidence": "하이드라페이셜 페이지 타이틀(본문은 이미지)"
+          }
+        ],
+        "context": "Hydrafacial 스킨케어 장비 — 카탈로그 미수록(하이드라 검색 무결과) → 보류",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "manufacturer_signals": [],
+  "treatments": [
+    {
+      "treatment_name": "사각턱보톡스 50unit",
+      "category": "보툴리눔 톡신",
+      "product_name": "제오민",
+      "equipment_name": null,
+      "price": {
+        "text": "국산 70,000원 / 수입(제오민) 150,000원 (VAT 포함)",
+        "low": 70000,
+        "high": 150000,
+        "regular_price": null,
+        "unit": "unit",
+        "quantity": 50.0,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": "국산/수입(제오민) 옵션. 수입가는 제오민 기준",
+      "source_page": "http://faceup1.com/botoxfiller",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "주름보톡스 (미간/눈가/콧등 중 1부위)",
+      "category": "보툴리눔 톡신",
+      "product_name": "제오민",
+      "equipment_name": null,
+      "price": {
+        "text": "국산 60,000원 / 수입(제오민) 90,000원 (VAT 포함)",
+        "low": 60000,
+        "high": 90000,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "http://faceup1.com/botoxfiller",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "이마 주름보톡스",
+      "category": "보툴리눔 톡신",
+      "product_name": "제오민",
+      "equipment_name": null,
+      "price": {
+        "text": "국산 80,000원 / 수입(제오민) 110,000원 (VAT 포함)",
+        "low": 80000,
+        "high": 110000,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "http://faceup1.com/botoxfiller",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "관자보톡스 (측두근전체)",
+      "category": "보툴리눔 톡신",
+      "product_name": "제오민",
+      "equipment_name": null,
+      "price": {
+        "text": "국산 110,000원 / 수입(제오민) 220,000원 (VAT 포함)",
+        "low": 110000,
+        "high": 220000,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "http://faceup1.com/botoxfiller",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "침샘보톡스 (귀밑/혀밑/턱밑)",
+      "category": "보툴리눔 톡신",
+      "product_name": "제오민",
+      "equipment_name": null,
+      "price": {
+        "text": "국산 110,000원 / 수입(제오민) 220,000원 (부위별 동일, VAT 포함)",
+        "low": 110000,
+        "high": 220000,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": "귀밑·혀밑·턱밑 각 동일 가격",
+      "source_page": "http://faceup1.com/botoxfiller",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "자갈턱보톡스",
+      "category": "보툴리눔 톡신",
+      "product_name": "제오민",
+      "equipment_name": null,
+      "price": {
+        "text": "국산 70,000원 / 수입(제오민) 150,000원 (VAT 포함)",
+        "low": 70000,
+        "high": 150000,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": null,
+      "source_page": "http://faceup1.com/botoxfiller",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "리쥬란힐러 (Normal) - NECK",
+      "category": "스킨부스터",
+      "product_name": "리쥬란 힐러",
+      "equipment_name": null,
+      "price": {
+        "text": "4cc [1pack] 650,000원 (VAT 포함)",
+        "low": 650000,
+        "high": 650000,
+        "regular_price": null,
+        "unit": "cc",
+        "quantity": 4.0,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": false
+      },
+      "package": {
+        "sessions": 1,
+        "duration_months": null,
+        "event_period": null
+      },
+      "notes": "목 부위 집중 케어",
+      "source_page": "http://faceup1.com/event",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "리쥬란HB plus - FACE",
+      "category": "스킨부스터",
+      "product_name": "리쥬란 HB",
+      "equipment_name": null,
+      "price": {
+        "text": "1cc 290,000 / 2cc 570,000 / 4cc 1,100,000 / 7cc 1,750,000원 (VAT 포함)",
+        "low": 290000,
+        "high": 1750000,
+        "regular_price": null,
+        "unit": "cc",
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": false
+      },
+      "package": null,
+      "notes": "용량별 가격(1/2/4/7cc). 눈가 포함 얼굴 전체",
+      "source_page": "http://faceup1.com/event",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "입술 리쥬란HB plus (입술케어)",
+      "category": "스킨부스터",
+      "product_name": "리쥬란 HB",
+      "equipment_name": null,
+      "price": {
+        "text": "1cc 입술케어 400,000원 (VAT 포함)",
+        "low": 400000,
+        "high": 400000,
+        "regular_price": null,
+        "unit": "cc",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": "입술 탄력·보습 프로모션",
+      "source_page": "http://faceup1.com/event",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "모공 & 탄력 & 보습 5주 완성 패키지",
+      "category": "복합 패키지",
+      "product_name": "리쥬란 HB",
+      "equipment_name": "제네시스",
+      "price": {
+        "text": "2,350,000원 (VAT 포함) — 1·3·5주차 엑셀브이 제네시스 5000샷+리쥬란HB 3cc, 2·4주차 엑셀브이 제네시스 5000샷+초음파 미백보습관리",
+        "low": 2350000,
+        "high": 2350000,
+        "regular_price": null,
+        "unit": null,
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 5,
+        "duration_months": null,
+        "event_period": null
+      },
+      "notes": "엑셀브이 제네시스 + 리쥬란HB + 초음파 미백보습관리 5주 패키지",
+      "source_page": "http://faceup1.com/event",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "써마지FLX 600샷 프로모션",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "써마지 FLX",
+      "price": {
+        "text": "600샷 2,300,000 / +리쥬란HB plus 2cc 2,600,000(정상2,880,000) / +4cc 3,000,000(정상3,460,000) / +7cc 3,500,000(정상4,330,000). 써마지 무통옵션 +500,000(일일 3명 한정). VAT 포함",
+        "low": 2300000,
+        "high": 3500000,
+        "regular_price": 2880000,
+        "unit": "샷",
+        "quantity": 600.0,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": "리쥬란HB plus 콤보 옵션 별도. 무통옵션 +50만원(최대 강도·최저 통증, 일일 3명 한정)",
+      "source_page": "http://faceup1.com/event",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "써마지FLX 300샷 프로모션",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "써마지 FLX",
+      "price": {
+        "text": "300샷 1,500,000 / +리쥬란HB plus 2cc 1,900,000 / +4cc 2,300,000 / +7cc 2,900,000. 써마지 무통옵션 +400,000(일일 3명 한정). VAT 포함",
+        "low": 1500000,
+        "high": 2900000,
+        "regular_price": null,
+        "unit": "샷",
+        "quantity": 300.0,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": true
+      },
+      "package": null,
+      "notes": "리쥬란HB plus 콤보 옵션 별도. 무통옵션 +40만원(일일 3명 한정)",
+      "source_page": "http://faceup1.com/event",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "인모드 리프팅",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "인모드 포마/FX",
+      "price": null,
+      "package": null,
+      "notes": "FX·Forma 2단계 배합. 단독시술 5000케이스 이상. 가격 미게시(상담)",
+      "source_page": "http://faceup1.com/inmode",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "아포지 플러스 레이저 제모",
+      "category": "제모",
+      "product_name": null,
+      "equipment_name": "아포지 플러스 (Apogee Plus)",
+      "price": {
+        "text": "1회/5회 부위별 — 얼굴: 헤어라인/이마/뒷목 각 30,000/120,000, 얼굴전체 70,000/280,000. 팔: 겨드랑이 30,000/120,000, 상완 40,000/160,000, 하완 40,000/160,000, 팔전체 70,000/280,000. 다리: 허벅지 80,000/320,000, 종아리 60,000/240,000, 다리전체 130,000/520,000. VAT 포함",
+        "low": 30000,
+        "high": 520000,
+        "regular_price": null,
+        "unit": "회",
+        "quantity": null,
+        "currency": "KRW",
+        "include_vat": true,
+        "is_event_price": false
+      },
+      "package": {
+        "sessions": 5,
+        "duration_months": null,
+        "event_period": null
+      },
+      "notes": "남성/여성/바디/특수부위 제모. 1회·5회 패키지(이미지 vision 판독)",
+      "source_page": "http://faceup1.com/event",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "엑셀V 레이저 (색소·홍조·탄력)",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": "엑셀V 레이저 (Excel V)",
+      "price": null,
+      "package": null,
+      "notes": "멀티 솔루션 레이저. 안면홍조·모세혈관확장증·색소병변·흑자 등 3모드. 가격 미게시(상담)",
+      "source_page": "http://faceup1.com/excelv",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "하이드라페이셜",
+      "category": "스킨케어",
+      "product_name": null,
+      "equipment_name": "하이드라페이셜 (Hydrafacial)",
+      "price": null,
+      "package": null,
+      "notes": "각질/모공/보습 케어. 본문 이미지 전용, 가격 미게시",
+      "source_page": "http://faceup1.com/hydrafacial_kor",
+      "verification_status": "verified"
+    }
+  ],
+  "language_support": {
+    "supported_languages": [
+      "ko",
+      "en"
+    ],
+    "has_language_switcher": true,
+    "foreign_language_pages": {
+      "en": "http://faceup1.com/thermage_eng"
+    }
+  },
+  "crawl_metadata": {
+    "pages_crawled": 9,
+    "pages_visited": [
+      "http://faceup1.com/ (홈·정찰)",
+      "http://faceup1.com/botoxfiller (보톡스·제오민·가격)",
+      "http://faceup1.com/rejuran_kor (리쥬란 HB/힐러)",
+      "http://faceup1.com/thermage (써마지 FLX)",
+      "http://faceup1.com/inmode (인모드 FX/Forma)",
+      "http://faceup1.com/apogee (아포지 플러스 제모)",
+      "http://faceup1.com/excelv (엑셀V 레이저/제네시스)",
+      "http://faceup1.com/hydrafacial_kor (하이드라페이셜)",
+      "http://faceup1.com/event (프로모션 가격표 — 이미지 vision 판독)",
+      "http://faceup1.com/information (진료시간·오시는길)"
+    ],
+    "crawl_method": "텍스트형 — Playwright evaluate 추출 우선. 가격은 imweb 프로모션 이미지에 묻혀 있어 vision 4장 판독(리쥬란/써마지/보톡스/제모 가격표).",
+    "errors": [],
+    "completeness": {
+      "operation_info": true,
+      "doctors": true,
+      "products": true,
+      "equipments": true,
+      "treatments": true,
+      "prices": true,
+      "language_support": true
+    },
+    "follow_up": [
+      {
+        "area": "doctors",
+        "reason": "needs_deeper_crawl",
+        "detail": "Dr.Hwang(황인성 대표원장) 전용 프로필 페이지(/drhwang) 미방문 — 학력·경력·전문과목 미수집. 대표원장 정보는 리쥬란 본문에서만 확보.",
+        "urls": [
+          "http://faceup1.com/drhwang",
+          "http://faceup1.com/thehfaceup"
+        ]
+      }
+    ],
+    "cost": {
+      "model": "claude-opus-4-8",
+      "effort": "medium",
+      "input_tokens": 3868,
+      "output_tokens": 15296,
+      "cost_usd": 3.0878,
+      "duration_seconds": 487
+    },
+    "notes": [
+      "병원 확인: 푸터 사업자정보(디에이치페이스업의원·황인성·639-04-01260·강남대로 480 5층)가 입력 정보와 일치 — identity match.",
+      "텍스트형 사이트(imweb 기반). 메뉴·시술 본문은 텍스트, 가격은 프로모션 이미지에만 있어 vision 4장 판독(리쥬란/써마지/보톡스/아포지 제모 가격표). 모두 VAT 포함 표기.",
+      "제품 매칭: 리쥬란 HB·리쥬란 힐러(파마리서치)·제오민(멀츠) 카탈로그 직접 매칭. 사이트 '리쥬란 HB plus'는 카탈로그 '리쥬란 HB'로 매칭(plus는 신규 라인 표기 추정). 보톡스 '수입'=제오민, '국산'은 브랜드 미표기로 unmatched.",
+      "장비 매칭: 써마지 FLX(Solta)·인모드 포마/FX(InMode)·제네시스(Cutera/Candela, '엑셀브이 제네시스') 카탈로그 매칭. Excel V 본체·아포지 플러스(Cynosure)·하이드라페이셜은 카탈로그 미수록(영문명으로도 미검색) → unmatched 보류.",
+      "진료시간: 평일(월·화·목·금) 11:00-20:00(점심 13-14시), 토·일 11:00-17:00, 매주 수요일 휴진. 신논현역 3번 출구 도보 30초, 메가커피 건물 3시간 무료주차.",
+      "미방문: /drhwang(원장 프로필), 후기·SNS는 데이터 출처로 보지 않아 미수집."
+    ]
+  }
+}

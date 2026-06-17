@@ -1,0 +1,13 @@
+{
+  "combo": "opus_high",
+  "model_short": "opus",
+  "model_id": "claude-opus-4-8",
+  "effort": "high",
+  "id": "kl8cgn",
+  "name": "바노바기성형외과의원",
+  "url": "https://www.banobagi.com",
+  "exit_code": 0,
+  "wall_seconds": 346.4,
+  "hard_killed": false,
+  "start_ts": 1781674879.1
+}

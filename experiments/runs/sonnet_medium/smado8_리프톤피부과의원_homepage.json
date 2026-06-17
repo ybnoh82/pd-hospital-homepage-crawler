@@ -1,0 +1,52 @@
+{
+  "hospital_id": "smado8",
+  "hospital_name": "리프톤피부과의원",
+  "crawled_at": "1970-01-01T00:00:00+09:00",
+  "address": null,
+  "homepage_url": "https://www.liftonskin.com/",
+  "identity_status": null,
+  "alternative_urls": [],
+  "branches": null,
+  "operation_info": null,
+  "doctors": [],
+  "products": {
+    "matched_products": [],
+    "unmatched_products": []
+  },
+  "equipments": {
+    "matched_equipments": [],
+    "unmatched_equipments": []
+  },
+  "manufacturer_signals": [],
+  "treatments": [],
+  "language_support": {
+    "supported_languages": [],
+    "has_language_switcher": false,
+    "foreign_language_pages": {}
+  },
+  "crawl_metadata": {
+    "pages_crawled": 0,
+    "pages_visited": [],
+    "crawl_method": null,
+    "errors": [],
+    "completeness": {
+      "operation_info": false,
+      "doctors": false,
+      "products": false,
+      "equipments": false,
+      "treatments": false,
+      "prices": false,
+      "language_support": false
+    },
+    "follow_up": [],
+    "cost": {
+      "model": "claude-sonnet-4-6",
+      "effort": "medium",
+      "input_tokens": 37,
+      "output_tokens": 5015,
+      "cost_usd": 0.6293,
+      "duration_seconds": 108
+    },
+    "notes": []
+  }
+}

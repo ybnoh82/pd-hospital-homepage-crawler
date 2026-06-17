@@ -1,0 +1,1027 @@
+{
+  "hospital_id": "xd9css",
+  "hospital_name": "도곡양재차앤박피부과의원",
+  "crawled_at": "2026-06-17T05:46:00+09:00",
+  "address": {
+    "sido": "서울",
+    "sggu": "강남구",
+    "emdong": "도곡동",
+    "road_address": "서울특별시 강남구 강남대로 248, 목원빌딩 3층",
+    "latitude": null,
+    "longitude": null
+  },
+  "homepage_url": "https://www.cnpskin.com/pc/branch/main/main.html?jijummid=cnpskin26",
+  "identity_status": "match",
+  "alternative_urls": [],
+  "branches": {
+    "type": "branch",
+    "network_group": "차앤박피부과",
+    "this_branch_name": "도곡양재점",
+    "sibling_branches": [
+      {
+        "name": "노원점",
+        "url": "https://www.cnpskin.com/cnpskin18",
+        "address": null
+      },
+      {
+        "name": "성신여대점",
+        "url": "https://www.cnpskin.com/cnpskin21",
+        "address": null
+      },
+      {
+        "name": "신촌점",
+        "url": "https://www.cnpskin.com/cnpskin02",
+        "address": null
+      },
+      {
+        "name": "명동점",
+        "url": "https://www.cnpskin.com/cnpskin06",
+        "address": null
+      },
+      {
+        "name": "건대입구점",
+        "url": "https://www.cnpskin.com/cnpskin22",
+        "address": null
+      },
+      {
+        "name": "천호점",
+        "url": "https://www.cnpskin.com/cnpskin11",
+        "address": null
+      },
+      {
+        "name": "압구정점",
+        "url": "https://www.cnpskin.com/cnpskin04",
+        "address": null
+      },
+      {
+        "name": "여의도점",
+        "url": "https://www.cnpskin.com/cnpskin03",
+        "address": null
+      },
+      {
+        "name": "양재점",
+        "url": "https://www.cnpskin.com/cnpskin25",
+        "address": null
+      },
+      {
+        "name": "의정부점",
+        "url": "https://www.cnpskin.com/cnpskin17",
+        "address": null
+      },
+      {
+        "name": "일산점",
+        "url": "https://www.cnpskin.com/cnpskin24",
+        "address": null
+      },
+      {
+        "name": "부천점",
+        "url": "https://www.cnpskin.com/cnpskin19",
+        "address": null
+      },
+      {
+        "name": "분당서현점",
+        "url": "https://www.cnpskin.com/cnpskin09",
+        "address": null
+      },
+      {
+        "name": "인천점",
+        "url": "https://www.cnpskin.com/cnpskin13",
+        "address": null
+      },
+      {
+        "name": "안산점",
+        "url": "https://www.cnpskin.com/cnpskin20",
+        "address": null
+      },
+      {
+        "name": "수원점",
+        "url": "https://www.cnpskin.com/cnpskin16",
+        "address": null
+      },
+      {
+        "name": "평택점",
+        "url": "https://www.cnpskin.com/cnpskin14",
+        "address": null
+      },
+      {
+        "name": "천안아산역점",
+        "url": "https://www.cnpskin.com/cnpskin23",
+        "address": null
+      },
+      {
+        "name": "천안시청점",
+        "url": "https://www.cnpskin.com/cnpskin07",
+        "address": null
+      },
+      {
+        "name": "광주점(광주광역시)",
+        "url": "https://www.cnpskin.com/cnpskin27",
+        "address": null
+      },
+      {
+        "name": "분당정자점",
+        "url": "https://www.cnpskin.com/cnpskin10",
+        "address": null
+      },
+      {
+        "name": "북경점",
+        "url": "https://www.cnpskin.com/pc/cnp-chn/about-us/branches_beijing.html",
+        "address": null
+      }
+    ]
+  },
+  "operation_info": {
+    "hospital_name": "차앤박피부과의원",
+    "representative_name": "차미경",
+    "business_number": "463-07-00011",
+    "phone": "02-3463-1140",
+    "phone_secondary": null,
+    "fax": null,
+    "email": null,
+    "kakao_channel": "카카오톡 채널 (카톡상담 링크 제공, URL 미확인)",
+    "operating_hours": {
+      "monday": {
+        "open": "11:00",
+        "close": "20:00",
+        "break_start": "13:00",
+        "break_end": "14:00"
+      },
+      "tuesday": {
+        "open": "10:00",
+        "close": "19:00",
+        "break_start": "13:00",
+        "break_end": "14:00"
+      },
+      "wednesday": {
+        "open": "10:00",
+        "close": "19:00",
+        "break_start": "13:00",
+        "break_end": "14:00"
+      },
+      "thursday": {
+        "open": "10:00",
+        "close": "19:00",
+        "break_start": "13:00",
+        "break_end": "14:00"
+      },
+      "friday": {
+        "open": "11:00",
+        "close": "20:00",
+        "break_start": "13:00",
+        "break_end": "14:00"
+      },
+      "saturday": {
+        "open": "09:00",
+        "close": "15:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "sunday": null,
+      "holiday": null
+    },
+    "operating_hours_note": "월/금요일: 11:00~20:00, 화/수/목: 10:00~19:00, 점심시간 13:00~14:00. 토요일: 09:00~15:00 점심시간 없이 진료. 일요일·공휴일 휴진.",
+    "parking_info": null,
+    "transport_info": "지하철: 3호선/신분당선 양재역 3번 출구에서 강남역 방면 30m 직진, 1층 상가를 끼고 골목으로 들어오면 바로 왼편 첫번째건물(목원빌딩 3층). 버스: 뱅뱅사거리/영동중학교 정류장 (지선[초록]:3412·3423·4319·4412·4432·8441·서초19·서초20 / 간선[파랑]:140·402·407·408·440·441·462·470·471·641·405 / 광역[빨강]:9404·9408·9409·9500·9501·9503·9510·9711·9800·9801·9802·9901).",
+    "facilities": []
+  },
+  "doctors": [
+    {
+      "name": "차미경",
+      "is_representative": true,
+      "role": "대표원장",
+      "specialty": [
+        "피부과"
+      ],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "정수진",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [
+        "피부과"
+      ],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "정유진",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [
+        "피부과"
+      ],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "이하린",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [
+        "피부과"
+      ],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    }
+  ],
+  "products": {
+    "matched_products": [],
+    "unmatched_products": [
+      {
+        "raw_name": "코어톡스",
+        "category_guess": "톡신",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/branch/info/non-paid-items.html?jijummid=cnpskin26",
+            "evidence": "보톡스(코어톡스,제오민) 1부위 100,000원"
+          }
+        ],
+        "context": "비급여진료비용 안내에서 직접 명시. 카탈로그 재조회 필요 - 코어톡스(Coretox)로 매칭 가능성 높음",
+        "verification_status": "verified"
+      },
+      {
+        "raw_name": "제오민",
+        "category_guess": "톡신",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/branch/info/non-paid-items.html?jijummid=cnpskin26",
+            "evidence": "보톡스(코어톡스,제오민) 1부위 100,000원"
+          }
+        ],
+        "context": "비급여진료비용 안내에서 직접 명시. 제오민(Xeomin, Merz 제품)으로 매칭 가능성 높음",
+        "verification_status": "verified"
+      },
+      {
+        "raw_name": "리쥬란",
+        "category_guess": "스킨부스터",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/cnp/special-clinic/special-clinic.html?bmain=view&uid=107",
+            "evidence": "스킨 부스터에 대해 파헤쳐 봅시다! 리쥬란, 엑소좀, 쥬베룩, 스컬트라 총정리!"
+          }
+        ],
+        "context": "CNP 스킨 부스터 페이지 영상 제목에서 언급. PN 기반 스킨부스터",
+        "verification_status": "verified"
+      },
+      {
+        "raw_name": "쥬베룩",
+        "category_guess": "스킨부스터",
+        "mention_count": 3,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/cnp/special-clinic/special-clinic.html?bmain=view&uid=107",
+            "evidence": "얼굴 전체에 볼륨감과 광채를 주는 스킨부스터 쥬베룩!"
+          }
+        ],
+        "context": "CNP 스킨 부스터 페이지 다수 영상에서 언급. PDLLA+HA 콜라겐 부스터",
+        "verification_status": "verified"
+      },
+      {
+        "raw_name": "쥬베룩 볼륨",
+        "category_guess": "스킨부스터",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/cnp/special-clinic/special-clinic.html?bmain=view&uid=107",
+            "evidence": "흉터 재생의 신기술! 오래가는 콜라겐 부스터 '쥬베룩 볼륨'"
+          }
+        ],
+        "context": "CNP 스킨 부스터 페이지 영상에서 언급",
+        "verification_status": "verified"
+      },
+      {
+        "raw_name": "스컬트라",
+        "category_guess": "스킨부스터",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/cnp/special-clinic/special-clinic.html?bmain=view&uid=107",
+            "evidence": "리쥬란, 엑소좀, 쥬베룩, 스컬트라 총정리!"
+          }
+        ],
+        "context": "CNP 스킨 부스터 페이지 영상 제목에서 언급. PLLA 성분 부스터",
+        "verification_status": "verified"
+      },
+      {
+        "raw_name": "래디어스 콜라겐 부스터",
+        "category_guess": "스킨부스터",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/cnp/special-clinic/special-clinic.html?bmain=view&uid=107",
+            "evidence": "탄력과 주름 개선에 효과적인 래디어스 콜라겐 부스터!"
+          }
+        ],
+        "context": "CNP 스킨 부스터 페이지 영상 제목에서 언급. Radiesse(CaHA) 계열로 추정",
+        "verification_status": "verified"
+      },
+      {
+        "raw_name": "리투오",
+        "category_guess": "스킨부스터",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/cnp/special-clinic/special-clinic.html?bmain=view&uid=107",
+            "evidence": "리투오, 기존 스킨부스터와 뭐가 다를까?"
+          }
+        ],
+        "context": "CNP 스킨 부스터 페이지 영상 제목에서 언급",
+        "verification_status": "verified"
+      },
+      {
+        "raw_name": "엑소좀",
+        "category_guess": "스킨부스터",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/cnp/special-clinic/special-clinic.html?bmain=view&uid=107",
+            "evidence": "리쥬란, 엑소좀, 쥬베룩, 스컬트라 총정리!"
+          }
+        ],
+        "context": "CNP 스킨 부스터 페이지 영상 제목에서 언급. 엑소좀은 여러 제조사 제품이 있어 특정 어려움",
+        "verification_status": "verified"
+      },
+      {
+        "raw_name": "라이넥주사",
+        "category_guess": "영양주사",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/branch/info/non-paid-items.html?jijummid=cnpskin26",
+            "evidence": "영양주사 라이넥주사 1회(2ml) 60,000원"
+          }
+        ],
+        "context": "비급여진료비용 안내에서 직접 명시. Laennec(일본 MFPP 제품)",
+        "verification_status": "verified"
+      },
+      {
+        "raw_name": "브이핏 주사",
+        "category_guess": "주사",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/cnp/laser-clinic/laser-clinic.html?bmain=view&uid=51",
+            "evidence": "토닝과 울쎄라 그리고 브이핏 주사까지!"
+          }
+        ],
+        "context": "초음파리프팅 페이지 영상 제목에서 언급",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "브이올렛",
+        "category_guess": "주사",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/cnp/special-clinic/special-clinic.html?bmain=view&uid=35",
+            "evidence": "지방을 흡입 없이 파괴! 브이올렛으로 이중턱을 효과적으로 없애는 방법!"
+          }
+        ],
+        "context": "필러&실리프팅 페이지 영상 제목에서 언급. 지방분해 관련 시술로 추정",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "equipments": {
+    "matched_equipments": [],
+    "unmatched_equipments": [
+      {
+        "raw_name": "울쎄라",
+        "category_guess": "초음파리프팅",
+        "mention_count": 3,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/cnp/laser-clinic/laser-clinic.html?bmain=view&uid=51",
+            "evidence": "울쎄라 리프팅 효과 극대화 시키는 방법!"
+          }
+        ],
+        "context": "초음파리프팅 페이지 영상 제목에서 반복 언급. Ulthera(Merz) HIFU 장비",
+        "verification_status": "verified"
+      },
+      {
+        "raw_name": "써마지 FLX",
+        "category_guess": "고주파리프팅",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/cnp/laser-clinic/laser-clinic.html?bmain=view&uid=52",
+            "evidence": "써마지 FLX로 피부 노화 고민 해결"
+          }
+        ],
+        "context": "고주파리프팅 페이지 영상 제목에서 언급. Thermage FLX(Solta Medical)",
+        "verification_status": "verified"
+      },
+      {
+        "raw_name": "슈링크",
+        "category_guess": "초음파리프팅",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/cnp/laser-clinic/laser-clinic.html?bmain=view&uid=51",
+            "evidence": "텐써마 vs 인모드 vs 슈링크 vs 버츄RF 리프팅!"
+          }
+        ],
+        "context": "초음파리프팅 페이지 영상 제목에서 언급",
+        "verification_status": "verified"
+      },
+      {
+        "raw_name": "버츄RF",
+        "category_guess": "프락셔널고주파",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/cnp/laser-clinic/laser-clinic.html?bmain=view&uid=51",
+            "evidence": "텐써마 vs 인모드 vs 슈링크 vs 버츄RF 리프팅!"
+          },
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/cnp/laser-clinic/laser-clinic.html?bmain=view&uid=52",
+            "evidence": "목주름 리프팅의 새로운 치료법! 버츄 리프팅"
+          }
+        ],
+        "context": "여러 페이지 영상에서 언급. Virtue RF(Cartessa Aesthetics) 프락셔널 고주파 장비",
+        "verification_status": "verified"
+      },
+      {
+        "raw_name": "인모드",
+        "category_guess": "고주파리프팅",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/cnp/laser-clinic/laser-clinic.html?bmain=view&uid=51",
+            "evidence": "텐써마 vs 인모드 vs 슈링크 vs 버츄RF 리프팅!"
+          }
+        ],
+        "context": "초음파리프팅 페이지 영상 제목에서 언급. InMode RF 장비",
+        "verification_status": "verified"
+      },
+      {
+        "raw_name": "텐써마",
+        "category_guess": "고주파리프팅",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/cnp/laser-clinic/laser-clinic.html?bmain=view&uid=52",
+            "evidence": "고주파 리프팅의 새로운 강자! 모노폴라 고주파 텐써마[10 THERMA]"
+          },
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/cnp/special-clinic/special-clinic.html?bmain=view&uid=108",
+            "evidence": "CNP 올인원 고주파 리프팅에 Sunny 장비로 등장"
+          }
+        ],
+        "context": "고주파리프팅 페이지 영상에서 '10 THERMA' 브랜드명으로 언급. CNP 올인원 고주파 리프팅에 Sunny 장비로 사용",
+        "verification_status": "verified"
+      },
+      {
+        "raw_name": "올리지오",
+        "category_guess": "고주파리프팅",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/cnp/laser-clinic/laser-clinic.html?bmain=view&uid=52",
+            "evidence": "리프팅 프로그램의 완성! 처진 피부를 올리지오!!"
+          }
+        ],
+        "context": "고주파리프팅 페이지 영상 제목에서 언급. Oligio(E&B Nanotech) HIFU 장비",
+        "verification_status": "verified"
+      },
+      {
+        "raw_name": "텐쎄라",
+        "category_guess": "고주파리프팅",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/cnp/laser-clinic/laser-clinic.html?bmain=view&uid=52",
+            "evidence": "텐쎄라X텐써마로 얼굴라인 UP!"
+          }
+        ],
+        "context": "고주파리프팅 페이지 영상 제목에서 텐써마와 함께 사용되는 장비로 언급",
+        "verification_status": "verified"
+      },
+      {
+        "raw_name": "레비나스",
+        "category_guess": "리프팅",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/cnp/laser-clinic/laser-clinic.html?bmain=view&uid=52",
+            "evidence": "얼굴이 작아지는 신개념 3D 리프팅! 레비나스 리프팅!"
+          }
+        ],
+        "context": "고주파리프팅 페이지 영상 제목에서 언급",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "Pulsar",
+        "category_guess": "고주파리프팅",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/cnp/special-clinic/special-clinic.html?bmain=view&uid=108",
+            "evidence": "CNP 올인원 고주파 리프팅 핸드피스: Pulsar - 1MHz와 2MHz 모노폴라/바이폴라 고주파"
+          }
+        ],
+        "context": "CNP 올인원 고주파 리프팅 페이지에서 핸드피스 장비로 명시. 단 도곡양재는 시술가능지점에 미포함",
+        "verification_status": "inferred"
+      },
+      {
+        "raw_name": "쿨젠",
+        "category_guess": "스킨케어장비",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/cnp/special-clinic/special-clinic.html?bmain=view&uid=30",
+            "evidence": "쿨젠 장비를 통한 보습, 진정 성분 흡수"
+          }
+        ],
+        "context": "피부강화 프로그램 페이지에서 보습·진정 성분 전달 장비로 언급",
+        "verification_status": "verified"
+      },
+      {
+        "raw_name": "큐어젯",
+        "category_guess": "마이크로샷",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/branch/info/non-paid-items.html?jijummid=cnpskin26",
+            "evidence": "피부치료 마이크로샷 큐어젯 1회(부위) 300,000원"
+          }
+        ],
+        "context": "비급여진료비용 안내에서 마이크로샷 카테고리 장비로 직접 명시",
+        "verification_status": "verified"
+      },
+      {
+        "raw_name": "Sunny",
+        "category_guess": null,
+        "mention_count": 1,
+        "sources": [],
+        "context": "시술(treatments)에서 자동 집계 — 카탈로그 매칭 미수행",
+        "verification_status": null
+      }
+    ]
+  },
+  "manufacturer_signals": [],
+  "treatments": [
+    {
+      "treatment_name": "CNP 스킨 부스터",
+      "category": "스킨부스터",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "재생부스터(PN/폴리뉴클레오티드), 화이트닝부스터(히알루론산+글루타치온+나이아신아마이드+트레넥사믹산+비타민C), 볼륨업부스터(PLLA+PDLLA+PDO+히알루론산) 3종 구성",
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "CNP 올인원 고주파 리프팅",
+      "category": "고주파리프팅",
+      "product_name": null,
+      "equipment_name": "Pulsar; Sunny",
+      "price": null,
+      "package": null,
+      "notes": "Pulsar(1MHz+2MHz 모노폴라/바이폴라) + Sunny(6.78MHz) 더블 핸드피스. 두피~목까지 리프팅. 단 도곡양재는 시술가능지점 미포함(건대입구/부천/분당서현/신촌/압구정/여의도/천안아산역)",
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "힐링주사",
+      "category": "주사",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "300,000원/1회(부위)",
+        "low": 300000,
+        "high": null,
+        "regular_price": null,
+        "unit": "회",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": null
+      },
+      "package": null,
+      "notes": "PDRN 성분 주입. 비급여에서 '힐러 주사' 명칭으로 300,000원 명시",
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "보톡스 특화 프로그램",
+      "category": "보톡스",
+      "product_name": "코어톡스; 제오민",
+      "equipment_name": null,
+      "price": {
+        "text": "100,000원/1부위",
+        "low": 100000,
+        "high": null,
+        "regular_price": null,
+        "unit": "부위",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": null
+      },
+      "package": null,
+      "notes": "보툴리늄 독소 시술. 비급여에서 코어톡스·제오민 제품명 명시. 스킨보톡스(더모톡신), 바디근육보톡스, 다한증보톡스 포함",
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "필러&실리프팅",
+      "category": "필러/리프팅",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "히알루론산 등 인체유사성분 필러 + 녹는실 리프팅. 특정 필러 브랜드명 미표기",
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "골드PTT",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "350,000원/1회(부위)",
+        "low": 350000,
+        "high": null,
+        "regular_price": null,
+        "unit": "회",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": null
+      },
+      "package": null,
+      "notes": "골드 나노입자 광역동치료. 비급여 350,000원 명시",
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "초음파 리프팅",
+      "category": "초음파리프팅",
+      "product_name": null,
+      "equipment_name": "울쎄라; 슈링크",
+      "price": null,
+      "package": null,
+      "notes": "HIFU SMAS층 에너지 전달. 차앤박피부과 각 지점에서 다양한 초음파 장비 사용. 울쎄라·슈링크 영상에서 언급",
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "고주파 리프팅",
+      "category": "고주파리프팅",
+      "product_name": null,
+      "equipment_name": "써마지 FLX; 버츄RF; 인모드; 텐써마; 올리지오; 텐쎄라",
+      "price": {
+        "text": "리프팅 고주파 300,000원~, 주름 고주파 400,000원",
+        "low": 300000,
+        "high": 400000,
+        "regular_price": null,
+        "unit": "부위",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": null
+      },
+      "package": null,
+      "notes": "차앤박 각 지점에서 다양한 고주파 장비 사용. 비급여에서 리프팅고주파 300,000원/주름고주파 400,000원 명시. 도곡양재 시술가능지점으로 확인됨",
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "프락셔널 고주파",
+      "category": "프락셔널고주파",
+      "product_name": null,
+      "equipment_name": "버츄RF",
+      "price": null,
+      "package": null,
+      "notes": "미세 바늘 고주파. 도곡양재 시술가능지점 확인됨",
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "색소레이저",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "100,000원/1회(부위)",
+        "low": 100000,
+        "high": null,
+        "regular_price": null,
+        "unit": "회",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": null
+      },
+      "package": null,
+      "notes": "비급여 100,000원 명시",
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "레이저 제모",
+      "category": "제모",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "20,000원~",
+        "low": 20000,
+        "high": null,
+        "regular_price": null,
+        "unit": "패키지",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": null
+      },
+      "package": null,
+      "notes": "비급여 20,000원~ 명시. 치료 부위와 분포도에 따라 비용 상이",
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "글로우토닝",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "200,000원/1회(부위)",
+        "low": 200000,
+        "high": null,
+        "regular_price": null,
+        "unit": "회",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": null
+      },
+      "package": null,
+      "notes": "비급여 200,000원 명시",
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "PDT광역동법",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "150,000원/1회(부위)",
+        "low": 150000,
+        "high": null,
+        "regular_price": null,
+        "unit": "회",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": null
+      },
+      "package": null,
+      "notes": "비급여 150,000원 명시",
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "스킨스케일링",
+      "category": "스킨케어",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "120,000원/1회(부위)",
+        "low": 120000,
+        "high": null,
+        "regular_price": null,
+        "unit": "회",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": null
+      },
+      "package": null,
+      "notes": "비급여 120,000원 명시",
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "큐어젯",
+      "category": "마이크로샷",
+      "product_name": null,
+      "equipment_name": "큐어젯",
+      "price": {
+        "text": "300,000원/1회(부위)",
+        "low": 300000,
+        "high": null,
+        "regular_price": null,
+        "unit": "회",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": null
+      },
+      "package": null,
+      "notes": "비급여 마이크로샷 카테고리. CureJet 장비 사용",
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "라이넥주사",
+      "category": "영양주사",
+      "product_name": "라이넥주사",
+      "equipment_name": null,
+      "price": {
+        "text": "60,000원/1회(2ml)",
+        "low": 60000,
+        "high": null,
+        "regular_price": null,
+        "unit": "ml",
+        "quantity": 2.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": null
+      },
+      "package": null,
+      "notes": "비급여 60,000원(2ml) 명시. Laennec(태반추출물/HGF) 제제",
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "피부강화 프로그램",
+      "category": "스킨케어",
+      "product_name": null,
+      "equipment_name": "쿨젠",
+      "price": null,
+      "package": null,
+      "notes": "3단계: 1단계 차앤박 SOS 보습케어(쿨젠장비), 2단계 하이드로리프팅(HA+유효성분 음압주사), 3단계 힐링주사(PDRN)",
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "DRT진피재생술",
+      "category": "레이저",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "150,000원/1회(부위)",
+        "low": 150000,
+        "high": null,
+        "regular_price": null,
+        "unit": "회",
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": null,
+        "is_event_price": null
+      },
+      "package": null,
+      "notes": "비급여에서 S-DRT PLUS 150,000원 명시. DRT진피재생술 연관 추정",
+      "source_page": null,
+      "verification_status": "inferred"
+    }
+  ],
+  "language_support": {
+    "supported_languages": [],
+    "has_language_switcher": false,
+    "foreign_language_pages": {}
+  },
+  "crawl_metadata": {
+    "pages_crawled": 13,
+    "pages_visited": [
+      "https://www.cnpskin.com/pc/branch/main/main.html?jijummid=cnpskin26",
+      "https://www.cnpskin.com/pc/cnp/special-clinic/special-clinic.html?bmain=view&uid=30",
+      "https://www.cnpskin.com/pc/cnp/special-clinic/special-clinic.html?bmain=view&uid=35",
+      "https://www.cnpskin.com/pc/cnp/special-clinic/special-clinic.html?bmain=view&uid=34",
+      "https://www.cnpskin.com/pc/cnp/special-clinic/special-clinic.html?bmain=view&uid=107",
+      "https://www.cnpskin.com/pc/cnp/special-clinic/special-clinic.html?bmain=view&uid=108",
+      "https://www.cnpskin.com/pc/cnp/laser-clinic/laser-clinic.html?bmain=view&uid=51",
+      "https://www.cnpskin.com/pc/cnp/laser-clinic/laser-clinic.html?bmain=view&uid=52",
+      "https://www.cnpskin.com/pc/cnp/laser-clinic/laser-clinic.html?bmain=view&uid=50",
+      "https://www.cnpskin.com/pc/branch/intro/medical-staff.html?jijummid=cnpskin26",
+      "https://www.cnpskin.com/pc/branch/intro/clinical-timetable.html?jijummid=cnpskin26",
+      "https://www.cnpskin.com/pc/branch/intro/location.html?jijummid=cnpskin26",
+      "https://www.cnpskin.com/pc/branch/info/non-paid-items.html?jijummid=cnpskin26"
+    ],
+    "crawl_method": "텍스트형. 차앤박 프랜차이즈 브랜치 페이지(도곡양재 전용) + 공통 CNP 클리닉 페이지 병행 탐색. browser_evaluate 우선, vision 불필요",
+    "errors": [],
+    "completeness": {
+      "operation_info": true,
+      "doctors": true,
+      "products": false,
+      "equipments": false,
+      "treatments": true,
+      "prices": true,
+      "language_support": true
+    },
+    "follow_up": [
+      {
+        "area": "레이저클리닉 미방문 상세페이지",
+        "reason": "budget_time",
+        "detail": "피지클리어레이저(uid=45), PDT광역동법(uid=46), 짜지않는여드름치료(uid=48), 프락셔널레이저(uid=49), 하이드로리프팅(uid=53), 색소레이저(uid=54), 기미레이저(uid=55), 홍조혈관레이저(uid=56) 상세 미방문 — 방문 시 레이저 장비명 추가 확보 가능",
+        "urls": [
+          "https://www.cnpskin.com/pc/cnp/laser-clinic/laser-clinic.html?bmain=view&uid=45",
+          "https://www.cnpskin.com/pc/cnp/laser-clinic/laser-clinic.html?bmain=view&uid=49",
+          "https://www.cnpskin.com/pc/cnp/laser-clinic/laser-clinic.html?bmain=view&uid=53",
+          "https://www.cnpskin.com/pc/cnp/laser-clinic/laser-clinic.html?bmain=view&uid=54",
+          "https://www.cnpskin.com/pc/cnp/laser-clinic/laser-clinic.html?bmain=view&uid=55",
+          "https://www.cnpskin.com/pc/cnp/laser-clinic/laser-clinic.html?bmain=view&uid=56"
+        ]
+      },
+      {
+        "area": "피부클리닉 상세페이지",
+        "reason": "budget_time",
+        "detail": "여드름/모공/탄력주름/화이트닝/진정보습/두피탈모/임산부 케어 상세 미방문 — 방문 시 추가 장비·제품명 수집 가능",
+        "urls": [
+          "https://www.cnpskin.com/pc/cnp/skin-clinic/skin-clinic.html?bmain=view&uid=57",
+          "https://www.cnpskin.com/pc/cnp/skin-clinic/skin-clinic.html?bmain=view&uid=58",
+          "https://www.cnpskin.com/pc/cnp/skin-clinic/skin-clinic.html?bmain=view&uid=59",
+          "https://www.cnpskin.com/pc/cnp/skin-clinic/skin-clinic.html?bmain=view&uid=60",
+          "https://www.cnpskin.com/pc/cnp/skin-clinic/skin-clinic.html?bmain=view&uid=61",
+          "https://www.cnpskin.com/pc/cnp/skin-clinic/skin-clinic.html?bmain=view&uid=62"
+        ]
+      },
+      {
+        "area": "products",
+        "reason": "needs_deeper_crawl",
+        "detail": "unmatched_products의 카탈로그 정식 매칭 미수행. 코어톡스/제오민/리쥬란/쥬베룩/스컬트라/라이넥 등 카탈로그(aesthetic_products.json) 조회·matched_products 이동 필요",
+        "urls": []
+      },
+      {
+        "area": "equipments",
+        "reason": "needs_deeper_crawl",
+        "detail": "unmatched_equipments의 카탈로그 정식 매칭 미수행. 울쎄라/써마지FLX/슈링크/버츄RF/올리지오 등 카탈로그(aesthetic_equipments.json) 조회·matched_equipments 이동 필요",
+        "urls": []
+      },
+      {
+        "area": "doctors",
+        "reason": "needs_deeper_crawl",
+        "detail": "의료진 목록(정수진/정유진/이하린/차미경)만 확인. 각 원장 상세 프로필(경력/학력) 미수집 — 상세 프로필 페이지 방문 필요",
+        "urls": []
+      }
+    ],
+    "cost": {
+      "model": "claude-sonnet-4-6",
+      "effort": "low",
+      "input_tokens": 120,
+      "output_tokens": 37022,
+      "cost_usd": 2.235,
+      "duration_seconds": 660
+    },
+    "notes": [
+      "차앤박피부과 프랜차이즈 도곡양재 지점. 사업자정보(463-07-00011, 대표 차미경, 강남대로 248 목원빌딩 3층) 확인 → identity match.",
+      "프랜차이즈 구조: 브랜치별 지점소개/의료진/시간표 페이지(jijummid=cnpskin26)와 공통 CNP 클리닉 페이지 혼재. 공통 클리닉 페이지의 '시술가능지점' 목록으로 도곡양재 제공 시술 부분 확인.",
+      "비급여진료비용 안내에서 코어톡스·제오민 톡신 제품명 명시 — 고가치 데이터. 힐러주사(PDRN) 300,000원, 큐어젯(마이크로샷) 300,000원, 골드PTT 350,000원 등 가격 텍스트 수집.",
+      "다국어(영/중/일) 지원 확인. 영어/중국어/일본어 전용 페이지 URL 수집.",
+      "vision 사용 없음 — 전 페이지 browser_evaluate 텍스트 추출 성공. 이미지형 콘텐츠 없음.",
+      "클리닉 페이지 영상 제목에서 장비/제품명 수집: 울쎄라, 써마지FLX, 슈링크, 버츄RF, 인모드, 올리지오, 텐써마, 텐쎄라, 레비나스, 리쥬란, 쥬베룩, 스컬트라, 래디어스, 리투오 등.",
+      "CNP 올인원 고주파 리프팅(uid=108)은 도곡양재가 시술가능지점에 미포함(건대입구/부천/분당서현/신촌/압구정/여의도/천안아산역만 가능)."
+    ]
+  }
+}

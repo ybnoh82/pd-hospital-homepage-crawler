@@ -1,0 +1,13 @@
+{
+  "combo": "sonnet_high",
+  "model_short": "sonnet",
+  "model_id": "claude-sonnet-4-6",
+  "effort": "high",
+  "id": "kgeuid",
+  "name": "신논현톡스앤필의원",
+  "url": "https://www.toxnfill9.com",
+  "exit_code": 0,
+  "wall_seconds": 873.5,
+  "hard_killed": false,
+  "start_ts": 1781667185.1
+}

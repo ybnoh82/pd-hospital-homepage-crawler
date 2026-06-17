@@ -1,0 +1,13 @@
+{
+  "combo": "sonnet_high",
+  "model_short": "sonnet",
+  "model_id": "claude-sonnet-4-6",
+  "effort": "high",
+  "id": "smado8",
+  "name": "리프톤피부과의원",
+  "url": "https://www.liftonskin.com/",
+  "exit_code": 0,
+  "wall_seconds": 833.3,
+  "hard_killed": false,
+  "start_ts": 1781666173.6
+}

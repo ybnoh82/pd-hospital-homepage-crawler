@@ -1,0 +1,676 @@
+{
+  "hospital_id": "n1u349",
+  "hospital_name": "대치오라클피부과의원",
+  "crawled_at": "1970-01-01T00:00:00+09:00",
+  "address": null,
+  "homepage_url": "https://daechi.oracleclinic.com/",
+  "identity_status": "match",
+  "alternative_urls": [],
+  "branches": {
+    "type": null,
+    "network_group": null,
+    "this_branch_name": null,
+    "sibling_branches": []
+  },
+  "operation_info": null,
+  "doctors": [],
+  "products": {
+    "matched_products": [],
+    "unmatched_products": [
+      {
+        "raw_name": "리제반힐러",
+        "category_guess": null,
+        "mention_count": null,
+        "sources": [],
+        "context": "스킨부스터 카테고리, PN 성분, DNA 리얼 테라피. 비급여 150,000원/cc. 카탈로그 미수록 — 검색어 '리제반', 'Regevan', 'regevan healer'로 조회 시 없음",
+        "verification_status": null
+      },
+      {
+        "raw_name": "보톡스(톡신)",
+        "category_guess": null,
+        "mention_count": null,
+        "sources": [],
+        "context": "쁘띠 카테고리, 표정주름·사각턱·종아리 축소. 비급여 50단위 100,000원. 보톡스는 일반명(브랜드 미특정)이라 카탈로그 매칭 불가",
+        "verification_status": null
+      },
+      {
+        "raw_name": "필러(히알루론산)",
+        "category_guess": null,
+        "mention_count": null,
+        "sources": [],
+        "context": "쁘띠 카테고리, HA 성분, 비급여 1cc 300,000원. 특정 브랜드 미표기",
+        "verification_status": null
+      },
+      {
+        "raw_name": "연어주사",
+        "category_guess": null,
+        "mention_count": null,
+        "sources": [],
+        "context": "스킨부스터 카테고리, PN/PDRN 성분. 리쥬란과 별개로 표기. 특정 브랜드 미특정",
+        "verification_status": null
+      },
+      {
+        "raw_name": "물광주사",
+        "category_guess": null,
+        "mention_count": null,
+        "sources": [],
+        "context": "스킨부스터 카테고리, HA 성분. 특정 브랜드 미표기",
+        "verification_status": null
+      },
+      {
+        "raw_name": "PRP 자가혈",
+        "category_guess": null,
+        "mention_count": null,
+        "sources": [],
+        "context": "스킨부스터 카테고리. 자가혈 PRP는 제조품 아님",
+        "verification_status": null
+      },
+      {
+        "raw_name": "실리프팅(실)",
+        "category_guess": null,
+        "mention_count": null,
+        "sources": [],
+        "context": "쁘띠 카테고리, 비급여 10줄 400,000원. 실 리프팅 소모품 — 제품 카탈로그 미수록",
+        "verification_status": null
+      },
+      {
+        "raw_name": "루치온주사",
+        "category_guess": null,
+        "mention_count": null,
+        "sources": [],
+        "context": "비만 카테고리. 상세 내용 불명. 카탈로그 미수록",
+        "verification_status": null
+      },
+      {
+        "raw_name": "쥬베룩",
+        "category_guess": null,
+        "mention_count": null,
+        "sources": [],
+        "context": "비급여 가격표에 명시. matched_products로 이관됨",
+        "verification_status": null
+      },
+      {
+        "raw_name": "PRP",
+        "category_guess": null,
+        "mention_count": 1,
+        "sources": [],
+        "context": "시술(treatments)에서 자동 집계 — 카탈로그 매칭 미수행",
+        "verification_status": null
+      },
+      {
+        "raw_name": "리쥬란 힐러",
+        "category_guess": null,
+        "mention_count": 1,
+        "sources": [],
+        "context": "시술(treatments)에서 자동 집계 — 카탈로그 매칭 미수행",
+        "verification_status": null
+      }
+    ]
+  },
+  "equipments": {
+    "matched_equipments": [],
+    "unmatched_equipments": [
+      {
+        "raw_name": "인디고",
+        "category_guess": null,
+        "mention_count": null,
+        "sources": [],
+        "context": "리프팅 카테고리 메뉴. 상세 페이지 CTA만 있고 장비 세부 미공개. 카탈로그 미수록",
+        "verification_status": null
+      },
+      {
+        "raw_name": "컨트렉스",
+        "category_guess": null,
+        "mention_count": null,
+        "sources": [],
+        "context": "리프팅 카테고리 메뉴. 상세 페이지 CTA만 있고 장비 세부 미공개. 카탈로그 미수록",
+        "verification_status": null
+      },
+      {
+        "raw_name": "디아지",
+        "category_guess": null,
+        "mention_count": null,
+        "sources": [],
+        "context": "리프팅 카테고리 메뉴. 이벤트 이미지에서 '디아지+프락셀+PRP+제네시스관리+SP관리+홈케세포' 복합 패키지 확인. 카탈로그 미수록",
+        "verification_status": null
+      },
+      {
+        "raw_name": "엑셀V",
+        "category_guess": null,
+        "mention_count": null,
+        "sources": [],
+        "context": "색소 카테고리 메뉴. 상세 페이지 CTA만. 엑셀V(ExcelV by Cutera) 혈관·색소 레이저로 추정. 카탈로그 미수록",
+        "verification_status": null
+      },
+      {
+        "raw_name": "쿨스컬프팅",
+        "category_guess": null,
+        "mention_count": null,
+        "sources": [],
+        "context": "비급여 가격표에 '쿨스컬프팅 1부위 300,000원~' 명시. CoolSculpting(Allergan/Zeltiq)로 추정. 카탈로그 미수록",
+        "verification_status": null
+      },
+      {
+        "raw_name": "듀얼HIFU",
+        "category_guess": null,
+        "mention_count": null,
+        "sources": [],
+        "context": "이벤트 이미지 02번에 '듀얼HIFU ~샷' 언급. 특정 기기명인지 일반명인지 불명. 카탈로그 미수록",
+        "verification_status": null
+      },
+      {
+        "raw_name": "텐써마",
+        "category_guess": null,
+        "mention_count": 1,
+        "sources": [],
+        "context": "시술(treatments)에서 자동 집계 — 카탈로그 매칭 미수행",
+        "verification_status": null
+      },
+      {
+        "raw_name": "제네시스",
+        "category_guess": null,
+        "mention_count": 1,
+        "sources": [],
+        "context": "시술(treatments)에서 자동 집계 — 카탈로그 매칭 미수행",
+        "verification_status": null
+      },
+      {
+        "raw_name": "텐트리플",
+        "category_guess": null,
+        "mention_count": 1,
+        "sources": [],
+        "context": "시술(treatments)에서 자동 집계 — 카탈로그 매칭 미수행",
+        "verification_status": null
+      },
+      {
+        "raw_name": "써마지 FLX",
+        "category_guess": null,
+        "mention_count": 1,
+        "sources": [],
+        "context": "시술(treatments)에서 자동 집계 — 카탈로그 매칭 미수행",
+        "verification_status": null
+      },
+      {
+        "raw_name": "울쎄라",
+        "category_guess": null,
+        "mention_count": 1,
+        "sources": [],
+        "context": "시술(treatments)에서 자동 집계 — 카탈로그 매칭 미수행",
+        "verification_status": null
+      }
+    ]
+  },
+  "manufacturer_signals": [],
+  "treatments": [
+    {
+      "treatment_name": "텐써마",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "텐써마",
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "인디고",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "인디고",
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "컨트렉스",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "컨트렉스",
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "디아지",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "디아지",
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "제네시스",
+      "category": "여드름/토닝",
+      "product_name": null,
+      "equipment_name": "제네시스",
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "텐트리플",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "텐트리플",
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "써마지 FLX",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "써마지 FLX",
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "울쎄라",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "울쎄라",
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "연어주사",
+      "category": "스킨부스터",
+      "product_name": "연어주사",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "물광주사",
+      "category": "스킨부스터",
+      "product_name": "물광주사",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "PRP 자가혈",
+      "category": "스킨부스터",
+      "product_name": "PRP",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "리주란",
+      "category": "스킨부스터",
+      "product_name": "리쥬란 힐러",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "리제반 PN",
+      "category": "스킨부스터",
+      "product_name": "리제반힐러",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "보톡스",
+      "category": "쁘띠",
+      "product_name": "보톡스(톡신)",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "필러",
+      "category": "쁘띠",
+      "product_name": "필러(히알루론산)",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "실리프팅",
+      "category": "쁘띠",
+      "product_name": "실리프팅(실)",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "쥬베룩",
+      "category": "스킨부스터",
+      "product_name": "쥬베룩",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "엑셀V",
+      "category": "색소",
+      "product_name": null,
+      "equipment_name": "엑셀V",
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "CO2 레이저",
+      "category": "색소",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "토닝",
+      "category": "색소",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "고주파관리",
+      "category": "스킨케어",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "미백관리",
+      "category": "스킨케어",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "보습관리",
+      "category": "스킨케어",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "재생관리",
+      "category": "스킨케어",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "진정관리",
+      "category": "스킨케어",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "여드름관리",
+      "category": "여드름",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "스켈링관리",
+      "category": "여드름",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "바하필관리",
+      "category": "여드름",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "아쿠아필관리",
+      "category": "여드름",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "아클레스필관리",
+      "category": "여드름",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "여드름 흉터 치료",
+      "category": "여드름",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "여성 제모",
+      "category": "제모",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "남성 제모",
+      "category": "제모",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "수액주사",
+      "category": "비만",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "루치온주사",
+      "category": "비만",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "쿨스컬프팅",
+      "category": "비만",
+      "product_name": null,
+      "equipment_name": "쿨스컬프팅",
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "듀얼HIFU + 제네시스 탄력 패키지",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "듀얼HIFU",
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "inferred"
+    },
+    {
+      "treatment_name": "탄력관리 패키지",
+      "category": "스킨케어",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": null,
+      "source_page": null,
+      "verification_status": "inferred"
+    }
+  ],
+  "language_support": {
+    "supported_languages": [],
+    "has_language_switcher": false,
+    "foreign_language_pages": {}
+  },
+  "crawl_metadata": {
+    "pages_crawled": 21,
+    "pages_visited": [
+      "https://daechi.oracleclinic.com/",
+      "https://daechi.oracleclinic.com/treatments/10therma-daechi",
+      "https://daechi.oracleclinic.com/treatments/botox",
+      "https://daechi.oracleclinic.com/treatments/filler",
+      "https://daechi.oracleclinic.com/treatments/salmon",
+      "https://daechi.oracleclinic.com/treatments/rejuran",
+      "https://daechi.oracleclinic.com/treatments/regevan",
+      "https://daechi.oracleclinic.com/treatments/indigo",
+      "https://daechi.oracleclinic.com/treatments/contrex",
+      "https://daechi.oracleclinic.com/treatments/excelv",
+      "https://daechi.oracleclinic.com/non-covered",
+      "https://daechi.oracleclinic.com/events",
+      "https://daechi.oracleclinic.com/events/6",
+      "https://daechi.oracleclinic.com/events/7",
+      "https://daechi.oracleclinic.com/api/media/file/2606_%EB%8C%80%EC%B9%98%EC%A0%90_%EC%9D%B4%EB%B2%A4%ED%8A%B8_%EC%83%81%EC%84%B801.jpg",
+      "https://daechi.oracleclinic.com/api/media/file/2606_%EB%8C%80%EC%B9%98%EC%A0%90_%EC%9D%B4%EB%B2%A4%ED%8A%B8_%EC%83%81%EC%84%B802.jpg",
+      "https://daechi.oracleclinic.com/doctors",
+      "https://daechi.oracleclinic.com/about",
+      "https://daechi.oracleclinic.com/contact",
+      "https://daechi.oracleclinic.com/treatments/co2",
+      "https://daechi.oracleclinic.com/treatments/toning"
+    ],
+    "crawl_method": "text-first SPA(Next.js) — browser_evaluate로 텍스트·링크 수집, 이벤트 이미지 2장 vision 판독",
+    "errors": [],
+    "completeness": {
+      "operation_info": false,
+      "doctors": false,
+      "products": false,
+      "equipments": false,
+      "treatments": false,
+      "prices": false,
+      "language_support": false
+    },
+    "follow_up": [],
+    "cost": {
+      "model": "claude-sonnet-4-5",
+      "effort": "high",
+      "input_tokens": 178,
+      "output_tokens": 38686,
+      "cost_usd": 2.8233,
+      "duration_seconds": 748
+    },
+    "notes": []
+  }
+}

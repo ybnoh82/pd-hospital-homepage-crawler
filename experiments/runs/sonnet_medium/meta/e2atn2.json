@@ -1,0 +1,13 @@
+{
+  "combo": "sonnet_medium",
+  "model_short": "sonnet",
+  "model_id": "claude-sonnet-4-6",
+  "effort": "medium",
+  "id": "e2atn2",
+  "name": "디에이치페이스업의원",
+  "url": "http://faceup1.com",
+  "exit_code": 0,
+  "wall_seconds": 761.4,
+  "hard_killed": false,
+  "start_ts": 1781666623.9
+}

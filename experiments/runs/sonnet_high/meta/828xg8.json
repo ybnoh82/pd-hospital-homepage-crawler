@@ -1,0 +1,13 @@
+{
+  "combo": "sonnet_high",
+  "model_short": "sonnet",
+  "model_id": "claude-sonnet-4-6",
+  "effort": "high",
+  "id": "828xg8",
+  "name": "미인피부과의원",
+  "url": "http://www.meinclinic.com",
+  "exit_code": 0,
+  "wall_seconds": 859.2,
+  "hard_killed": false,
+  "start_ts": 1781676738.3
+}

@@ -1,0 +1,2228 @@
+{
+  "hospital_id": "pja1wj",
+  "hospital_name": "강남유앤아이의원",
+  "crawled_at": "2026-06-17T03:37:00+09:00",
+  "address": {
+    "sido": "서울",
+    "sggu": "강남구",
+    "emdong": "역삼동",
+    "road_address": "서울특별시 강남구 강남대로 470, 808타워 6층 (역삼동)",
+    "latitude": null,
+    "longitude": null
+  },
+  "homepage_url": "https://www.uni114.co.kr/",
+  "identity_status": "match",
+  "alternative_urls": [
+    "https://jp.uni114.com/",
+    "https://cn.uni114.com/",
+    "https://th.uni114.com/",
+    "https://uni114.com/"
+  ],
+  "branches": {
+    "type": "branch",
+    "network_group": "유앤아이의원",
+    "this_branch_name": "유앤아이의원 강남점",
+    "sibling_branches": [
+      {
+        "name": "선릉점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "잠실점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "왕십리점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "명동점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "홍대신촌점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "영등포점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "마곡점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "건대점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "구로점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "여의도점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "천호점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "목동점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "창동점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "수원점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "판교점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "광교점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "광명점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "산본점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "부천점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "일산점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "다산점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "김포점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "인천검단점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "동탄점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "평택점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "안양점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "부평점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "안산점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "의정부점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "시흥배곧점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "분당미금점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "과천점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "하남미사점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "화성봉담점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "경기광주점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "천안점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "대전점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "광주점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "목포점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "대구점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "부산점",
+        "url": null,
+        "address": null
+      },
+      {
+        "name": "창원점",
+        "url": null,
+        "address": null
+      }
+    ]
+  },
+  "operation_info": {
+    "hospital_name": "유앤아이의원 강남점",
+    "representative_name": "허찬",
+    "business_number": "450-18-00627",
+    "phone": "02-6927-6022",
+    "phone_secondary": null,
+    "fax": null,
+    "email": null,
+    "kakao_channel": "https://www.uni114.co.kr/kakao/",
+    "operating_hours": {
+      "monday": {
+        "open": "10:00",
+        "close": "20:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "tuesday": {
+        "open": "10:00",
+        "close": "20:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "wednesday": {
+        "open": "10:00",
+        "close": "20:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "thursday": {
+        "open": "10:00",
+        "close": "20:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "friday": {
+        "open": "10:00",
+        "close": "20:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "17:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "sunday": {
+        "open": "10:00",
+        "close": "17:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "holiday": null
+    },
+    "operating_hours_note": "평일 10:00~20:00 야간진료. 주말(토/일) 10:00~17:00. 점심시간 없음. 5층: 외국인, 6층: 내국인.",
+    "parking_info": "주차 1시간 무료 (추가 30분당 3,000원)",
+    "transport_info": null,
+    "facilities": [
+      "주차장",
+      "외국인 전용 층(5층)",
+      "내국인(6층)"
+    ]
+  },
+  "doctors": [
+    {
+      "name": "허찬",
+      "is_representative": true,
+      "role": "원장",
+      "specialty": [],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "유세인",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "이예솔",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "윤지혜",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "이태규",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "황훈석",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "김진효",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "문이리나",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "이근영",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "김민경",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "김희진",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    },
+    {
+      "name": "김수민",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [],
+      "education": [],
+      "career": [],
+      "associations": [],
+      "awards": [],
+      "profile_image_url": null,
+      "verification_status": "verified"
+    }
+  ],
+  "products": {
+    "matched_products": [
+      {
+        "product_kr": "스킨바이브",
+        "brand_kr": "스킨바이브",
+        "manufacturer_kr": "엘러간",
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=skinvive",
+            "evidence": "메뉴 링크 '스킨바이브'"
+          }
+        ],
+        "context": "카탈로그 '스킨바이브' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "힐로웨이브",
+        "brand_kr": "힐로웨이브",
+        "manufacturer_kr": "하이어코퍼레이션",
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=hilowave",
+            "evidence": "메뉴 링크, 이벤트 750,000→400,000원"
+          }
+        ],
+        "context": "카탈로그 '힐로웨이브' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "고우리",
+        "brand_kr": "고우리",
+        "manufacturer_kr": "덱스레보",
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=gouri",
+            "evidence": "메뉴 링크 '고우리 부스터'"
+          }
+        ],
+        "context": "사이트 표기 '고우리 부스터' → 카탈로그 '고우리' 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "래디어스",
+        "brand_kr": "래디어스",
+        "manufacturer_kr": "멀츠",
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=radiesse",
+            "evidence": "메뉴 링크 '레디어스'"
+          }
+        ],
+        "context": "사이트 표기 '레디어스' → 카탈로그 '래디어스'(Radiesse) 한글 표기 변형 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "엘라비에 리투오",
+        "brand_kr": "리투오",
+        "manufacturer_kr": "휴메딕스",
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=elraviere2o",
+            "evidence": "메뉴 링크 '엘라비에 리투오', 이벤트 진행중"
+          }
+        ],
+        "context": "카탈로그 '엘라비에 리투오' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "벨로테로 리바이브 스킨부스터",
+        "brand_kr": "리바이브",
+        "manufacturer_kr": "멀츠",
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=revive",
+            "evidence": "메뉴 링크 '벨로테로 리바이브'"
+          }
+        ],
+        "context": "카탈로그 '벨로테로 리바이브 스킨부스터' 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "쥬베룩 볼륨",
+        "brand_kr": "쥬베룩",
+        "manufacturer_kr": "바임",
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=juvelookvolume",
+            "evidence": "메뉴 링크 '쥬베룩 볼륨'"
+          }
+        ],
+        "context": "카탈로그 '쥬베룩 볼륨' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "리쥬란 HB",
+        "brand_kr": "리쥬란",
+        "manufacturer_kr": "파마리서치",
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 3,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/landing/rejuranhb/",
+            "evidence": "메뉴 링크 '리쥬란HB+', 이벤트 '리쥬란 2cc'"
+          }
+        ],
+        "context": "사이트 표기 '리쥬란HB+' → 카탈로그 '리쥬란 HB' 매칭(HB+는 HB 상위 표기)",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "쥬베룩",
+        "brand_kr": "쥬베룩",
+        "manufacturer_kr": "바임",
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 3,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=juvelook",
+            "evidence": "메뉴 링크, 이벤트 '포텐자+쥬베룩 스킨부스터 2cc'"
+          }
+        ],
+        "context": "카탈로그 '쥬베룩' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "벨로테로 볼륨",
+        "brand_kr": "벨로테로",
+        "manufacturer_kr": "멀츠",
+        "category": "필러",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=beloterovol",
+            "evidence": "메뉴 링크 '벨로테로 볼륨부스터'"
+          }
+        ],
+        "context": "사이트 표기 '벨로테로 볼륨부스터' → 카탈로그 '벨로테로 볼륨' 매칭",
+        "verification_status": "inferred"
+      },
+      {
+        "product_kr": "레스틸렌",
+        "brand_kr": "레스틸렌",
+        "manufacturer_kr": "갈더마",
+        "category": "필러",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=restylane",
+            "evidence": "메뉴 링크 '레스틸렌'"
+          }
+        ],
+        "context": "카탈로그 '레스틸렌' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "벨로테로 밸런스",
+        "brand_kr": "벨로테로",
+        "manufacturer_kr": "멀츠",
+        "category": "필러",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=belotero",
+            "evidence": "메뉴 링크 '벨로테로'"
+          }
+        ],
+        "context": "사이트 '벨로테로' 브랜드 표기 → 카탈로그 '벨로테로 밸런스' inferred(세부 라인 불분명)",
+        "verification_status": "inferred"
+      },
+      {
+        "product_kr": "스컬트라",
+        "brand_kr": "스컬트라",
+        "manufacturer_kr": "갈더마",
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=sculptra",
+            "evidence": "메뉴 링크 '스컬트라'"
+          }
+        ],
+        "context": "카탈로그 '스컬트라' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "셀르디엠",
+        "brand_kr": "셀르디엠",
+        "manufacturer_kr": "한스바이오메드",
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=cellredm",
+            "evidence": "이벤트 진행중 '셀르디엠'"
+          }
+        ],
+        "context": "카탈로그 '셀르디엠' 직접 매칭",
+        "verification_status": "verified"
+      }
+    ],
+    "unmatched_products": [
+      {
+        "raw_name": "리쥬필",
+        "category_guess": "필러/스킨부스터",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=rejufill",
+            "evidence": "메뉴 링크"
+          }
+        ],
+        "context": "카탈로그 조회 결과 미수록. 자체 시술명으로 추정",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "빼라톡스",
+        "category_guess": "보톡스",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=profile",
+            "evidence": "메뉴 링크"
+          }
+        ],
+        "context": "카탈로그 미수록. '빼라톡스'는 프로파일 보톡스(윤곽 보톡스) 자체 마케팅명으로 추정",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "영국산보톡스",
+        "category_guess": "보톡스",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=ukbotox",
+            "evidence": "메뉴 링크, 이벤트 목주름 스킨보톡스"
+          }
+        ],
+        "context": "카탈로그 미수록. '영국산보톡스'는 통상 디스포트(Dysport, Ipsen 英) 지칭이나 확정 불가 — 보수적으로 보류",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "리톡스",
+        "category_guess": "보톡스",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=retox",
+            "evidence": "메뉴 링크"
+          }
+        ],
+        "context": "카탈로그 미수록. '리톡스'는 리쥬란+보톡스 복합시술 자체 마케팅명으로 추정",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "볼뉴머",
+        "category_guess": "필러/리프팅",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/landing/volnewmer/",
+            "evidence": "메뉴 링크"
+          }
+        ],
+        "context": "카탈로그 미수록",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "더모톡신",
+        "category_guess": "보톡스",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=dermatoxin",
+            "evidence": "메뉴 링크"
+          }
+        ],
+        "context": "카탈로그 미수록. 피부(진피) 보톡스 자체 마케팅명으로 추정",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "하이코",
+        "category_guess": "주사",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=highko",
+            "evidence": "메뉴 링크"
+          }
+        ],
+        "context": "카탈로그 미수록",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "아쎄라",
+        "category_guess": "지방용해주사",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=assera",
+            "evidence": "메뉴 링크, 이벤트 얼굴 아쎄라 5cc"
+          }
+        ],
+        "context": "카탈로그 미수록",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "equipments": {
+    "matched_equipments": [
+      {
+        "name_kr": "슈링크 유니버스",
+        "name_en": "Shrink Universe",
+        "category": "리프팅",
+        "mention_count": 3,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/landing/universe/",
+            "evidence": "메뉴 링크, 이벤트 '슈링크 유니버스 300샷', 장비페이지 '슈링크유니버스 3대 보유'"
+          }
+        ],
+        "context": "카탈로그 '슈링크'(Shrink) 매칭. 유니버스는 신형 모델명",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "인모드 포마/FX",
+        "name_en": "InMode Forma / FX",
+        "category": "리프팅",
+        "mention_count": 3,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/landing/inmode/",
+            "evidence": "메뉴 링크 '인모드리프팅', 이벤트 '인모드 FX', 장비페이지 '인모드 2대 보유'"
+          }
+        ],
+        "context": "카탈로그 '인모드 포마/FX' 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "써마지 FLX",
+        "name_en": "Thermage FLX",
+        "category": "리프팅",
+        "mention_count": 3,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/landing/thermage/",
+            "evidence": "메뉴 링크, 이벤트 '아이 써마지 225샷', 장비페이지 '써마지FLX 2대 보유'"
+          }
+        ],
+        "context": "카탈로그 '써마지 FLX' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "울쎄라피 프라임",
+        "name_en": "Ultherapy Prime",
+        "category": "리프팅",
+        "mention_count": 4,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=ultherapy",
+            "evidence": "메뉴 링크, 이벤트 가격 4종, 장비페이지 '4대 보유'"
+          }
+        ],
+        "context": "카탈로그 '울쎄라피 프라임' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "소프웨이브",
+        "name_en": "Sofwave (SUPERB)",
+        "category": "리프팅",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=sofwave",
+            "evidence": "메뉴 링크, 이벤트 '목 소프웨이브 100샷'"
+          }
+        ],
+        "context": "카탈로그 '소프웨이브' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "온다",
+        "name_en": "ONDA",
+        "category": "리프팅",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/landing/onda/",
+            "evidence": "메뉴 링크 '온다리프팅', 이벤트 '바디온다 12만줄'"
+          }
+        ],
+        "context": "카탈로그 '온다' 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "올리지오",
+        "name_en": "Oligio",
+        "category": "리프팅",
+        "mention_count": 3,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/landing/oligioX/",
+            "evidence": "메뉴 링크 '올리지오X', 이벤트 '올리지오X 300샷/아이올리지오X 200샷', 장비페이지 '올리지오X 2대 보유'"
+          }
+        ],
+        "context": "카탈로그 '올리지오' 매칭. X는 업그레이드 모델",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "스킨아우라",
+        "name_en": "Skin Aura",
+        "category": "리프팅",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=aura",
+            "evidence": "메뉴 링크, 장비페이지 '스킨아우라'"
+          }
+        ],
+        "context": "카탈로그 '스킨아우라' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "티타늄",
+        "name_en": "Titanium",
+        "category": "리프팅",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/landing/titanum/",
+            "evidence": "메뉴 링크 '티타늄 리프팅', 장비페이지 '티타늄'"
+          }
+        ],
+        "context": "카탈로그 '티타늄' 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "포텐자",
+        "name_en": "POTENZA",
+        "category": "리프팅 / 재생",
+        "mention_count": 3,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/",
+            "evidence": "이벤트 '포텐자 N팁', 장비페이지 '포텐자 3대 보유'"
+          }
+        ],
+        "context": "카탈로그 '포텐자' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "피코슈어",
+        "name_en": "PicoSure",
+        "category": "색소",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/equipment/",
+            "evidence": "장비페이지 '피코슈어'"
+          }
+        ],
+        "context": "카탈로그 '피코슈어' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "피코플러스",
+        "name_en": "PicoPlus",
+        "category": "색소",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=picotoing",
+            "evidence": "메뉴 '피코플러스 토닝', 장비페이지 '피코플러스 2대 보유'"
+          }
+        ],
+        "context": "카탈로그 '피코플러스' 직접 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "젠틀맥스 프로 플러스",
+        "name_en": "GentleMax Pro+ GLX",
+        "category": "색소 / 혈관 / 제모",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=GentleMaxProPlus",
+            "evidence": "메뉴 '젠틀맥스 프로플러스', 이벤트 제모, 장비페이지"
+          }
+        ],
+        "context": "카탈로그 '젠틀맥스 프로 플러스' 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "name_kr": "CO₂ 프락셔널",
+        "name_en": "CO2 Fractional Laser",
+        "category": "재생 / 흉터",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/equipment/",
+            "evidence": "장비페이지 'Co2 레이저(헤스티아) 4대 보유'"
+          }
+        ],
+        "context": "사이트 표기 'Co2 레이저(헤스티아)' → 카탈로그 'CO₂ 프락셔널' 매칭. 헤스티아는 모델명",
+        "verification_status": "verified"
+      }
+    ],
+    "unmatched_equipments": [
+      {
+        "raw_name": "헐리우드 스펙트라",
+        "category_guess": "색소 레이저",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=hollywood",
+            "evidence": "메뉴 링크"
+          }
+        ],
+        "context": "카탈로그 미수록(Spectra, Lutronic 제품)",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "클라리티2",
+        "category_guess": "레이저",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=clarity2",
+            "evidence": "메뉴, 장비페이지 '클라리티2 2대 보유'"
+          }
+        ],
+        "context": "카탈로그 미수록(Clarity II, Lutronic)",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "더마V레이저",
+        "category_guess": "레이저",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=dermav",
+            "evidence": "메뉴, 장비페이지 '더마브이 2대 보유'"
+          }
+        ],
+        "context": "카탈로그 미수록",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "라셈드",
+        "category_guess": "레이저",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=lasemd",
+            "evidence": "메뉴 링크, 장비페이지 '라셈드레이저'"
+          }
+        ],
+        "context": "카탈로그 미수록(Lasemd, Lutronic)",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "네오빔",
+        "category_guess": "레이저",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=neobim",
+            "evidence": "메뉴 링크, 장비페이지"
+          }
+        ],
+        "context": "카탈로그 미수록",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "덴서티 알파",
+        "category_guess": "리프팅",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/landing/density_alpha/",
+            "evidence": "메뉴 링크"
+          }
+        ],
+        "context": "카탈로그 미수록",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "잼버실",
+        "category_guess": "실리프팅",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/landing/jamber/",
+            "evidence": "메뉴 링크"
+          }
+        ],
+        "context": "카탈로그 미수록",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "볼링크",
+        "category_guess": "리프팅/실",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/landing/volrink/",
+            "evidence": "메뉴 링크"
+          }
+        ],
+        "context": "카탈로그 미수록",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "올라움",
+        "category_guess": "리프팅",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/",
+            "evidence": "이벤트 올라움 SVP/FORMA 모드"
+          }
+        ],
+        "context": "카탈로그 미수록",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "셀렉IPL",
+        "category_guess": "IPL",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/equipment/",
+            "evidence": "장비페이지"
+          }
+        ],
+        "context": "카탈로그 미수록",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "실펌X",
+        "category_guess": "RF마이크로니들링",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/equipment/",
+            "evidence": "장비페이지 '실펌X 2대 보유'"
+          }
+        ],
+        "context": "카탈로그 미수록(Sylfirm X)",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "미모레이저",
+        "category_guess": "레이저",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/equipment/",
+            "evidence": "장비페이지"
+          }
+        ],
+        "context": "카탈로그 미수록",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "아그네스",
+        "category_guess": "RF마이크로니들링",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/equipment/",
+            "evidence": "장비페이지"
+          }
+        ],
+        "context": "카탈로그 미수록(Agnes RF)",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "피코프락셀",
+        "category_guess": "피코레이저+프락셔널",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/equipment/",
+            "evidence": "장비페이지"
+          }
+        ],
+        "context": "카탈로그 미수록. 피코플러스 프락셔널 모드 시술명으로 추정",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "피코 MLA(피코플러스)",
+        "category_guess": "피코레이저",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/equipment/",
+            "evidence": "장비페이지 '피코 MLA(피코플러스) 2대 보유'"
+          }
+        ],
+        "context": "피코플러스 MLA 모드. 카탈로그 '피코플러스' 관련이나 별도 모드 표기",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "헐리우드MLA",
+        "category_guess": "색소 레이저",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/equipment/",
+            "evidence": "장비페이지"
+          }
+        ],
+        "context": "카탈로그 미수록. 헐리우드 스펙트라 MLA 모드 추정",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "메가스키니",
+        "category_guess": "바디",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/equipment/",
+            "evidence": "장비페이지"
+          }
+        ],
+        "context": "카탈로그 미수록",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "바디인모드",
+        "category_guess": "바디 리프팅",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=bodyinmode",
+            "evidence": "메뉴 링크, 장비페이지"
+          }
+        ],
+        "context": "카탈로그 미수록. 인모드 바디 전용 모드",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "트리플바디",
+        "category_guess": "바디",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=triple",
+            "evidence": "메뉴 링크, 장비페이지"
+          }
+        ],
+        "context": "카탈로그 미수록",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "인퓨전펌프",
+        "category_guess": "스킨케어/주입",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/equipment/",
+            "evidence": "장비페이지"
+          }
+        ],
+        "context": "카탈로그 미수록",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "아포지플러스",
+        "category_guess": "레이저/제모",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/",
+            "evidence": "이벤트 아포지플러스 제모, 장비페이지"
+          }
+        ],
+        "context": "카탈로그 미수록(Apogee Elite+, Cynosure)",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "르반타",
+        "category_guess": "레이저",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/equipment/",
+            "evidence": "장비페이지"
+          }
+        ],
+        "context": "카탈로그 미수록",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "플래티넘 PTT",
+        "category_guess": "색소/관리",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=platinum",
+            "evidence": "메뉴 링크"
+          }
+        ],
+        "context": "카탈로그 미수록. 자체 시술명으로 추정",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "아쿠아필",
+        "category_guess": "스킨케어",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.uni114.co.kr/view/?page=aqua",
+            "evidence": "메뉴 링크, 이벤트 프리미엄 아쿠아필+크라이오"
+          }
+        ],
+        "context": "카탈로그 미수록(HydraFacial 계열)",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "manufacturer_signals": [],
+  "treatments": [
+    {
+      "treatment_name": "바디온다 12만줄",
+      "category": "바디 리프팅",
+      "product_name": null,
+      "equipment_name": "온다",
+      "price": {
+        "text": "이달의 이벤트 1회 1,000,000원 → 550,000원 (VAT 별도)",
+        "low": 550000,
+        "high": 550000,
+        "regular_price": 1000000,
+        "unit": null,
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 1,
+        "duration_months": null,
+        "event_period": "2026-06-01~2026-06-30"
+      },
+      "notes": "VAT 별도",
+      "source_page": "https://www.uni114.co.kr/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "아이 써마지 225샷 + 아이 울쎄라피 프라임 200샷",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "써마지 FLX, 울쎄라피 프라임",
+      "price": {
+        "text": "이달의 이벤트 2,500,000원 → 1,390,000원 (VAT 별도)",
+        "low": 1390000,
+        "high": 1390000,
+        "regular_price": 2500000,
+        "unit": null,
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 1,
+        "duration_months": null,
+        "event_period": "2026-06-01~2026-06-30"
+      },
+      "notes": "VAT 별도",
+      "source_page": "https://www.uni114.co.kr/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "겨드랑이 제모 + 토닝 1회",
+      "category": "제모/레이저",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "이달의 이벤트 70,000원 → 40,000원 (VAT 별도)",
+        "low": 40000,
+        "high": 40000,
+        "regular_price": 70000,
+        "unit": null,
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 1,
+        "duration_months": null,
+        "event_period": "2026-06-01~2026-06-30"
+      },
+      "notes": null,
+      "source_page": "https://www.uni114.co.kr/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "겨드랑이 제모 + 토닝 5회",
+      "category": "제모/레이저",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "이달의 이벤트 350,000원 → 180,000원 (VAT 별도)",
+        "low": 180000,
+        "high": 180000,
+        "regular_price": 350000,
+        "unit": null,
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 5,
+        "duration_months": null,
+        "event_period": "2026-06-01~2026-06-30"
+      },
+      "notes": null,
+      "source_page": "https://www.uni114.co.kr/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "겨드랑이 제모 + 토닝 10회",
+      "category": "제모/레이저",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "이달의 이벤트 650,000원 → 330,000원 (VAT 별도)",
+        "low": 330000,
+        "high": 330000,
+        "regular_price": 650000,
+        "unit": null,
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 10,
+        "duration_months": null,
+        "event_period": "2026-06-01~2026-06-30"
+      },
+      "notes": null,
+      "source_page": "https://www.uni114.co.kr/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "밀크토닝 1회",
+      "category": "레이저 토닝",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "이달의 이벤트 179,000원 → 99,000원 (VAT 별도)",
+        "low": 99000,
+        "high": 99000,
+        "regular_price": 179000,
+        "unit": null,
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 1,
+        "duration_months": null,
+        "event_period": "2026-06-01~2026-06-30"
+      },
+      "notes": null,
+      "source_page": "https://www.uni114.co.kr/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "밀크토닝 5회",
+      "category": "레이저 토닝",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "이달의 이벤트 750,000원 → 390,000원 (VAT 별도)",
+        "low": 390000,
+        "high": 390000,
+        "regular_price": 750000,
+        "unit": null,
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 5,
+        "duration_months": null,
+        "event_period": "2026-06-01~2026-06-30"
+      },
+      "notes": null,
+      "source_page": "https://www.uni114.co.kr/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "면역력 + 백옥 올케어 (브이트리주 + 글루타치온 주사) 1회",
+      "category": "영양/미백 주사",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "이달의 이벤트 100,000원 → 70,000원 (VAT 별도)",
+        "low": 70000,
+        "high": 70000,
+        "regular_price": 100000,
+        "unit": null,
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 1,
+        "duration_months": null,
+        "event_period": "2026-06-01~2026-06-30"
+      },
+      "notes": null,
+      "source_page": "https://www.uni114.co.kr/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "면역력 + 백옥 올케어 (브이트리주 + 글루타치온 주사) 5회",
+      "category": "영양/미백 주사",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "이달의 이벤트 450,000원 → 290,000원 (VAT 별도)",
+        "low": 290000,
+        "high": 290000,
+        "regular_price": 450000,
+        "unit": null,
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 5,
+        "duration_months": null,
+        "event_period": "2026-06-01~2026-06-30"
+      },
+      "notes": null,
+      "source_page": "https://www.uni114.co.kr/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "목 소프웨이브 100샷 + 목주름 스킨보톡스 (영국산)",
+      "category": "리프팅/보톡스",
+      "product_name": "영국산보톡스",
+      "equipment_name": "소프웨이브",
+      "price": {
+        "text": "이달의 이벤트 1,320,000원 → 1,000,000원 (VAT 별도)",
+        "low": 1000000,
+        "high": 1000000,
+        "regular_price": 1320000,
+        "unit": null,
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 1,
+        "duration_months": null,
+        "event_period": "2026-06-01~2026-06-30"
+      },
+      "notes": null,
+      "source_page": "https://www.uni114.co.kr/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "포텐자 N팁 + 쥬베룩 스킨부스터 2cc + 진정팩 1회",
+      "category": "RF마이크로니들링/스킨부스터",
+      "product_name": "쥬베룩",
+      "equipment_name": "포텐자",
+      "price": {
+        "text": "이달의 이벤트 350,000원 → 190,000원 (VAT 별도)",
+        "low": 190000,
+        "high": 190000,
+        "regular_price": 350000,
+        "unit": "cc",
+        "quantity": 2.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 1,
+        "duration_months": null,
+        "event_period": "2026-06-01~2026-06-30"
+      },
+      "notes": null,
+      "source_page": "https://www.uni114.co.kr/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "포텐자 N팁 + 쥬베룩 스킨부스터 2cc + 진정팩 3회",
+      "category": "RF마이크로니들링/스킨부스터",
+      "product_name": "쥬베룩",
+      "equipment_name": "포텐자",
+      "price": {
+        "text": "이달의 이벤트 900,000원 → 500,000원 (VAT 별도)",
+        "low": 500000,
+        "high": 500000,
+        "regular_price": 900000,
+        "unit": "cc",
+        "quantity": 2.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 3,
+        "duration_months": null,
+        "event_period": "2026-06-01~2026-06-30"
+      },
+      "notes": null,
+      "source_page": "https://www.uni114.co.kr/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "포텐자 N팁 + 쥬베룩 스킨부스터 2cc + 진정팩 5회",
+      "category": "RF마이크로니들링/스킨부스터",
+      "product_name": "쥬베룩",
+      "equipment_name": "포텐자",
+      "price": {
+        "text": "이달의 이벤트 1,500,000원 → 850,000원 (VAT 별도)",
+        "low": 850000,
+        "high": 850000,
+        "regular_price": 1500000,
+        "unit": "cc",
+        "quantity": 2.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 5,
+        "duration_months": null,
+        "event_period": "2026-06-01~2026-06-30"
+      },
+      "notes": null,
+      "source_page": "https://www.uni114.co.kr/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "슈링크 유니버스 300샷 + 인모드 FX 얼굴전체 + 얼굴 아쎄라 5cc 1회",
+      "category": "리프팅/복합",
+      "product_name": "아쎄라",
+      "equipment_name": "슈링크 유니버스, 인모드 포마/FX",
+      "price": {
+        "text": "이달의 이벤트 300,000원 → 170,000원 (VAT 별도)",
+        "low": 170000,
+        "high": 170000,
+        "regular_price": 300000,
+        "unit": "cc",
+        "quantity": 5.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 1,
+        "duration_months": null,
+        "event_period": "2026-06-01~2026-06-30"
+      },
+      "notes": null,
+      "source_page": "https://www.uni114.co.kr/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "슈링크 유니버스 300샷 + 인모드 FX 얼굴전체 + 얼굴 아쎄라 5cc 3회",
+      "category": "리프팅/복합",
+      "product_name": "아쎄라",
+      "equipment_name": "슈링크 유니버스, 인모드 포마/FX",
+      "price": {
+        "text": "이달의 이벤트 800,000원 → 450,000원 (VAT 별도)",
+        "low": 450000,
+        "high": 450000,
+        "regular_price": 800000,
+        "unit": "cc",
+        "quantity": 5.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 3,
+        "duration_months": null,
+        "event_period": "2026-06-01~2026-06-30"
+      },
+      "notes": null,
+      "source_page": "https://www.uni114.co.kr/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "더마브이 1회 + 리쥬란 2cc 1회",
+      "category": "레이저/스킨부스터",
+      "product_name": "리쥬란 HB",
+      "equipment_name": "더마V레이저",
+      "price": {
+        "text": "이달의 이벤트 450,000원 → 250,000원 (VAT 별도)",
+        "low": 250000,
+        "high": 250000,
+        "regular_price": 450000,
+        "unit": "cc",
+        "quantity": 2.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 1,
+        "duration_months": null,
+        "event_period": "2026-06-01~2026-06-30"
+      },
+      "notes": null,
+      "source_page": "https://www.uni114.co.kr/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "더마브이 10회 + 리쥬란 2cc 5회",
+      "category": "레이저/스킨부스터",
+      "product_name": "리쥬란 HB",
+      "equipment_name": "더마V레이저",
+      "price": {
+        "text": "이달의 이벤트 2,000,000원 → 1,500,000원 (VAT 별도)",
+        "low": 1500000,
+        "high": 1500000,
+        "regular_price": 2000000,
+        "unit": "cc",
+        "quantity": 2.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 10,
+        "duration_months": null,
+        "event_period": "2026-06-01~2026-06-30"
+      },
+      "notes": null,
+      "source_page": "https://www.uni114.co.kr/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "더마브이 5회 + 리쥬란 2cc 3회",
+      "category": "레이저/스킨부스터",
+      "product_name": "리쥬란 HB",
+      "equipment_name": "더마V레이저",
+      "price": {
+        "text": "이달의 이벤트 1,300,000원 → 880,000원 (VAT 별도)",
+        "low": 880000,
+        "high": 880000,
+        "regular_price": 1300000,
+        "unit": "cc",
+        "quantity": 2.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 5,
+        "duration_months": null,
+        "event_period": "2026-06-01~2026-06-30"
+      },
+      "notes": null,
+      "source_page": "https://www.uni114.co.kr/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "위코우노 + 소노케어 + 글루타치온 1회",
+      "category": "스킨케어/영양주사",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "이달의 이벤트 250,000원 → 130,000원 (VAT 별도)",
+        "low": 130000,
+        "high": 130000,
+        "regular_price": 250000,
+        "unit": null,
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 1,
+        "duration_months": null,
+        "event_period": "2026-06-01~2026-06-30"
+      },
+      "notes": null,
+      "source_page": "https://www.uni114.co.kr/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "위코우노 + 소노케어 + 글루타치온 3회",
+      "category": "스킨케어/영양주사",
+      "product_name": null,
+      "equipment_name": null,
+      "price": {
+        "text": "이달의 이벤트 650,000원 → 330,000원 (VAT 별도)",
+        "low": 330000,
+        "high": 330000,
+        "regular_price": 650000,
+        "unit": null,
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 3,
+        "duration_months": null,
+        "event_period": "2026-06-01~2026-06-30"
+      },
+      "notes": null,
+      "source_page": "https://www.uni114.co.kr/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "프리미엄 아쿠아필 + 크라이오 1회",
+      "category": "스킨케어",
+      "product_name": null,
+      "equipment_name": "아쿠아필",
+      "price": {
+        "text": "이달의 이벤트 150,000원 → 80,000원 (VAT 별도)",
+        "low": 80000,
+        "high": 80000,
+        "regular_price": 150000,
+        "unit": null,
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 1,
+        "duration_months": null,
+        "event_period": "2026-06-01~2026-06-30"
+      },
+      "notes": null,
+      "source_page": "https://www.uni114.co.kr/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "힐로웨이브 2cc",
+      "category": "스킨부스터",
+      "product_name": "힐로웨이브",
+      "equipment_name": null,
+      "price": {
+        "text": "입고 이벤트 750,000원 → 400,000원 (VAT 별도)",
+        "low": 400000,
+        "high": 400000,
+        "regular_price": 750000,
+        "unit": "cc",
+        "quantity": 2.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 1,
+        "duration_months": null,
+        "event_period": "2026-06-01~2026-06-30"
+      },
+      "notes": "입고 이벤트",
+      "source_page": "https://www.uni114.co.kr/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "올라움 SVP 모드 or FORMA 모드 1회",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "올라움",
+      "price": {
+        "text": "이벤트 75,000원 → 40,000원 (VAT 별도)",
+        "low": 40000,
+        "high": 40000,
+        "regular_price": 75000,
+        "unit": null,
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 1,
+        "duration_months": null,
+        "event_period": "2026-06-01~2026-06-30"
+      },
+      "notes": null,
+      "source_page": "https://www.uni114.co.kr/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "올라움 SVP 모드 + FORMA 모드 1회",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "올라움",
+      "price": {
+        "text": "이벤트 120,000원 → 70,000원 (VAT 별도)",
+        "low": 70000,
+        "high": 70000,
+        "regular_price": 120000,
+        "unit": null,
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 1,
+        "duration_months": null,
+        "event_period": "2026-06-01~2026-06-30"
+      },
+      "notes": null,
+      "source_page": "https://www.uni114.co.kr/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "올리지오X 300샷",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "올리지오",
+      "price": {
+        "text": "이벤트 790,000원 → 400,000원 (VAT 별도)",
+        "low": 400000,
+        "high": 400000,
+        "regular_price": 790000,
+        "unit": null,
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 1,
+        "duration_months": null,
+        "event_period": "2026-06-01~2026-06-30"
+      },
+      "notes": null,
+      "source_page": "https://www.uni114.co.kr/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "아이올리지오X 200샷",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "올리지오",
+      "price": {
+        "text": "이벤트 490,000원 → 350,000원 (VAT 별도)",
+        "low": 350000,
+        "high": 350000,
+        "regular_price": 490000,
+        "unit": null,
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 1,
+        "duration_months": null,
+        "event_period": "2026-06-01~2026-06-30"
+      },
+      "notes": null,
+      "source_page": "https://www.uni114.co.kr/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "울쎄라피 프라임 100샷",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "울쎄라피 프라임",
+      "price": {
+        "text": "이벤트 600,000원 → 380,000원 (VAT 별도)",
+        "low": 380000,
+        "high": 380000,
+        "regular_price": 600000,
+        "unit": null,
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 1,
+        "duration_months": null,
+        "event_period": "2026-06-01~2026-06-30"
+      },
+      "notes": null,
+      "source_page": "https://www.uni114.co.kr/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "울쎄라피 프라임 300샷",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "울쎄라피 프라임",
+      "price": {
+        "text": "이벤트 1,500,000원 → 1,050,000원 (VAT 별도)",
+        "low": 1050000,
+        "high": 1050000,
+        "regular_price": 1500000,
+        "unit": null,
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 1,
+        "duration_months": null,
+        "event_period": "2026-06-01~2026-06-30"
+      },
+      "notes": null,
+      "source_page": "https://www.uni114.co.kr/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "울쎄라피 프라임 600샷",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "울쎄라피 프라임",
+      "price": {
+        "text": "이벤트 2,600,000원 → 1,950,000원 (VAT 별도)",
+        "low": 1950000,
+        "high": 1950000,
+        "regular_price": 2600000,
+        "unit": null,
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 1,
+        "duration_months": null,
+        "event_period": "2026-06-01~2026-06-30"
+      },
+      "notes": null,
+      "source_page": "https://www.uni114.co.kr/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "울쎄라피 프라임 900샷",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "울쎄라피 프라임",
+      "price": {
+        "text": "이벤트 3,500,000원 → 2,700,000원 (VAT 별도)",
+        "low": 2700000,
+        "high": 2700000,
+        "regular_price": 3500000,
+        "unit": null,
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 1,
+        "duration_months": null,
+        "event_period": "2026-06-01~2026-06-30"
+      },
+      "notes": null,
+      "source_page": "https://www.uni114.co.kr/",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "아이 울쎄라피 프라임 200샷",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "울쎄라피 프라임",
+      "price": {
+        "text": "이벤트 1,000,000원 → 750,000원 (VAT 별도)",
+        "low": 750000,
+        "high": 750000,
+        "regular_price": 1000000,
+        "unit": null,
+        "quantity": 1.0,
+        "currency": "KRW",
+        "include_vat": false,
+        "is_event_price": true
+      },
+      "package": {
+        "sessions": 1,
+        "duration_months": null,
+        "event_period": "2026-06-01~2026-06-30"
+      },
+      "notes": null,
+      "source_page": "https://www.uni114.co.kr/",
+      "verification_status": "verified"
+    }
+  ],
+  "language_support": {
+    "supported_languages": [
+      "ko",
+      "ja",
+      "zh",
+      "th",
+      "en"
+    ],
+    "has_language_switcher": true,
+    "foreign_language_pages": {
+      "ja": "https://jp.uni114.com/",
+      "zh": "https://cn.uni114.com/",
+      "th": "https://th.uni114.com/",
+      "en": "https://uni114.com/"
+    }
+  },
+  "crawl_metadata": {
+    "pages_crawled": 4,
+    "pages_visited": [
+      "https://www.uni114.co.kr/ (홈 — 메뉴 전수, 이벤트 가격 수집)",
+      "https://www.uni114.co.kr/equipment/ (보유장비 전체 목록)",
+      "https://www.uni114.co.kr/direction/ (운영시간·주차·연락처)",
+      "https://www.uni114.co.kr/staff/ (의료진 12인)"
+    ],
+    "crawl_method": "텍스트형 — 홈 메뉴·이벤트 본문 + 보유장비/지점소개/의료진 페이지를 evaluate로 수집. vision 미사용. 프랜차이즈(강남점).",
+    "errors": [],
+    "completeness": {
+      "operation_info": true,
+      "doctors": true,
+      "products": true,
+      "equipments": true,
+      "treatments": true,
+      "prices": true,
+      "language_support": true
+    },
+    "follow_up": [
+      {
+        "area": "treatments",
+        "reason": "needs_deeper_crawl",
+        "detail": "개별 시술 상세페이지(view/?page=xxx) 약 30개 미방문. 상세 설명·세부 제품명 추가 확인 가능",
+        "urls": [
+          "https://www.uni114.co.kr/view/?page=skinvive",
+          "https://www.uni114.co.kr/view/?page=gouri",
+          "https://www.uni114.co.kr/view/?page=elraviere2o"
+        ]
+      },
+      {
+        "area": "prices",
+        "reason": "other",
+        "detail": "비급여공지 xlsx 파일 미다운로드. gn_251119.xlsx에 비급여 진료비용 있을 수 있음",
+        "urls": [
+          "https://www.uni114.co.kr/excel/non-payment/gn_251119.xlsx"
+        ]
+      },
+      {
+        "area": "doctors",
+        "reason": "needs_deeper_crawl",
+        "detail": "staff 페이지에 이름·직책만 표기됨. 개별 의료진 상세 클릭 시 학력·경력 추가 가능",
+        "urls": [
+          "https://www.uni114.co.kr/staff/"
+        ]
+      }
+    ],
+    "cost": {
+      "model": "claude-sonnet-4-6",
+      "effort": "low",
+      "input_tokens": 57,
+      "output_tokens": 51085,
+      "cost_usd": 2.0575,
+      "duration_seconds": 703
+    },
+    "notes": [
+      "프랜차이즈: 전국 42개 지점. 강남점 도메인(www.uni114.co.kr).",
+      "푸터 사업자정보 확인 — 대표 허찬, 사번 450-18-00627, 주소 강남대로 470 808타워 6층 → identity_status=match.",
+      "다국어 5개 언어(JP/CN/TH/EN 별도 도메인).",
+      "이벤트 가격 VAT 별도 명시(2026-06-01~06-30). 이달의 이벤트·입고 이벤트·올라움·올리지오·울쎄라피 등 30개 이상 가격 수집.",
+      "보유장비 전용 페이지에서 35종 장비 확인(슈링크유니버스 3대·울쎄라피 프라임 4대·Co2 레이저 4대 등 보유 수 포함).",
+      "의료진 12인(허찬 대표원장 포함). 이름·직책만 표기, 학력·경력 정보 없음.",
+      "비급여공지 xlsx 파일 링크 있음(gn_251119.xlsx). 5층 외국인 전용, 6층 내국인."
+    ]
+  }
+}

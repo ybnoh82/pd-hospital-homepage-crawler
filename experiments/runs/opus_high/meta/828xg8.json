@@ -1,0 +1,13 @@
+{
+  "combo": "opus_high",
+  "model_short": "opus",
+  "model_id": "claude-opus-4-8",
+  "effort": "high",
+  "id": "828xg8",
+  "name": "미인피부과의원",
+  "url": "http://www.meinclinic.com",
+  "exit_code": 0,
+  "wall_seconds": 485.8,
+  "hard_killed": false,
+  "start_ts": 1781676979.9
+}

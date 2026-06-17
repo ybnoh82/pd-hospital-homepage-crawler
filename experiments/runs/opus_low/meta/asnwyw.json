@@ -1,0 +1,13 @@
+{
+  "combo": "opus_low",
+  "model_short": "opus",
+  "model_id": "claude-opus-4-8",
+  "effort": "low",
+  "id": "asnwyw",
+  "name": "리더스피부과의원",
+  "url": "https://leaders-cd.com/",
+  "exit_code": 0,
+  "wall_seconds": 423.9,
+  "hard_killed": false,
+  "start_ts": 1781676185.9
+}

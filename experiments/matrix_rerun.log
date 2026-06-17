@@ -1,0 +1,53 @@
+매트릭스: 25개 잡 · 동시성 6 · 캡 $3/900s · stagger 2.0s
+[1/25] ▶ START opus_high kl8cgn (바노바기성형외과의원)
+[2/25] ▶ START sonnet_low xd9css (도곡양재차앤박피부과의원)
+[3/25] ▶ START sonnet_medium xd9css (도곡양재차앤박피부과의원)
+[4/25] ▶ START sonnet_high xd9css (도곡양재차앤박피부과의원)
+[5/25] ▶ START opus_low xd9css (도곡양재차앤박피부과의원)
+[6/25] ▶ START opus_medium xd9css (도곡양재차앤박피부과의원)
+[1/25] ✔ DONE  opus_high kl8cgn — USEFUL · 346s
+[7/25] ▶ START opus_high xd9css (도곡양재차앤박피부과의원)
+[5/25] ✔ DONE  opus_low xd9css — USEFUL · 407s
+[8/25] ▶ START sonnet_low n1u349 (대치오라클피부과의원)
+[6/25] ✔ DONE  opus_medium xd9css — USEFUL · 530s
+[9/25] ▶ START sonnet_medium n1u349 (대치오라클피부과의원)
+[2/25] ✔ DONE  sonnet_low xd9css — USEFUL · 662s
+[10/25] ▶ START sonnet_high n1u349 (대치오라클피부과의원)
+[3/25] ✔ DONE  sonnet_medium xd9css — USEFUL · 745s
+[11/25] ▶ START opus_low n1u349 (대치오라클피부과의원)
+[4/25] ✔ DONE  sonnet_high xd9css — USEFUL · 771s
+[12/25] ▶ START opus_medium n1u349 (대치오라클피부과의원)
+[7/25] ✔ DONE  opus_high xd9css — USEFUL · 441s
+[13/25] ▶ START opus_high n1u349 (대치오라클피부과의원)
+[8/25] ✔ DONE  sonnet_low n1u349 — USEFUL · 659s
+[14/25] ▶ START sonnet_low asnwyw (리더스피부과의원)
+[11/25] ✔ DONE  opus_low n1u349 — USEFUL · 359s
+[15/25] ▶ START sonnet_medium asnwyw (리더스피부과의원)
+[12/25] ✔ DONE  opus_medium n1u349 — USEFUL · 417s
+[16/25] ▶ START sonnet_high asnwyw (리더스피부과의원)
+[13/25] ✔ DONE  opus_high n1u349 — USEFUL · 519s
+[17/25] ▶ START opus_low asnwyw (리더스피부과의원)
+[9/25] ✔ DONE  sonnet_medium n1u349 — USEFUL · 860s
+[18/25] ▶ START opus_medium asnwyw (리더스피부과의원)
+[10/25] ✔ DONE  sonnet_high n1u349 — USEFUL · 750s
+[19/25] ▶ START opus_high asnwyw (리더스피부과의원)
+[17/25] ✔ DONE  opus_low asnwyw — USEFUL · 424s
+[20/25] ▶ START sonnet_low 828xg8 (미인피부과의원)
+[15/25] ✔ DONE  sonnet_medium asnwyw — USEFUL · 670s
+[21/25] ▶ START sonnet_medium 828xg8 (미인피부과의원)
+[14/25] ✔ DONE  sonnet_low asnwyw — USEFUL · 785s
+[22/25] ▶ START sonnet_high 828xg8 (미인피부과의원)
+[19/25] ✔ DONE  opus_high asnwyw — USEFUL · 525s
+[23/25] ▶ START opus_low 828xg8 (미인피부과의원)
+[18/25] ✔ DONE  opus_medium asnwyw — USEFUL · 569s
+[24/25] ▶ START opus_medium 828xg8 (미인피부과의원)
+[16/25] ✔ DONE  sonnet_high asnwyw — USEFUL · 907s
+[25/25] ▶ START opus_high 828xg8 (미인피부과의원)
+[20/25] ✔ DONE  sonnet_low 828xg8 — USEFUL · 415s
+[21/25] ✔ DONE  sonnet_medium 828xg8 — USEFUL · 558s
+[23/25] ✔ DONE  opus_low 828xg8 — USEFUL · 440s
+[24/25] ✔ DONE  opus_medium 828xg8 — USEFUL · 510s
+[25/25] ✔ DONE  opus_high 828xg8 — USEFUL · 486s
+[22/25] ✔ DONE  sonnet_high 828xg8 — USEFUL · 859s
+
+전체 완료: 25개 잡 · 45.3분

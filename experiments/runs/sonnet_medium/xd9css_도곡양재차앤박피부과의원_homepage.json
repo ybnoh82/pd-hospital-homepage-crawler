@@ -1,0 +1,750 @@
+{
+  "hospital_id": "xd9css",
+  "hospital_name": "도곡양재차앤박피부과의원",
+  "crawled_at": "2026-06-17T05:42:00+09:00",
+  "address": {
+    "sido": "서울",
+    "sggu": "강남구",
+    "emdong": "도곡동",
+    "road_address": "서울특별시 강남구 강남대로 248, 목원빌딩 3층",
+    "latitude": null,
+    "longitude": null
+  },
+  "homepage_url": "https://www.cnpskin.com/pc/branch/main/main.html?jijummid=cnpskin26",
+  "identity_status": "match",
+  "alternative_urls": [
+    "https://www.cnpskin.com/cnpskin26",
+    "https://www.cnpskin.com/pc/cnp-eng/about-us/branches.html?bmain=view&uid=28",
+    "https://www.cnpskin.com/pc/cnp-chn/about-us/branches.html?bmain=view&uid=28",
+    "https://www.cnpskin.com/pc/cnp-jpn/about-us/branches.html?bmain=view&uid=28"
+  ],
+  "branches": {
+    "type": "branch",
+    "network_group": "차앤박피부과",
+    "this_branch_name": "도곡양재",
+    "sibling_branches": [
+      {
+        "name": "노원",
+        "url": "https://www.cnpskin.com/cnpskin18",
+        "address": null
+      },
+      {
+        "name": "성신여대",
+        "url": "https://www.cnpskin.com/cnpskin21",
+        "address": null
+      },
+      {
+        "name": "신촌",
+        "url": "https://www.cnpskin.com/cnpskin02",
+        "address": null
+      },
+      {
+        "name": "명동",
+        "url": "https://www.cnpskin.com/cnpskin06",
+        "address": null
+      },
+      {
+        "name": "건대입구",
+        "url": "https://www.cnpskin.com/cnpskin22",
+        "address": null
+      },
+      {
+        "name": "천호",
+        "url": "https://www.cnpskin.com/cnpskin11",
+        "address": null
+      },
+      {
+        "name": "압구정",
+        "url": "https://www.cnpskin.com/cnpskin04",
+        "address": null
+      },
+      {
+        "name": "여의도",
+        "url": "https://www.cnpskin.com/cnpskin03",
+        "address": null
+      },
+      {
+        "name": "양재",
+        "url": "https://www.cnpskin.com/cnpskin25",
+        "address": null
+      }
+    ]
+  },
+  "operation_info": {
+    "hospital_name": "차앤박피부과의원",
+    "representative_name": "차미경",
+    "business_number": "463-07-00011",
+    "phone": "02-3463-1140",
+    "phone_secondary": null,
+    "fax": null,
+    "email": null,
+    "kakao_channel": null,
+    "operating_hours": {
+      "monday": {
+        "open": "11:00",
+        "close": "20:00",
+        "break_start": "13:00",
+        "break_end": "14:00"
+      },
+      "tuesday": {
+        "open": "10:00",
+        "close": "19:00",
+        "break_start": "13:00",
+        "break_end": "14:00"
+      },
+      "wednesday": {
+        "open": "10:00",
+        "close": "19:00",
+        "break_start": "13:00",
+        "break_end": "14:00"
+      },
+      "thursday": {
+        "open": "10:00",
+        "close": "19:00",
+        "break_start": "13:00",
+        "break_end": "14:00"
+      },
+      "friday": {
+        "open": "11:00",
+        "close": "20:00",
+        "break_start": "13:00",
+        "break_end": "14:00"
+      },
+      "saturday": {
+        "open": "09:00",
+        "close": "15:00",
+        "break_start": null,
+        "break_end": null
+      },
+      "sunday": null,
+      "holiday": null
+    },
+    "operating_hours_note": "월/금 11:00~20:00, 화/수/목 10:00~19:00, 토 09:00~15:00(점심 없음). 평일 점심 13:00~14:00.",
+    "parking_info": null,
+    "transport_info": null,
+    "facilities": []
+  },
+  "doctors": [
+    {
+      "name": "차미경",
+      "is_representative": true,
+      "role": "대표원장",
+      "specialty": [
+        "피부과"
+      ],
+      "education": [
+        "가톨릭대학교 의과대학 졸업 및 동대학원 박사",
+        "가톨릭대학교 중앙의료원 피부과 전문의 수료",
+        "가톨릭 의과대학 피부과 외래교수"
+      ],
+      "career": [
+        "1996년 차앤박피부과 개원",
+        "차앤박 피부과 네트워크 설립자",
+        "前 CNP차앤박화장품 대표이사",
+        "前 대한피부과의사회 이사"
+      ],
+      "associations": [
+        "대한여드름학회 정회원",
+        "대한의학레이저학회 정회원"
+      ],
+      "awards": [
+        "피부야 피부야 공저"
+      ],
+      "profile_image_url": "https://www.cnpskin.com/upload/doctor/260.gif",
+      "verification_status": "verified"
+    },
+    {
+      "name": "정수진",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [
+        "피부과"
+      ],
+      "education": [
+        "가톨릭대학교 의과대학 졸업",
+        "가톨릭대학교 중앙의료원 피부과 전문의 수료",
+        "Harvard Medical School and Brigham & Women's Hospital Dermatology Observership Fellow (2012)"
+      ],
+      "career": [
+        "前 명동 CNP차앤박피부과 원장",
+        "前 신촌 CNP차앤박피부과 원장"
+      ],
+      "associations": [
+        "대한 피부과학회 정회원",
+        "대한 피부과의사회 정회원"
+      ],
+      "awards": [
+        "가톨릭 중앙의료원 피부과 우수논문 학술상 수상"
+      ],
+      "profile_image_url": "https://www.cnpskin.com/upload/doctor/261.png",
+      "verification_status": "verified"
+    },
+    {
+      "name": "정유진",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [
+        "피부과"
+      ],
+      "education": [
+        "카이스트 생명과학과 졸업",
+        "가톨릭대학교 의과대학 졸업 및 동대학원 피부과학 박사",
+        "가톨릭대학교 의과대학 피부과 전문의 수료",
+        "가톨릭대학교 의과대학 피부과학교실 외래 조교수"
+      ],
+      "career": [
+        "前 압구정CNP차앤박피부과원장"
+      ],
+      "associations": [
+        "대한피부과학회 정회원",
+        "대한피부과의사회 정회원",
+        "대한레이저학회 정회원"
+      ],
+      "awards": [],
+      "profile_image_url": "https://www.cnpskin.com/upload/doctor/1127.png",
+      "verification_status": "verified"
+    },
+    {
+      "name": "이하린",
+      "is_representative": false,
+      "role": "원장",
+      "specialty": [
+        "피부과"
+      ],
+      "education": [
+        "이화여자대학교 의과대학 졸업",
+        "이화여자대학교 피부과 전문의",
+        "이화여자대학교 의과대학 석사",
+        "이화여자대학교 의과대학 박사",
+        "가톨릭대학교 부속 서울성모병원 피부과 임상강사",
+        "미국 UCLA 부속 피부 임상연구소 Fellowship"
+      ],
+      "career": [
+        "前 서울, 아름다운 피부과 의원 원장",
+        "前 동수원병원 피부과 과장"
+      ],
+      "associations": [
+        "대한 피부과학회 정회원",
+        "대한 피부과의사회 정회원",
+        "대한 피부 레이저학회 정회원",
+        "대한 미용 피부과학회 정회원",
+        "대한 여드름 학회 정회원",
+        "대한 피부 항노화연구회 정회원",
+        "대한 피부 기능의학회 평생회원"
+      ],
+      "awards": [
+        "현대 약품 올해의 우수 논문상(1998)",
+        "반포세무서 성실 납세자상(2003)"
+      ],
+      "profile_image_url": "https://www.cnpskin.com/upload/doctor/1126.png",
+      "verification_status": "verified"
+    }
+  ],
+  "products": {
+    "matched_products": [
+      {
+        "product_kr": "리쥬란 힐러",
+        "brand_kr": "리쥬란",
+        "manufacturer_kr": "파마리서치",
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/branch/intro/news/notice.html?bmain=view&uid=19156&jijummid=cnpskin26",
+            "evidence": "마이크로 리파인 큐어젯 공지: '쥬베룩, 울트라콜, 리쥬란 등 스킨 부스터 약물도 침투가 가능합니다'"
+          },
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/cnp/special-clinic/special-clinic.html?bmain=view&uid=107",
+            "evidence": "CNP 스킨부스터 재생부스터: PN(폴리뉴클레오티드) 성분 사용, 도곡양재 시술 가능 지점"
+          }
+        ],
+        "context": "도곡양재 공지(마이크로 큐어젯)에서 '리쥬란' 직접 명시. 카탈로그 '리쥬란 힐러'(파마리서치) 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "쥬베룩",
+        "brand_kr": "쥬베룩",
+        "manufacturer_kr": "바임",
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/branch/intro/news/notice.html?bmain=view&uid=19156&jijummid=cnpskin26",
+            "evidence": "마이크로 리파인 큐어젯 공지: '쥬베룩, 울트라콜, 리쥬란 등 스킨 부스터 약물'"
+          }
+        ],
+        "context": "도곡양재 공지에서 '쥬베룩' 직접 명시. 카탈로그 '쥬베룩'(바임) 매칭",
+        "verification_status": "verified"
+      },
+      {
+        "product_kr": "울트라콜 100",
+        "brand_kr": "울트라콜",
+        "manufacturer_kr": "울트라브이",
+        "category": "스킨부스터",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/branch/intro/news/notice.html?bmain=view&uid=19156&jijummid=cnpskin26",
+            "evidence": "마이크로 리파인 큐어젯 공지: '울트라콜' 직접 명시"
+          }
+        ],
+        "context": "도곡양재 공지에서 '울트라콜' 명시. 카탈로그 '울트라콜 100'(울트라브이) 매칭. 세부 라인 불명이나 100이 일반 대표품",
+        "verification_status": "inferred"
+      },
+      {
+        "product_kr": "보톡스",
+        "brand_kr": "보톡스",
+        "manufacturer_kr": "엘러간",
+        "category": "톡신",
+        "plandocs_handled": 0,
+        "plandocs_featured": 0,
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/cnp/special-clinic/special-clinic.html?bmain=view&uid=34",
+            "evidence": "스페셜클리닉 메뉴 '보톡스 특화 프로그램' — 도곡양재 지점 메뉴에 포함"
+          }
+        ],
+        "context": "도곡양재 지점 메뉴 '보톡스 특화 프로그램' 항목. 브랜드 특정은 어려우나 '보톡스'(엘러간)이 업계 대표표기로 카탈로그 매칭",
+        "verification_status": "inferred"
+      }
+    ],
+    "unmatched_products": [
+      {
+        "raw_name": "힐링주사",
+        "category_guess": "수액/주사 (구체적 성분 미표기)",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/cnp/special-clinic/special-clinic.html?bmain=view&uid=31",
+            "evidence": "스페셜클리닉 메뉴 '힐링주사'"
+          }
+        ],
+        "context": "브랜드·성분 미표기, 상세 페이지 미방문 → 보류",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "equipments": {
+    "matched_equipments": [
+      {
+        "name_kr": "써마지 FLX",
+        "name_en": "Thermage FLX",
+        "category": "리프팅",
+        "mention_count": 5,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/branch/intro/news/notice.html?bmain=view&uid=18559&jijummid=cnpskin26",
+            "evidence": "공지: '4세대 써마지FLX로 강력한 타이트닝 효과를 경험 해 보세요 - 도곡양재차앤박피부과'"
+          },
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/branch/main/main.html?jijummid=cnpskin26",
+            "evidence": "닥터칼럼 다수: '4세대 써마지 FLX로 완성하는 웨딩 리프팅 전략', '써마지FLX가 비수술 리프팅 첫 단계로', '콜라겐 밀도 높이고 노화 지연에 효과적인 4세대 써마지 FLX', '써마지 FLX 과학'"
+          }
+        ],
+        "context": "도곡양재 공지·칼럼에서 '써마지 FLX' 5회 이상 명시. 카탈로그 '써마지 FLX'(Thermage FLX, 리프팅) 직접 매칭",
+        "verification_status": "verified"
+      }
+    ],
+    "unmatched_equipments": [
+      {
+        "raw_name": "더마스리프팅",
+        "category_guess": "리프팅 (모노폴라+바이폴라 고주파 복합)",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/branch/intro/news/notice.html?bmain=view&uid=18532&jijummid=cnpskin26",
+            "evidence": "공지: '더마스리프팅, 얼굴 살이 적어 울쎄라·써마지 받기 어렵다면 — 모노폴라·바이폴라 고주파 방식'"
+          }
+        ],
+        "context": "도곡양재 공지에서 울쎄라/써마지 대안으로 명시. 카탈로그에서 '더마스' 검색 미수록 — Derma-S 계열로 추정",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "마이크로 리파인 큐어젯",
+        "category_guess": "약물전달장비 (no-needle 고압제트)",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/branch/intro/news/notice.html?bmain=view&uid=19156&jijummid=cnpskin26",
+            "evidence": "도곡양재 공지(2026-04-23): '마이크로 리파인 큐어젯(Micro Refine curejet), 바늘 없는 약물 전달'"
+          }
+        ],
+        "context": "도곡양재 공지에서 최신 도입 장비로 명시. 카탈로그 미수록",
+        "verification_status": "verified"
+      },
+      {
+        "raw_name": "포엘원(4L1)",
+        "category_guess": "모공·레이저 복합 프로그램 (도곡양재 특화)",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/branch/intro/news/notice.html?bmain=view&uid=18382&jijummid=cnpskin26",
+            "evidence": "공지: '모공축소·피부톤개선·활기·탄력개선 포엘원(4L1)프로그램 런칭'"
+          },
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/branch/main/main.html?jijummid=cnpskin26",
+            "evidence": "닥터칼럼 '모공축소 탄력 개선 한번에 포엘원 프로그램'"
+          }
+        ],
+        "context": "도곡양재 특화 자체 프로그램명(4가지 효과 복합). 실제 장비 모델 미표기 → 카탈로그 미수록",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "레이저스태킹",
+        "category_guess": "기미레이저 (도곡양재 특화 기법)",
+        "mention_count": 2,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/branch/intro/news/notice.html?bmain=view&uid=18877&jijummid=cnpskin26",
+            "evidence": "공지(2024-07-15): '도곡양재차앤박에만 있는 기미치료법 레이저스태킹'"
+          }
+        ],
+        "context": "도곡양재 독자 기미치료 기법명. 실제 장비 미특정, 카탈로그 미수록",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "골드PTT",
+        "category_guess": "여드름 치료 (레이저/광역동)",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/branch/intro/news/notice.html?bmain=view&uid=18442&jijummid=cnpskin26",
+            "evidence": "공지: '새로운 여드름 치료 프로그램, 골드PTT'"
+          }
+        ],
+        "context": "도곡양재 공지. 골드PTT = 금 나노입자 광역동 치료. 스페셜클리닉에도 메뉴 있음(uid=66). 카탈로그 미수록",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "S-DRT플러스",
+        "category_guess": "흉터치료 (진피재생술 응용)",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/branch/main/main.html?jijummid=cnpskin26",
+            "evidence": "닥터칼럼 'S-DRT플러스, 여드름 흉터 치료에 날개를 달다'"
+          }
+        ],
+        "context": "차앤박 DRT진피재생술 응용 시술명. 카탈로그 미수록",
+        "verification_status": "unverified"
+      },
+      {
+        "raw_name": "초음파홍조프로그램",
+        "category_guess": "초음파 복합 프로그램 (민감성·여드름·탄력)",
+        "mention_count": 1,
+        "sources": [
+          {
+            "channel": "homepage",
+            "url": "https://www.cnpskin.com/pc/branch/intro/news/notice.html?bmain=view&uid=18661&jijummid=cnpskin26",
+            "evidence": "공지(2023-03-08): '민감성+여드름+탄력저하 등 복합적 피부문제 초음파홍조프로그램'"
+          }
+        ],
+        "context": "도곡양재 복합 치료 프로그램명. 실제 장비 미특정, 카탈로그 미수록",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "manufacturer_signals": [],
+  "treatments": [
+    {
+      "treatment_name": "마이크로 리파인 큐어젯",
+      "category": "흉터/튼살 치료",
+      "product_name": "리쥬란 힐러, 쥬베룩, 울트라콜",
+      "equipment_name": "마이크로 리파인 큐어젯",
+      "price": null,
+      "package": null,
+      "notes": "no-needle 고압제트 약물전달 장비. 주입 가능 성분: 쥬베룩, 울트라콜, 리쥬란, PDRN. 여드름 흉터·튼살 치료에 사용. 마이크로 서브시전 기술 포함.",
+      "source_page": "https://www.cnpskin.com/pc/branch/intro/news/notice.html?bmain=view&uid=19156&jijummid=cnpskin26",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "써마지 FLX",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "써마지 FLX",
+      "price": null,
+      "package": null,
+      "notes": "4세대 써마지 FLX. 도곡양재 닥터칼럼에 다수 언급. 고주파 리프팅, 타이트닝. 웨딩 리프팅 전략에도 활용.",
+      "source_page": "https://www.cnpskin.com/pc/branch/intro/news/notice.html?bmain=view&uid=18559&jijummid=cnpskin26",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "더마스리프팅",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "더마스리프팅",
+      "price": null,
+      "package": null,
+      "notes": "모노폴라+바이폴라 고주파 복합 장비. 얼굴 살이 적어 울쎄라·써마지 받기 어려운 분 대상. 표면~진피층 고르게 에너지 전달.",
+      "source_page": "https://www.cnpskin.com/pc/branch/intro/news/notice.html?bmain=view&uid=18532&jijummid=cnpskin26",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "레이저스태킹",
+      "category": "기미레이저",
+      "product_name": null,
+      "equipment_name": "레이저스태킹",
+      "price": null,
+      "package": null,
+      "notes": "도곡양재차앤박 독자 기미치료법. '잘 치료되지 않았던 기미 치료에도 도움'.",
+      "source_page": "https://www.cnpskin.com/pc/branch/intro/news/notice.html?bmain=view&uid=18877&jijummid=cnpskin26",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "포엘원(4L1) 프로그램",
+      "category": "모공·탄력",
+      "product_name": null,
+      "equipment_name": "포엘원(4L1)",
+      "price": null,
+      "package": null,
+      "notes": "도곡양재 특화 4-in-1 프로그램. 효과: 모공축소, 피부톤개선, 활기, 탄력개선.",
+      "source_page": "https://www.cnpskin.com/pc/branch/intro/news/notice.html?bmain=view&uid=18382&jijummid=cnpskin26",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "골드PTT",
+      "category": "여드름",
+      "product_name": null,
+      "equipment_name": "골드PTT",
+      "price": null,
+      "package": null,
+      "notes": "새로운 여드름 치료 프로그램. 스페셜클리닉 메뉴에도 수록.",
+      "source_page": "https://www.cnpskin.com/pc/branch/intro/news/notice.html?bmain=view&uid=18442&jijummid=cnpskin26",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "CNP 스킨부스터",
+      "category": "스킨부스터",
+      "product_name": "리쥬란 힐러, 쥬베룩, 울트라콜",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "3가지 타입: 재생부스터(PN/리쥬란), 화이트닝부스터(HA+글루타치온+비타민C 등), 볼륨업부스터(PLLA/PDLLA/PDO+HA). 도곡양재 시술 가능 지점 확인.",
+      "source_page": "https://www.cnpskin.com/pc/cnp/special-clinic/special-clinic.html?bmain=view&uid=107",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "DRT진피재생술",
+      "category": "흉터/재생",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "스페셜클리닉 메뉴 항목. S-DRT플러스는 응용 버전.",
+      "source_page": "https://www.cnpskin.com/pc/cnp/special-clinic/special-clinic.html?bmain=view&uid=32",
+      "verification_status": "unverified"
+    },
+    {
+      "treatment_name": "보톡스 특화 프로그램",
+      "category": "톡신",
+      "product_name": "보톡스",
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "도곡양재 지점 메뉴 항목.",
+      "source_page": "https://www.cnpskin.com/pc/cnp/special-clinic/special-clinic.html?bmain=view&uid=34",
+      "verification_status": "unverified"
+    },
+    {
+      "treatment_name": "필러&실리프팅",
+      "category": "필러/실리프팅",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "스페셜클리닉 메뉴 항목. 구체적 필러 브랜드 미확인.",
+      "source_page": "https://www.cnpskin.com/pc/cnp/special-clinic/special-clinic.html?bmain=view&uid=35",
+      "verification_status": "unverified"
+    },
+    {
+      "treatment_name": "프락셔널레이저",
+      "category": "재생/흉터레이저",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "레이저클리닉 메뉴 항목.",
+      "source_page": "https://www.cnpskin.com/pc/cnp/laser-clinic/laser-clinic.html?bmain=view&uid=49",
+      "verification_status": "unverified"
+    },
+    {
+      "treatment_name": "프락셔널고주파",
+      "category": "고주파/리프팅",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "레이저클리닉 메뉴 항목.",
+      "source_page": "https://www.cnpskin.com/pc/cnp/laser-clinic/laser-clinic.html?bmain=view&uid=50",
+      "verification_status": "unverified"
+    },
+    {
+      "treatment_name": "초음파리프팅",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "레이저클리닉 메뉴. 차앤박피부과는 각 지점별 다양한 초음파 장비 사용. 도곡양재 사용 장비 미특정. 더마스리프팅 공지에서 '울쎄라'도 언급됨.",
+      "source_page": "https://www.cnpskin.com/pc/cnp/laser-clinic/laser-clinic.html?bmain=view&uid=51",
+      "verification_status": "unverified"
+    },
+    {
+      "treatment_name": "고주파리프팅",
+      "category": "리프팅",
+      "product_name": null,
+      "equipment_name": "써마지 FLX",
+      "price": null,
+      "package": null,
+      "notes": "레이저클리닉 메뉴. 도곡양재 시술 가능 지점 확인. 도곡양재는 써마지 FLX 사용 확인.",
+      "source_page": "https://www.cnpskin.com/pc/cnp/laser-clinic/laser-clinic.html?bmain=view&uid=52",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "기미레이저",
+      "category": "색소/기미레이저",
+      "product_name": null,
+      "equipment_name": "레이저스태킹",
+      "price": null,
+      "package": null,
+      "notes": "레이저클리닉 메뉴. 도곡양재 특화 '레이저스태킹' 기법으로 진행.",
+      "source_page": "https://www.cnpskin.com/pc/cnp/laser-clinic/laser-clinic.html?bmain=view&uid=55",
+      "verification_status": "verified"
+    },
+    {
+      "treatment_name": "PDT광역동법",
+      "category": "여드름/PDT",
+      "product_name": null,
+      "equipment_name": null,
+      "price": null,
+      "package": null,
+      "notes": "레이저클리닉 메뉴 항목.",
+      "source_page": "https://www.cnpskin.com/pc/cnp/laser-clinic/laser-clinic.html?bmain=view&uid=46",
+      "verification_status": "unverified"
+    }
+  ],
+  "language_support": {
+    "supported_languages": [
+      "ko",
+      "en",
+      "zh",
+      "ja"
+    ],
+    "has_language_switcher": true,
+    "foreign_language_pages": {
+      "en": "https://www.cnpskin.com/pc/cnp-eng/about-us/branches.html?bmain=view&uid=28",
+      "zh": "https://www.cnpskin.com/pc/cnp-chn/about-us/branches.html?bmain=view&uid=28",
+      "ja": "https://www.cnpskin.com/pc/cnp-jpn/about-us/branches.html?bmain=view&uid=28"
+    }
+  },
+  "crawl_metadata": {
+    "pages_crawled": 15,
+    "pages_visited": [
+      "https://www.cnpskin.com/pc/branch/main/main.html?jijummid=cnpskin26 (홈 정찰)",
+      "https://www.cnpskin.com/pc/branch/intro/medical-staff.html?jijummid=cnpskin26 (의료진 목록)",
+      "https://www.cnpskin.com/pc/branch/intro/medical-staff.html?jijumuid=28&bmain=view&uid=260 (차미경 프로필)",
+      "https://www.cnpskin.com/pc/branch/intro/medical-staff.html?jijumuid=28&bmain=view&uid=261 (정수진 프로필)",
+      "https://www.cnpskin.com/pc/branch/intro/medical-staff.html?jijumuid=28&bmain=view&uid=1127 (정유진 프로필)",
+      "https://www.cnpskin.com/pc/branch/intro/medical-staff.html?jijumuid=28&bmain=view&uid=1126 (이하린 프로필)",
+      "https://www.cnpskin.com/pc/cnp/laser-clinic/laser-clinic.html?bmain=view&uid=51 (초음파리프팅 상세)",
+      "https://www.cnpskin.com/pc/cnp/laser-clinic/laser-clinic.html?bmain=view&uid=52 (고주파리프팅 상세)",
+      "https://www.cnpskin.com/pc/branch/intro/news/notice.html?jijummid=cnpskin26 (새소식 목록)",
+      "https://www.cnpskin.com/pc/branch/intro/news/notice.html?bmain=view&uid=19156 (마이크로 리파인 큐어젯)",
+      "https://www.cnpskin.com/pc/branch/intro/news/notice.html?bmain=view&uid=18877 (레이저스태킹)",
+      "https://www.cnpskin.com/pc/branch/intro/news/notice.html?bmain=view&uid=18532 (더마스리프팅)",
+      "https://www.cnpskin.com/pc/branch/intro/news/notice.html?bmain=view&uid=18382 (포엘원)",
+      "https://www.cnpskin.com/pc/branch/intro/news/notice.html?bmain=view&uid=18925 (학생 이벤트)",
+      "https://www.cnpskin.com/pc/cnp/special-clinic/special-clinic.html?bmain=view&uid=107 (CNP 스킨부스터)"
+    ],
+    "crawl_method": "text",
+    "errors": [
+      "비급여진료비용안내 URL(https://www.cnpskin.com/pc/branch/intro/info/non-paid-items.html?jijummid=cnpskin26) → 404 Not Found"
+    ],
+    "completeness": {
+      "operation_info": true,
+      "doctors": true,
+      "products": true,
+      "equipments": true,
+      "treatments": true,
+      "prices": false,
+      "language_support": true
+    },
+    "follow_up": [
+      {
+        "area": "가격 정보",
+        "reason": "budget_time",
+        "detail": "시술가격 전혀 미수집. 비급여 안내 URL 404, 이벤트 가격 미게시. 새소식 추가 페이지(96건 중 1페이지만 확인) 탐색 필요.",
+        "urls": [
+          "https://www.cnpskin.com/pc/branch/intro/news/notice.html?jijummid=cnpskin26&page=2"
+        ]
+      },
+      {
+        "area": "필러 브랜드",
+        "reason": "needs_deeper_crawl",
+        "detail": "'필러&실리프팅' 메뉴 있으나 구체적 필러 제품(레스틸렌, 쥬비덤, 이브아르 등) 확인 미완. 상세 페이지(uid=35) 방문 필요.",
+        "urls": [
+          "https://www.cnpskin.com/pc/cnp/special-clinic/special-clinic.html?bmain=view&uid=35"
+        ]
+      },
+      {
+        "area": "힐링주사 상세",
+        "reason": "needs_deeper_crawl",
+        "detail": "힐링주사 성분·브랜드 미확인. 상세 페이지(uid=31) 방문 필요.",
+        "urls": [
+          "https://www.cnpskin.com/pc/cnp/special-clinic/special-clinic.html?bmain=view&uid=31"
+        ]
+      },
+      {
+        "area": "레이저 장비 상세",
+        "reason": "needs_deeper_crawl",
+        "detail": "프락셔널레이저, 프락셔널고주파 구체적 장비명 미확인. 레이저 상세 페이지 방문 필요.",
+        "urls": [
+          "https://www.cnpskin.com/pc/cnp/laser-clinic/laser-clinic.html?bmain=view&uid=49",
+          "https://www.cnpskin.com/pc/cnp/laser-clinic/laser-clinic.html?bmain=view&uid=50"
+        ]
+      }
+    ],
+    "cost": {
+      "model": "claude-sonnet-4-6",
+      "effort": "medium",
+      "input_tokens": 132,
+      "output_tokens": 42860,
+      "cost_usd": 2.6553,
+      "duration_seconds": 743
+    },
+    "notes": [
+      "차앤박피부과 프랜차이즈 도곡양재 지점. identity_status:match(사업자번호 463-07-00011, 대표 차미경, 주소 일치).",
+      "텍스트형 사이트 — vision 미사용.",
+      "메뉴 구조: 지점 전용(/pc/branch/) + 체인 공통(/pc/cnp/).",
+      "비급여 진료비 안내 URL(non-paid-items.html) 404 — 가격 정보 없음.",
+      "도곡양재 특화 시술: 레이저스태킹(기미), 포엘원(모공), 더마스리프팅, 초음파홍조프로그램.",
+      "써마지 FLX가 핵심 리프팅 장비로 도곡양재 칼럼·공지에서 다수 확인.",
+      "마이크로 리파인 큐어젯: 2026년 최신 도입 no-needle 약물전달 장비.",
+      "CNP 스킨부스터(재생/볼륨/화이트닝 3종): 도곡양재 시술 가능 확인. 리쥬란·쥬베룩·울트라콜 사용 명시.",
+      "의료진 상세 프로필(학력·경력) 4명 완전 수집.",
+      "시술 가격 정보 없음(비급여 404, 이벤트 가격 미게시)."
+    ]
+  }
+}

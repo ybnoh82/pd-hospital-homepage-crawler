@@ -1,0 +1,13 @@
+{
+  "combo": "sonnet_low",
+  "model_short": "sonnet",
+  "model_id": "claude-sonnet-4-6",
+  "effort": "low",
+  "id": "6wzs3t",
+  "name": "권장덕케이성형외과의원",
+  "url": "http://www.mimo21.co.kr",
+  "exit_code": 0,
+  "wall_seconds": 284.8,
+  "hard_killed": false,
+  "start_ts": 1781666181.6
+}

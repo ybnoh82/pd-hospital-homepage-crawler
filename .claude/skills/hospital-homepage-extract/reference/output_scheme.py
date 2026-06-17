@@ -747,6 +747,15 @@ def normalize_aliases(raw):
                 if t.get(k):
                     t["treatment_name"] = t[k]
                     break
+        # 그래도 없으면 제품·장비·카테고리명으로 합성한다. treatment_name은 스키마 필수라
+        # 비어 있으면 검증 루프(_fix_at)가 이 시술 항목을 통째로 삭제하고, 그러면 거기 박힌
+        # 1순위 가치(product_name·equipment_name)가 aggregate_from_treatments 이전에 사라진다.
+        # 폴백으로 항목을 살려야 거둔 제품·장비명이 최상위 unmatched로 집계된다(무손실).
+        if not t.get("treatment_name"):
+            for k in ("product_name", "equipment_name", "category"):
+                if t.get(k):
+                    t["treatment_name"] = t[k]
+                    break
         p = t.get("price")
         if isinstance(p, str) and p.strip():
             t["price"] = {"text": p.strip()}

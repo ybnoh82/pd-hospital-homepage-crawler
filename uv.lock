@@ -501,7 +501,7 @@ wheels = [
 ]
 
 [[package]]
-name = "pd-hospital-crawler"
+name = "pd-hospital-homepage-crawler"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

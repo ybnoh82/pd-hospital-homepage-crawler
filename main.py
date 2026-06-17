@@ -66,6 +66,21 @@ FINALIZE_MESSAGE = (
     "유효성이 최우선이다 — 빈 필드·미매칭이 있어도 스키마만 통과하면 된다."
 )
 
+# 조기 종료(저장 전 턴 끝냄) 감지 시 주입하는 재촉. 저비용 effort(특히 Sonnet low/medium)는
+# 정찰을 마치고도 "디렉토리만 만들고" 또는 계획만 말한 뒤 파일 쓰기 없이 턴을 끝내는 경향이
+# 있다(실측: sample10 매트릭스). 그러면 ResultMessage가 와서 러너가 끊고, 저장된 게 없어
+# 결과가 EMPTY가 된다 — 크롤은 됐는데 적지를 못한 손실. 이 메시지로 한 번 더 끌고 가 저장시킨다.
+SAVE_NOW_MESSAGE = (
+    "아직 결과 JSON 파일을 저장하지 않았다. 더 설명하거나 계획하지 말고, 지금 이 응답에서 "
+    "그때까지 수집한 것만으로 스키마에 맞는 유효한 JSON을 출력 경로에 **실제로 파일로 써라**. "
+    "디렉토리 생성·계획 설명은 저장이 아니다 — Write/Bash로 파일 쓰기를 끝까지 실행하라. "
+    "카탈로그 매칭은 나중에 해도 되니, 거둔 제품·장비 이름은 unmatched에 그대로 넣고 먼저 저장하라."
+)
+
+# 조기 종료 재촉 최대 횟수. 유효 저장이 생기거나 소프트 데드라인에 닿으면 멈춘다.
+# 진짜 빈 사이트(트리아지가 못 거른)면 몇 번 재촉 후 포기 — 그 낭비는 상한으로 묶는다.
+MAX_SAVE_NUDGES = 3
+
 # playwright MCP 서버. 배치(8,000개 병렬)를 위해:
 # --headless: 가시 창 없이 실행(메모리·CPU↓, 헤드리스 서버 실행 가능, 브라우저 오버헤드↓).
 #   단, 시간캡에 묶여 속도 이득은 주로 "같은 시간에 더 많은 페이지"(완전성)로 나타난다.
@@ -144,7 +159,10 @@ def build_prompt(
         "것만으로 유효한 JSON을 위 경로에 **반드시 먼저 저장**하라. 첫 저장에 카탈로그 매칭은 "
         "필요 없다 — 거둔 제품·장비 이름을 unmatched에 그대로 넣고 저장하면 된다(매칭 0건도 OK). "
         "큰 카탈로그를 읽어 매칭하는 일이 첫 저장을 늦추는 주범이다. 이후 페이지·매칭으로 보강할 "
-        "때마다 같은 파일을 덮어써 갱신하라. '모두 수집한 뒤 한 번에 저장'은 금지 — 끊기면 0이 된다."
+        "때마다 같은 파일을 덮어써 갱신하라. '모두 수집한 뒤 한 번에 저장'은 금지 — 끊기면 0이 된다. "
+        "출력 디렉토리는 이미 만들어져 있다 — mkdir 같은 준비 단계에 응답을 쓰지 말고 곧장 파일을 "
+        "써라. 디렉토리 생성·계획 설명은 저장이 아니다. '저장하겠다'고 말한 응답에서 반드시 실제 "
+        "파일 쓰기까지 끝내라 — 준비만 하고 턴을 끝내면 거둔 게 전부 사라진다."
     )
 
 
@@ -241,6 +259,36 @@ def backfill_cost(
     return True
 
 
+def backfill_timecap_duration(
+    path: Path, duration_s: int, model: str | None, effort: str | None
+) -> bool:
+    """시간캡(TimeoutError)으로 ResultMessage가 없을 때, 러너가 아는 것만 채운다.
+
+    비용·토큰은 ResultMessage 없이는 알 수 없어 null로 둔다. 다만 경과시간(≈시간캡)·모델·
+    effort는 러너가 알기에 채워, 배치 비용·시간 모니터링에서 '가장 오래 돈(=잠재 최고가)'
+    시간캡 런이 cost 통째 null로 누락되는 갭을 줄인다(CLAUDE.md '알려진 갭'의 부분 해소).
+    """
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError):
+        return False
+    cm = data.setdefault("crawl_metadata", {})
+    cost = cm.get("cost") or {}
+    observed = {
+        "model": model,
+        "effort": effort if (effort and supports_effort(model)) else None,
+        "duration_seconds": duration_s,
+    }
+    for key, value in observed.items():
+        if cost.get(key) in (None, "") and value is not None:
+            cost[key] = value
+    cm["cost"] = cost
+    path.write_text(
+        json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+    return True
+
+
 SCHEMA_VALIDATOR = (
     PROJECT_ROOT / ".claude/skills" / SKILL_NAME / "reference/output_scheme.py"
 )
@@ -303,6 +351,43 @@ def supports_effort(model: str | None) -> bool:
     return "sonnet-4-6" in m or "opus" in m
 
 
+def has_useful_output(path: Path | None) -> bool:
+    """에이전트가 유의미한 데이터를 이미 파일로 저장했는지(조기 종료 재촉 판단용).
+
+    repair 전 원본을 본다. 저비용 모델이 별칭 필드명으로 쓰는 경우까지 관대하게 인정한다
+    (operation_info↔business_info 등) — 여기선 "거둔 게 있나"만 보면 되고 정규화는 repair가 한다.
+    핵심 가치(시술·제품·장비) 중 하나라도 있거나 운영정보가 채워졌으면 저장된 것으로 본다.
+    """
+    if path is None:
+        return False
+    try:
+        d = json.loads(path.read_text(encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError, OSError):
+        return False
+    if not isinstance(d, dict):
+        return False
+
+    def _len(x: object) -> int:
+        return len(x) if isinstance(x, (list, dict)) else 0
+
+    def _nested(container: object, *keys: str) -> int:
+        if not isinstance(container, dict):
+            return _len(container)
+        return sum(_len(container.get(k)) for k in keys)
+
+    treatments = d.get("treatments") or d.get("treatment_info")
+    products = d.get("products")
+    equipments = d.get("equipments")
+    op = d.get("operation_info") or d.get("business_info")
+    return bool(
+        _len(treatments)
+        or _nested(products, "matched_products", "unmatched_products")
+        or _nested(products, "matched", "unmatched")  # 별칭형
+        or _nested(equipments, "matched_equipments", "unmatched_equipments")
+        or (isinstance(op, dict) and any(v for v in op.values()))
+    )
+
+
 async def run(
     url: str,
     info: dict[str, str | None],
@@ -361,6 +446,8 @@ async def run(
     budget_reached = False
     time_reached = False
     steered = False
+    nudges = 0
+    elapsed: float | None = None  # 시간캡 시 경과시간(ResultMessage 없을 때 duration 백필용)
     fatal_error: str | None = None
 
     # 양방향 클라이언트로 크롤링을 돌리되, 소프트 데드라인에서 "마무리하라" 메시지를
@@ -378,6 +465,22 @@ async def run(
                         seen_model = render_message(msg) or seen_model
                         if isinstance(msg, ResultMessage):
                             last_result = msg
+                            # 조기 종료 구제: 에이전트가 유효 저장 전에 턴을 끝냈고, 소프트
+                            # 데드라인 전이며 재촉 여유가 있으면 끊지 말고 "지금 저장하라"를
+                            # 주입해 한 번 더 끌고 간다. (저비용 effort의 EMPTY를 결정론적으로
+                            # 줄인다 — 유효성을 에이전트 신뢰도에서 떼어내는 러너의 역할.)
+                            if (
+                                nudges < MAX_SAVE_NUDGES
+                                and (loop.time() - start) < soft_deadline
+                                and not has_useful_output(out_path)
+                            ):
+                                nudges += 1
+                                log(
+                                    f"\n⚠️  저장 전 조기 종료 감지 — 저장 재촉 주입 "
+                                    f"({nudges}/{MAX_SAVE_NUDGES})"
+                                )
+                                await client.query(SAVE_NOW_MESSAGE)
+                                continue
                             break
                         if not steered and (loop.time() - start) > soft_deadline:
                             steered = True
@@ -387,6 +490,7 @@ async def run(
                             await client.query(FINALIZE_MESSAGE)
             except TimeoutError:
                 time_reached = True
+                elapsed = loop.time() - start
     except Exception as exc:  # noqa: BLE001 — SDK가 에러 결과를 예외로 던진다
         # 예산 한도 도달은 이 프로젝트에서 정상 종료다(스킬이 follow_up을 남기고 멈춘다).
         if "budget" in str(exc).lower():
@@ -404,6 +508,12 @@ async def run(
         useful = repair_output(out_path, info, url)
         if last_result is not None:
             backfill_cost(out_path, last_result, model or seen_model, effort)
+        elif time_reached and elapsed is not None:
+            # 시간캡으로 ResultMessage가 없으면 비용·토큰은 모르나, 러너가 아는
+            # 경과시간·모델·effort는 채워 배치 모니터링에서 통째 누락되지 않게 한다.
+            backfill_timecap_duration(
+                out_path, round(elapsed), model or seen_model, effort
+            )
 
     log("\n" + "─" * 48)
     if last_result is not None:

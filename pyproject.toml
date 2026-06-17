@@ -1,5 +1,5 @@
 [project]
-name = "pd-hospital-crawler"
+name = "pd-hospital-homepage-crawler"
 version = "0.1.0"
 description = "플랜닥스 잠재고객인 미용·성형 전문 병원 홈페이지 크롤러"
 readme = "README.md"
